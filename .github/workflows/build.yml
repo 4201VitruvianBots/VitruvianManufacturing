@@ -1,0 +1,23 @@
+name: 🔨 Build app
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./VitruvianManufacturing
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - run: npm install
+
+      - name: Build app
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3.1.1
+        with:
+          name: build
+          path: build
