@@ -12,17 +12,33 @@ function Page(props) {
 function SignIn(props) {
     return (
         <Page selected={props.selected} className="page" id="sign-in">
-            <div>
-                <p className="section-label" id="SignIn">Energized</p>
+            <button onclick="document.getElementById('id01').style.display='block'">Login</button>
 
-                <div className="textArea">
-                    <input type="text" id="Username" name="Username" placeholder="Username" className="text-input" />
-                    <br />
-                    <input type="text" id="Password" name="Password" placeholder="Password" className="text-input" />
-                    <br />
-                    <button>Sumbit</button>
-                    {/* <input type="submit" className="SAVE" value="Sign In" /> */}
-                </div>
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="close" title="Close Modal">&times;</span>
+
+                <form class="modal-content animate" action="/action_page.php">
+                    <div class="imgcontainer">
+                        <img src="img_avatar2.png" alt="Avatar" class="avatar"></img>
+                    </div>
+                    <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required/>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required/>
+
+                                <button type="submit">Login</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"/> Remember me </label>
+
+
+
+                            {/* <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span> */}
+                    </div>
+                </form>
             </div>
         </Page>
     );
@@ -136,11 +152,11 @@ function DrivetrainPhotos(props) {
 
                 <p className="section-label" id="Part Hub">Drivetrain Photos</p>
                 <div className="textArea">
-                <input type="file"
-                    id="avatar" name="avatar"
-                    accept="image/png, image/jpeg"></input>
-                    
-            </div>
+                    <input type="file"
+                        id="avatar" name="avatar"
+                        accept="image/png, image/jpeg"></input>
+
+                </div>
 
             </div>
         </Page>
@@ -148,13 +164,13 @@ function DrivetrainPhotos(props) {
 }
 function SavePage(props) {
     return (
-        
+
         <Page selected={props.selected} id="S">
-                            <p className="section-label" id="DriveTrain">Save</p>
+            <p className="section-label" id="DriveTrain">Save</p>
 
-                            <div className="textArea">
+            <div className="textArea">
 
-            <button>Sumbit</button>
+                <button>Sumbit</button>
             </div>
         </Page>
     );
