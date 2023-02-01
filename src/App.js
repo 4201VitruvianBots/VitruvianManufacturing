@@ -1,5 +1,6 @@
 import "./App.css";
 import React from "react";
+import { SignIn, PartHub, Drivetrain, SavePage, DrivetrainPhotos } from "./Pages";
 
 class App extends React.Component {
     constructor(props) {
@@ -32,15 +33,15 @@ class App extends React.Component {
             */}
 
                 <form onSubmit={this.SubmitHandler} action="#">
-                    {/* 
-                TODO: Add fields to the form here, by putting react components between the
-                    opening and closing <form></form> tags. These can be components from this file,
-                    or components that get exported from another file (such as Form.js) and imported
-                    into this file
-                */}
+                <SignIn selected={this.state.selected === 'sign-in'} />
+                    <PartHub selected={this.state.selected === 'part-hub'} />
+                    <Drivetrain selected={this.state.selected === 'drive-train'} />
+                    <DrivetrainPhotos selected={this.state.selected === 'drive-train-photos'} />
+
+                    <SavePage selected={this.state.selected === 'save-page'} QRCode={this.state.QRCode} />
                 </form>
             </main>
-        );
+        );   
         
     }
 }
