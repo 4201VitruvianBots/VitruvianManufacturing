@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { SignIn, PartHub, Drivetrain, SavePage, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos,  AuxiliarySystems,  AuxiliarySystemsPhotos } from "./Pages";
+import { SignIn, PartHub, Drivetrain, SavePage, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos } from "./Pages";
 
 class App extends React.Component {
     constructor(props) {
@@ -33,24 +33,24 @@ class App extends React.Component {
             */}
 
                 <form onSubmit={this.SubmitHandler} action="#">
-                <SignIn selected={this.state.selected === 'sign-in'} />
+                    <SignIn selected={this.state.selected === 'sign-in'} />
                     <PartHub selected={this.state.selected === 'part-hub'} />
                     <Drivetrain selected={this.state.selected === 'drive-train'} />
                     <DrivetrainPhotos selected={this.state.selected === 'drive-train-photos'} />
-                    <SavePage selected={this.state.selected === 'save-page'} QRCode={this.state.QRCode} />
-                    <Bumpers selected={this.state.selected === 'bumpers'}/>
-                    <BumperPhotos selected={this.state.selected === 'bumper-photos'}/>
-                    <Elevator selected={this.state.selected === 'Elevator'}/>
-                    <ElevatorPhotos selected={this.state.selected === 'Elevator-photos'}/>
-                    <Intake selected={this.state.selected === 'Intake'}/>
-                    <IntakePhotos selected={this.state.selected === 'Intake-photos'}/>
-                    <Outtake selected={this.state.selected === 'Outtake'}/>
-                    <OuttakePhotos selected={this.state.selected === 'Outtake-photos'}/>
-                    < AuxiliarySystems selected={this.state.selected === 'Auxiliary-Systems'}/>
-                    < AuxiliarySystemsPhotos selected={this.state.selected === 'Auxiliary-Systems-Photos'}/>
+                    <SavePage selected={this.state.selected === 'save-page'} />
+                    <Bumpers selected={this.state.selected === 'bumpers'} />
+                    <BumperPhotos selected={this.state.selected === 'bumper-photos'} />
+                    <Elevator selected={this.state.selected === 'Elevator'} />
+                    <ElevatorPhotos selected={this.state.selected === 'Elevator-photos'} />
+                    <Intake selected={this.state.selected === 'Intake'} />
+                    <IntakePhotos selected={this.state.selected === 'Intake-photos'} />
+                    <Outtake selected={this.state.selected === 'Outtake'} />
+                    <OuttakePhotos selected={this.state.selected === 'Outtake-photos'} />
+                    < AuxiliarySystems selected={this.state.selected === 'Auxiliary-Systems'} />
+                    < AuxiliarySystemsPhotos selected={this.state.selected === 'Auxiliary-Systems-Photos'} />
                 </form>
             </main>
-        );   
+        );
     }
 }
 

@@ -115,8 +115,8 @@
    height: 30px;
    font-size: 20px;
    margin: 0 auto;
-   
-   
+
+
  }
 
  .chonk {
@@ -126,18 +126,19 @@
    height: 75px !important;
    font-size: 50px !important;
    /* margin-left: 100; */
-   
-    background-color:#003800;
+
+   background-color: #003800;
 
  }
- input[type = button].chonk{
-  background-color:#cad3c8;
-  border-width: 2px;
-  border-color:  #83c183;
-  cursor: default;
+
+ input[type=button].chonk {
+   background-color: #cad3c8;
+   border-width: 2px;
+   border-color: #83c183;
+   cursor: default;
 
  }
- 
+
 
  input[type="checkbox"] {
    border-color: var(--accent-3);
@@ -165,28 +166,30 @@
    width: 100px !important;
    height: 75px !important;
    font-size: 50px;
-   text-align:center;
+   text-align: center;
    border-color: gray;
  }
 
- .SAVE, .CLEAR {
+ .SAVE,
+ .CLEAR {
    display: inline-block;
    width: 300px;
    height: 35px;
    font-size: 20px;
    margin: 15px;
  }
- 
+
  .SAVE {
    background-color: #83c183;
    margin-top: 30px;
    margin-bottom: 10px;
 
  }
- 
+
  .CLEAR {
    border-color: var(--accent-3);
-   background-color: red; /*Make this color better*/
+   background-color: red;
+   /*Make this color better*/
  }
 
  .savept2 {
@@ -203,12 +206,12 @@
    text-align: left;
    cursor: default; */
    background-color: initial;
-    cursor: default;
-    appearance: auto;
-    box-sizing: border-box;
-    margin: 3px 3px 0px 5px;
-    padding: initial;
-    border: initial;
+   cursor: default;
+   appearance: auto;
+   box-sizing: border-box;
+   margin: 3px 3px 0px 5px;
+   padding: initial;
+   border: initial;
 
  }
 
@@ -216,120 +219,143 @@
    padding: 20px;
    background-color: white;
  }
- .container { 
-  height: 200px;
-  width: 250px ;
 
-  position: relative;
-  /* border: 3px solid green;  */
-}
-.center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 200%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
+ .container {
+   height: 200px;
+   width: 250px;
 
-.vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
+   position: relative;
+   /* border: 3px solid green;  */
+ }
 
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-}
+ .center {
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   left: 200%;
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+ }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
+ .vertical-center {
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+ }
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
+ .tab {
+   overflow: hidden;
+   border: 1px solid #ccc;
+   background-color: #f1f1f1;
+ }
 
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
+ /* Style the buttons that are used to open the tab content */
+ .tab button {
+   background-color: inherit;
+   float: left;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   padding: 14px 16px;
+   transition: 0.3s;
+ }
 
-strong {
-  font-size: large;
-}
+ /* Change background color of buttons on hover */
+ .tab button:hover {
+   background-color: #ddd;
+ }
 
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
-}
+ /* Create an active/current tablink class */
+ .tab button.active {
+   background-color: #ccc;
+ }
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5px auto; /* 15% from the top and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
+ /* Style the tab content */
+ .tabcontent {
+   display: none;
+   padding: 6px 12px;
+   border: 1px solid #ccc;
+   border-top: none;
+ }
 
-/* The Close Button */
-.close {
-  /* Position it in the top right corner outside of the modal */
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
+ strong {
+   font-size: large;
+ }
 
-/* Close button on hover */
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
+ .modal {
+   display: none;
+   /* Hidden by default */
+   position: fixed;
+   /* Stay in place */
+   z-index: 1;
+   /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%;
+   /* Full width */
+   height: 100%;
+   /* Full height */
+   overflow: auto;
+   /* Enable scroll if needed */
+   background-color: rgb(0, 0, 0);
+   /* Fallback color */
+   background-color: rgba(0, 0, 0, 0.4);
+   /* Black w/ opacity */
+   padding-top: 60px;
+ }
 
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
+ /* Modal Content/Box */
+ .modal-content {
+   background-color: #fefefe;
+   margin: 5px auto;
+   /* 15% from the top and centered */
+   border: 1px solid #888;
+   width: 80%;
+   /* Could be more or less, depending on screen size */
+ }
 
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)}
-  to {-webkit-transform: scale(1)}
-}
+ /* The Close Button */
+ .close {
+   /* Position it in the top right corner outside of the modal */
+   position: absolute;
+   right: 25px;
+   top: 0;
+   color: #000;
+   font-size: 35px;
+   font-weight: bold;
+ }
 
-@keyframes animatezoom {
-  from {transform: scale(0)}
-  to {transform: scale(1)}
-}
+ /* Close button on hover */
+ .close:hover,
+ .close:focus {
+   color: red;
+   cursor: pointer;
+ }
+
+ /* Add Zoom Animation */
+ .animate {
+   -webkit-animation: animatezoom 0.6s;
+   animation: animatezoom 0.6s
+ }
+
+ @-webkit-keyframes animatezoom {
+   from {
+     -webkit-transform: scale(0)
+   }
+
+   to {
+     -webkit-transform: scale(1)
+   }
+ }
+
+ @keyframes animatezoom {
+   from {
+     transform: scale(0)
+   }
+
+   to {
+     transform: scale(1)
+   }
+ }

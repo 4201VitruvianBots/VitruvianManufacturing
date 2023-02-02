@@ -18,11 +18,11 @@ function SignIn(props) {
             <input type="text" placeholder="Enter Username" name="username" required></input>
 
             <br><br></br>
-            <label for="pswrd">Your password</label>
-            <input type="password" placeholder="Enter Password" name="pswrd" required>
+                <label for="pswrd">Your password</label>
+                <input type="password" placeholder="Enter Password" name="pswrd" required>
 
-    </input>
-          </br>
+                </input>
+            </br>
         </Page>
     );
 }
@@ -583,7 +583,7 @@ function Bumpers(props) {
                                     <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
                                     <br></br>
                                     <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
-    
+
                                     <select name="SizeOfPart" id="SizeOfPart" defaultValue="Choose">
                                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                                         <option value="1*1">1x1</option>
@@ -595,7 +595,7 @@ function Bumpers(props) {
                                     </select>
                                     <br></br>
                                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
-    
+
                                     <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
                                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                                         <option value="Extrusion">Extrusion</option>
@@ -610,7 +610,7 @@ function Bumpers(props) {
                                         <option value="1/16">1/16</option>
                                         <option value="1/8">1/8</option>
                                     </select>
-    
+
                                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
                                     <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
                                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
@@ -621,7 +621,7 @@ function Bumpers(props) {
                                         <option value="3/8">3/8</option>
                                         <option value="3/4">3/4</option>
                                     </select>
-    
+
                                     <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
                                     <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
                                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
@@ -635,7 +635,7 @@ function Bumpers(props) {
                                     <input type="text" id="Part Number" name="Part Number" placeholder="Part Number" className="text-input" />
                                     <br></br>
                                     <input type="text" id="When do you need the part done by?" name="When do you need the part done by? " placeholder="When do you need the part done by? " className="text-input" />
-    
+
                                     {/* <label for="avatar">Choose a profile picture:</label>
                 
                 <input type="file"
@@ -649,35 +649,35 @@ function Bumpers(props) {
                         return (
                             <Page selected={props.selected} id="Buper-Photos">
                                 <div>
-    
+
                                     <p className="section-label" id="Part Hub">Bumper Photos</p>
                                     <div className="textArea">
                                         <input type="file"
                                             id="avatar" name="avatar"
                                             accept="image/png, image/jpeg"></input>
-    
+
                                     </div>
-    
+
                                 </div>
                             </Page>
                         );
                     }
                     function SavePage(props) {
                         return (
-    
+
                             <Page selected={props.selected} id="Elevator ">
                                 <p className="section-label" id="Elevator ">Save</p>
-    
+
                                 <div className="textArea">
-    
+
                                     <button>Sumbit</button>
                                 </div>
                             </Page>
                         );
                     }
-    
-    
-    
 
 
-                export { SignIn, Drivetrain, PartHub, SavePage, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos, Outtake, OuttakePhotos };
+
+
+
+                    export { SignIn, Drivetrain, PartHub, SavePage, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos, Outtake, OuttakePhotos };
