@@ -14,15 +14,11 @@ function SignIn(props) {
             <h3>Sign in</h3>
             <p>Sign in with your username and password</p>
 
-            <label for="username">Your username</label>
+            <label htmlFor="username">Your username</label>
             <input type="text" placeholder="Enter Username" name="username" required></input>
-
-            <br><br></br>
-                <label for="pswrd">Your password</label>
-                <input type="password" placeholder="Enter Password" name="pswrd" required>
-
-                </input>
-            </br>
+            <label htmlFor="pswrd">Your password</label>
+                <input type="password" placeholder="Enter Password" name="pswrd" required/>
+                    <br/>
         </Page>
     );
 }
@@ -42,10 +38,10 @@ function PartHub(props) {
                         <option value="Bumpers">Bumpers</option>
                         <option value="Intake">Intake</option>
                         <option value="Outtake">Outtake</option>
-                        <br></br>
+                        
                     </select>
+                    <br></br>
                     <div>
-                        <button>Logout</button>
                     </div>
 
                 </div>
@@ -130,7 +126,7 @@ function Drivetrain(props) {
 }
 function DrivetrainPhotos(props) {
     return (
-        <Page selected={props.selected} id="Sk">
+        <Page selected={props.selected} id="DrivetrainPhotos">
             <div>
 
                 <p className="section-label" id="Part Hub">Drivetrain Photos</p>
@@ -145,24 +141,12 @@ function DrivetrainPhotos(props) {
         </Page>
     );
 }
-// function SavePage(props) {
-//     return (
 
-//         <Page selected={props.selected} id="S">
-//             <p className="section-label" id="DriveTrain">Save</p>
-
-//             <div className="textArea">
-
-//                 <button>Sumbit</button>
-//             </div>
-//         </Page>
-//     );
-// }
 function Bumpers(props) {
     return (
         <Page selected={props.selected} id="Bumpers">
             <div>
-                <p className="section-label" id="DriveTrain">Bumpers</p>
+                <p className="section-label" id="Bumpers">Bumpers</p>
                 <div className="textArea">
                     <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
                     <br></br>
@@ -234,10 +218,10 @@ function Bumpers(props) {
 }
 function BumperPhotos(props) {
     return (
-        <Page selected={props.selected} id="Buper-Photos">
+        <Page selected={props.selected} id="Bumper-Photos">
             <div>
 
-                <p className="section-label" id="Part Hub">Bumper Photos</p>
+                <p className="section-label" id="Bumper-Photos">Bumper Photos</p>
                 <div className="textArea">
                     <input type="file"
                         id="avatar" name="avatar"
@@ -264,9 +248,9 @@ function BumperPhotos(props) {
 // }
 function Elevator(props) {
     return (
-        <Page selected={props.selected} id="Bumpers">
+        <Page selected={props.selected} id="Elevator">
             <div>
-                <p className="section-label" id="DriveTrain">Bumpers</p>
+                <p className="section-label" id="Elevator">Elevator</p>
                 <div className="textArea">
                     <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
                     <br></br>
@@ -338,10 +322,10 @@ function Elevator(props) {
 }
 function ElevatorPhotos(props) {
     return (
-        <Page selected={props.selected} id="Buper-Photos">
+        <Page selected={props.selected} id="Elevator-Photos">
             <div>
 
-                <p className="section-label" id="Part Hub">Bumper Photos</p>
+                <p className="section-label" id="Elevators Photos">Elevator Photos</p>
                 <div className="textArea">
                     <input type="file"
                         id="avatar" name="avatar"
@@ -353,25 +337,13 @@ function ElevatorPhotos(props) {
         </Page>
     );
 }
-// function SavePage(props) {
-//     return (
 
-//         <Page selected={props.selected} id="Elevator ">
-//             <p className="section-label" id="Elevator ">Save</p>
-
-//             <div className="textArea">
-
-//                 <button>Sumbit</button>
-//             </div>
-//         </Page>
-//     );
-// }
 
 function Intake(props) {
     return (
-        <Page selected={props.selected} id="Bumpers">
+        <Page selected={props.selected} id="Intake">
             <div>
-                <p className="section-label" id="DriveTrain">Bumpers</p>
+                <p className="section-label" id="Intake">Intake</p>
                 <div className="textArea">
                     <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
                     <br></br>
@@ -443,10 +415,10 @@ function Intake(props) {
 }
 function IntakePhotos(props) {
     return (
-        <Page selected={props.selected} id="Buper-Photos">
+        <Page selected={props.selected} id="Intake-Photos">
             <div>
 
-                <p className="section-label" id="Part Hub">Bumper Photos</p>
+                <p className="section-label" id="Intake-Photos">Intake Photos</p>
                 <div className="textArea">
                     <input type="file"
                         id="avatar" name="avatar"
@@ -458,7 +430,6 @@ function IntakePhotos(props) {
         </Page>
     );
 }
-// function SavePage(props) {
 //     return (
 
 //         <Page selected={props.selected} id="Elevator ">
@@ -474,9 +445,9 @@ function IntakePhotos(props) {
 
 function AuxiliarySystems(props) {
     return (
-        <Page selected={props.selected} id="Bumpers">
+        <Page selected={props.selected} id="AuxiliarySystems">
             <div>
-                <p className="section-label" id="DriveTrain">Bumpers</p>
+                <p className="section-label" id="AuxiliarySystems">Auxiliary Systems</p>
                 <div className="textArea">
                     <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
                     <br></br>
@@ -549,10 +520,10 @@ function AuxiliarySystems(props) {
 
 function AuxiliarySystemsPhotos(props) {
     return (
-        <Page selected={props.selected} id="Buper-Photos">
+        <Page selected={props.selected} id="AuxiliarySystems-Photos">
             <div>
 
-                <p className="section-label" id="Part Hub">Bumper Photos</p>
+                <p className="section-label" id="AuxiliarySystems-Photos">Auxiliary Systems Photos</p>
                 <div className="textArea">
                     <input type="file"
                         id="avatar" name="avatar"
@@ -579,9 +550,9 @@ function AuxiliarySystemsPhotos(props) {
 // }
 function Outtake(props) {
     return (
-        <Page selected={props.selected} id="Bumpers">
+        <Page selected={props.selected} id="Outtake">
             <div>
-                <p className="section-label" id="DriveTrain">Bumpers</p>
+                <p className="section-label" id="Outtake">Outtake</p>
                 <div className="textArea">
                     <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
                     <br></br>
@@ -653,10 +624,10 @@ function Outtake(props) {
 }
 function OuttakePhotos(props) {
     return (
-        <Page selected={props.selected} id="Buper-Photos">
+        <Page selected={props.selected} id="Outtake-Photos">
             <div>
 
-                <p className="section-label" id="Part Hub">Bumper Photos</p>
+                <p className="section-label" id="Outtake-Photos">Outtake Photos</p>
                 <div className="textArea">
                     <input type="file"
                         id="avatar" name="avatar"
@@ -671,8 +642,8 @@ function OuttakePhotos(props) {
 function SavePage(props) {
     return (
 
-        <Page selected={props.selected} id="Elevator ">
-            <p className="section-label" id="Elevator ">Save</p>
+        <Page selected={props.selected} id="Save ">
+            <p className="section-label" id="Save ">Save</p>
 
             <div className="textArea">
 
