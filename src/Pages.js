@@ -145,19 +145,19 @@ function DrivetrainPhotos(props) {
         </Page>
     );
 }
-function SavePage(props) {
-    return (
+// function SavePage(props) {
+//     return (
 
-        <Page selected={props.selected} id="S">
-            <p className="section-label" id="DriveTrain">Save</p>
+//         <Page selected={props.selected} id="S">
+//             <p className="section-label" id="DriveTrain">Save</p>
 
-            <div className="textArea">
+//             <div className="textArea">
 
-                <button>Sumbit</button>
-            </div>
-        </Page>
-    );
-}
+//                 <button>Sumbit</button>
+//             </div>
+//         </Page>
+//     );
+// }
 function Bumpers(props) {
     return (
         <Page selected={props.selected} id="Bumpers">
@@ -231,453 +231,454 @@ function Bumpers(props) {
             </div>
         </Page>
     );
-    function BumperPhotos(props) {
-        return (
-            <Page selected={props.selected} id="Buper-Photos">
-                <div>
+}
+function BumperPhotos(props) {
+    return (
+        <Page selected={props.selected} id="Buper-Photos">
+            <div>
 
-                    <p className="section-label" id="Part Hub">Bumper Photos</p>
-                    <div className="textArea">
-                        <input type="file"
-                            id="avatar" name="avatar"
-                            accept="image/png, image/jpeg"></input>
-
-                    </div>
-
-                </div>
-            </Page>
-        );
-    }
-    function SavePage(props) {
-        return (
-
-            <Page selected={props.selected} id="S">
-                <p className="section-label" id="Bumpers">Save</p>
-
+                <p className="section-label" id="Part Hub">Bumper Photos</p>
                 <div className="textArea">
+                    <input type="file"
+                        id="avatar" name="avatar"
+                        accept="image/png, image/jpeg"></input>
 
-                    <button>Sumbit</button>
                 </div>
-            </Page>
-        );
-    }
-    function Elevator(props) {
-        return (
-            <Page selected={props.selected} id="Bumpers">
-                <div>
-                    <p className="section-label" id="DriveTrain">Bumpers</p>
-                    <div className="textArea">
-                        <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
-                        <br></br>
-                        <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
-                        <br></br>
-                        <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
 
-                        <select name="SizeOfPart" id="SizeOfPart" defaultValue="Choose">
-                            <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                            <option value="1*1">1x1</option>
-                            <option value="1x2">1x2</option>
-                            <option value="1.5x1.5">1.5x1.5</option>
-                            <option value="2x2">2x2</option>
-                            <option value="L-Bracket ">L-Bracket</option>
-                            <option value="Shaft">Shaft</option>
-                        </select>
-                        <br></br>
-                        <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
+            </div>
+        </Page>
+    );
+}
+// function SavePage(props) {
+//     return (
 
-                        <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
-                            <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                            <option value="Extrusion">Extrusion</option>
-                            <option value="Plate">Plate</option>
-                            <option value="Hex Shaft">Hex Shaft</option>
-                            <option value="Shaft">Shaft</option>
-                        </select>
-                        <br></br>
-                        <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
-                        <select name="Thickness (Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose">
-                            <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                            <option value="1/16">1/16</option>
-                            <option value="1/8">1/8</option>
-                        </select>
+//         <Page selected={props.selected} id="S">
+//             <p className="section-label" id="Bumpers">Save</p>
 
-                        <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
-                        <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
-                            <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                            <option value="1/16">1/16</option>
-                            <option value=".09">.09</option>
-                            <option value="1/8">1/8</option>
-                            <option value="1/4">1/4</option>
-                            <option value="3/8">3/8</option>
-                            <option value="3/4">3/4</option>
-                        </select>
+//             <div className="textArea">
 
-                        <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
-                        <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
-                            <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                            <option value="Aluminum">Aluminum</option>
-                            <option value="Polycarbonate">Polycarbonate</option>
-                            <option value="Wood">Wood</option>
-                        </select>
-                        <br></br>
-                        <input type="text" id="Length in Inches" name="Length in Inches" placeholder="Length in Inches" className="text-input" />
-                        <br></br>
-                        <input type="text" id="Part Number" name="Part Number" placeholder="Part Number" className="text-input" />
-                        <br></br>
-                        <input type="text" id="When do you need the part done by?" name="When do you need the part done by? " placeholder="When do you need the part done by? " className="text-input" />
+//                 <button>Sumbit</button>
+//             </div>
+//         </Page>
+//     );
+// }
+function Elevator(props) {
+    return (
+        <Page selected={props.selected} id="Bumpers">
+            <div>
+                <p className="section-label" id="DriveTrain">Bumpers</p>
+                <div className="textArea">
+                    <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
+                    <br></br>
+                    <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
+                    <br></br>
+                    <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
 
-                        {/* <label for="avatar">Choose a profile picture:</label>
+                    <select name="SizeOfPart" id="SizeOfPart" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="1*1">1x1</option>
+                        <option value="1x2">1x2</option>
+                        <option value="1.5x1.5">1.5x1.5</option>
+                        <option value="2x2">2x2</option>
+                        <option value="L-Bracket ">L-Bracket</option>
+                        <option value="Shaft">Shaft</option>
+                    </select>
+                    <br></br>
+                    <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
+
+                    <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="Extrusion">Extrusion</option>
+                        <option value="Plate">Plate</option>
+                        <option value="Hex Shaft">Hex Shaft</option>
+                        <option value="Shaft">Shaft</option>
+                    </select>
+                    <br></br>
+                    <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
+                    <select name="Thickness (Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="1/16">1/16</option>
+                        <option value="1/8">1/8</option>
+                    </select>
+
+                    <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
+                    <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="1/16">1/16</option>
+                        <option value=".09">.09</option>
+                        <option value="1/8">1/8</option>
+                        <option value="1/4">1/4</option>
+                        <option value="3/8">3/8</option>
+                        <option value="3/4">3/4</option>
+                    </select>
+
+                    <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
+                    <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="Aluminum">Aluminum</option>
+                        <option value="Polycarbonate">Polycarbonate</option>
+                        <option value="Wood">Wood</option>
+                    </select>
+                    <br></br>
+                    <input type="text" id="Length in Inches" name="Length in Inches" placeholder="Length in Inches" className="text-input" />
+                    <br></br>
+                    <input type="text" id="Part Number" name="Part Number" placeholder="Part Number" className="text-input" />
+                    <br></br>
+                    <input type="text" id="When do you need the part done by?" name="When do you need the part done by? " placeholder="When do you need the part done by? " className="text-input" />
+
+                    {/* <label for="avatar">Choose a profile picture:</label>
     
     <input type="file"
            id="avatar" name="avatar"
            accept="image/png, image/jpeg"></input> */}
-                    </div>
                 </div>
-            </Page>
-        );
-        function ElevatorPhotos(props) {
-            return (
-                <Page selected={props.selected} id="Buper-Photos">
-                    <div>
+            </div>
+        </Page>
+    );
+}
+function ElevatorPhotos(props) {
+    return (
+        <Page selected={props.selected} id="Buper-Photos">
+            <div>
 
-                        <p className="section-label" id="Part Hub">Bumper Photos</p>
-                        <div className="textArea">
-                            <input type="file"
-                                id="avatar" name="avatar"
-                                accept="image/png, image/jpeg"></input>
+                <p className="section-label" id="Part Hub">Bumper Photos</p>
+                <div className="textArea">
+                    <input type="file"
+                        id="avatar" name="avatar"
+                        accept="image/png, image/jpeg"></input>
 
-                        </div>
+                </div>
 
-                    </div>
-                </Page>
-            );
-        }
-        function SavePage(props) {
-            return (
+            </div>
+        </Page>
+    );
+}
+// function SavePage(props) {
+//     return (
 
-                <Page selected={props.selected} id="Elevator ">
-                    <p className="section-label" id="Elevator ">Save</p>
+//         <Page selected={props.selected} id="Elevator ">
+//             <p className="section-label" id="Elevator ">Save</p>
 
-                    <div className="textArea">
+//             <div className="textArea">
 
-                        <button>Sumbit</button>
-                    </div>
-                </Page>
-            );
-        }
+//                 <button>Sumbit</button>
+//             </div>
+//         </Page>
+//     );
+// }
 
-        function Intake(props) {
-            return (
-                <Page selected={props.selected} id="Bumpers">
-                    <div>
-                        <p className="section-label" id="DriveTrain">Bumpers</p>
-                        <div className="textArea">
-                            <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
-                            <br></br>
-                            <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
-                            <br></br>
-                            <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
+function Intake(props) {
+    return (
+        <Page selected={props.selected} id="Bumpers">
+            <div>
+                <p className="section-label" id="DriveTrain">Bumpers</p>
+                <div className="textArea">
+                    <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
+                    <br></br>
+                    <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
+                    <br></br>
+                    <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
 
-                            <select name="SizeOfPart" id="SizeOfPart" defaultValue="Choose">
-                                <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                                <option value="1*1">1x1</option>
-                                <option value="1x2">1x2</option>
-                                <option value="1.5x1.5">1.5x1.5</option>
-                                <option value="2x2">2x2</option>
-                                <option value="L-Bracket ">L-Bracket</option>
-                                <option value="Shaft">Shaft</option>
-                            </select>
-                            <br></br>
-                            <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
+                    <select name="SizeOfPart" id="SizeOfPart" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="1*1">1x1</option>
+                        <option value="1x2">1x2</option>
+                        <option value="1.5x1.5">1.5x1.5</option>
+                        <option value="2x2">2x2</option>
+                        <option value="L-Bracket ">L-Bracket</option>
+                        <option value="Shaft">Shaft</option>
+                    </select>
+                    <br></br>
+                    <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
 
-                            <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
-                                <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                                <option value="Extrusion">Extrusion</option>
-                                <option value="Plate">Plate</option>
-                                <option value="Hex Shaft">Hex Shaft</option>
-                                <option value="Shaft">Shaft</option>
-                            </select>
-                            <br></br>
-                            <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
-                            <select name="Thickness (Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose">
-                                <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                                <option value="1/16">1/16</option>
-                                <option value="1/8">1/8</option>
-                            </select>
+                    <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="Extrusion">Extrusion</option>
+                        <option value="Plate">Plate</option>
+                        <option value="Hex Shaft">Hex Shaft</option>
+                        <option value="Shaft">Shaft</option>
+                    </select>
+                    <br></br>
+                    <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
+                    <select name="Thickness (Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="1/16">1/16</option>
+                        <option value="1/8">1/8</option>
+                    </select>
 
-                            <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
-                            <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
-                                <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                                <option value="1/16">1/16</option>
-                                <option value=".09">.09</option>
-                                <option value="1/8">1/8</option>
-                                <option value="1/4">1/4</option>
-                                <option value="3/8">3/8</option>
-                                <option value="3/4">3/4</option>
-                            </select>
+                    <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
+                    <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="1/16">1/16</option>
+                        <option value=".09">.09</option>
+                        <option value="1/8">1/8</option>
+                        <option value="1/4">1/4</option>
+                        <option value="3/8">3/8</option>
+                        <option value="3/4">3/4</option>
+                    </select>
 
-                            <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
-                            <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
-                                <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                                <option value="Aluminum">Aluminum</option>
-                                <option value="Polycarbonate">Polycarbonate</option>
-                                <option value="Wood">Wood</option>
-                            </select>
-                            <br></br>
-                            <input type="text" id="Length in Inches" name="Length in Inches" placeholder="Length in Inches" className="text-input" />
-                            <br></br>
-                            <input type="text" id="Part Number" name="Part Number" placeholder="Part Number" className="text-input" />
-                            <br></br>
-                            <input type="text" id="When do you need the part done by?" name="When do you need the part done by? " placeholder="When do you need the part done by? " className="text-input" />
+                    <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
+                    <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="Aluminum">Aluminum</option>
+                        <option value="Polycarbonate">Polycarbonate</option>
+                        <option value="Wood">Wood</option>
+                    </select>
+                    <br></br>
+                    <input type="text" id="Length in Inches" name="Length in Inches" placeholder="Length in Inches" className="text-input" />
+                    <br></br>
+                    <input type="text" id="Part Number" name="Part Number" placeholder="Part Number" className="text-input" />
+                    <br></br>
+                    <input type="text" id="When do you need the part done by?" name="When do you need the part done by? " placeholder="When do you need the part done by? " className="text-input" />
 
-                            {/* <label for="avatar">Choose a profile picture:</label>
+                    {/* <label for="avatar">Choose a profile picture:</label>
         
         <input type="file"
                id="avatar" name="avatar"
                accept="image/png, image/jpeg"></input> */}
-                        </div>
-                    </div>
-                </Page>
-            );
-            function IntakePhotos(props) {
-                return (
-                    <Page selected={props.selected} id="Buper-Photos">
-                        <div>
+                </div>
+            </div>
+        </Page>
+    );
+}
+function IntakePhotos(props) {
+    return (
+        <Page selected={props.selected} id="Buper-Photos">
+            <div>
 
-                            <p className="section-label" id="Part Hub">Bumper Photos</p>
-                            <div className="textArea">
-                                <input type="file"
-                                    id="avatar" name="avatar"
-                                    accept="image/png, image/jpeg"></input>
+                <p className="section-label" id="Part Hub">Bumper Photos</p>
+                <div className="textArea">
+                    <input type="file"
+                        id="avatar" name="avatar"
+                        accept="image/png, image/jpeg"></input>
 
-                            </div>
+                </div>
 
-                        </div>
-                    </Page>
-                );
-            }
-            function SavePage(props) {
-                return (
+            </div>
+        </Page>
+    );
+}
+// function SavePage(props) {
+//     return (
 
-                    <Page selected={props.selected} id="Elevator ">
-                        <p className="section-label" id="Elevator ">Save</p>
+//         <Page selected={props.selected} id="Elevator ">
+//             <p className="section-label" id="Elevator ">Save</p>
 
-                        <div className="textArea">
+//             <div className="textArea">
 
-                            <button>Sumbit</button>
-                        </div>
-                    </Page>
-                );
-            }
+//                 <button>Sumbit</button>
+//             </div>
+//         </Page>
+//     );
+// }
 
-            function AuxiliarySystems(props) {
-                return (
-                    <Page selected={props.selected} id="Bumpers">
-                        <div>
-                            <p className="section-label" id="DriveTrain">Bumpers</p>
-                            <div className="textArea">
-                                <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
-                                <br></br>
-                                <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
-                                <br></br>
-                                <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
+function AuxiliarySystems(props) {
+    return (
+        <Page selected={props.selected} id="Bumpers">
+            <div>
+                <p className="section-label" id="DriveTrain">Bumpers</p>
+                <div className="textArea">
+                    <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
+                    <br></br>
+                    <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
+                    <br></br>
+                    <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
 
-                                <select name="SizeOfPart" id="SizeOfPart" defaultValue="Choose">
-                                    <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                                    <option value="1*1">1x1</option>
-                                    <option value="1x2">1x2</option>
-                                    <option value="1.5x1.5">1.5x1.5</option>
-                                    <option value="2x2">2x2</option>
-                                    <option value="L-Bracket ">L-Bracket</option>
-                                    <option value="Shaft">Shaft</option>
-                                </select>
-                                <br></br>
-                                <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
+                    <select name="SizeOfPart" id="SizeOfPart" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="1*1">1x1</option>
+                        <option value="1x2">1x2</option>
+                        <option value="1.5x1.5">1.5x1.5</option>
+                        <option value="2x2">2x2</option>
+                        <option value="L-Bracket ">L-Bracket</option>
+                        <option value="Shaft">Shaft</option>
+                    </select>
+                    <br></br>
+                    <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
 
-                                <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
-                                    <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                                    <option value="Extrusion">Extrusion</option>
-                                    <option value="Plate">Plate</option>
-                                    <option value="Hex Shaft">Hex Shaft</option>
-                                    <option value="Shaft">Shaft</option>
-                                </select>
-                                <br></br>
-                                <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
-                                <select name="Thickness (Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose">
-                                    <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                                    <option value="1/16">1/16</option>
-                                    <option value="1/8">1/8</option>
-                                </select>
+                    <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="Extrusion">Extrusion</option>
+                        <option value="Plate">Plate</option>
+                        <option value="Hex Shaft">Hex Shaft</option>
+                        <option value="Shaft">Shaft</option>
+                    </select>
+                    <br></br>
+                    <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
+                    <select name="Thickness (Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="1/16">1/16</option>
+                        <option value="1/8">1/8</option>
+                    </select>
 
-                                <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
-                                <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
-                                    <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                                    <option value="1/16">1/16</option>
-                                    <option value=".09">.09</option>
-                                    <option value="1/8">1/8</option>
-                                    <option value="1/4">1/4</option>
-                                    <option value="3/8">3/8</option>
-                                    <option value="3/4">3/4</option>
-                                </select>
+                    <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
+                    <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="1/16">1/16</option>
+                        <option value=".09">.09</option>
+                        <option value="1/8">1/8</option>
+                        <option value="1/4">1/4</option>
+                        <option value="3/8">3/8</option>
+                        <option value="3/4">3/4</option>
+                    </select>
 
-                                <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
-                                <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
-                                    <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                                    <option value="Aluminum">Aluminum</option>
-                                    <option value="Polycarbonate">Polycarbonate</option>
-                                    <option value="Wood">Wood</option>
-                                </select>
-                                <br></br>
-                                <input type="text" id="Length in Inches" name="Length in Inches" placeholder="Length in Inches" className="text-input" />
-                                <br></br>
-                                <input type="text" id="Part Number" name="Part Number" placeholder="Part Number" className="text-input" />
-                                <br></br>
-                                <input type="text" id="When do you need the part done by?" name="When do you need the part done by? " placeholder="When do you need the part done by? " className="text-input" />
+                    <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
+                    <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="Aluminum">Aluminum</option>
+                        <option value="Polycarbonate">Polycarbonate</option>
+                        <option value="Wood">Wood</option>
+                    </select>
+                    <br></br>
+                    <input type="text" id="Length in Inches" name="Length in Inches" placeholder="Length in Inches" className="text-input" />
+                    <br></br>
+                    <input type="text" id="Part Number" name="Part Number" placeholder="Part Number" className="text-input" />
+                    <br></br>
+                    <input type="text" id="When do you need the part done by?" name="When do you need the part done by? " placeholder="When do you need the part done by? " className="text-input" />
 
-                                {/* <label for="avatar">Choose a profile picture:</label>
+                    {/* <label for="avatar">Choose a profile picture:</label>
             
             <input type="file"
                    id="avatar" name="avatar"
                    accept="image/png, image/jpeg"></input> */}
-                            </div>
-                        </div>
-                    </Page>
-                );
-                function AuxiliarySystemsPhotos(props) {
-                    return (
-                        <Page selected={props.selected} id="Buper-Photos">
-                            <div>
+                </div>
+            </div>
+        </Page>
+    );
+}
 
-                                <p className="section-label" id="Part Hub">Bumper Photos</p>
-                                <div className="textArea">
-                                    <input type="file"
-                                        id="avatar" name="avatar"
-                                        accept="image/png, image/jpeg"></input>
+function AuxiliarySystemsPhotos(props) {
+    return (
+        <Page selected={props.selected} id="Buper-Photos">
+            <div>
 
-                                </div>
+                <p className="section-label" id="Part Hub">Bumper Photos</p>
+                <div className="textArea">
+                    <input type="file"
+                        id="avatar" name="avatar"
+                        accept="image/png, image/jpeg"></input>
 
-                            </div>
-                        </Page>
-                    );
-                }
-                function SavePage(props) {
-                    return (
+                </div>
 
-                        <Page selected={props.selected} id="Elevator ">
-                            <p className="section-label" id="Elevator ">Save</p>
+            </div>
+        </Page>
+    );
+}
+// function SavePage(props) {
+//     return (
 
-                            <div className="textArea">
+//         <Page selected={props.selected} id="Elevator ">
+//             <p className="section-label" id="Elevator ">Save</p>
 
-                                <button>Sumbit</button>
-                            </div>
-                        </Page>
-                    );
-                }
-                function Outtake(props) {
-                    return (
-                        <Page selected={props.selected} id="Bumpers">
-                            <div>
-                                <p className="section-label" id="DriveTrain">Bumpers</p>
-                                <div className="textArea">
-                                    <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
-                                    <br></br>
-                                    <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
-                                    <br></br>
-                                    <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
+//             <div className="textArea">
 
-                                    <select name="SizeOfPart" id="SizeOfPart" defaultValue="Choose">
-                                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                                        <option value="1*1">1x1</option>
-                                        <option value="1x2">1x2</option>
-                                        <option value="1.5x1.5">1.5x1.5</option>
-                                        <option value="2x2">2x2</option>
-                                        <option value="L-Bracket ">L-Bracket</option>
-                                        <option value="Shaft">Shaft</option>
-                                    </select>
-                                    <br></br>
-                                    <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
+//                 <button>Sumbit</button>
+//             </div>
+//         </Page>
+//     );
+// }
+function Outtake(props) {
+    return (
+        <Page selected={props.selected} id="Bumpers">
+            <div>
+                <p className="section-label" id="DriveTrain">Bumpers</p>
+                <div className="textArea">
+                    <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
+                    <br></br>
+                    <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
+                    <br></br>
+                    <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
 
-                                    <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
-                                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                                        <option value="Extrusion">Extrusion</option>
-                                        <option value="Plate">Plate</option>
-                                        <option value="Hex Shaft">Hex Shaft</option>
-                                        <option value="Shaft">Shaft</option>
-                                    </select>
-                                    <br></br>
-                                    <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
-                                    <select name="Thickness (Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose">
-                                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                                        <option value="1/16">1/16</option>
-                                        <option value="1/8">1/8</option>
-                                    </select>
+                    <select name="SizeOfPart" id="SizeOfPart" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="1*1">1x1</option>
+                        <option value="1x2">1x2</option>
+                        <option value="1.5x1.5">1.5x1.5</option>
+                        <option value="2x2">2x2</option>
+                        <option value="L-Bracket ">L-Bracket</option>
+                        <option value="Shaft">Shaft</option>
+                    </select>
+                    <br></br>
+                    <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
 
-                                    <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
-                                    <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
-                                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                                        <option value="1/16">1/16</option>
-                                        <option value=".09">.09</option>
-                                        <option value="1/8">1/8</option>
-                                        <option value="1/4">1/4</option>
-                                        <option value="3/8">3/8</option>
-                                        <option value="3/4">3/4</option>
-                                    </select>
+                    <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="Extrusion">Extrusion</option>
+                        <option value="Plate">Plate</option>
+                        <option value="Hex Shaft">Hex Shaft</option>
+                        <option value="Shaft">Shaft</option>
+                    </select>
+                    <br></br>
+                    <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
+                    <select name="Thickness (Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="1/16">1/16</option>
+                        <option value="1/8">1/8</option>
+                    </select>
 
-                                    <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
-                                    <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
-                                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                                        <option value="Aluminum">Aluminum</option>
-                                        <option value="Polycarbonate">Polycarbonate</option>
-                                        <option value="Wood">Wood</option>
-                                    </select>
-                                    <br></br>
-                                    <input type="text" id="Length in Inches" name="Length in Inches" placeholder="Length in Inches" className="text-input" />
-                                    <br></br>
-                                    <input type="text" id="Part Number" name="Part Number" placeholder="Part Number" className="text-input" />
-                                    <br></br>
-                                    <input type="text" id="When do you need the part done by?" name="When do you need the part done by? " placeholder="When do you need the part done by? " className="text-input" />
+                    <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
+                    <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="1/16">1/16</option>
+                        <option value=".09">.09</option>
+                        <option value="1/8">1/8</option>
+                        <option value="1/4">1/4</option>
+                        <option value="3/8">3/8</option>
+                        <option value="3/4">3/4</option>
+                    </select>
 
-                                    {/* <label for="avatar">Choose a profile picture:</label>
+                    <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
+                    <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="Aluminum">Aluminum</option>
+                        <option value="Polycarbonate">Polycarbonate</option>
+                        <option value="Wood">Wood</option>
+                    </select>
+                    <br></br>
+                    <input type="text" id="Length in Inches" name="Length in Inches" placeholder="Length in Inches" className="text-input" />
+                    <br></br>
+                    <input type="text" id="Part Number" name="Part Number" placeholder="Part Number" className="text-input" />
+                    <br></br>
+                    <input type="text" id="When do you need the part done by?" name="When do you need the part done by? " placeholder="When do you need the part done by? " className="text-input" />
+
+                    {/* <label for="avatar">Choose a profile picture:</label>
                 
                 <input type="file"
                        id="avatar" name="avatar"
                        accept="image/png, image/jpeg"></input> */}
-                                </div>
-                            </div>
-                        </Page>
-                    );
-                    function OuttakePhotos(props) {
-                        return (
-                            <Page selected={props.selected} id="Buper-Photos">
-                                <div>
+                </div>
+            </div>
+        </Page>
+    );
+}
+function OuttakePhotos(props) {
+    return (
+        <Page selected={props.selected} id="Buper-Photos">
+            <div>
 
-                                    <p className="section-label" id="Part Hub">Bumper Photos</p>
-                                    <div className="textArea">
-                                        <input type="file"
-                                            id="avatar" name="avatar"
-                                            accept="image/png, image/jpeg"></input>
+                <p className="section-label" id="Part Hub">Bumper Photos</p>
+                <div className="textArea">
+                    <input type="file"
+                        id="avatar" name="avatar"
+                        accept="image/png, image/jpeg"></input>
 
-                                    </div>
+                </div>
 
-                                </div>
-                            </Page>
-                        );
-                    }
-                    function SavePage(props) {
-                        return (
+            </div>
+        </Page>
+    );
+}
+function SavePage(props) {
+    return (
 
-                            <Page selected={props.selected} id="Elevator ">
-                                <p className="section-label" id="Elevator ">Save</p>
+        <Page selected={props.selected} id="Elevator ">
+            <p className="section-label" id="Elevator ">Save</p>
 
-                                <div className="textArea">
+            <div className="textArea">
 
-                                    <button>Sumbit</button>
-                                </div>
-                            </Page>
-                        );
-                    }
-
-
-
-
-
-                    export { SignIn, Drivetrain, PartHub, SavePage, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos, Outtake, OuttakePhotos };
+                <button>Sumbit</button>
+            </div>
+        </Page>
+    );
+}
+export { SignIn, Drivetrain, PartHub, SavePage, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos, Outtake, OuttakePhotos };

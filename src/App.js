@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { SignIn, PartHub, Drivetrain, SavePage, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos } from "./Pages";
+import { SignIn, PartHub, Drivetrain, SavePage, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos, Outtake, OuttakePhotos } from "./Pages";
 
 class App extends React.Component {
     constructor(props) {

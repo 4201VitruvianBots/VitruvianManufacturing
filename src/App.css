@@ -10,49 +10,54 @@
  .page-title {
    color: gray;
    font-size: 25px;
-   
-   font-style:normal;
+
+   font-style: normal;
  }
 
  ::placeholder {
-    color: gray;
-    font-size: 20px;
-    font-style: italic;
-    text-align: center;
+   color: gray;
+   font-size: 20px;
+   font-style: italic;
+   text-align: center;
  }
 
  .section-label {
    color: black;
    font-size: 30px;
    font-weight: bold;
-   
+
  }
 
- .item-label, .item-label2 {
+ .item-label,
+ .item-label2 {
    color: black;
-   font-size: 20px; 
-   
+   font-size: 20px;
+
    display: inline-block;
  }
- .item-label2{
-  margin-bottom:20px;
-  margin-top: 10px;
+
+ .item-label2 {
+   margin-bottom: 20px;
+   margin-top: 10px;
  }
- .dropdown{
-  border-color:#085f00;
-  border-width: 50px;
+
+ .dropdown {
+   border-color: #085f00;
+   border-width: 50px;
  }
- .textInput{
-  border-color:#085f00;
-  border-width: 50px;
+
+ .textInput {
+   border-color: #085f00;
+   border-width: 50px;
  }
-.numberInput{
-  border-color:#085f00;
-  border-width: 50px;
-  margin:10px;
+
+ .numberInput {
+   border-color: #085f00;
+   border-width: 50px;
+   margin: 10px;
  }
- 
- .textArea{
+
+ .textArea {
    background-color: #ecf2eb;
    min-width: 300px;
    min-height: 100px;
