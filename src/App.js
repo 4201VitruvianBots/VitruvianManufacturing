@@ -37,7 +37,6 @@ class App extends React.Component {
                     <PartHub selected={this.state.selected === 'part-hub'} />
                     <Drivetrain selected={this.state.selected === 'drive-train'} />
                     <DrivetrainPhotos selected={this.state.selected === 'drive-train-photos'} />
-                    <SavePage selected={this.state.selected === 'save-page'} />
                     <Bumpers selected={this.state.selected === 'bumpers'} />
                     <BumperPhotos selected={this.state.selected === 'bumper-photos'} />
                     <Elevator selected={this.state.selected === 'Elevator'} />
@@ -48,6 +47,8 @@ class App extends React.Component {
                     <OuttakePhotos selected={this.state.selected === 'Outtake-photos'} />
                     < AuxiliarySystems selected={this.state.selected === 'Auxiliary-Systems'} />
                     < AuxiliarySystemsPhotos selected={this.state.selected === 'Auxiliary-Systems-Photos'} />
+                    <SavePage selected={this.state.selected === 'save-page'} />
+
                 </form>
             </main>
         );
