@@ -32,36 +32,9 @@ function SignIn(props) {
                 <input type="password" id="pwd" name="pwd"></input>
 <br></br>
 <input type="submit" value="Submit" />
-<body class="light">
-
-    <div class="calendar">
-        <div class="calendar-header">
-            <span class="month-picker" id="month-picker">April</span>
-            <div class="year-picker">
-                <span class="year-change" id="prev-year">
-                </span>
-                <span id="year">2022</span>
-                <span class="year-change" id="next-year">
-                </span>
-            </div>
-        </div>
-        <div class="calendar-body">
-            <div class="calendar-week-day">
-                <div>Sun</div>
-                <div>Mon</div>
-                <div>Tue</div>
-                <div>Wed</div>
-                <div>Thu</div>
-                <div>Fri</div>
-                <div>Sat</div>
-            </div>
-            <div class="calendar-days"></div>
-        </div>
+{/* <body class="light">     */}
        
-        <div class="month-list"></div>
-    </div>
-    <script src="app.js"></script>
-</body>
+{/* </body> */}
 
             </div>
 
@@ -154,13 +127,11 @@ function Drivetrain(props) {
                         <option value="Wood">Wood</option>
                     </select>
                     <br></br>
-                    <input type="text" id="Length in Inches" name="Length in Inches" placeholder="Length in Inches" className="text-input" />
+                    <input type="text" id="LengthInInches" name="LengthInInches" placeholder="Length in Inches" className="text-input" />
                     <br></br>
-                    <input type="text" id="Part Number" name="Part Number" placeholder="Part Number" className="text-input" />
+                    <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
-                    <label for="bdaymonth">When do you need the part by?</label>
-  <input type="month" id="month" name="When do you need the part by?"/>
-  <input type="submit" value="Submit"/>
+                    <input type='text' id="WDYN" name="WDYN" placeholder="When do you need the part by" className="text-input" />
                     {/* <label for="avatar">Choose a profile picture:</label>
 
 <input type="file"
@@ -219,6 +190,8 @@ function Bumpers(props) {
                         <option value="Plate">Plate</option>
                         <option value="Hex Shaft">Hex Shaft</option>
                         <option value="Shaft">Shaft</option>
+                        <option value="3D-Print">3D-Print</option>
+
                     </select>
                     <br></br>
                     <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
@@ -247,11 +220,11 @@ function Bumpers(props) {
                         <option value="Wood">Wood</option>
                     </select>
                     <br></br>
-                    <input type="text" id="Length in Inches" name="Length in Inches" placeholder="Length in Inches" className="text-input" />
+                    <input type="text" id="LengthInInches" name="LengthInInches" placeholder="Length in Inches" className="text-input" />
                     <br></br>
-                    <input type="text" id="Part Number" name="Part Number" placeholder="Part Number" className="text-input" />
+                    <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
-                    <input type="text" id="When do you need the part done by?" name="When do you need the part done by? " placeholder="When do you need the part done by? " className="text-input" />
+                    <input type="text" id="WDYN" name="WDYN" placeholder="When do you need the part done by? " className="text-input" />
 
                     {/* <label for="avatar">Choose a profile picture:</label>
 
@@ -351,11 +324,11 @@ function Elevator(props) {
                         <option value="Wood">Wood</option>
                     </select>
                     <br></br>
-                    <input type="text" id="Length in Inches" name="Length in Inches" placeholder="Length in Inches" className="text-input" />
+                    <input type="text" id="LengthInInches" name="LengthInInches" placeholder="Length in Inches" className="text-input" />
                     <br></br>
-                    <input type="text" id="Part Number" name="Part Number" placeholder="Part Number" className="text-input" />
+                    <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
-                    <input type="text" id="When do you need the part done by?" name="When do you need the part done by? " placeholder="When do you need the part done by? " className="text-input" />
+                    <input type="text" id="WDYN" name="WDYN" placeholder="When do you need the part done by? " className="text-input" />
 
                     {/* <label for="avatar">Choose a profile picture:</label>
     
@@ -444,11 +417,11 @@ function Intake(props) {
                         <option value="Wood">Wood</option>
                     </select>
                     <br></br>
-                    <input type="text" id="Length in Inches" name="Length in Inches" placeholder="Length in Inches" className="text-input" />
+                    <input type="text" id="LengthInInches" name="LengthInInches" placeholder="Length in Inches" className="text-input" />
                     <br></br>
-                    <input type="text" id="Part Number" name="Part Number" placeholder="Part Number" className="text-input" />
+                    <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
-                    <input type="text" id="When do you need the part done by?" name="When do you need the part done by? " placeholder="When do you need the part done by? " className="text-input" />
+                    <input type="text" id="WDYN" name="WDYN" placeholder="When do you need the part done by? " className="text-input" />
 
                     {/* <label for="avatar">Choose a profile picture:</label>
         
@@ -496,7 +469,7 @@ function AuxiliarySystems(props) {
             <div>
                 <p className="section-label" id="AuxiliarySystems">Auxiliary Systems</p>
                 <div className="textArea">
-                    <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
+                    <input type="text" id="Mechanism" name="name" placeholder="Mechanism" className="text-input" />
                     <br></br>
                     <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
                     <br></br>
@@ -548,11 +521,11 @@ function AuxiliarySystems(props) {
                         <option value="Wood">Wood</option>
                     </select>
                     <br></br>
-                    <input type="text" id="Length in Inches" name="Length in Inches" placeholder="Length in Inches" className="text-input" />
+                    <input type="text" id="LengthInInches" name="LengthInInches" placeholder="Length in Inches" className="text-input" />
                     <br></br>
-                    <input type="text" id="Part Number" name="Part Number" placeholder="Part Number" className="text-input" />
+                    <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
-                    <input type="text" id="When do you need the part done by?" name="When do you need the part done by? " placeholder="When do you need the part done by? " className="text-input" />
+                    <input type="text" id="WDYN" name="WDYN" placeholder="When do you need the part done by? " className="text-input" />
 
                     {/* <label for="avatar">Choose a profile picture:</label>
             
@@ -653,11 +626,11 @@ function Outtake(props) {
                         <option value="Wood">Wood</option>
                     </select>
                     <br></br>
-                    <input type="text" id="Length in Inches" name="Length in Inches" placeholder="Length in Inches" className="text-input" />
+                    <input type="text" id="LengthInInches" name="LengthInInches" placeholder="Length in Inches" className="text-input" />
                     <br></br>
-                    <input type="text" id="Part Number" name="Part Number" placeholder="Part Number" className="text-input" />
+                    <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
-                    <input type="text" id="When do you need the part done by?" name="When do you need the part done by? " placeholder="When do you need the part done by? " className="text-input" />
+                    <input type="text" id="WDYN" name="WDYN" placeholder="When do you need the part done by? " className="text-input" />
 
                     {/* <label for="avatar">Choose a profile picture:</label>
                 

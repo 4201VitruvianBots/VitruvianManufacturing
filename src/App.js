@@ -1,6 +1,8 @@
 import "./App.css";
 import React from "react";
+import DatePicker from "react-datepicker";
 import { SignIn, PartHub, Drivetrain, SavePage, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos, Outtake, OuttakePhotos } from "./Pages";
+import "react-datepicker/dist/react-datepicker.css";
 
 class App extends React.Component {
     constructor(props) {
@@ -55,5 +57,16 @@ class App extends React.Component {
     }
 }
 
+
+
+// CSS Modules, react-datepicker-cssmodules.css
+// import 'react-datepicker/dist/react-datepicker-cssmodules.css';
+
+// const Example = () => {
+//   const [startDate, setStartDate] = useState(new Date());
+//   return (
+//     <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+//   );
+// };
 
 export default App;

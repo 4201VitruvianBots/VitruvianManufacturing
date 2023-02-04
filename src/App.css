@@ -605,3 +605,19 @@ body {
 .month-list > div > div:hover {
   background-color: var(--color-hover);
 }
+
+input#NumberOfParts.text-input{
+  width: 390px;
+}
+input#Mechanism.text-input{
+  width: 390px;
+}
+input#LengthInInches.text-input{
+  width: 390px;
+}
+input#PartNumber.text-input{
+  width: 390px;
+}
+input#WDYN.text-input{
+  width: 390px;
+}
