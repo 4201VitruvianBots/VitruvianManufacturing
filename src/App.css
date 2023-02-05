@@ -621,3 +621,6 @@ input#PartNumber.text-input{
 input#WDYN.text-input{
   width: 390px;
 }
+h4{
+  font-size: large;
+}

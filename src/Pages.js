@@ -1,5 +1,6 @@
 import "./App.css";
-
+import React, { useState } from "react";
+import DatePicker from "react-datepicker";
 function Page(props) {
     return (
         <div className={props.selected ? "page selected" : "page"} id={props.id}>
@@ -8,6 +9,13 @@ function Page(props) {
 
     );
 }
+function NewDate  () {
+    const [startDate, setStartDate] = useState(new Date());
+    return (
+      <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+    );
+  };
+  
 function SignIn(props) {
     return (
         <Page selected={props.selected} className="page" id="sign-in">
@@ -56,7 +64,8 @@ function PartHub(props) {
                         <option value="Auxiliary Systems">Auxiliary Systems</option>
                         <option value="Bumpers">Bumpers</option>
                         <option value="Intake">Intake</option>
-                        <option value="Outtake">Outtake</option>
+                        <option value="Forebar">Forebar</option>
+                        <option value="3DPrint">3D Print</option>
 
                     </select>
                     <br></br>
@@ -125,6 +134,13 @@ function Drivetrain(props) {
                         <option value="Aluminum">Aluminum</option>
                         <option value="Polycarbonate">Polycarbonate</option>
                         <option value="Wood">Wood</option>
+                        <option value="PETG">PETG</option>
+                        <option value="PLA">PLA</option>
+                        <option value="ONYX">ONYX</option>
+
+                        
+                        ONYX
+
                     </select>
                     <br></br>
                     <input type="text" id="LengthInInches" name="LengthInInches" placeholder="Length in Inches" className="text-input" />
@@ -132,11 +148,13 @@ function Drivetrain(props) {
                     <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
                     <input type='text' id="WDYN" name="WDYN" placeholder="When do you need the part by" className="text-input" />
+                    <br></br>
+                    <h4>When do you need the part done by?</h4>
+                    <NewDate/>
                     {/* <label for="avatar">Choose a profile picture:</label>
-
 <input type="file"
        id="avatar" name="avatar"
-       accept="image/png, image/jpeg"></input> */}
+       accept="image/*,.pdf"></input> */}
                 </div>
             </div>
         </Page>
@@ -218,14 +236,18 @@ function Bumpers(props) {
                         <option value="Aluminum">Aluminum</option>
                         <option value="Polycarbonate">Polycarbonate</option>
                         <option value="Wood">Wood</option>
+                        <option value="PETG">PETG</option>
+                        <option value="PLA">PLA</option>
+                        <option value="ONYX">ONYX</option>
                     </select>
                     <br></br>
                     <input type="text" id="LengthInInches" name="LengthInInches" placeholder="Length in Inches" className="text-input" />
                     <br></br>
                     <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
-                    <input type="text" id="WDYN" name="WDYN" placeholder="When do you need the part done by? " className="text-input" />
-
+                    <br></br>
+                    <h4>When do you need the part done by?</h4>
+                    <NewDate/>
                     {/* <label for="avatar">Choose a profile picture:</label>
 
 <input type="file"
@@ -245,7 +267,7 @@ function BumperPhotos(props) {
                 <div className="textArea">
                     <input type="file"
                         id="avatar" name="avatar"
-                        accept="image/png, image/jpeg"></input>
+                        accept="image/*,.pdf"></input>
 
                 </div>
 
@@ -322,13 +344,18 @@ function Elevator(props) {
                         <option value="Aluminum">Aluminum</option>
                         <option value="Polycarbonate">Polycarbonate</option>
                         <option value="Wood">Wood</option>
+                        <option value="PETG">PETG</option>
+                        <option value="PLA">PLA</option>
+                        <option value="ONYX">ONYX</option>
                     </select>
                     <br></br>
                     <input type="text" id="LengthInInches" name="LengthInInches" placeholder="Length in Inches" className="text-input" />
                     <br></br>
                     <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
-                    <input type="text" id="WDYN" name="WDYN" placeholder="When do you need the part done by? " className="text-input" />
+                    <br></br>
+                    <h4>When do you need the part done by?</h4>
+                    <NewDate/>
 
                     {/* <label for="avatar">Choose a profile picture:</label>
     
@@ -349,7 +376,7 @@ function ElevatorPhotos(props) {
                 <div className="textArea">
                     <input type="file"
                         id="avatar" name="avatar"
-                        accept="image/png, image/jpeg"></input>
+                        accept="image/*,.pdf"></input>
 
                 </div>
 
@@ -415,14 +442,17 @@ function Intake(props) {
                         <option value="Aluminum">Aluminum</option>
                         <option value="Polycarbonate">Polycarbonate</option>
                         <option value="Wood">Wood</option>
+                        <option value="PETG">PETG</option>
+                        <option value="PLA">PLA</option>
+                        <option value="ONYX">ONYX</option>
                     </select>
                     <br></br>
                     <input type="text" id="LengthInInches" name="LengthInInches" placeholder="Length in Inches" className="text-input" />
                     <br></br>
                     <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
-                    <input type="text" id="WDYN" name="WDYN" placeholder="When do you need the part done by? " className="text-input" />
-
+                    <h4>When do you need the part done by?</h4>
+                    <NewDate/>
                     {/* <label for="avatar">Choose a profile picture:</label>
         
         <input type="file"
@@ -442,7 +472,7 @@ function IntakePhotos(props) {
                 <div className="textArea">
                     <input type="file"
                         id="avatar" name="avatar"
-                        accept="image/png, image/jpeg"></input>
+                        accept="image/*,.pdf"></input>
 
                 </div>
 
@@ -519,14 +549,17 @@ function AuxiliarySystems(props) {
                         <option value="Aluminum">Aluminum</option>
                         <option value="Polycarbonate">Polycarbonate</option>
                         <option value="Wood">Wood</option>
+                        <option value="PETG">PETG</option>
+                        <option value="PLA">PLA</option>
+                        <option value="ONYX">ONYX</option>
                     </select>
                     <br></br>
                     <input type="text" id="LengthInInches" name="LengthInInches" placeholder="Length in Inches" className="text-input" />
                     <br></br>
                     <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
-                    <input type="text" id="WDYN" name="WDYN" placeholder="When do you need the part done by? " className="text-input" />
-
+                    <h4>When do you need the part done by?</h4>
+                    <NewDate/>
                     {/* <label for="avatar">Choose a profile picture:</label>
             
             <input type="file"
@@ -547,7 +580,7 @@ function AuxiliarySystemsPhotos(props) {
                 <div className="textArea">
                     <input type="file"
                         id="avatar" name="avatar"
-                        accept="image/png, image/jpeg"></input>
+                        accept="image/*,.pdf"></input>
 
                 </div>
 
@@ -568,11 +601,11 @@ function AuxiliarySystemsPhotos(props) {
 //         </Page>
 //     );
 // }
-function Outtake(props) {
+function Forebar(props) {
     return (
-        <Page selected={props.selected} id="Outtake">
+        <Page selected={props.selected} id="Forebar">
             <div>
-                <p className="section-label" id="Outtake">Outtake</p>
+                <p className="section-label" id="Forebar">Forebar</p>
                 <div className="textArea">
                     <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
                     <br></br>
@@ -624,14 +657,17 @@ function Outtake(props) {
                         <option value="Aluminum">Aluminum</option>
                         <option value="Polycarbonate">Polycarbonate</option>
                         <option value="Wood">Wood</option>
+                        <option value="PETG">PETG</option>
+                        <option value="PLA">PLA</option>
+                        <option value="ONYX">ONYX</option>
                     </select>
                     <br></br>
                     <input type="text" id="LengthInInches" name="LengthInInches" placeholder="Length in Inches" className="text-input" />
                     <br></br>
                     <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
-                    <input type="text" id="WDYN" name="WDYN" placeholder="When do you need the part done by? " className="text-input" />
-
+                    <h4>When do you need the part done by?</h4>
+                    <NewDate/>
                     {/* <label for="avatar">Choose a profile picture:</label>
                 
                 <input type="file"
@@ -642,16 +678,18 @@ function Outtake(props) {
         </Page>
     );
 }
-function OuttakePhotos(props) {
+
+
+function ForebarPhotos(props) {
     return (
-        <Page selected={props.selected} id="Outtake-Photos">
+        <Page selected={props.selected} id="Forebar-Photos">
             <div>
 
-                <p className="section-label" id="Outtake-Photos">Outtake Photos</p>
+                <p className="section-label" id="Forebar-Photos">Forebar Photos</p>
                 <div className="textArea">
                     <input type="file"
                         id="avatar" name="avatar"
-                        accept="image/png, image/jpeg"></input>
+                        accept="image/*,.pdf"></input>
 
                 </div>
 
@@ -659,6 +697,103 @@ function OuttakePhotos(props) {
         </Page>
     );
 }
+function ThreeDPrint(props) {
+    return (
+        <Page selected={props.selected} id="ThreeDPrint">
+            <div>
+                <p className="section-label" id="ThreeDPrint">3d Print</p>
+                <div className="textArea">
+                    <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
+                    <br></br>
+                    <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
+                    <br></br>
+                    <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
+
+                    <select name="SizeOfPart" id="SizeOfPart" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="1*1">1x1</option>
+                        <option value="1x2">1x2</option>
+                        <option value="1.5x1.5">1.5x1.5</option>
+                        <option value="2x2">2x2</option>
+                        <option value="L-Bracket ">L-Bracket</option>
+                        <option value="Shaft">Shaft</option>
+                    </select>
+                    <br></br>
+                    <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
+
+                    <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="Extrusion">Extrusion</option>
+                        <option value="Plate">Plate</option>
+                        <option value="Hex Shaft">Hex Shaft</option>
+                        <option value="Shaft">Shaft</option>
+                    </select>
+                    <br></br>
+                    <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
+                    <select name="Thickness (Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="1/16">1/16</option>
+                        <option value="1/8">1/8</option>
+                    </select>
+
+                    <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
+                    <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="1/16">1/16</option>
+                        <option value=".09">.09</option>
+                        <option value="1/8">1/8</option>
+                        <option value="1/4">1/4</option>
+                        <option value="3/8">3/8</option>
+                        <option value="3/4">3/4</option>
+                    </select>
+
+                    <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
+                    <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                        <option value="Aluminum">Aluminum</option>
+                        <option value="Polycarbonate">Polycarbonate</option>
+                        <option value="Wood">Wood</option>
+                        <option value="PETG">PETG</option>
+                        <option value="PLA">PLA</option>
+                        <option value="ONYX">ONYX</option>
+                    </select>
+                    <br></br>
+                    <input type="text" id="LengthInInches" name="LengthInInches" placeholder="Length in Inches" className="text-input" />
+                    <br></br>
+                    <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
+                    <br></br>
+                    <h4>When do you need the part done by?</h4>
+                    <NewDate/>
+                    {/* <label for="avatar">Choose a profile picture:</label>
+                
+                <input type="file"
+                       id="avatar" name="avatar"
+                       accept="image/png, image/jpeg"></input> */}
+                </div>
+            </div>
+        </Page>
+    );
+}
+
+
+function ThreeDPrintPhotos(props) {
+    return (
+        <Page selected={props.selected} id="ThreeDPrint">
+            <div>
+
+                <p className="section-label" id="ThreeDPrint">3d Print Photos</p>
+                <div className="textArea">
+                    <input type="file"
+                        id="avatar" name="avatar"
+                        accept="image/*,.pdf"></input>
+
+                </div>
+
+            </div>
+        </Page>
+    );
+}
+
 function SavePage(props) {
     return (
 
@@ -671,4 +806,4 @@ function SavePage(props) {
         </Page>
     );
 }
-export { SignIn, Drivetrain, PartHub, SavePage, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos, Outtake, OuttakePhotos };
+export { SignIn, Drivetrain, PartHub, SavePage, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos, Forebar, ForebarPhotos, NewDate, ThreeDPrint, ThreeDPrintPhotos };

@@ -1,8 +1,7 @@
 import "./App.css";
 import React from "react";
-import DatePicker from "react-datepicker";
-import { SignIn, PartHub, Drivetrain, SavePage, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos, Outtake, OuttakePhotos } from "./Pages";
 import "react-datepicker/dist/react-datepicker.css";
+import { SignIn, PartHub, Drivetrain, SavePage, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos, Forebar, ForebarPhotos, ThreeDPrint, ThreeDPrintPhotos } from "./Pages";
 
 class App extends React.Component {
     constructor(props) {
@@ -45,10 +44,12 @@ class App extends React.Component {
                     <ElevatorPhotos selected={this.state.selected === 'Elevator-photos'} />
                     <Intake selected={this.state.selected === 'Intake'} />
                     <IntakePhotos selected={this.state.selected === 'Intake-photos'} />
-                    <Outtake selected={this.state.selected === 'Outtake'} />
-                    <OuttakePhotos selected={this.state.selected === 'Outtake-photos'} />
+                    <Forebar selected={this.state.selected === 'Forebar'} />
+                    <ForebarPhotos selected={this.state.selected === 'Forebar-photos'} />
                     < AuxiliarySystems selected={this.state.selected === 'Auxiliary-Systems'} />
                     < AuxiliarySystemsPhotos selected={this.state.selected === 'Auxiliary-Systems-Photos'} />
+                    < ThreeDPrint selected={this.state.selected === 'ThreeDPrint'} />
+                    < ThreeDPrintPhotos selected={this.state.selected === 'ThreeDPrintPhotos'} />
                     <SavePage selected={this.state.selected === 'save-page'} />
 
                 </form>
@@ -59,14 +60,5 @@ class App extends React.Component {
 
 
 
-// CSS Modules, react-datepicker-cssmodules.css
-// import 'react-datepicker/dist/react-datepicker-cssmodules.css';
-
-// const Example = () => {
-//   const [startDate, setStartDate] = useState(new Date());
-//   return (
-//     <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
-//   );
-// };
 
 export default App;
