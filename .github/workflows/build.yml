@@ -6,7 +6,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./VitruvianManufacturing
+        working-directory: ./Front-End
 
     steps:
       - uses: actions/checkout@v3
