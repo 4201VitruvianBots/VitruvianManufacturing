@@ -9,13 +9,13 @@ function Page(props) {
 
     );
 }
-function NewDate  () {
+function NewDate() {
     const [startDate, setStartDate] = useState(new Date());
     return (
-      <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+        <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
     );
-  };
-  
+};
+
 function SignIn(props) {
     return (
         <Page selected={props.selected} className="page" id="sign-in">
@@ -38,11 +38,11 @@ function SignIn(props) {
 
                 <label for="pwd">Password:</label>
                 <input type="password" id="pwd" name="pwd"></input>
-<br></br>
-<input type="submit" value="Submit" />
-{/* <body class="light">     */}
-       
-{/* </body> */}
+                <br></br>
+                <input type="submit" value="Submit" />
+                {/* <body class="light">     */}
+
+                {/* </body> */}
 
             </div>
 
@@ -138,7 +138,7 @@ function Drivetrain(props) {
                         <option value="PLA">PLA</option>
                         <option value="ONYX">ONYX</option>
 
-                        
+
                         ONYX
 
                     </select>
@@ -150,7 +150,7 @@ function Drivetrain(props) {
                     <input type='text' id="WDYN" name="WDYN" placeholder="When do you need the part by" className="text-input" />
                     <br></br>
                     <h4>When do you need the part done by?</h4>
-                    <NewDate/>
+                    <NewDate />
                     {/* <label for="avatar">Choose a profile picture:</label>
 <input type="file"
        id="avatar" name="avatar"
@@ -247,7 +247,7 @@ function Bumpers(props) {
                     <br></br>
                     <br></br>
                     <h4>When do you need the part done by?</h4>
-                    <NewDate/>
+                    <NewDate />
                     {/* <label for="avatar">Choose a profile picture:</label>
 
 <input type="file"
@@ -355,7 +355,7 @@ function Elevator(props) {
                     <br></br>
                     <br></br>
                     <h4>When do you need the part done by?</h4>
-                    <NewDate/>
+                    <NewDate />
 
                     {/* <label for="avatar">Choose a profile picture:</label>
     
@@ -452,7 +452,7 @@ function Intake(props) {
                     <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
                     <h4>When do you need the part done by?</h4>
-                    <NewDate/>
+                    <NewDate />
                     {/* <label for="avatar">Choose a profile picture:</label>
         
         <input type="file"
@@ -559,7 +559,7 @@ function AuxiliarySystems(props) {
                     <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
                     <h4>When do you need the part done by?</h4>
-                    <NewDate/>
+                    <NewDate />
                     {/* <label for="avatar">Choose a profile picture:</label>
             
             <input type="file"
@@ -667,7 +667,7 @@ function Forebar(props) {
                     <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
                     <h4>When do you need the part done by?</h4>
-                    <NewDate/>
+                    <NewDate />
                     {/* <label for="avatar">Choose a profile picture:</label>
                 
                 <input type="file"
@@ -763,9 +763,8 @@ function ThreeDPrint(props) {
                     <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
                     <h4>When do you need the part done by?</h4>
-                    <NewDate/>
+                    <NewDate />
                     {/* <label for="avatar">Choose a profile picture:</label>
-                
                 <input type="file"
                        id="avatar" name="avatar"
                        accept="image/png, image/jpeg"></input> */}
