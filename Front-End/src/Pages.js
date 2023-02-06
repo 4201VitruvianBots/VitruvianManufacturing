@@ -30,8 +30,8 @@ function SignIn(props) {
                 {/* <label for="username">Username:</label> */}
                 {/* <input type="text" id="username" name="username"/> */}
                 <h1>Sign in</h1>
-                <label htmlFor="email">Email:</label>
-                <input type="email" id="email" name="email" />
+                <label htmlFor="email">Email: </label>
+                <input type="email" id="email" name="email" required="required" />
                 <br></br>
                 <br></br>
                 {/* <label for="pwd">Password:</label>
@@ -53,7 +53,7 @@ function PartHub(props) {
                 <p className="section-label" id="Part Hub">Select a Mechanism</p>
                 <div className="textArea">
                     <label className="item-label" htmlFor="Competition"><strong>Select a Mechanism</strong> </label>
-                    <select name="PartHub_ SelectaMechanism" id="Competition" defaultValue="Choose">
+                    <select name="PartHub_ SelectaMechanism" id="Competition" defaultValue="Choose" required="required">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="DriveTrain">DriveTrain</option>
                         <option value="Elevator">Elevator</option>
@@ -139,7 +139,7 @@ function Drivetrain(props) {
                     <br></br>
                     <input type="text" id="PartNumber" name="drivetrain_PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
-                    <input type='text' id="WDYN" name="drivetrain_WDYN" placeholder="When do you need the part by" className="text-input" />
+                    <input type='text' id="WDYN" name="drivetrain_WDYN" placeholder="When do you need the part by" className="text-input" required="required" />
                     <br></br>
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="drivetrain_cal" />
@@ -159,7 +159,7 @@ function DrivetrainPhotos(props) {
 
                 <p className="section-label" id="Drive-Train-Photos">Drivetrain Photos</p>
                 <div className="textArea">
-                    <input type="file"
+                    <input type="file" required="required"
                         id="avatar" name="drivetrainphotos_avatar"
                         accept="image/png, image/jpeg"></input>
                 </div>
@@ -174,15 +174,14 @@ function Bumpers(props) {
             <div>
                 <p className="section-label" id="Bumpers">Bumpers</p>
                 <div className="textArea">
-                    <input type="text" id="Mechanism" name="bumpers_Mechanism" placeholder="Mechanism" className="text-input" />
+                    <input type="text" id="Mechanism" name="bumpers_Mechanism" placeholder="Mechanism" className="text-input" required="required" />
                     <br></br>
-                    <input type="text" id="NumberOfParts" name="bumpers_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
+                    <input type="text" id="NumberOfParts" name="bumpers_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" required="required" />
                     <br></br>
-                    <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
-
-                    <select name="bumpers_SizeOfPart" id="SizeOfPart" defaultValue="Choose" className="form-control">
-                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                        <option value="1*1">1x1</option>
+                    <label className="SizeOfPart" required="required" htmlFor="SizeOfPart"><strong>Size Of Part</strong>  </label>
+                    <select name="bumpers_SizeOfPart" id="SizeOfPart" defaultValue="Choose" className="form-control" required>
+                        <option value="Choose" required="required" className="Placeholder" disabled>Click Here!</option>
+                        <option value="1*1">1x1 </option>
                         <option value="1x2">1x2</option>
                         <option value="1.5x1.5">1.5x1.5</option>
                         <option value="2x2">2x2</option>
@@ -191,7 +190,7 @@ function Bumpers(props) {
                     </select>
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
-                    <select name="bumpers_TypeOfStock" id="TypeOfPart" defaultValue="Choose" className="form-control">
+                    <select name="bumpers_TypeOfStock" id="TypeOfPart" defaultValue="Choose" className="form-control" required>
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Extrusion">Extrusion</option>
                         <option value="Plate">Plate</option>
@@ -201,14 +200,14 @@ function Bumpers(props) {
                     </select>
                     <br></br>
                     <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
-                    <select name="bumpers_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control">
+                    <select name="bumpers_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control" required>
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
                     </select>
 
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
-                    <select name="bumpers_Thickness(Plate)" id="Thickness (Plate)" defaultValue="Choose" className="form-control">
+                    <select name="bumpers_Thickness(Plate)" id="Thickness (Plate)" defaultValue="Choose" className="form-control" required>
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value=".09">.09</option>
@@ -218,8 +217,10 @@ function Bumpers(props) {
                         <option value="3/4">3/4</option>
                     </select>
 
-                    <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
-                    <select name="bumpers_Material(Plate)" id="Material  (Plate)" defaultValue="Choose" className="form-control">
+                    <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate) </strong> </label>
+                    <select name="bumpers_Material(Plate)" id="Material  (Plate)" defaultValue="Choose" className="form-control" required>
+                        <select required="required" />
+
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Aluminum">Aluminum</option>
                         <option value="Polycarbonate">Polycarbonate</option>
@@ -229,13 +230,13 @@ function Bumpers(props) {
                         <option value="ONYX">ONYX</option>
                     </select>
                     <br></br>
-                    <input type="text" id="LengthInInches" name="bumpers_LengthInInches" placeholder="Length in Inches" className="text-input" />
+                    <input type="text" id="LengthInInches" name="bumpers_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
                     <br></br>
-                    <input type="text" id="PartNumber" name="bumpers_PartNumber" placeholder="Part Number" className="text-input" />
+                    <input type="text" id="PartNumber" name="bumpers_PartNumber" placeholder="Part Number" className="text-input" required="required" />
                     <br></br>
                     <br></br>
                     <h4>When do you need the part done by?</h4>
-                    <NewDate name="bumpers_date" />
+                    <NewDate name="bumpers_date" required="required" />
                 </div>
             </div>
         </Page>
