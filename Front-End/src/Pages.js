@@ -86,8 +86,8 @@ function Drivetrain(props) {
                     <br></br>
                     <label className="SizeOfPart" name="drivetrain_SizeOfParts" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
 
-                    <select name="drivetrain_SizeOfPart" id="SizeOfPart" defaultValue="Choose" className="form-control">
-                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                    <select name="drivetrain_SizeOfPart" id="SizeOfPart" defaultValue="" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here! </option>
                         <option value="1*1">1x1</option>
                         <option value="1x2">1x2</option>
                         <option value="1.5x1.5">1.5x1.5</option>
@@ -98,8 +98,8 @@ function Drivetrain(props) {
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
 
-                    <select name="drivetrain_TypeOfPart" id="TypeOfPart" defaultValue="Choose" className="form-control">
-                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                    <select name="drivetrain_TypeOfPart" id="TypeOfPart" defaultValue="" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here!</option>
                         <option value="Extrusion">Extrusion</option>
                         <option value="Plate">Plate</option>
                         <option value="Hex Shaft">Hex Shaft</option>
@@ -107,15 +107,15 @@ function Drivetrain(props) {
                     </select>
                     <br></br>
                     <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
-                    <select name="drivetrain_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control">
-                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                    <select name="drivetrain_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
                     </select>
 
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
-                    <select name="drivetrain_Thickness(Plate)" id="Thickness (Plate)" defaultValue="Choose" className="form-control">
-                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                    <select name="drivetrain_Thickness(Plate)" id="Thickness (Plate)" defaultValue="" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value=".09">.09</option>
                         <option value="1/8">1/8</option>
@@ -125,8 +125,8 @@ function Drivetrain(props) {
                     </select>
 
                     <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
-                    <select name="drivetrain_Material(Plate)" id="Material  (Plate)" defaultValue="Choose" className="form-control">
-                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                    <select name="drivetrain_Material(Plate)" id="Material  (Plate)" defaultValue="" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here!</option>
                         <option value="Aluminum">Aluminum</option>
                         <option value="Polycarbonate">Polycarbonate</option>
                         <option value="Wood">Wood</option>
@@ -174,13 +174,13 @@ function Bumpers(props) {
             <div>
                 <p className="section-label" id="Bumpers">Bumpers</p>
                 <div className="textArea">
-                    <input type="text" id="Mechanism" name="bumpers_Mechanism" placeholder="Mechanism" className="text-input" required="required" />
+                    <input type="text" id="Mechanism" name="bumpers_Mechanism" placeholder="Mechanism" className="text-input" />
                     <br></br>
-                    <input type="text" id="NumberOfParts" name="bumpers_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" required="required" />
+                    <input type="text" id="NumberOfParts" name="bumpers_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
                     <br></br>
-                    <label className="SizeOfPart" required="required" htmlFor="SizeOfPart"><strong>Size Of Part</strong>  </label>
-                    <select name="bumpers_SizeOfPart" id="SizeOfPart" defaultValue="Choose" className="form-control" required>
-                        <option value="Choose" required="required" className="Placeholder" disabled>Click Here!</option>
+                    <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong>  </label>
+                    <select name="bumpers_SizeOfPart" id="SizeOfPart" defaultValue="Choose" className="form-control" >
+                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1*1">1x1 </option>
                         <option value="1x2">1x2</option>
                         <option value="1.5x1.5">1.5x1.5</option>
@@ -190,7 +190,7 @@ function Bumpers(props) {
                     </select>
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
-                    <select name="bumpers_TypeOfStock" id="TypeOfPart" defaultValue="Choose" className="form-control" required>
+                    <select name="bumpers_TypeOfStock" id="TypeOfPart" defaultValue="Choose" className="form-control" >
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Extrusion">Extrusion</option>
                         <option value="Plate">Plate</option>
@@ -200,14 +200,14 @@ function Bumpers(props) {
                     </select>
                     <br></br>
                     <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
-                    <select name="bumpers_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control" required>
+                    <select name="bumpers_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control" >
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
                     </select>
 
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
-                    <select name="bumpers_Thickness(Plate)" id="Thickness (Plate)" defaultValue="Choose" className="form-control" required>
+                    <select name="bumpers_Thickness(Plate)" id="Thickness (Plate)" defaultValue="Choose" className="form-control" >
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value=".09">.09</option>
@@ -218,9 +218,7 @@ function Bumpers(props) {
                     </select>
 
                     <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate) </strong> </label>
-                    <select name="bumpers_Material(Plate)" id="Material  (Plate)" defaultValue="Choose" className="form-control" required>
-                        <select required="required" />
-
+                    <select name="bumpers_Material(Plate)" id="Material  (Plate)" defaultValue="Choose" className="form-control" >
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Aluminum">Aluminum</option>
                         <option value="Polycarbonate">Polycarbonate</option>
@@ -230,13 +228,13 @@ function Bumpers(props) {
                         <option value="ONYX">ONYX</option>
                     </select>
                     <br></br>
-                    <input type="text" id="LengthInInches" name="bumpers_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
+                    <input type="text" id="LengthInInches" name="bumpers_LengthInInches" placeholder="Length in Inches" className="text-input" />
                     <br></br>
-                    <input type="text" id="PartNumber" name="bumpers_PartNumber" placeholder="Part Number" className="text-input" required="required" />
+                    <input type="text" id="PartNumber" name="bumpers_PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
                     <br></br>
                     <h4>When do you need the part done by?</h4>
-                    <NewDate name="bumpers_date" required="required" />
+                    <NewDate name="bumpers_date" />
                 </div>
             </div>
         </Page>
