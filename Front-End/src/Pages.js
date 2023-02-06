@@ -9,10 +9,10 @@ function Page(props) {
 
     );
 }
-function NewDate() {
+function NewDate(props) {
     const [startDate, setStartDate] = useState(new Date());
     return (
-        <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+        <DatePicker name={props.name} selected={startDate} onChange={(date) => setStartDate(date)} />
     );
 };
 
@@ -30,22 +30,18 @@ function SignIn(props) {
                 {/* <label for="username">Username:</label> */}
                 {/* <input type="text" id="username" name="username"/> */}
                 <h1>Sign in</h1>
-
-                <label for="email">Email:</label>
+                <label htmlFor="email">Email:</label>
                 <input type="email" id="email" name="email" />
                 <br></br>
                 <br></br>
-
-                <label for="pwd">Password:</label>
-                <input type="password" id="pwd" name="pwd"></input>
+                {/* <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="pwd"></input> */}
                 <br></br>
                 <input type="submit" value="Submit" />
                 {/* <body class="light">     */}
 
                 {/* </body> */}
-
             </div>
-
         </Page>
     );
 }
@@ -57,7 +53,7 @@ function PartHub(props) {
                 <p className="section-label" id="Part Hub">Select a Mechanism</p>
                 <div className="textArea">
                     <label className="item-label" htmlFor="Competition"><strong>Select a Mechanism</strong> </label>
-                    <select name="Competition" id="Competition" defaultValue="Choose">
+                    <select name="PartHub_ SelectaMechanism" id="Competition" defaultValue="Choose">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="DriveTrain">DriveTrain</option>
                         <option value="Elevator">Elevator</option>
@@ -84,13 +80,13 @@ function Drivetrain(props) {
             <div>
                 <p className="section-label" id="DriveTrain">Drivetrain</p>
                 <div className="textArea">
-                    <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
+                    <input type="text" id="Mechanism" name="drivetrain_Mechanism" placeholder="Mechanism" className="text-input" />
                     <br></br>
-                    <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
+                    <input type="text" id="NumberOfParts" name="drivetrain_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
                     <br></br>
-                    <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
+                    <label className="SizeOfPart" name="drivetrain_SizeOfParts" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
 
-                    <select name="SizeOfPart" id="SizeOfPart" defaultValue="Choose">
+                    <select name="drivetrain_SizeOfPart" id="SizeOfPart" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1*1">1x1</option>
                         <option value="1x2">1x2</option>
@@ -102,7 +98,7 @@ function Drivetrain(props) {
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
 
-                    <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
+                    <select name="drivetrain_TypeOfPart" id="TypeOfPart" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Extrusion">Extrusion</option>
                         <option value="Plate">Plate</option>
@@ -111,14 +107,14 @@ function Drivetrain(props) {
                     </select>
                     <br></br>
                     <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
-                    <select name="Thickness (Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose">
+                    <select name="drivetrain_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
                     </select>
 
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
-                    <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
+                    <select name="drivetrain_Thickness(Plate)" id="Thickness (Plate)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value=".09">.09</option>
@@ -129,7 +125,7 @@ function Drivetrain(props) {
                     </select>
 
                     <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
-                    <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
+                    <select name="drivetrain_Material(Plate)" id="Material  (Plate)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Aluminum">Aluminum</option>
                         <option value="Polycarbonate">Polycarbonate</option>
@@ -137,27 +133,23 @@ function Drivetrain(props) {
                         <option value="PETG">PETG</option>
                         <option value="PLA">PLA</option>
                         <option value="ONYX">ONYX</option>
-
-
-                        ONYX
-
                     </select>
                     <br></br>
-                    <input type="text" id="LengthInInches" name="LengthInInches" placeholder="Length in Inches" className="text-input" />
+                    <input type="text" id="LengthInInches" name="drivetrain_LengthInInches" placeholder="Length in Inches" className="text-input" />
                     <br></br>
-                    <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
+                    <input type="text" id="PartNumber" name="drivetrain_PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
-                    <input type='text' id="WDYN" name="WDYN" placeholder="When do you need the part by" className="text-input" />
+                    <input type='text' id="WDYN" name="drivetrain_WDYN" placeholder="When do you need the part by" className="text-input" />
                     <br></br>
                     <h4>When do you need the part done by?</h4>
-                    <NewDate />
+                    <NewDate name="drivetrain_cal" />
                     {/* <label for="avatar">Choose a profile picture:</label>
 <input type="file"
        id="avatar" name="avatar"
        accept="image/*,.pdf"></input> */}
                 </div>
             </div>
-        </Page>
+        </Page >
     );
 }
 function DrivetrainPhotos(props) {
@@ -168,11 +160,9 @@ function DrivetrainPhotos(props) {
                 <p className="section-label" id="Drive-Train-Photos">Drivetrain Photos</p>
                 <div className="textArea">
                     <input type="file"
-                        id="avatar" name="avatar"
+                        id="avatar" name="drivetrainphotos_avatar"
                         accept="image/png, image/jpeg"></input>
-
                 </div>
-
             </div>
         </Page>
     );
@@ -184,13 +174,13 @@ function Bumpers(props) {
             <div>
                 <p className="section-label" id="Bumpers">Bumpers</p>
                 <div className="textArea">
-                    <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
+                    <input type="text" id="Mechanism" name="bumpers_Mechanism" placeholder="Mechanism" className="text-input" />
                     <br></br>
-                    <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
+                    <input type="text" id="NumberOfParts" name="bumpers_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
                     <br></br>
                     <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
 
-                    <select name="SizeOfPart" id="SizeOfPart" defaultValue="Choose">
+                    <select name="bumpers_SizeOfPart" id="SizeOfPart" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1*1">1x1</option>
                         <option value="1x2">1x2</option>
@@ -201,26 +191,24 @@ function Bumpers(props) {
                     </select>
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
-
-                    <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
+                    <select name="bumpers_TypeOfStock" id="TypeOfPart" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Extrusion">Extrusion</option>
                         <option value="Plate">Plate</option>
                         <option value="Hex Shaft">Hex Shaft</option>
                         <option value="Shaft">Shaft</option>
                         <option value="3D-Print">3D-Print</option>
-
                     </select>
                     <br></br>
                     <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
-                    <select name="Thickness (Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose">
+                    <select name="bumpers_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
                     </select>
 
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
-                    <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
+                    <select name="bumpers_Thickness(Plate)" id="Thickness (Plate)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value=".09">.09</option>
@@ -231,7 +219,7 @@ function Bumpers(props) {
                     </select>
 
                     <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
-                    <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
+                    <select name="bumpers_Material(Plate)" id="Material  (Plate)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Aluminum">Aluminum</option>
                         <option value="Polycarbonate">Polycarbonate</option>
@@ -241,18 +229,13 @@ function Bumpers(props) {
                         <option value="ONYX">ONYX</option>
                     </select>
                     <br></br>
-                    <input type="text" id="LengthInInches" name="LengthInInches" placeholder="Length in Inches" className="text-input" />
+                    <input type="text" id="LengthInInches" name="bumpers_LengthInInches" placeholder="Length in Inches" className="text-input" />
                     <br></br>
-                    <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
+                    <input type="text" id="PartNumber" name="bumpers_PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
                     <br></br>
                     <h4>When do you need the part done by?</h4>
-                    <NewDate />
-                    {/* <label for="avatar">Choose a profile picture:</label>
-
-<input type="file"
-       id="avatar" name="avatar"
-       accept="image/png, image/jpeg"></input> */}
+                    <NewDate name="bumpers_date" />
                 </div>
             </div>
         </Page>
@@ -266,41 +249,27 @@ function BumperPhotos(props) {
                 <p className="section-label" id="Bumper-Photos">Bumper Photos</p>
                 <div className="textArea">
                     <input type="file"
-                        id="avatar" name="avatar"
+                        id="avatar" name="bumperphotos_avatar"
                         accept="image/*,.pdf"></input>
-
                 </div>
-
             </div>
         </Page>
     );
 }
-// function SavePage(props) {
-//     return (
 
-//         <Page selected={props.selected} id="S">
-//             <p className="section-label" id="Bumpers">Save</p>
-
-//             <div className="textArea">
-
-//                 <button>Sumbit</button>
-//             </div>
-//         </Page>
-//     );
-// }
 function Elevator(props) {
     return (
         <Page selected={props.selected} id="Elevator">
             <div>
                 <p className="section-label" id="Elevator">Elevator</p>
                 <div className="textArea">
-                    <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
+                    <input type="text" id="Mechanism" name="elevator_Mechanism" placeholder="Mechanism" className="text-input" />
                     <br></br>
-                    <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
+                    <input type="text" id="NumberOfParts" name="elevator_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
                     <br></br>
                     <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
 
-                    <select name="SizeOfPart" id="SizeOfPart" defaultValue="Choose">
+                    <select name="elevator_SizeOfPart" id="SizeOfPart" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1*1">1x1</option>
                         <option value="1x2">1x2</option>
@@ -312,7 +281,7 @@ function Elevator(props) {
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
 
-                    <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
+                    <select name="elevator_TypeOfStock" id="TypeOfPart" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Extrusion">Extrusion</option>
                         <option value="Plate">Plate</option>
@@ -321,14 +290,14 @@ function Elevator(props) {
                     </select>
                     <br></br>
                     <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
-                    <select name="Thickness (Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose">
+                    <select name="elevator_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
                     </select>
 
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
-                    <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
+                    <select name="elevator_Thickness(Plate)" id="Thickness (Plate)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value=".09">.09</option>
@@ -339,7 +308,7 @@ function Elevator(props) {
                     </select>
 
                     <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
-                    <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
+                    <select name="elevator_Material(Plate)" id="Material  (Plate)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Aluminum">Aluminum</option>
                         <option value="Polycarbonate">Polycarbonate</option>
@@ -349,19 +318,13 @@ function Elevator(props) {
                         <option value="ONYX">ONYX</option>
                     </select>
                     <br></br>
-                    <input type="text" id="LengthInInches" name="LengthInInches" placeholder="Length in Inches" className="text-input" />
+                    <input type="text" id="LengthInInches" name="elevator_LengthInInches" placeholder="Length in Inches" className="text-input" />
                     <br></br>
-                    <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
+                    <input type="text" id="PartNumber" name="elevator_PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
                     <br></br>
                     <h4>When do you need the part done by?</h4>
-                    <NewDate />
-
-                    {/* <label for="avatar">Choose a profile picture:</label>
-    
-    <input type="file"
-           id="avatar" name="avatar"
-           accept="image/png, image/jpeg"></input> */}
+                    <NewDate name="elevator_date" />
                 </div>
             </div>
         </Page>
@@ -375,11 +338,9 @@ function ElevatorPhotos(props) {
                 <p className="section-label" id="Elevators Photos">Elevator Photos</p>
                 <div className="textArea">
                     <input type="file"
-                        id="avatar" name="avatar"
+                        id="avatar" name="elevatorphotos_avatar"
                         accept="image/*,.pdf"></input>
-
                 </div>
-
             </div>
         </Page>
     );
@@ -392,13 +353,13 @@ function Intake(props) {
             <div>
                 <p className="section-label" id="Intake">Intake</p>
                 <div className="textArea">
-                    <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
+                    <input type="text" id="Mechanism" name="intake_Mechanism" placeholder="Mechanism" className="text-input" />
                     <br></br>
-                    <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
+                    <input type="text" id="NumberOfParts" name="intake_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
                     <br></br>
                     <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
 
-                    <select name="SizeOfPart" id="SizeOfPart" defaultValue="Choose">
+                    <select name="intake_SizeOfPart" id="SizeOfPart" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1*1">1x1</option>
                         <option value="1x2">1x2</option>
@@ -410,7 +371,7 @@ function Intake(props) {
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
 
-                    <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
+                    <select name="intake_TypeOfStock" id="TypeOfPart" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Extrusion">Extrusion</option>
                         <option value="Plate">Plate</option>
@@ -419,14 +380,14 @@ function Intake(props) {
                     </select>
                     <br></br>
                     <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
-                    <select name="Thickness (Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose">
+                    <select name="intake_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
                     </select>
 
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
-                    <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
+                    <select name="intake_Thickness(Plate)" id="Thickness (Plate)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value=".09">.09</option>
@@ -437,7 +398,7 @@ function Intake(props) {
                     </select>
 
                     <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
-                    <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
+                    <select name="intake_Material(Plate)" id="Material  (Plate)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Aluminum">Aluminum</option>
                         <option value="Polycarbonate">Polycarbonate</option>
@@ -447,12 +408,12 @@ function Intake(props) {
                         <option value="ONYX">ONYX</option>
                     </select>
                     <br></br>
-                    <input type="text" id="LengthInInches" name="LengthInInches" placeholder="Length in Inches" className="text-input" />
+                    <input type="text" id="LengthInInches" name="intake_LengthInInches" placeholder="Length in Inches" className="text-input" />
                     <br></br>
-                    <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
+                    <input type="text" id="PartNumber" name="intake_PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
                     <h4>When do you need the part done by?</h4>
-                    <NewDate />
+                    <NewDate name="intake_date" />
                     {/* <label for="avatar">Choose a profile picture:</label>
         
         <input type="file"
@@ -471,27 +432,13 @@ function IntakePhotos(props) {
                 <p className="section-label" id="Intake-Photos">Intake Photos</p>
                 <div className="textArea">
                     <input type="file"
-                        id="avatar" name="avatar"
+                        id="avatar" name="intakephotos_avatar"
                         accept="image/*,.pdf"></input>
-
                 </div>
-
             </div>
         </Page>
     );
 }
-//     return (
-
-//         <Page selected={props.selected} id="Elevator ">
-//             <p className="section-label" id="Elevator ">Save</p>
-
-//             <div className="textArea">
-
-//                 <button>Sumbit</button>
-//             </div>
-//         </Page>
-//     );
-// }
 
 function AuxiliarySystems(props) {
     return (
@@ -499,13 +446,13 @@ function AuxiliarySystems(props) {
             <div>
                 <p className="section-label" id="AuxiliarySystems">Auxiliary Systems</p>
                 <div className="textArea">
-                    <input type="text" id="Mechanism" name="name" placeholder="Mechanism" className="text-input" />
+                    <input type="text" id="Mechanism" name="AuxiliarySystems_mechanism" placeholder="Mechanism" className="text-input" />
                     <br></br>
-                    <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
+                    <input type="text" id="NumberOfParts" name="AuxiliarySystems_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
                     <br></br>
                     <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
 
-                    <select name="SizeOfPart" id="SizeOfPart" defaultValue="Choose">
+                    <select name="AuxiliarySystems_SizeOfPart" id="SizeOfPart" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1*1">1x1</option>
                         <option value="1x2">1x2</option>
@@ -517,7 +464,7 @@ function AuxiliarySystems(props) {
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
 
-                    <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
+                    <select name="AuxiliarySystems_TypeOfStock" id="TypeOfPart" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Extrusion">Extrusion</option>
                         <option value="Plate">Plate</option>
@@ -526,14 +473,14 @@ function AuxiliarySystems(props) {
                     </select>
                     <br></br>
                     <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
-                    <select name="Thickness (Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose">
+                    <select name="AuxiliarySystems_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
                     </select>
 
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
-                    <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
+                    <select name="AuxiliarySystems_Thickness(Plate)" id="Thickness (Plate)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value=".09">.09</option>
@@ -544,7 +491,7 @@ function AuxiliarySystems(props) {
                     </select>
 
                     <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
-                    <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
+                    <select name="AuxiliarySystems_Material(Plate)" id="Material  (Plate)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Aluminum">Aluminum</option>
                         <option value="Polycarbonate">Polycarbonate</option>
@@ -554,17 +501,12 @@ function AuxiliarySystems(props) {
                         <option value="ONYX">ONYX</option>
                     </select>
                     <br></br>
-                    <input type="text" id="LengthInInches" name="LengthInInches" placeholder="Length in Inches" className="text-input" />
+                    <input type="text" id="LengthInInches" name="AuxiliarySystems_LengthInInches" placeholder="Length in Inches" className="text-input" />
                     <br></br>
-                    <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
+                    <input type="text" id="PartNumber" name="AuxiliarySystems_PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
                     <h4>When do you need the part done by?</h4>
-                    <NewDate />
-                    {/* <label for="avatar">Choose a profile picture:</label>
-            
-            <input type="file"
-                   id="avatar" name="avatar"
-                   accept="image/png, image/jpeg"></input> */}
+                    <NewDate name="AuxiliarySystems_date" />
                 </div>
             </div>
         </Page>
@@ -579,41 +521,27 @@ function AuxiliarySystemsPhotos(props) {
                 <p className="section-label" id="AuxiliarySystems-Photos">Auxiliary Systems Photos</p>
                 <div className="textArea">
                     <input type="file"
-                        id="avatar" name="avatar"
+                        id="avatar" name="AuxiliarySystemsPhotos_avatar"
                         accept="image/*,.pdf"></input>
-
                 </div>
-
             </div>
         </Page>
     );
 }
-// function SavePage(props) {
-//     return (
 
-//         <Page selected={props.selected} id="Elevator ">
-//             <p className="section-label" id="Elevator ">Save</p>
-
-//             <div className="textArea">
-
-//                 <button>Sumbit</button>
-//             </div>
-//         </Page>
-//     );
-// }
 function Forebar(props) {
     return (
         <Page selected={props.selected} id="Forebar">
             <div>
                 <p className="section-label" id="Forebar">Forebar</p>
                 <div className="textArea">
-                    <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
+                    <input type="text" id="Mechanism" name="Forebar_Mechanism" placeholder="Mechanism" className="text-input" />
                     <br></br>
-                    <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
+                    <input type="text" id="NumberOfParts" name="Forebar_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
                     <br></br>
                     <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
 
-                    <select name="SizeOfPart" id="SizeOfPart" defaultValue="Choose">
+                    <select name="Forebar_SizeOfPart" id="SizeOfPart" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1*1">1x1</option>
                         <option value="1x2">1x2</option>
@@ -625,7 +553,7 @@ function Forebar(props) {
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
 
-                    <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
+                    <select name="Forebar_TypeOfStock" id="TypeOfPart" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Extrusion">Extrusion</option>
                         <option value="Plate">Plate</option>
@@ -634,14 +562,14 @@ function Forebar(props) {
                     </select>
                     <br></br>
                     <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
-                    <select name="Thickness (Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose">
+                    <select name="Forebar_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
                     </select>
 
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
-                    <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
+                    <select name="Forebar_Thickness(Plate)" id="Thickness (Plate)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value=".09">.09</option>
@@ -652,7 +580,7 @@ function Forebar(props) {
                     </select>
 
                     <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
-                    <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
+                    <select name="Forebar_Material(Plate)" id="Material  (Plate)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Aluminum">Aluminum</option>
                         <option value="Polycarbonate">Polycarbonate</option>
@@ -662,23 +590,18 @@ function Forebar(props) {
                         <option value="ONYX">ONYX</option>
                     </select>
                     <br></br>
-                    <input type="text" id="LengthInInches" name="LengthInInches" placeholder="Length in Inches" className="text-input" />
+                    <input type="text" id="LengthInInches" name="Forebar_LengthInInches" placeholder="Length in Inches" className="text-input" />
                     <br></br>
-                    <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
+                    <input type="text" id="PartNumber" name="Forebar_PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
                     <h4>When do you need the part done by?</h4>
-                    <NewDate />
-                    {/* <label for="avatar">Choose a profile picture:</label>
-                
-                <input type="file"
-                       id="avatar" name="avatar"
-                       accept="image/png, image/jpeg"></input> */}
+                    <NewDate name="Forebar_date" />
+
                 </div>
             </div>
         </Page>
     );
 }
-
 
 function ForebarPhotos(props) {
     return (
@@ -688,7 +611,7 @@ function ForebarPhotos(props) {
                 <p className="section-label" id="Forebar-Photos">Forebar Photos</p>
                 <div className="textArea">
                     <input type="file"
-                        id="avatar" name="avatar"
+                        id="avatar" name="Forebar_avatar"
                         accept="image/*,.pdf"></input>
 
                 </div>
@@ -703,13 +626,13 @@ function ThreeDPrint(props) {
             <div>
                 <p className="section-label" id="ThreeDPrint">3d Print</p>
                 <div className="textArea">
-                    <input type="text" id="Mechanism" name="Mechanism" placeholder="Mechanism" className="text-input" />
+                    <input type="text" id="Mechanism" name="ThreeDPrint_Mechanism" placeholder="Mechanism" className="text-input" />
                     <br></br>
-                    <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
+                    <input type="text" id="NumberOfParts" name="ThreeDPrint_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
                     <br></br>
                     <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
 
-                    <select name="SizeOfPart" id="SizeOfPart" defaultValue="Choose">
+                    <select name="ThreeDPrint_SizeOfPart" id="SizeOfPart" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1*1">1x1</option>
                         <option value="1x2">1x2</option>
@@ -721,7 +644,7 @@ function ThreeDPrint(props) {
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
 
-                    <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
+                    <select name="ThreeDPrint_TypeOfStock" id="TypeOfPart" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Extrusion">Extrusion</option>
                         <option value="Plate">Plate</option>
@@ -730,14 +653,14 @@ function ThreeDPrint(props) {
                     </select>
                     <br></br>
                     <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
-                    <select name="Thickness (Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose">
+                    <select name="ThreeDPrint_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
                     </select>
 
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
-                    <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
+                    <select name="ThreeDPrint_Thickness(Plate)" id="Thickness (Plate)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value=".09">.09</option>
@@ -748,7 +671,7 @@ function ThreeDPrint(props) {
                     </select>
 
                     <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
-                    <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
+                    <select name="ThreeDPrint_Material(Plate)" id="Material  (Plate)" defaultValue="Choose" className="form-control">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Aluminum">Aluminum</option>
                         <option value="Polycarbonate">Polycarbonate</option>
@@ -758,12 +681,12 @@ function ThreeDPrint(props) {
                         <option value="ONYX">ONYX</option>
                     </select>
                     <br></br>
-                    <input type="text" id="LengthInInches" name="LengthInInches" placeholder="Length in Inches" className="text-input" />
+                    <input type="text" id="LengthInInches" name="ThreeDPrint_LengthInInches" placeholder="Length in Inches" className="text-input" />
                     <br></br>
-                    <input type="text" id="PartNumber" name="PartNumber" placeholder="Part Number" className="text-input" />
+                    <input type="text" id="PartNumber" name="ThreeDPrint_PartNumber" placeholder="Part Number" className="text-input" />
                     <br></br>
                     <h4>When do you need the part done by?</h4>
-                    <NewDate />
+                    <NewDate name="ThreeDPrint_date" />
                     {/* <label for="avatar">Choose a profile picture:</label>
                 <input type="file"
                        id="avatar" name="avatar"
@@ -783,7 +706,7 @@ function ThreeDPrintPhotos(props) {
                 <p className="section-label" id="ThreeDPrint">3d Print Photos</p>
                 <div className="textArea">
                     <input type="file"
-                        id="avatar" name="avatar"
+                        id="avatar" name="ThreeDPrintPhotos_avatar"
                         accept="image/*,.pdf"></input>
 
                 </div>
