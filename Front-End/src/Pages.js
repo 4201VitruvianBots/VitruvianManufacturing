@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import DatePicker from "react-datepicker";
 function Page(props) {
     return (
@@ -15,6 +16,7 @@ function NewDate() {
         <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
     );
 };
+
 
 function SignIn(props) {
     return (
@@ -151,10 +153,6 @@ function Drivetrain(props) {
                     <br></br>
                     <h4>When do you need the part done by?</h4>
                     <NewDate />
-                    {/* <label for="avatar">Choose a profile picture:</label>
-<input type="file"
-       id="avatar" name="avatar"
-       accept="image/*,.pdf"></input> */}
                 </div>
             </div>
         </Page>
@@ -201,7 +199,6 @@ function Bumpers(props) {
                     </select>
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
-
                     <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Extrusion">Extrusion</option>
@@ -209,7 +206,6 @@ function Bumpers(props) {
                         <option value="Hex Shaft">Hex Shaft</option>
                         <option value="Shaft">Shaft</option>
                         <option value="3D-Print">3D-Print</option>
-
                     </select>
                     <br></br>
                     <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
@@ -218,7 +214,6 @@ function Bumpers(props) {
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
                     </select>
-
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
                     <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
@@ -229,7 +224,6 @@ function Bumpers(props) {
                         <option value="3/8">3/8</option>
                         <option value="3/4">3/4</option>
                     </select>
-
                     <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
                     <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
@@ -248,11 +242,6 @@ function Bumpers(props) {
                     <br></br>
                     <h4>When do you need the part done by?</h4>
                     <NewDate />
-                    {/* <label for="avatar">Choose a profile picture:</label>
-
-<input type="file"
-       id="avatar" name="avatar"
-       accept="image/png, image/jpeg"></input> */}
                 </div>
             </div>
         </Page>
@@ -262,32 +251,17 @@ function BumperPhotos(props) {
     return (
         <Page selected={props.selected} id="Bumper-Photos">
             <div>
-
                 <p className="section-label" id="Bumper-Photos">Bumper Photos</p>
                 <div className="textArea">
                     <input type="file"
                         id="avatar" name="avatar"
                         accept="image/*,.pdf"></input>
-
                 </div>
-
             </div>
         </Page>
     );
 }
-// function SavePage(props) {
-//     return (
 
-//         <Page selected={props.selected} id="S">
-//             <p className="section-label" id="Bumpers">Save</p>
-
-//             <div className="textArea">
-
-//                 <button>Sumbit</button>
-//             </div>
-//         </Page>
-//     );
-// }
 function Elevator(props) {
     return (
         <Page selected={props.selected} id="Elevator">
@@ -299,7 +273,6 @@ function Elevator(props) {
                     <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
                     <br></br>
                     <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
-
                     <select name="SizeOfPart" id="SizeOfPart" defaultValue="Choose">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1*1">1x1</option>
@@ -311,7 +284,6 @@ function Elevator(props) {
                     </select>
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
-
                     <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Extrusion">Extrusion</option>
@@ -326,7 +298,6 @@ function Elevator(props) {
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
                     </select>
-
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
                     <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
@@ -337,7 +308,6 @@ function Elevator(props) {
                         <option value="3/8">3/8</option>
                         <option value="3/4">3/4</option>
                     </select>
-
                     <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
                     <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
@@ -356,12 +326,6 @@ function Elevator(props) {
                     <br></br>
                     <h4>When do you need the part done by?</h4>
                     <NewDate />
-
-                    {/* <label for="avatar">Choose a profile picture:</label>
-    
-    <input type="file"
-           id="avatar" name="avatar"
-           accept="image/png, image/jpeg"></input> */}
                 </div>
             </div>
         </Page>
@@ -377,14 +341,11 @@ function ElevatorPhotos(props) {
                     <input type="file"
                         id="avatar" name="avatar"
                         accept="image/*,.pdf"></input>
-
                 </div>
-
             </div>
         </Page>
     );
 }
-
 
 function Intake(props) {
     return (
@@ -397,7 +358,6 @@ function Intake(props) {
                     <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
                     <br></br>
                     <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
-
                     <select name="SizeOfPart" id="SizeOfPart" defaultValue="Choose">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1*1">1x1</option>
@@ -409,7 +369,6 @@ function Intake(props) {
                     </select>
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
-
                     <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Extrusion">Extrusion</option>
@@ -424,7 +383,6 @@ function Intake(props) {
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
                     </select>
-
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
                     <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
@@ -435,7 +393,6 @@ function Intake(props) {
                         <option value="3/8">3/8</option>
                         <option value="3/4">3/4</option>
                     </select>
-
                     <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
                     <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
@@ -453,11 +410,6 @@ function Intake(props) {
                     <br></br>
                     <h4>When do you need the part done by?</h4>
                     <NewDate />
-                    {/* <label for="avatar">Choose a profile picture:</label>
-        
-        <input type="file"
-               id="avatar" name="avatar"
-               accept="image/png, image/jpeg"></input> */}
                 </div>
             </div>
         </Page>
@@ -473,25 +425,11 @@ function IntakePhotos(props) {
                     <input type="file"
                         id="avatar" name="avatar"
                         accept="image/*,.pdf"></input>
-
                 </div>
-
             </div>
         </Page>
     );
 }
-//     return (
-
-//         <Page selected={props.selected} id="Elevator ">
-//             <p className="section-label" id="Elevator ">Save</p>
-
-//             <div className="textArea">
-
-//                 <button>Sumbit</button>
-//             </div>
-//         </Page>
-//     );
-// }
 
 function AuxiliarySystems(props) {
     return (
@@ -504,7 +442,6 @@ function AuxiliarySystems(props) {
                     <input type="text" id="NumberOfParts" name="NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" />
                     <br></br>
                     <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
-
                     <select name="SizeOfPart" id="SizeOfPart" defaultValue="Choose">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1*1">1x1</option>
@@ -516,7 +453,6 @@ function AuxiliarySystems(props) {
                     </select>
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
-
                     <select name="TypeOfStock" id="TypeOfPart" defaultValue="Choose">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Extrusion">Extrusion</option>
@@ -531,7 +467,6 @@ function AuxiliarySystems(props) {
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
                     </select>
-
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
                     <select name="Thickness (Plate)" id="Thickness (Plate)" defaultValue="Choose">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
@@ -542,7 +477,6 @@ function AuxiliarySystems(props) {
                         <option value="3/8">3/8</option>
                         <option value="3/4">3/4</option>
                     </select>
-
                     <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
                     <select name="Material (Plate)" id="Material  (Plate)" defaultValue="Choose">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
@@ -560,11 +494,6 @@ function AuxiliarySystems(props) {
                     <br></br>
                     <h4>When do you need the part done by?</h4>
                     <NewDate />
-                    {/* <label for="avatar">Choose a profile picture:</label>
-            
-            <input type="file"
-                   id="avatar" name="avatar"
-                   accept="image/png, image/jpeg"></input> */}
                 </div>
             </div>
         </Page>
@@ -678,7 +607,6 @@ function Forebar(props) {
         </Page>
     );
 }
-
 
 function ForebarPhotos(props) {
     return (
