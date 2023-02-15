@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask
 app = Flask(__name__)
 
 
@@ -9,11 +9,10 @@ def home():
 
 @app.route("/api/parts", methods=["GET"])
 def parts():
-    return "get request"
+
+    return "request.form"
 
 
 @app.route("/api/parts", methods=["POST"])
 def newParts():
-
-    print(request.form)
     return "Hello!"
