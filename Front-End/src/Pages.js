@@ -1,6 +1,5 @@
 import "./App.css";
 import React, { useState } from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import DatePicker from "react-datepicker";
 function Page(props) {
     return (
