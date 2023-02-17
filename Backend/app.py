@@ -9,6 +9,7 @@ def home():
 
 @app.route("/api/parts", methods=["GET"])
 def parts():
+
     return "request.form"
 
 
