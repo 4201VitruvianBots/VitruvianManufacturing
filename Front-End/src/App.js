@@ -33,7 +33,7 @@ class App extends React.Component {
                 that field shouldn't be put here, and should be put below.
             */}
 
-                <form onSubmit={this.SubmitHandler} action="#">
+                <form action="http://127.0.0.1:5000/api/parts" method="POST">
                     <SignIn selected={this.state.selected === 'sign-in'} />
                     <PartHub selected={this.state.selected === 'part-hub'} />
                     <Drivetrain selected={this.state.selected === 'drive-train'} />
@@ -53,7 +53,7 @@ class App extends React.Component {
                     <SavePage selected={this.state.selected === 'save-page'} />
 
                 </form>
-            </main>
+            </main >
         );
     }
 }
