@@ -82,7 +82,7 @@ function Drivetrain(props) {
                 <p className="section-label" id="DriveTrain">Drivetrain</p>
                 <div className="textArea">
 
-                    <input type="text" id="Mechanism" name="drivetrain_Mechanism" placeholder="Mechanism" className="text-input" required="required"/>
+                    <input type="text" id="Mechanism" name="drivetrain_Mechanism" placeholder="Mechanism" className="text-input" required="required" />
                     <br></br>
                     <input type="text" id="NumberOfParts" name="drivetrain_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" required="required" />
 
@@ -198,8 +198,7 @@ function Bumpers(props) {
                     </select>
                     <br></br>
                     <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
-
-                        <select name="bumpers_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control" required />
+                    <select name="bumpers_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control" required >
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
@@ -225,7 +224,7 @@ function Bumpers(props) {
                         <option value="ONYX">ONYX</option>
                     </select>
                     <br></br>
-    <input type="text" id="LengthInInches" name="bumpers_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
+                    <input type="text" id="LengthInInches" name="bumpers_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
                     <br></br>
                     <input type="text" id="PartNumber" name="bumpers_PartNumber" placeholder="Part Number" className="text-input" required="required" />
                     <br></br>
@@ -614,7 +613,7 @@ function ThreeDPrint(props) {
                     </select>
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
-      <select name="ThreeDPrint_TypeOfStock" id="TypeOfPart" defaultValue="Choose" className="form-control" required>
+                    <select name="ThreeDPrint_TypeOfStock" id="TypeOfPart" defaultValue="Choose" className="form-control" required>
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Extrusion">Extrusion</option>
                         <option value="Plate">Plate</option>

@@ -72,11 +72,6 @@ function Choosepage(props) {
     }
     if (props.value === 7) {
         return (<><ThreeDPrint /><ThreeDPrintPhotos /><NewDate /></>
-
-
-
-                </form>
-            </main >
         );
     }
 
