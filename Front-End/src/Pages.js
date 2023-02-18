@@ -85,6 +85,7 @@ function Drivetrain(props) {
                     <input type="text" id="Mechanism" name="drivetrain_Mechanism" placeholder="Mechanism" className="text-input" required="required"/>
                     <br></br>
                     <input type="text" id="NumberOfParts" name="drivetrain_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" required="required" />
+
                     <br></br>
                     <label className="SizeOfPart" name="drivetrain_SizeOfParts" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
                     <select name="drivetrain_SizeOfPart" id="SizeOfPart" defaultValue="" className="form-control" required>
@@ -98,8 +99,8 @@ function Drivetrain(props) {
                     </select>
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
-                    <select name="drivetrain_TypeOfPart" id="TypeOfPart" defaultValue="" className="form-control" required>
-                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
+                    <select name="drivetrain_TypeOfPart" id="TypeOfPart" defaultValue="Choose" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here!</option>
                         <option value="Extrusion">Extrusion</option>
                         <option value="Plate">Plate</option>
                         <option value="Hex Shaft">Hex Shaft</option>
@@ -107,14 +108,14 @@ function Drivetrain(props) {
                     </select>
                     <br></br>
                     <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
-                    <select name="drivetrain_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="" className="form-control" required>
+                    <select name="drivetrain_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control" required>
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
                     </select>
 
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
-                    <select name="drivetrain_Thickness(Plate)" id="Thickness (Plate)" defaultValue="" className="form-control" required>
+                    <select name="drivetrain_Thickness(Plate)" id="Thickness (Plate)" defaultValue="Choose" className="form-control" required>
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value=".09">.09</option>
@@ -123,7 +124,6 @@ function Drivetrain(props) {
                         <option value="3/8">3/8</option>
                         <option value="3/4">3/4</option>
                     </select>
-
                     <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
                     <select name="drivetrain_Material(Plate)" id="Material  (Plate)" defaultValue="" className="form-control" required>
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
@@ -140,14 +140,10 @@ function Drivetrain(props) {
                     <br></br>
                     <input type="text" id="PartNumber" name="drivetrain_PartNumber" placeholder="Part Number" className="text-input" required="required" />
                     <br></br>
-                    <input type='text' id="WDYN" name="drivetrain_WDYN" placeholder="When do you need the part by" className="text-input" required="required" />
-                    <br></br>
-                    <input type='text' id="WDYN" name="WDYN" placeholder="When do you need the part by" className="text-input" required="required" />
+
                     <h4>When do you need the part done by?</h4>
 
                     <NewDate name="drivetrain_cal" />
-                    {/* <label for="avatar">Choose a profile picture:</label>
-
                 </div>
             </div>
         </Page >
@@ -175,8 +171,8 @@ function Bumpers(props) {
             <div>
                 <p className="section-label" id="Bumpers">Bumpers</p>
                 <div className="textArea">
-
                     <input type="text" id="Mechanism" name="bumpers_Mechanism" placeholder="Mechanism" className="text-input" required="required" />
+
                     <br></br>
                     <input type="text" id="NumberOfParts" name="bumpers_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" required="required" />
                     <br></br>
@@ -202,7 +198,8 @@ function Bumpers(props) {
                     </select>
                     <br></br>
                     <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
-                    <select name="bumpers_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control"required >
+
+                        <select name="bumpers_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control" required />
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
@@ -228,7 +225,7 @@ function Bumpers(props) {
                         <option value="ONYX">ONYX</option>
                     </select>
                     <br></br>
-                    <input type="text" id="LengthInInches" name="bumpers_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
+    <input type="text" id="LengthInInches" name="bumpers_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
                     <br></br>
                     <input type="text" id="PartNumber" name="bumpers_PartNumber" placeholder="Part Number" className="text-input" required="required" />
                     <br></br>
@@ -267,7 +264,7 @@ function Elevator(props) {
                     <input type="text" id="NumberOfParts" name="elevator_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" required="required" />
                     <br></br>
                     <label className="SizeOfPart" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
-                    <select name="elevator_SizeOfPart" id="SizeOfPart" defaultValue="Choose" className="form-control">
+                    <select name="elevator_SizeOfPart" id="SizeOfPart" defaultValue="Choose" className="form-control" required>
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1*1">1x1</option>
                         <option value="1x2">1x2</option>
@@ -287,7 +284,6 @@ function Elevator(props) {
                     </select>
                     <br></br>
                     <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
-
                     <select name="elevator_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control" required>
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
@@ -365,6 +361,7 @@ function Intake(props) {
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
                     <select name="intake_TypeOfStock" id="TypeOfPart" defaultValue="Choose" className="form-control" required>
+
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Extrusion">Extrusion</option>
                         <option value="Plate">Plate</option>
@@ -399,14 +396,13 @@ function Intake(props) {
                         <option value="ONYX">ONYX</option>
                     </select>
                     <br></br>
-
-                    <input type="text" id="LengthInInches" name="intake_LengthInInches" placeholder="Length in Inches" className="text-input" required="required"/>
+                    <input type="text" id="LengthInInches" name="intake_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
                     <br></br>
                     <input type="text" id="PartNumber" name="intake_PartNumber" placeholder="Part Number" className="text-input" required="required" />
                     <br></br>
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="intake_date" />
-                    {/* <label for="avatar">Choose a profile picture:</label>
+
                 </div>
             </div>
         </Page>
@@ -458,7 +454,7 @@ function AuxiliarySystems(props) {
                         <option value="Shaft">Shaft</option>
                     </select>
                     <br></br>
-                    <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
+                    <label className="Thickness(Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
                     <select name="AuxiliarySystems_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control" required>
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
@@ -570,7 +566,6 @@ function Forebar(props) {
                         <option value="ONYX">ONYX</option>
                     </select>
                     <br></br>
-
                     <input type="text" id="LengthInInches" name="Forebar_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
                     <br></br>
                     <input type="text" id="PartNumber" name="Forebar_PartNumber" placeholder="Part Number" className="text-input" required="required" />
@@ -603,7 +598,6 @@ function ThreeDPrint(props) {
             <div>
                 <p className="section-label" id="ThreeDPrint">3d Print</p>
                 <div className="textArea">
-
                     <input type="text" id="Mechanism" name="ThreeDPrint_Mechanism" placeholder="Mechanism" className="text-input" required="required" />
                     <br></br>
                     <input type="text" id="NumberOfParts" name="ThreeDPrint_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" required="required" />
@@ -620,7 +614,7 @@ function ThreeDPrint(props) {
                     </select>
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
-                    <select name="ThreeDPrint_TypeOfStock" id="TypeOfPart" defaultValue="Choose" className="form-control" required>
+      <select name="ThreeDPrint_TypeOfStock" id="TypeOfPart" defaultValue="Choose" className="form-control" required>
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="Extrusion">Extrusion</option>
                         <option value="Plate">Plate</option>
@@ -628,7 +622,6 @@ function ThreeDPrint(props) {
                         <option value="Shaft">Shaft</option>
                     </select>
                     <br></br>
-
                     <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
                     <select name="ThreeDPrint_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control" required>
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
@@ -660,13 +653,13 @@ function ThreeDPrint(props) {
                         <option value="CarbonFiber">CarbonFiber</option>
                     </select>
                     <br></br>
-
-                    <input type="text" id="LengthInInches" name="ThreeDPrint_LengthInInches" placeholder="Length in Inches" className="text-input" requiref />
+                    <input type="text" id="LengthInInches" name="ThreeDPrint_LengthInInches" placeholder="Length in Inches" className="text-input" required />
                     <br></br>
-                    <input type="text" id="PartNumber" name="ThreeDPrint_PartNumber" placeholder="Part Number" className="text-input"  required/>
+                    <input type="text" id="PartNumber" name="ThreeDPrint_PartNumber" placeholder="Part Number" className="text-input" required />
                     <br></br>
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="ThreeDPrint_date" />
+
                 </div>
             </div>
         </Page>
