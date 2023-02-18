@@ -461,7 +461,7 @@ function AuxiliarySystems(props) {
                     </select>
                     <br></br>
 
-
+                    <label className="Thickness(Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
                     <select name="AuxiliarySystems_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="Choose" className="form-control" required>
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
