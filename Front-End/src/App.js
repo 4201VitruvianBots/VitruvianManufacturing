@@ -26,11 +26,12 @@ function App() {
                 <li style={{ float: 'left' }}><button type='button' className={actArray[5]} onClick={() => { setValue(5) }}>Auxiliary Systems</button></li>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[6]} onClick={() => { setValue(6) }}>Forebar</button></li>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[7]} onClick={() => { setValue(7) }}>3D Print</button></li>
-                <li style={{ float: 'left' }}><button type='button' className={actArray[8]} onClick={() => { setValue(8) }}>Save Page</button></li>
             </ul>
             <br /><br />
             <div>
-                <Choosepage value={value} />
+                <form action="http://127.0.0.1:5000/api/parts" method="POST">
+                    <Choosepage value={value} />
+                </form>
             </div>
         </div>
 
@@ -43,40 +44,35 @@ function Choosepage(props) {
     }
 
     if (props.value === 1) {
-        return (<><Drivetrain /><DrivetrainPhotos /><NewDate /></>
+        return (<><Drivetrain /><DrivetrainPhotos /> <SavePage /></>
 
         );
     }
 
 
     if (props.value === 2) {
-        return (<><Bumpers /><BumperPhotos /><NewDate /></>
+        return (<><Bumpers /><BumperPhotos /><SavePage /></>
 
         );
     }
     if (props.value === 3) {
-        return (<><Elevator /><ElevatorPhotos /><NewDate /></>
+        return (<><Elevator /><ElevatorPhotos /><SavePage /></>
         );
     }
     if (props.value === 4) {
-        return (<><Intake /><IntakePhotos /><NewDate /></>
+        return (<><Intake /><IntakePhotos /><SavePage /></>
         );
     }
     if (props.value === 5) {
-        return (<><AuxiliarySystems /><AuxiliarySystemsPhotos /><NewDate /></>
+        return (<><AuxiliarySystems /><AuxiliarySystemsPhotos /><SavePage /></>
         )
     }
     if (props.value === 6) {
-        return (<><Forebar /><ForebarPhotos /><NewDate /></>
+        return (<><Forebar /><ForebarPhotos /><SavePage /></>
         );
     }
     if (props.value === 7) {
-        return (<><ThreeDPrint /><ThreeDPrintPhotos /><NewDate /></>
-        );
-    }
-
-    if (props.value === 8) {
-        return (<SavePage />
+        return (<><ThreeDPrint /><ThreeDPrintPhotos /><SavePage /></>
         );
     }
 }
