@@ -157,7 +157,7 @@ function DrivetrainPhotos(props) {
 
                 <p className="section-label" id="Drive-Train-Photos">Drivetrain Photos</p>
                 <div className="textArea">
-                    <input type="file" required="required"
+                    <input type="file" required="required" multiple
                         id="avatar" name="drivetrainphotos_avatar"
                         accept="image/png, image/jpeg"></input>
                 </div>
@@ -266,7 +266,7 @@ function BumperPhotos(props) {
             <div>
                 <p className="section-label" id="Bumper-Photos">Bumper Photos</p>
                 <div className="textArea">
-                    <input type="file" required="required"
+                    <input type="file" required="required" multiple
                         id="avatar" name="bumperphotos_avatar"
                         accept="image/*,.pdf"></input>
                 </div>
@@ -376,7 +376,7 @@ function ElevatorPhotos(props) {
 
                 <p className="section-label" id="Elevators Photos">Elevator Photos</p>
                 <div className="textArea">
-                    <input type="file" required="required"
+                    <input type="file" required="required" multiple
                         id="avatar" name="elevatorphotos_avatar"
                         accept="image/*,.pdf"></input>
                 </div>
@@ -486,7 +486,7 @@ function IntakePhotos(props) {
 
                 <p className="section-label" id="Intake-Photos">Intake Photos</p>
                 <div className="textArea">
-                    <input type="file" required="required"
+                    <input type="file" required="required" multiple
                         id="avatar" name="intakephotos_avatar"
                         accept="image/*,.pdf"></input>
                 </div>
@@ -595,7 +595,7 @@ function AuxiliarySystemsPhotos(props) {
 
                 <p className="section-label" id="AuxiliarySystems-Photos">Auxiliary Systems Photos</p>
                 <div className="textArea">
-                    <input type="file" required="required"
+                    <input type="file" required="required" multiple
                         id="avatar" name="AuxiliarySystemsPhotos_avatar"
                         accept="image/*,.pdf"></input>
                 </div>
@@ -703,7 +703,7 @@ function ForebarPhotos(props) {
             <div>
                 <p className="section-label" id="Forebar-Photos">Forebar Photos</p>
                 <div className="textArea">
-                    <input type="file" required="required"
+                    <input type="file" required="required" multiple
                         id="avatar" name="Forebar_avatar"
                         accept="image/*,.pdf"></input>
                 </div>
@@ -816,7 +816,7 @@ function ThreeDPrintPhotos(props) {
             <div>
                 <p className="section-label" id="ThreeDPrint">3d Print Photos</p>
                 <div className="textArea">
-                    <input type="file" required="required"
+                    <input type="file" required="required" multiple
                         id="avatar" name="ThreeDPrintPhotos_avatar"
                         accept="image/*,.pdf"></input>
                 </div>
