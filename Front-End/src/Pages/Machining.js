@@ -1,5 +1,5 @@
 import React from 'react';
-import { AuxiliarySystems, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, Drivetrain, DrivetrainPhotos, Elevator, ElevatorPhotos, Forebar, ForebarPhotos, Intake, IntakePhotos, SavePage, SignIn, ThreeDPrint, ThreeDPrintPhotos } from '../Pages';
+import { AuxiliarySystems, AuxiliarySystemsDataTable, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, BumpersDataTable, Drivetrain, DrivetrainDataTable, DrivetrainPhotos, Elevator, ElevatorDataTable, ElevatorPhotos, Forebar, ForebarDataTable, ForebarPhotos, Intake, IntakePhotos, SavePage, SignIn, ThreeDPrint, ThreeDPrintDataTable, ThreeDPrintPhotos } from '../PageM';
 
 
 const Machining = () => {
@@ -45,40 +45,35 @@ function Choosepage(props) {
             return (<SignIn />
             );
         }
-
+    
         if (props.value === 1) {
-            return (
-                
+            return ( <><Drivetrain /><DrivetrainPhotos /> <DrivetrainDataTable/><SavePage /></>    
             );
         }
 
-
-
-
-
         if (props.value === 2) {
-            return (<><Bumpers /><BumperPhotos /><SavePage /></>
+            return (<><Bumpers /><BumperPhotos /><BumpersDataTable/><SavePage /></>
 
             );
         }
         if (props.value === 3) {
-            return (<><Elevator /><ElevatorPhotos /><SavePage /></>
+            return (<><Elevator /><ElevatorPhotos /><ElevatorDataTable/><SavePage /></>
             );
         }
         if (props.value === 4) {
-            return (<><Intake /><IntakePhotos /><SavePage /></>
+            return (<><Intake /><IntakePhotos /><IntakeDataTable/><SavePage /></>
             );
         }
         if (props.value === 5) {
-            return (<><AuxiliarySystems /><AuxiliarySystemsPhotos /><SavePage /></>
+            return (<><AuxiliarySystems /><AuxiliarySystemsPhotos /><AuxiliarySystemsDataTable/><SavePage /></>
             )
         }
         if (props.value === 6) {
-            return (<><Forebar /><ForebarPhotos /><SavePage /></>
+            return (<><Forebar /><ForebarPhotos /><ForebarDataTable/><SavePage /></>
             );
         }
         if (props.value === 7) {
-            return (<><ThreeDPrint /><ThreeDPrintPhotos /><SavePage /></>
+            return (<><ThreeDPrint /><ThreeDPrintPhotos /><ThreeDPrintDataTable/><SavePage /></>
             );
         }
     }

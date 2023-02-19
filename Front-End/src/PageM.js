@@ -165,7 +165,30 @@ function DrivetrainPhotos(props) {
         </Page>
     );
 }
+function DrivetrainDataTable(props) {
+    return(
+        <Page selected={props.selected} id="DrivetrainDataTable">
+            <div>
+                <p className="selection-label" id="Drive-Train-Data-Table">Drivetrain Data Tables</p>
+                <div className="text area">
+                <table>
+    <td>Mechanism</td>
+    <td>Number Of Parts</td>
+    <td> Size Of Part</td>
+    <td> Type Of Stock</td>
+    <td> Thickness (Extrusion)</td>
+    <td> Thickness (Plate)</td>
+    <td> Material (Plate)</td>
+    <td> Length in Inches </td>
+    <td> Part Number </td>
+    <td> Date</td>
 
+</table>
+                </div>
+            </div>
+        </Page>
+    )
+}
 function Bumpers(props) {
     return (
         <Page selected={props.selected} id="Bumpers">
@@ -250,6 +273,30 @@ function BumperPhotos(props) {
             </div>
         </Page>
     );
+}
+function BumpersDataTable(props) {
+    return(
+        <Page selected={props.selected} id="BumpersDataTable">
+            <div>
+                <p className="selection-label" id="Bumpers-Data-Table">Bumpers Data Tables</p>
+                <div className="text area">
+                <table>
+    <td>Mechanism</td>
+    <td>Number Of Parts</td>
+    <td> Size Of Part</td>
+    <td> Type Of Stock</td>
+    <td> Thickness (Extrusion)</td>
+    <td> Thickness (Plate)</td>
+    <td> Material (Plate)</td>
+    <td> Length in Inches </td>
+    <td> Part Number </td>
+    <td> Date</td>
+
+</table>
+                </div>
+            </div>
+        </Page>
+    )
 }
 
 function Elevator(props) {
@@ -337,6 +384,30 @@ function ElevatorPhotos(props) {
         </Page>
     );
 }
+function ElevatorDataTable(props) {
+    return(
+        <Page selected={props.selected} id="ElevatorDataTable">
+            <div>
+                <p className="selection-label" id="Elevator-Data-Table">Elevator Data Tables</p>
+                <div className="text area">
+                <table>
+    <td>Mechanism</td>
+    <td>Number Of Parts</td>
+    <td> Size Of Part</td>
+    <td> Type Of Stock</td>
+    <td> Thickness (Extrusion)</td>
+    <td> Thickness (Plate)</td>
+    <td> Material (Plate)</td>
+    <td> Length in Inches </td>
+    <td> Part Number </td>
+    <td> Date</td>
+
+</table>
+                </div>
+            </div>
+        </Page>
+    )
+}
 
 function Intake(props) {
     return (
@@ -423,6 +494,30 @@ function IntakePhotos(props) {
         </Page>
     );
 }
+function IntakeDataTable(props) {
+    return(
+        <Page selected={props.selected} id="IntakeDataTable">
+            <div>
+                <p className="selection-label" id="Intake-Data-Table">Intake Data Tables</p>
+                <div className="text area">
+                <table>
+    <td>Mechanism</td>
+    <td>Number Of Parts</td>
+    <td> Size Of Part</td>
+    <td> Type Of Stock</td>
+    <td> Thickness (Extrusion)</td>
+    <td> Thickness (Plate)</td>
+    <td> Material (Plate)</td>
+    <td> Length in Inches </td>
+    <td> Part Number </td>
+    <td> Date</td>
+
+</table>
+                </div>
+            </div>
+        </Page>
+    )
+}
 
 function AuxiliarySystems(props) {
     return (
@@ -508,6 +603,30 @@ function AuxiliarySystemsPhotos(props) {
         </Page>
     );
 }
+function AuxiliarySystemsDataTable(props) {
+    return(
+        <Page selected={props.selected} id="AuxiliarySystemsDataTable">
+            <div>
+                <p className="selection-label" id="Auxiliary-Systems-Data-Table">Auxiliary Systems Data Tables</p>
+                <div className="text area">
+                <table>
+    <td>Mechanism</td>
+    <td>Number Of Parts</td>
+    <td> Size Of Part</td>
+    <td> Type Of Stock</td>
+    <td> Thickness (Extrusion)</td>
+    <td> Thickness (Plate)</td>
+    <td> Material (Plate)</td>
+    <td> Length in Inches </td>
+    <td> Part Number </td>
+    <td> Date</td>
+
+</table>
+                </div>
+            </div>
+        </Page>
+    )
+}
 
 function Forebar(props) {
     return (
@@ -591,6 +710,31 @@ function ForebarPhotos(props) {
             </div>
         </Page>
     );
+}
+
+function ForebarDataTable(props) {
+    return(
+        <Page selected={props.selected} id="ForebarDataTable">
+            <div>
+                <p className="selection-label" id="Forebar-Data-Table">Forebar Data Tables</p>
+                <div className="text area">
+                <table>
+    <td>Mechanism</td>
+    <td>Number Of Parts</td>
+    <td> Size Of Part</td>
+    <td> Type Of Stock</td>
+    <td> Thickness (Extrusion)</td>
+    <td> Thickness (Plate)</td>
+    <td> Material (Plate)</td>
+    <td> Length in Inches </td>
+    <td> Part Number </td>
+    <td> Date</td>
+
+</table>
+                </div>
+            </div>
+        </Page>
+    )
 }
 function ThreeDPrint(props) {
     return (
@@ -680,6 +824,30 @@ function ThreeDPrintPhotos(props) {
         </Page>
     );
 }
+function ThreeDPrintDataTable(props) {
+    return(
+        <Page selected={props.selected} id="ThreeDPrintDataTable">
+            <div>
+                <p className="selection-label" id="Three-D-Print-Data-Table">3D Print Data Tables</p>
+                <div className="text area">
+                <table>
+    <td>Mechanism</td>
+    <td>Number Of Parts</td>
+    <td> Size Of Part</td>
+    <td> Type Of Stock</td>
+    <td> Thickness (Extrusion)</td>
+    <td> Thickness (Plate)</td>
+    <td> Material (Plate)</td>
+    <td> Length in Inches </td>
+    <td> Part Number </td>
+    <td> Date</td>
+
+</table>
+                </div>
+            </div>
+        </Page>
+    )
+}
 
 function SavePage(props) {
     return (
@@ -691,4 +859,4 @@ function SavePage(props) {
         </Page>
     );
 }
-export { SignIn, Drivetrain, PartHub, SavePage, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos, Forebar, ForebarPhotos, NewDate, ThreeDPrint, ThreeDPrintPhotos };
+export { SignIn, Drivetrain,ThreeDPrintDataTable, ForebarDataTable,  AuxiliarySystemsDataTable, IntakeDataTable, ElevatorDataTable, BumpersDataTable, DrivetrainDataTable,  PartHub, SavePage, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos, Forebar, ForebarPhotos, NewDate, ThreeDPrint, ThreeDPrintPhotos };
