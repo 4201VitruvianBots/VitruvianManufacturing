@@ -1,6 +1,6 @@
 import React from 'react';
 import { AuxiliarySystems, AuxiliarySystemsDataTable, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, BumpersDataTable, Drivetrain, DrivetrainDataTable, DrivetrainPhotos, Elevator, ElevatorDataTable, ElevatorPhotos, Forebar, ForebarDataTable, ForebarPhotos, Intake, IntakePhotos, IntakeDataTable, SavePage, SignIn, ThreeDPrint, ThreeDPrintDataTable, ThreeDPrintPhotos } from '../PageM';
-
+import "./app.css";
 
 const Machining = () => {
     return (
@@ -53,7 +53,6 @@ function Choosepage(props) {
 
         if (props.value === 2) {
             return (<><Bumpers /><BumperPhotos /><BumpersDataTable/><SavePage /></>
-
             );
         }
         if (props.value === 3) {
@@ -75,10 +74,9 @@ function Choosepage(props) {
         if (props.value === 7) {
             return (<><ThreeDPrint /><ThreeDPrintPhotos /><ThreeDPrintDataTable/><SavePage /></>
             );
-    
+
         }
     }
 
 };
-
 export default Machining;
