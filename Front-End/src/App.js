@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Pages/Layout";
 import Parts from "./Pages/Parts";
 import Blogs from "./Pages/blogs";
-import Contact from "./Pages/contact";
+import PrinterStatus from "./Pages/PrinterStatus";
 import NoPage from "./Pages/NoPage";
 export default function App() {
 
@@ -15,7 +15,7 @@ export default function App() {
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Parts />} />
                     <Route path="blogs" element={<Blogs />} />
-                    <Route path="contact" element={<Contact />} />
+                    <Route path="PrinterStatus" element={<PrinterStatus />} />
                     <Route path="*" element={<NoPage />} />
                 </Route>
             </Routes>
