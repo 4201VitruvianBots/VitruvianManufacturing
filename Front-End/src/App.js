@@ -1,63 +1,82 @@
-import "./App.css";
-import React from "react";
-import "react-datepicker/dist/react-datepicker.css";
-import { SignIn, PartHub, Drivetrain, SavePage, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos, Forebar, ForebarPhotos, ThreeDPrint, ThreeDPrintPhotos } from "./Pages";
+import './App.css';
+import React from 'react';
+import { AuxiliarySystems, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, Drivetrain, DrivetrainPhotos, Elevator, ElevatorPhotos, Forebar, ForebarPhotos, Intake, IntakePhotos, SavePage, SignIn, ThreeDPrint, ThreeDPrintPhotos } from './Pages';
 
-class App extends React.Component {
-    constructor(props) {
-        super(props);
-        // TODO: Read in all values from props here, and add them to state if
-        //      you need to modify them elsewhere in the app
-        this.state = { signedIn: false };
-        this.SubmitHandler = this.SubmitHandler.bind(this);
+function App() {
+    const [value, setValue] = React.useState(0)
 
+    const actArray = []
+    for (let i = 0; i < 10; i++) {
+        if (i === value) {
+            actArray.push('btn active')
+        }
+        else {
+            actArray.push('btn')
+        }
     }
 
-    SubmitHandler(e) {
-        e.preventDefault();
-        // const answers = e.target.elements;
-        // TODO: Add any custom logic here for when the form is submitted. 
-        return false;
-    }
-
-    render() {
-        return (
-            <main>
-                <p className="page-title">Welcome to the Vitruvian Manufacturing Hub</p>
-
-                {/* 
-            TODO: Add any files here that hold information about the app (such as navigation,
-                page headers, or login logic) that you want to present to the user, that
-                DOESN'T include any data you want in the form. For instance, if you want to
-                record the name of the user in the table/database once you submit the form,
-                that field shouldn't be put here, and should be put below.
-            */}
-
-                <form action="http://127.0.0.1:5000/api/parts" method="POST">
-                    <SignIn selected={this.state.selected === 'sign-in'} />
-                    <PartHub selected={this.state.selected === 'part-hub'} />
-                    <Drivetrain selected={this.state.selected === 'drive-train'} />
-                    <DrivetrainPhotos selected={this.state.selected === 'drive-train-photos'} />
-                    <Bumpers selected={this.state.selected === 'bumpers'} />
-                    <BumperPhotos selected={this.state.selected === 'bumper-photos'} />
-                    <Elevator selected={this.state.selected === 'Elevator'} />
-                    <ElevatorPhotos selected={this.state.selected === 'Elevator-photos'} />
-                    <Intake selected={this.state.selected === 'Intake'} />
-                    <IntakePhotos selected={this.state.selected === 'Intake-photos'} />
-                    <Forebar selected={this.state.selected === 'Forebar'} />
-                    <ForebarPhotos selected={this.state.selected === 'Forebar-photos'} />
-                    < AuxiliarySystems selected={this.state.selected === 'Auxiliary-Systems'} />
-                    < AuxiliarySystemsPhotos selected={this.state.selected === 'Auxiliary-Systems-Photos'} />
-                    < ThreeDPrint selected={this.state.selected === 'ThreeDPrint'} />
-                    < ThreeDPrintPhotos selected={this.state.selected === 'ThreeDPrintPhotos'} />
-                    <SavePage selected={this.state.selected === 'save-page'} />
-
+    return (
+        <div className="App">
+            <ul style={{ listStyle: 'none' }}>
+                <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>SignIn</button></li>
+                <li style={{ float: 'left' }}><button type='button' className={actArray[1]} onClick={() => { setValue(1) }}>Drivetrain</button></li>
+                <li style={{ float: 'left' }}><button type='button' className={actArray[2]} onClick={() => { setValue(2) }}>Bumpers</button></li>
+                <li style={{ float: 'left' }}><button type='button' className={actArray[3]} onClick={() => { setValue(3) }}>Elevator</button></li>
+                <li style={{ float: 'left' }}><button type='button' className={actArray[4]} onClick={() => { setValue(4) }}>Intake</button></li>
+                <li style={{ float: 'left' }}><button type='button' className={actArray[5]} onClick={() => { setValue(5) }}>Auxiliary Systems</button></li>
+                <li style={{ float: 'left' }}><button type='button' className={actArray[6]} onClick={() => { setValue(6) }}>Forebar</button></li>
+                <li style={{ float: 'left' }}><button type='button' className={actArray[7]} onClick={() => { setValue(7) }}>3D Print</button></li>
+            </ul>
+            <br /><br />
+            <div>
+                <form action="http://127.0.0.1:5000/api/parts" method="POST"
+                    enctype="multipart/form-data">
+                    <Choosepage value={value} />
                 </form>
-            </main >
+            </div>
+        </div>
+
+    );
+}
+function Choosepage(props) {
+    if (props.value === 0) {
+        return (<SignIn />
+        );
+    }
+
+    if (props.value === 1) {
+        return (<><Drivetrain /><DrivetrainPhotos /> <SavePage /></>
+
+        );
+    }
+
+
+    if (props.value === 2) {
+        return (<><Bumpers /><BumperPhotos /><SavePage /></>
+
+        );
+    }
+    if (props.value === 3) {
+        return (<><Elevator /><ElevatorPhotos /><SavePage /></>
+        );
+    }
+    if (props.value === 4) {
+        return (<><Intake /><IntakePhotos /><SavePage /></>
+        );
+    }
+    if (props.value === 5) {
+        return (<><AuxiliarySystems /><AuxiliarySystemsPhotos /><SavePage /></>
+        )
+    }
+    if (props.value === 6) {
+        return (<><Forebar /><ForebarPhotos /><SavePage /></>
+        );
+    }
+    if (props.value === 7) {
+        return (<><ThreeDPrint /><ThreeDPrintPhotos /><SavePage /></>
         );
     }
 }
-
 
 
 
