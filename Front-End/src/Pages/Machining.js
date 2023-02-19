@@ -48,72 +48,7 @@ function Choosepage(props) {
 
         if (props.value === 1) {
             return (
-                <Page selected={props.selected} id="DriveTrain">
-                    <div>
-                        <p className="section-label" id="DriveTrain">Drivetrain</p>
-                        <div className="textArea">
-                            <input type="text" id="NameOfDesigner" placeholder="NameOfDesigner" className="text-input" required="required" />
-                            <input type="text" id="NameOfDesigner" placeholder="NameOfDesigner" className="text-input" required="required" />
-                            <input type="text" id="Mechanism" name="drivetrain_Mechanism" placeholder="Mechanism" className="text-input" required="required" />
-                            <br></br>
-                            <input type="text" id="NumberOfParts" name="drivetrain_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" required="required" />
-                            <br></br>
-                            <label className="SizeOfPart" name="drivetrain_SizeOfParts" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
-                            <select name="drivetrain_SizeOfPart" id="SizeOfPart" defaultValue="" className="form-control" required>
-                                <option value="" className="Placeholder" disabled>Click Here! </option>
-                                <option value="1*1">1x1</option>
-                                <option value="1x2">1x2</option>
-                                <option value="1.5x1.5">1.5x1.5</option>
-                                <option value="2x2">2x2</option>
-                                <option value="L-Bracket ">L-Bracket</option>
-                                <option value="Shaft">Shaft</option>
-                            </select>
-                            <br></br>
-                            <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
-                            <select name="drivetrain_TypeOfPart" id="TypeOfPart" defaultValue="" className="form-control" required>
-                                <option value="" className="Placeholder" disabled>Click Here!</option>
-                                <option value="Extrusion">Extrusion</option>
-                                <option value="Plate">Plate</option>
-                                <option value="Hex Shaft">Hex Shaft</option>
-                                <option value="Shaft">Shaft</option>
-                            </select>
-                            <br></br>
-                            <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
-                            <select name="drivetrain_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="" className="form-control" required>
-                                <option value="" className="Placeholder" disabled>Click Here!</option>
-                                <option value="1/16">1/16</option>
-                                <option value="1/8">1/8</option>
-                            </select>
-                            <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
-                            <select name="drivetrain_Thickness(Plate)" id="Thickness (Plate)" defaultValue="" className="form-control" required>
-                                <option value="" className="Placeholder" disabled>Click Here!</option>
-                                <option value="1/16">1/16</option>
-                                <option value=".09">.09</option>
-                                <option value="1/8">1/8</option>
-                                <option value="1/4">1/4</option>
-                                <option value="3/8">3/8</option>
-                                <option value="3/4">3/4</option>
-                            </select>
-                            <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
-                            <select name="drivetrain_Material(Plate)" id="Material  (Plate)" defaultValue="" className="form-control" required>
-                                <option value="" className="Placeholder" disabled>Click Here!</option>
-                                <option value="Aluminum">Aluminum</option>
-                                <option value="Polycarbonate">Polycarbonate</option>
-                                <option value="Wood">Wood</option>
-                                <option value="PETG">PETG</option>
-                                <option value="PLA">PLA</option>
-                                <option value="ONYX">ONYX</option>
-                            </select>
-                            <br></br>
-                            <input type="text" id="LengthInInches" name="drivetrain_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
-                            <br></br>
-                            <input type="text" id="PartNumber" name="drivetrain_PartNumber" placeholder="Part Number" className="text-input" required="required" />
-                            <br></br>
-                            <h4>When do you need the part done by?</h4>
-                            <NewDate name="drivetrain_cal" />
-                        </div>
-                    </div>
-                </Page >
+                
             );
         }
 
