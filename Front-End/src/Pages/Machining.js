@@ -1,5 +1,5 @@
 import React from 'react';
-import { AuxiliarySystems, AuxiliarySystemsDataTable, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, BumpersDataTable, Drivetrain, DrivetrainDataTable, DrivetrainPhotos, Elevator, ElevatorDataTable, ElevatorPhotos, Forebar, ForebarDataTable, ForebarPhotos, Intake, IntakePhotos, SavePage, SignIn, ThreeDPrint, ThreeDPrintDataTable, ThreeDPrintPhotos } from '../PageM';
+import { AuxiliarySystems, AuxiliarySystemsDataTable, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, BumpersDataTable, Drivetrain, DrivetrainDataTable, DrivetrainPhotos, Elevator, ElevatorDataTable, ElevatorPhotos, Forebar, ForebarDataTable, ForebarPhotos, Intake, IntakePhotos, IntakeDataTable, SavePage, SignIn, ThreeDPrint, ThreeDPrintDataTable, ThreeDPrintPhotos } from '../PageM';
 
 
 const Machining = () => {
@@ -40,7 +40,7 @@ const Machining = () => {
 
             );
         }
-
+    )
 function Choosepage(props) {
         if (props.value === 0) {
             return (<SignIn />);
