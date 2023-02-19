@@ -31,7 +31,7 @@ const Machining = () => {
                     </ul>
                     <br /><br />
                     <div>
-                        <form action="http://127.0.0.1:5000/api/parts" method="POST"
+                        <form action="http://127.0.0.1:5000/api/machining" method="POST"
                             enctype="multipart/form-data">
                             <Choosepage value={value} />
                         </form>
@@ -40,10 +40,10 @@ const Machining = () => {
 
             );
         }
+
 function Choosepage(props) {
         if (props.value === 0) {
-            return (<SignIn />
-            );
+            return (<SignIn />);
         }
     
         if (props.value === 1) {
@@ -75,6 +75,7 @@ function Choosepage(props) {
         if (props.value === 7) {
             return (<><ThreeDPrint /><ThreeDPrintPhotos /><ThreeDPrintDataTable/><SavePage /></>
             );
+    
         }
     }
 
