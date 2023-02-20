@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Pages/Layout";
 import Parts from "./Pages/Parts";
-import Blogs from "./Pages/blogs";
+import Machining from "./Pages/Machining";
 import Contact from "./Pages/contact";
 import NoPage from "./Pages/NoPage";
 export default function App() {
@@ -14,7 +14,7 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Parts />} />
-                    <Route path="blogs" element={<Blogs />} />
+                    <Route path="Machining" element={<Machining />} />
                     <Route path="contact" element={<Contact />} />
                     <Route path="*" element={<NoPage />} />
                 </Route>

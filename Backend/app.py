@@ -14,6 +14,12 @@ def parts():
     return "request.form"
 
 
+@app.route("api/machining", methods=["POST"])
+def newParts():
+    print(request.form)
+    return "Hello!"
+
+
 @app.route("/api/parts", methods=["POST"])
 def newParts():
     print(request.form)
