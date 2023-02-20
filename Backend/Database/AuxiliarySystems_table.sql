@@ -1,6 +1,6 @@
 -- partSubmission.`Auxiliary Systems` definition
 
-CREATE TABLE partSubmission.`Auxiliary Systems` (
+CREATE TABLE IF NOT EXISTS partSubmission.`Auxiliary Systems` (
 	AS_Mechanism varchar(100) NULL,
 	AS_NumofPartMachined varchar(100) NULL,
 	AS_SizeOfPart varchar(100) NULL,
