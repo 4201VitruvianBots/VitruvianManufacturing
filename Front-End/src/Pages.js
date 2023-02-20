@@ -141,11 +141,15 @@ function Drivetrain(props) {
                     <br></br>
                     <input type="text" id="PartNumber" name="drivetrain_PartNumber" placeholder="Part Number" className="text-input" required="required" />
                     <br></br>
+                    <input type="radio" id="Low" name="Low" value="HTML" />
+                    <label for="html">Low</label>
+                    <input type="radio" id="Mid" name="Mid" value="Mid" />
+                    <label for="Mid">Mid</label>
 
                     <h4>When do you need the part done by?</h4>
-
                     <NewDate name="drivetrain_cal" />
                 </div>
+
             </div>
         </Page >
     );
