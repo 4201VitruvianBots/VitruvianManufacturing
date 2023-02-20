@@ -1,8 +1,8 @@
 import React from 'react';
-import { PrinerStatus } from '../Print';
+import { PrinterStatus } from '../Print';
 import { SavePage, SignIn } from '../Pages';
 
-function App() {
+function PrinterStatusPage() {
     const [value, setValue] = React.useState(0)
 
     const actArray = []
@@ -40,7 +40,7 @@ function Choosepage(props) {
     }
 
     if (props.value === 1) {
-        return (<><PrinerStatus /><SavePage /></>
+        return (<><PrinterStatus /><SavePage /></>
         );
 
     }
@@ -49,4 +49,4 @@ function Choosepage(props) {
 
 
 
-export default App;
+export default PrinterStatusPage;
