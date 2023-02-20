@@ -5,15 +5,11 @@ const Layout = () => {
     return (
         <>
             <nav>
-            <div className="menu">
-
-                        <Link to="/">Home</Link>
-                        <br></br>
-                        <Link to="/Machining">Machining</Link>
-                        <br></br>
-                        <Link to="/contact">Contact</Link>
-                        </div>
-
+                <div className="menu">
+                    <Link to="/">Home</Link>
+                    <Link to="/Printer">Printer Status</Link>
+                    <Link to="/Machining">Machining</Link>
+                </div>
             </nav>
             <Outlet />
         </>
