@@ -1,7 +1,9 @@
 import "./App.css";
 import React, { useState } from "react";
+import { RadioButtons } from "./Form";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+
 function Page(props) {
     return (
         <div className={props.selected ? "page selected" : "page"} id={props.id}>
@@ -32,6 +34,7 @@ function SignIn(props) {
                 {/* <label for="username">Username:</label> */}
                 {/* <input type="text" id="username" name="username"/> */}
                 <h1>Sign in</h1>
+                <br></br>
                 <label htmlFor="email">Email: </label>
                 <input type="email" id="email" name="email" required="required" />
                 <br></br>
@@ -64,7 +67,6 @@ function PartHub(props) {
                         <option value="Intake">Intake</option>
                         <option value="Forebar">Forebar</option>
                         <option value="3DPrint">3D Print</option>
-
                     </select>
                     <br></br>
                     <div>
@@ -137,17 +139,11 @@ function Drivetrain(props) {
                     </select>
                     <br></br>
 
-                    <input type="text" id="LengthInInches" name="drivetrain_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
-                    <br></br>
-                    <input type="text" id="PartNumber" name="drivetrain_PartNumber" placeholder="Part Number" className="text-input" required="required" />
-                    <br></br>
-                    <input type="radio" id="Low" name="Low" value="HTML" />
-                    <label for="html">Low</label>
-                    <input type="radio" id="Mid" name="Mid" value="Mid" />
-                    <label for="Mid">Mid</label>
-
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="drivetrain_cal" />
+                    <br></br>
+                    <h1>Priority</h1>
+                    <RadioButtons items={['1', '2', '3', '4', '5']} id="Drivetrain_Priority" />
                 </div>
 
             </div>
@@ -177,7 +173,6 @@ function Bumpers(props) {
                 <p className="section-label" id="Bumpers">Bumpers</p>
                 <div className="textArea">
                     <input type="text" id="Mechanism" name="bumpers_Mechanism" placeholder="Mechanism" className="text-input" required="required" />
-
                     <br></br>
                     <input type="text" id="NumberOfParts" name="bumpers_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" required="required" />
                     <br></br>
@@ -236,6 +231,9 @@ function Bumpers(props) {
                     <br></br>
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="bumpers_date" />
+                    <br></br>
+                    <h1>Priority</h1>
+                    <RadioButtons items={['1', '2', '3', '4', '5']} id="Bumpers_Priority" />
                 </div>
             </div>
         </Page>
@@ -321,6 +319,9 @@ function Elevator(props) {
                     <br></br>
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="elevator_date" />
+                    <h1>Priority</h1>
+                    <RadioButtons items={['1', '2', '3', '4', '5']} id="Elevator_Priority" />
+
                 </div>
             </div>
         </Page>
@@ -406,6 +407,9 @@ function Intake(props) {
                     <br></br>
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="intake_date" />
+                    <br></br>
+                    <h1>Priority</h1>
+                    <RadioButtons items={['1', '2', '3', '4', '5']} id="Intake_Priority" />
 
                 </div>
             </div>
@@ -491,6 +495,10 @@ function AuxiliarySystems(props) {
                     <br></br>
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="AuxiliarySystems_date" />
+                    <br></br>
+                    <h1>Priority</h1>
+                    <RadioButtons items={['1', '2', '3', '4', '5']} id="AuxiliarySystem_Priority" />
+
                 </div>
             </div>
         </Page>
@@ -576,6 +584,10 @@ function Forebar(props) {
                     <br></br>
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="Forebar_date" />
+                    <br></br>
+                    <h1>Priority</h1>
+                    <RadioButtons items={['1', '2', '3', '4', '5']} id="Forebar_Priority" />
+
                 </div>
             </div>
         </Page>
@@ -663,6 +675,10 @@ function ThreeDPrint(props) {
                     <br></br>
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="ThreeDPrint_date" />
+                    <br></br>
+                    <h1>Priority</h1>
+                    <br></br>
+                    <RadioButtons items={['1', '2', '3', '4', '5']} id="ThreeDPrint_Priority" />
 
                 </div>
             </div>
@@ -695,4 +711,4 @@ function SavePage(props) {
         </Page>
     );
 }
-export { SignIn, Drivetrain, PartHub, SavePage, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos, Forebar, ForebarPhotos, NewDate, ThreeDPrint, ThreeDPrintPhotos };
+export { SignIn, Drivetrain, PartHub, SavePage, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos, Forebar, ForebarPhotos, NewDate, ThreeDPrint, ThreeDPrintPhotos, RadioButtons };
