@@ -149,12 +149,12 @@ def ASParts():
     return "Hello!"
 
 
-@ app.route("/api/3DPrint", methods=["POST"])
+@app.route("/api/3DPrint", methods=["POST"])
 def ThreeDParts():
     print(request.form)
-    print(request.form.get('3DPrint_Mechanism'))
-    insert_Bumpers_data(request.form.get('3DPrint_Mechanism'),
-                        request.form.get('3DPrint_NumberOfPartMachined'), request.form.get('3DPrint_SizeOfPart'), request.form.get('3DPrint_TypeOfStock'), request.form.get('3DPrint_Thickness-Extrusion'), request.form.get('3DPrint_ThicknessPlate'), request.form.get('3DPrint_MaterialPlate'), request.form.get('3DPrint_LengthInInches'), request.form.get('3DPrint_PartNumber'), request.form.get('3DPrint_Date'), request.form.get('3DPrint_Photos'))
+    print(request.form.get('ThreeDPrint_Mechanism'))
+    insert_3D_Print_data(request.form.get('ThreeDPrint_Mechanism'),
+                         request.form.get('ThreeDPrint_NumberOfParts'), request.form.get('ThreeDPrint_SizeOfPart'), request.form.get('ThreeDPrint_TypeOfStock'), request.form.get('ThreeDPrint_Thickness(Extrusion)'), request.form.get('ThreeDPrint_Thickness(Plate)'), request.form.get('ThreeDPrint_Material(Plate)'), request.form.get('ThreeDPrint_LengthInInches'), request.form.get('ThreeDPrint_PartNumber'), request.form.get('ThreeDPrint_date'), request.form.get('3DPrint_Photos'))
     return "Hello!"
 
 
