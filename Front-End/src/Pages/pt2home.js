@@ -1,7 +1,8 @@
 import React from 'react';
-import { AuxiliarySystems, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, Drivetrain, DrivetrainPhotos, Elevator, ElevatorPhotos, Forebar, ForebarPhotos, Intake, IntakePhotos, SavePage, SignIn, ThreeDPrint, ThreeDPrintPhotos } from '../Pages';
+import { AuxiliarySystemsDataTable, BumpersDataTable, DrivetrainDataTable, ElevatorDataTable, ForebarDataTable, IntakeDataTable, SavePage, SignIn, ThreeDPrintDataTable } from '../NewPartApp';
+import "./app.css";
 
-function App() {
+const Home = () => {
     const [value, setValue] = React.useState(0)
 
     const actArray = []
@@ -13,8 +14,8 @@ function App() {
             actArray.push('btn')
         }
     }
-
     return (
+
         <div className="App">
             <ul style={{ listStyle: 'none' }}>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>SignIn</button></li>
@@ -28,7 +29,7 @@ function App() {
             </ul>
             <br /><br />
             <div>
-                <form action="http://127.0.0.1:5000/api/parts" method="POST"
+                <form action="http://127.0.0.1:5000/api/home" method="POST"
                     enctype="multipart/form-data">
                     <Choosepage value={value} />
                 </form>
@@ -37,44 +38,42 @@ function App() {
 
     );
 }
+
 function Choosepage(props) {
     if (props.value === 0) {
-        return (<SignIn />
-        );
+        return (<SignIn />);
     }
 
     if (props.value === 1) {
-        return (<><Drivetrain /><DrivetrainPhotos /> <SavePage /></>
-
+        return (<><DrivetrainDataTable /><SavePage /></>
         );
     }
 
-
     if (props.value === 2) {
-        return (<><Bumpers /><BumperPhotos /><SavePage /></>
-
+        return (<><BumpersDataTable /><SavePage /></>
         );
     }
     if (props.value === 3) {
-        return (<><Elevator /><ElevatorPhotos /><SavePage /></>
+        return (<><ElevatorDataTable /><SavePage /></>
         );
     }
     if (props.value === 4) {
-        return (<><Intake /><IntakePhotos /><SavePage /></>
+        return (<><IntakeDataTable /><SavePage /></>
         );
     }
     if (props.value === 5) {
-        return (<><AuxiliarySystems /><AuxiliarySystemsPhotos /><SavePage /></>
+        return (<><AuxiliarySystemsDataTable /><SavePage /></>
         )
     }
     if (props.value === 6) {
-        return (<><Forebar /><ForebarPhotos /><SavePage /></>
+        return (<><ForebarDataTable /><SavePage /></>
         );
     }
     if (props.value === 7) {
-        return (<><ThreeDPrint /><ThreeDPrintPhotos /><SavePage /></>
+        return (<><ThreeDPrintDataTable /><SavePage /></>
         );
+
     }
 }
 
-export default App;
+export default Home;
