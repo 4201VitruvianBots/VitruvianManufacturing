@@ -83,10 +83,11 @@ ul {
 
 .textArea {
   background-color: #ecf2eb;
-  min-width: 300px;
+  min-width: 600px;
   min-height: 100px;
-  padding: 25px;
-  margin: 20px;
+  min: length 100%;
+  padding: 100px;
+  margin: 200px;
 }
 
 body {
