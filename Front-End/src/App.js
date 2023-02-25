@@ -17,8 +17,7 @@ export default function App() {
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Parts />} />
                     <Route path="Printer" element={<PrinterStatusPage />} />
-                    <Route path="Printer" element={<PrinterStatusDataPage />} />
-
+                    <Route path="PrinterStatusDataPage" element={<PrinterStatusDataPage />} />
                     <Route path="Machining" element={<Machining />} />
                     <Route path="*" element={<NoPage />} />
                 </Route>

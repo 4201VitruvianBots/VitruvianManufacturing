@@ -21,7 +21,6 @@ function PrinterStatusDataPage() {
             <ul style={{ listStyle: 'none' }}>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>SignIn</button></li>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[1]} onClick={() => { setValue(1) }}>Printer Status Admin</button></li>
-
             </ul>
             <br /><br />
             <div>

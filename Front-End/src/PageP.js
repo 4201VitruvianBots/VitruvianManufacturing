@@ -54,7 +54,7 @@ function PrinterStatusDataTable(props) {
                 <br></br>
                 <p className="selection-label" id="Printer-Stauts-Data-Table">Priner Status Data Tables</p>
                 <div className="textArea">
-                    <table border="1" width="100%">
+                    <table border="1" width="140%">
                         <tr>
                             <th>Name Of Printer</th>
                             <th>Status Of Printer</th>
