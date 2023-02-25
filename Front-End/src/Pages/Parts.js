@@ -34,7 +34,6 @@ function App() {
                 </form>
             </div>
         </div>
-
     );
 }
 function Choosepage(props) {
@@ -45,14 +44,12 @@ function Choosepage(props) {
 
     if (props.value === 1) {
         return (<><Drivetrain /><DrivetrainPhotos /> <SavePage /></>
-
         );
     }
 
 
     if (props.value === 2) {
         return (<><Bumpers /><BumperPhotos /><SavePage /></>
-
         );
     }
     if (props.value === 3) {
@@ -65,7 +62,7 @@ function Choosepage(props) {
     }
     if (props.value === 5) {
         return (<><AuxiliarySystems /><AuxiliarySystemsPhotos /><SavePage /></>
-        )
+        );
     }
     if (props.value === 6) {
         return (<><Forebar /><ForebarPhotos /><SavePage /></>

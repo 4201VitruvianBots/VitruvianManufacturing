@@ -63,7 +63,7 @@ function Choosepage(props) {
     }
     if (props.value === 5) {
         return (<><AuxiliarySystemsDataTable /><SavePage /></>
-        )
+        );
     }
     if (props.value === 6) {
         return (<><ForebarDataTable /><SavePage /></>
@@ -72,7 +72,6 @@ function Choosepage(props) {
     if (props.value === 7) {
         return (<><ThreeDPrintDataTable /><SavePage /></>
         );
-
     }
 }
 

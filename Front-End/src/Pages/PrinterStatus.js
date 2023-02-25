@@ -20,7 +20,6 @@ function PrinterStatusPage() {
             <ul style={{ listStyle: 'none' }}>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>SignIn</button></li>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[1]} onClick={() => { setValue(1) }}>Printer Status</button></li>
-
             </ul>
             <br /><br />
             <div>
@@ -30,7 +29,6 @@ function PrinterStatusPage() {
                 </form>
             </div>
         </div>
-
     );
 }
 function Choosepage(props) {
@@ -42,11 +40,7 @@ function Choosepage(props) {
     if (props.value === 1) {
         return (<><PrinterStatus /><SavePage /></>
         );
-
     }
-
 }
-
-
 
 export default PrinterStatusPage;
