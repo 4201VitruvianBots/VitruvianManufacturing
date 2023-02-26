@@ -43,33 +43,75 @@ function Choosepage(props) {
     }
 
     if (props.value === 1) {
-        return (<><Drivetrain /><DrivetrainPhotos /> <SavePage /></>
+
+        return (
+
+            <form action="http://127.0.0.1:5000/api/drivetrain" method="POST"
+                enctype="multipart/form-data">
+                <Drivetrain />
+                <DrivetrainPhotos />
+                <SavePage />
+            </form>
         );
     }
 
 
     if (props.value === 2) {
-        return (<><Bumpers /><BumperPhotos /><SavePage /></>
+        return (
+            <form action="http://127.0.0.1:5000/api/bumpers" method="POST"
+                enctype="multipart/form-data">
+                <Bumpers />
+                <BumperPhotos />
+                <SavePage />
+            </form>
+
         );
     }
     if (props.value === 3) {
-        return (<><Elevator /><ElevatorPhotos /><SavePage /></>
+        return (<form action="http://127.0.0.1:5000/api/elevator" method="POST"
+            enctype="multipart/form-data">
+            <Elevator />
+            <ElevatorPhotos />
+            <SavePage />
+        </form>
         );
     }
     if (props.value === 4) {
-        return (<><Intake /><IntakePhotos /><SavePage /></>
+        return (<form action="http://127.0.0.1:5000/api/intake" method="POST"
+            enctype="multipart/form-data">
+            <Intake />
+            <IntakePhotos />
+            <SavePage />
+        </form>
         );
     }
     if (props.value === 5) {
-        return (<><AuxiliarySystems /><AuxiliarySystemsPhotos /><SavePage /></>
-        );
+        return (<form action="http://127.0.0.1:5000/api/auxiliary-systems" method="POST"
+            enctype="multipart/form-data">
+            <AuxiliarySystems />
+            <AuxiliarySystemsPhotos />
+            <SavePage />
+        </form>
+        )
     }
     if (props.value === 6) {
-        return (<><Forebar /><ForebarPhotos /><SavePage /></>
+        return (
+            < form action="http://127.0.0.1:5000/api/forebar" method="POST"
+                enctype="multipart/form-data">
+                <Forebar />
+                <ForebarPhotos />
+                <SavePage />
+            </form>
         );
     }
     if (props.value === 7) {
-        return (<><ThreeDPrint /><ThreeDPrintPhotos /><SavePage /></>
+        return (
+            <form action="http://127.0.0.1:5000/api/3DPrint" method="POST"
+                enctype="multipart/form-data">
+                <ThreeDPrint />
+                <ThreeDPrintPhotos />
+                <SavePage />
+            </form>
         );
     }
 }
