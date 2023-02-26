@@ -25,7 +25,7 @@ def get_data_from_table(table):
     print(rows)
 
 
-get_data_from_table("`ThreeDPrint_Mechanism`")
+get_data_from_table("`3DPrint`")
 
 
 # INSERT INTO partSubmission.Drivetrain
