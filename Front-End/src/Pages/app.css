@@ -81,17 +81,17 @@ ul {
   margin: 10px;
 }
 
-.textArea {
+/* .textArea {
   background-color: #ecf2eb;
   min-width: 300px;
   min-height: 100px;
   padding: 25px;
   margin: 20px;
-}
+} */
 
 body {
   margin: 0;
-  font-family: monospace;
+  /* font-family: monospace; */
   font-weight: 100;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -408,7 +408,7 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
-  font-family: var(--font-family);
+  font-family: comic sans-serif;
   background-color: var(--bg-body);
 }
 
@@ -670,4 +670,8 @@ h4 {
 .btn:hover {
   background-color: #666;
   color: white;
+}
+
+a{
+  color: fuchsia;
 }
