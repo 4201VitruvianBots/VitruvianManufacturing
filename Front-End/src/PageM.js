@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
+
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -52,6 +53,7 @@ function SignIn(props) {
 
 
 function DrivetrainDataTable(props) {
+    const [isLoaded, setIsLoaded] = useState(false);
     const [advice, setAdvice] = useState("");
 
     useEffect(() => {
@@ -63,6 +65,7 @@ function DrivetrainDataTable(props) {
                 const json = await response.json();
                 console.log(json);
                 setAdvice(json);
+                setIsLoaded(true);
             } catch (error) {
                 console.log("error", error);
             }
@@ -70,589 +73,551 @@ function DrivetrainDataTable(props) {
 
         fetchData();
     }, []);
+    if (isLoaded) {
+        return (
+            < Page selected={props.selected} id="DrivetrainDataTable" >
+                <div>
+                    <br></br>
 
-    return (
-        <Page selected={props.selected} id="DrivetrainDataTable">
-            <div>
-                <br></br>
+                    <p className="selection-label" id="Drive-Train-Data-Table">Drivetrain Data Tables</p>
+                    <div className="textArea">
+                        <table border="1" width="100%">
+                            <tbody>
+                                <tr>
+                                    <th>Mechanism</th>
+                                    <th>Number Of Parts</th>
+                                    <th>Size Of Part</th>
+                                    <th>Type Of Stock</th>
+                                    <th> Thickness (Extrusion)</th>
+                                    <th> Thickness (Plate)</th>
+                                    <th> Material (Plate)</th>
+                                    <th>  Length in Inches</th>
+                                    <th>  Part Number</th>
+                                    <th> Date</th>
+                                </tr>
+                                {
+                                    advice.map(row => (
+                                        <tr>
+                                            <td>{row[0]}</td>
+                                            <td>{row[1]}</td>
+                                            <td>{row[2]}</td>
+                                            <td>{row[3]}</td>
+                                            <td>{row[4]}</td>
+                                            <td>{row[5]}</td>
+                                            <td>{row[6]}</td>
+                                            <td>{row[7]}</td>
+                                            <td>{row[8]}</td>
+                                            <td>{row[9]}</td>
+                                        </tr>
+                                    ))
+                                }
+                            </tbody>
 
-                <p className="selection-label" id="Drive-Train-Data-Table">Drivetrain Data Tables</p>
-                <div className="textArea">
-                    <table border="1" width="100%">
-                        <tbody>
-                            <tr>
-                                <th>Mechanism</th>
-                                <th>Number Of Parts</th>
-                                <th>Size Of Part</th>
-                                <th> Thickness (Extrusion)</th>
-                                <th> Thickness (Plate)</th>
-                                <th> Material (Plate)</th>
-                                <th>  Length in Inches</th>
-                                <th>  Part Number</th>
-                                <th> Date</th>
-                            </tr>
-                            <tr>
-                                <td>{advice[0]}</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                            </tr>
-                            <tr>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                            </tr>
-                            <tr>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                            </tr>
-                            <tr>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                            </tr>
-                            <tr>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                                <td>Hello</td>
-                            </tr>
-                        </tbody>
+                        </table>
 
-                    </table>
-
+                    </div>
                 </div>
-            </div>
-        </Page>
-    )
+            </Page >
+        )
+    }
+    else {
+        return (
+
+            <div>Loading....</div>
+        )
+
+    }
 }
+
 
 function BumpersDataTable(props) {
-    return (
-        <Page selected={props.selected} id="BumpersDataTable">
-            <div>
-                <br></br>
+    const [advice, setAdvice] = useState("");
+    const [isLoaded, setIsLoaded] = useState(false);
 
-                <p className="selection-label" id="Bumpers-Data-Table">Bumpers Data Tables</p>
-                <div className="textArea">
-                    <table border="1" width="100%">
-                        <tr>
-                            <th>Mechanism</th>
-                            <th>Number Of Parts</th>
-                            <th>Size Of Part</th>
-                            <th> Thickness (Extrusion)</th>
-                            <th> Thickness (Plate)</th>
-                            <th> Material (Plate)</th>
-                            <th>  Length in Inches</th>
-                            <th>  Part Number</th>
-                            <th> Date</th>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                    </table>
+    useEffect(() => {
+        const url = "http://127.0.0.1:5000/api/bumpers";
 
+        const fetchData = async () => {
+            try {
+                const response = await fetch(url);
+                const json = await response.json();
+                console.log(json);
+                setAdvice(json);
+                setIsLoaded(true);
+            } catch (error) {
+                console.log("error", error);
+            }
+        };
+
+        fetchData();
+    }, []);
+    if (isLoaded) {
+        return (
+            <Page selected={props.selected} id="BumpersDataTable">
+                <div>
+                    <br></br>
+
+                    <p className="selection-label" id="Bumpers-Data-Table">Bumpers Data Tables</p>
+                    <div className="textArea">
+                        <table border="1" width="100%">
+                            <tbody>
+                                <tr>
+                                    <th>Mechanism</th>
+                                    <th>Number Of Parts</th>
+                                    <th>Size Of Part</th>
+                                    <th>Type Of Stock</th>
+
+                                    <th> Thickness (Extrusion)</th>
+                                    <th> Thickness (Plate)</th>
+                                    <th> Material (Plate)</th>
+                                    <th>  Length in Inches</th>
+                                    <th>  Part Number</th>
+                                    <th> Date</th>
+                                </tr>
+                                <tr>
+                                    <td>{advice[0][0]}</td>
+                                    <td>{advice[0][1]}</td>
+                                    <td>{advice[0][2]}</td>
+                                    <td>{advice[0][3]}</td>
+                                    <td>{advice[0][4]}</td>
+                                    <td>{advice[0][5]}</td>
+                                    <td>{advice[0][6]}</td>
+                                    <td>{advice[0][7]}</td>
+                                    <td>{advice[0][8]}</td>
+                                    <td>{advice[0][9]}</td>
+                                </tr>
+                                {
+                                    advice.map(row => (
+                                        <tr>
+                                            <td>{row[0]}</td>
+                                            <td>{row[1]}</td>
+                                            <td>{row[2]}</td>
+                                            <td>{row[3]}</td>
+                                            <td>{row[4]}</td>
+                                            <td>{row[5]}</td>
+                                            <td>{row[6]}</td>
+                                            <td>{row[7]}</td>
+                                            <td>{row[8]}</td>
+                                            <td>{row[9]}</td>
+                                        </tr>
+                                    ))
+                                }
+                            </tbody>
+                        </table>
+
+                    </div>
                 </div>
-            </div>
-        </Page>
-    )
+            </Page >
+        )
+    }
+    else {
+        return (
+
+            <div>Loading....</div>
+        )
+
+    }
 }
 
+
 function ElevatorDataTable(props) {
-    return (
-        <Page selected={props.selected} id="ElevatorDataTable">
-            <div>
-                <br></br>
+    const [advice, setAdvice] = useState("");
+    const [isLoaded, setIsLoaded] = useState(false);
 
-                <p className="selection-label" id="Elevator-Data-Table">Elevator Data Tables</p>
-                <div className="textArea">
-                    <table border="1" width="100%">
-                        <tr>
-                            <th>Mechanism</th>
-                            <th>Number Of Parts</th>
-                            <th>Size Of Part</th>
-                            <th> Thickness (Extrusion)</th>
-                            <th> Thickness (Plate)</th>
-                            <th> Material (Plate)</th>
-                            <th>  Length in Inches</th>
-                            <th>  Part Number</th>
-                            <th> Date</th>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                    </table>
+    useEffect(() => {
+        const url = "http://127.0.0.1:5000/api/elevator";
+        const fetchData = async () => {
+            try {
+                const response = await fetch(url);
+                const json = await response.json();
+                console.log(json);
+                setAdvice(json);
+                setIsLoaded(true);
+            } catch (error) {
+                console.log("error", error);
+            }
+        };
 
+        fetchData();
+    }, []);
+    if (isLoaded) {
+
+        return (
+            <Page selected={props.selected} id="ElevatorDataTable">
+                <div>
+                    <br></br>
+
+                    <p className="selection-label" id="Elevator-Data-Table">Elevator Data Tables</p>
+                    <div className="textArea">
+                        <table border="1" width="100%">
+                            <tbody>
+                                <tr>
+                                    <th>Mechanism</th>
+                                    <th>Number Of Parts</th>
+                                    <th>Size Of Part</th>
+                                    <th>Type Of Stock</th>
+
+                                    <th> Thickness (Extrusion)</th>
+                                    <th> Thickness (Plate)</th>
+                                    <th> Material (Plate)</th>
+                                    <th>  Length in Inches</th>
+                                    <th>  Part Number</th>
+                                    <th> Date</th>
+                                </tr>
+                                <tr>
+                                    <td>{advice[0][0]}</td>
+                                    <td>{advice[0][1]}</td>
+                                    <td>{advice[0][2]}</td>
+                                    <td>{advice[0][3]}</td>
+                                    <td>{advice[0][4]}</td>
+                                    <td>{advice[0][5]}</td>
+                                    <td>{advice[0][6]}</td>
+                                    <td>{advice[0][7]}</td>
+                                    <td>{advice[0][8]}</td>
+                                    <td>{advice[0][9]}</td>
+                                </tr>
+                                {
+                                    advice.map(row => (
+                                        <tr>
+                                            <td>{row[0]}</td>
+                                            <td>{row[1]}</td>
+                                            <td>{row[2]}</td>
+                                            <td>{row[3]}</td>
+                                            <td>{row[4]}</td>
+                                            <td>{row[5]}</td>
+                                            <td>{row[6]}</td>
+                                            <td>{row[7]}</td>
+                                            <td>{row[8]}</td>
+                                            <td>{row[9]}</td>
+                                        </tr>
+                                    ))
+                                }
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
-        </Page>
-    )
+            </Page>
+        )
+    }
+    else {
+        return (
+
+            <div>Loading....</div>
+        )
+
+    }
 }
 
 function IntakeDataTable(props) {
-    return (
-        <Page selected={props.selected} id="IntakeDataTable">
-            <div>
-                <br></br>
+    const [advice, setAdvice] = useState("");
+    const [isLoaded, setIsLoaded] = useState(false);
 
-                <p className="selection-label" id="Intake-Data-Table">Intake Data Tables</p>
-                <div className="textArea">
-                    <table border="1" width="100%">
-                        <tr>
-                            <th>Mechanism</th>
-                            <th>Number Of Parts</th>
-                            <th>Size Of Part</th>
-                            <th> Thickness (Extrusion)</th>
-                            <th> Thickness (Plate)</th>
-                            <th> Material (Plate)</th>
-                            <th>  Length in Inches</th>
-                            <th>  Part Number</th>
-                            <th> Date</th>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                    </table>
+    useEffect(() => {
+        const url = "http://127.0.0.1:5000/api/intake";
 
+        const fetchData = async () => {
+            try {
+                const response = await fetch(url);
+                const json = await response.json();
+                console.log(json);
+                setAdvice(json);
+                setIsLoaded(true);
+            } catch (error) {
+                console.log("error", error);
+            }
+        };
+
+        fetchData();
+    }, []);
+    if (isLoaded) {
+        return (
+            <Page selected={props.selected} id="IntakeDataTable">
+                <div>
+                    <br></br>
+
+                    <p className="selection-label" id="Intake-Data-Table">Intake Data Tables</p>
+                    <div className="textArea">
+                        <table border="1" width="100%">
+                            <tbody>
+                                <tr>
+                                    <th>Mechanism</th>
+                                    <th>Number Of Parts</th>
+                                    <th>Size Of Part</th>
+                                    <th>Type Of Stock</th>
+
+                                    <th> Thickness (Extrusion)</th>
+                                    <th> Thickness (Plate)</th>
+                                    <th> Material (Plate)</th>
+                                    <th>  Length in Inches</th>
+                                    <th>  Part Number</th>
+                                    <th> Date</th>
+                                </tr>
+                                <tr>
+                                    <td>{advice[0][0]}</td>
+                                    <td>{advice[0][1]}</td>
+                                    <td>{advice[0][2]}</td>
+                                    <td>{advice[0][3]}</td>
+                                    <td>{advice[0][4]}</td>
+                                    <td>{advice[0][5]}</td>
+                                    <td>{advice[0][6]}</td>
+                                    <td>{advice[0][7]}</td>
+                                    <td>{advice[0][8]}</td>
+                                    <td>{advice[0][9]}</td>
+                                </tr>
+                                {
+                                    advice.map(row => (
+                                        <tr>
+                                            <td>{row[0]}</td>
+                                            <td>{row[1]}</td>
+                                            <td>{row[2]}</td>
+                                            <td>{row[3]}</td>
+                                            <td>{row[4]}</td>
+                                            <td>{row[5]}</td>
+                                            <td>{row[6]}</td>
+                                            <td>{row[7]}</td>
+                                            <td>{row[8]}</td>
+                                            <td>{row[9]}</td>
+                                        </tr>
+                                    ))
+                                }
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
-        </Page>
-    )
+            </Page>
+        )
+    }
+    else {
+        return (
+
+            <div>Loading....</div>
+        )
+
+    }
 }
-
 function AuxiliarySystemsDataTable(props) {
-    return (
-        <Page selected={props.selected} id="AuxiliarySystemsDataTable">
-            <div>
-                <br></br>
+    const [advice, setAdvice] = useState("");
+    const [isLoaded, setIsLoaded] = useState(false);
 
-                <p className="selection-label" id="Auxiliary-Systems-Data-Table">Auxiliary Systems Data Tables</p>
-                <div className="textArea">
-                    <table border="1" width="100%">
-                        <tr>
-                            <th>Mechanism</th>
-                            <th>Number Of Parts</th>
-                            <th>Size Of Part</th>
-                            <th> Thickness (Extrusion)</th>
-                            <th> Thickness (Plate)</th>
-                            <th> Material (Plate)</th>
-                            <th>  Length in Inches</th>
-                            <th>  Part Number</th>
-                            <th> Date</th>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                    </table>
+    useEffect(() => {
+        const url = "http://127.0.0.1:5000/api/auxiliary-systems";
+        const fetchData = async () => {
+            try {
+                const response = await fetch(url);
+                const json = await response.json();
+                console.log(json);
+                setAdvice(json);
+                setIsLoaded(true);
+            } catch (error) {
+                console.log("error", error);
+            }
+        };
 
+        fetchData();
+    }, []);
+    if (isLoaded) {
+        return (
+            <Page selected={props.selected} id="AuxiliarySystemsDataTable">
+                <div>
+                    <br></br>
+
+                    <p className="selection-label" id="Auxiliary-Systems-Data-Table">Auxiliary Systems Data Tables</p>
+                    <div className="textArea">
+                        <table border="1" width="100%">
+                            <tbody>
+                                <tr>
+                                    <th>Mechanism</th>
+                                    <th>Number Of Parts</th>
+                                    <th>Size Of Part</th>
+                                    <th>Type Of Stock</th>
+
+                                    <th> Thickness (Extrusion)</th>
+                                    <th> Thickness (Plate)</th>
+                                    <th> Material (Plate)</th>
+                                    <th>  Length in Inches</th>
+                                    <th>  Part Number</th>
+                                    <th> Date</th>
+                                </tr>
+                                {
+                                    advice.map(row => (
+                                        <tr>
+                                            <td>{row[0]}</td>
+                                            <td>{row[1]}</td>
+                                            <td>{row[2]}</td>
+                                            <td>{row[3]}</td>
+                                            <td>{row[4]}</td>
+                                            <td>{row[5]}</td>
+                                            <td>{row[6]}</td>
+                                            <td>{row[7]}</td>
+                                            <td>{row[8]}</td>
+                                            <td>{row[9]}</td>
+                                        </tr>
+                                    ))
+                                }
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
-        </Page>
-    )
+            </Page>
+        )
+    }
+    else {
+        return (
+
+            <div>Loading....</div>
+        )
+
+    }
 }
 
 function ForebarDataTable(props) {
-    return (
-        <Page selected={props.selected} id="ForebarDataTable">
-            <div>
-                <br></br>
+    const [advice, setAdvice] = useState("");
+    const [isLoaded, setIsLoaded] = useState(false);
 
-                <p className="selection-label" id="Forebar-Data-Table">Forebar Data Tables</p>
-                <div className="textArea">
-                    <table border="1" width="100%">
-                        <tr>
-                            <th>Mechanism</th>
-                            <th>Number Of Parts</th>
-                            <th>Size Of Part</th>
-                            <th> Thickness (Extrusion)</th>
-                            <th> Thickness (Plate)</th>
-                            <th> Material (Plate)</th>
-                            <th>  Length in Inches</th>
-                            <th>  Part Number</th>
-                            <th> Date</th>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                    </table>
+    useEffect(() => {
+        const url = "http://127.0.0.1:5000/api/forebar";
+        const fetchData = async () => {
+            try {
+                const response = await fetch(url);
+                const json = await response.json();
+                console.log(json);
+                setAdvice(json);
+                setIsLoaded(true);
+            } catch (error) {
+                console.log("error", error);
+            }
+        };
 
+        fetchData();
+    }, []);
+    if (isLoaded) {
+
+        return (
+            <Page selected={props.selected} id="ForebarDataTable">
+                <div>
+                    <br></br>
+
+                    <p className="selection-label" id="Forebar-Data-Table">Forebar Data Tables</p>
+                    <div className="textArea">
+                        <table border="1" width="100%">
+                            <tbody>
+                                <tr>
+                                    <th>Mechanism</th>
+                                    <th>Number Of Parts</th>
+                                    <th>Size Of Part</th>
+                                    <th>Type Of Stock</th>
+                                    <th> Thickness (Extrusion)</th>
+                                    <th> Thickness (Plate)</th>
+                                    <th> Material (Plate)</th>
+                                    <th>  Length in Inches</th>
+                                    <th>  Part Number</th>
+                                    <th> Date</th>
+                                </tr>
+                                {
+                                    advice.map(row => (
+                                        <tr>
+                                            <td>{row[0]}</td>
+                                            <td>{row[1]}</td>
+                                            <td>{row[2]}</td>
+                                            <td>{row[3]}</td>
+                                            <td>{row[4]}</td>
+                                            <td>{row[5]}</td>
+                                            <td>{row[6]}</td>
+                                            <td>{row[7]}</td>
+                                            <td>{row[8]}</td>
+                                            <td>{row[9]}</td>
+                                        </tr>
+                                    ))
+                                }
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
-        </Page>
-    )
-}
+            </Page>
+        )
+    }
+    else {
+        return (
 
+            <div>Loading....</div>
+        )
+
+    }
+}
 function ThreeDPrintDataTable(props) {
-    return (
-        <Page selected={props.selected} id="ThreeDPrintDataTable">
-            <div>
-                <br></br>
+    const [advice, setAdvice] = useState("");
+    const [isLoaded, setIsLoaded] = useState(false);
+    useEffect(() => {
+        const url = "http://127.0.0.1:5000/api/3DPrint";
+        const fetchData = async () => {
+            try {
+                const response = await fetch(url);
+                const json = await response.json();
+                console.log(json);
+                setAdvice(json);
+                setIsLoaded(true);
+            } catch (error) {
+                console.log("error", error);
+            }
+        };
 
-                <p className="selection-label" id="Three-D-Print-Data-Table">3D Print Data Tables</p>
-                <div className="textArea">
-                    <table border="1" width="100%">
-                        <tr>
-                            <th>Mechanism</th>
-                            <th>Number Of Parts</th>
-                            <th>Size Of Part</th>
-                            <th> Thickness (Extrusion)</th>
-                            <th> Thickness (Plate)</th>
-                            <th> Material (Plate)</th>
-                            <th>  Length in Inches</th>
-                            <th>  Part Number</th>
-                            <th> Date</th>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                    </table>
+        fetchData();
+    }, []);
+    if (isLoaded) {
+
+        return (
+            <Page selected={props.selected} id="ThreeDPrintDataTable">
+                <div>
+                    <br></br>
+
+                    <p className="selection-label" id="Three-D-Print-Data-Table">3D Print Data Tables</p>
+                    <div className="textArea">
+                        <table border="1" width="100%">
+                            <tbody>
+                                <tr>
+                                    <th>Mechanism</th>
+                                    <th>Number Of Parts</th>
+                                    <th>Size Of Part</th>
+                                    <th>Type Of Stock</th>
+
+                                    <th> Thickness (Extrusion)</th>
+                                    <th> Thickness (Plate)</th>
+                                    <th> Material (Plate)</th>
+                                    <th>  Length in Inches</th>
+                                    <th>  Part Number</th>
+                                    <th> Date</th>
+                                </tr>
+                                {
+                                    advice.map(row => (
+                                        <tr>
+                                            <td>{row[0]}</td>
+                                            <td>{row[1]}</td>
+                                            <td>{row[2]}</td>
+                                            <td>{row[3]}</td>
+                                            <td>{row[4]}</td>
+                                            <td>{row[5]}</td>
+                                            <td>{row[6]}</td>
+                                            <td>{row[7]}</td>
+                                            <td>{row[8]}</td>
+                                            <td>{row[9]}</td>
+                                        </tr>
+                                    ))
+                                }
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
-        </Page>
-    )
-}
+            </Page >
+        )
+    }
+    else {
+        return (
 
+            <div>Loading....</div>
+        )
+
+    }
+}
 function SavePage(props) {
     return (
         <Page selected={props.selected} id="Save ">
