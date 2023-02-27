@@ -639,7 +639,7 @@
    padding: 10px 16px;
    background-color: #f1f1f1;
    cursor: pointer;
-   margin: 5px
+   margin: 5px;
  }
 
  .active,
@@ -647,3 +647,7 @@
    background-color: #666;
    color: white;
  }
+
+ .a{
+  color: fuchsia;
+}
