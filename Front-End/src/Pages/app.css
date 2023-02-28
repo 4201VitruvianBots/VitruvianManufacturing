@@ -19,8 +19,12 @@ ul {
 .menu a {
   text-decoration: none;
   color: black;
-  display: block;
+  /* display: block; */
+  font-family: cursive;
+  /* display: flow-root; */
+  display: inherit;
 }
+
 
 :root {
   --accent-1: white;
@@ -716,6 +720,54 @@ select#Thickness(Extrusion).form-control {
   width: 250px;
 }
 
+select#Thickness(Plate).form-control {
+  width: 250px;
+}
+
+select#Material(Plate).form-control {
+  width: 250px;
+}
+
 strong {
   font-size: 180%;
 }
+
+h4 {
+  font-size: 30px;
+}
+
+input#file-upload-button {}
+
+input {}
+
+a {}
+
+button.btn {}
+
+li {}
+
+p#Drive-Train-Photos.section-label {}
+
+p#Save.section-label {}
+
+p#Bumpers.section-label {}
+
+p#Bumper-Photos.section-label {}
+
+p#Elevator.section-label {}
+
+p#ElevatorsPhotos.section-label {}
+
+p#Intake.section-label {}
+
+p#Intake-Photos.section-label {}
+
+p#AuxiliarySystems.section-label {}
+
+p#AuxiliarySystems-Photos.section-label {}
+
+p#Forebar.section-label {}
+
+p#Forebar-Photos.section-label {}
+
+p#ThreeDPrint.section-label {}
