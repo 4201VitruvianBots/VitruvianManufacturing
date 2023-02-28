@@ -59,9 +59,9 @@
 
  .textArea {
    background-color: #ecf2eb;
-   min-width: 300px;
-   min-height: 100px;
-   padding: 25px;
+   min-width: 400px;
+   min-height: 200px;
+   padding: 35px;
    margin: 20px;
  }
 
@@ -286,7 +286,7 @@
  }
 
  strong {
-   font-size: large;
+   font-size: 200%;
  }
 
  .modal {
@@ -639,7 +639,7 @@
    padding: 10px 16px;
    background-color: #f1f1f1;
    cursor: pointer;
-   margin: 5px
+   margin: 5px;
  }
 
  .active,
@@ -647,3 +647,7 @@
    background-color: #666;
    color: white;
  }
+
+ .a{
+  color: fuchsia;
+}

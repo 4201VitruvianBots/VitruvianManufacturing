@@ -1,6 +1,6 @@
 -- partSubmission.Bumpers definition
 
-CREATE TABLE partSubmission.Bumpers (
+CREATE TABLE IF NOT EXISTS partSubmission.Bumpers (
 	Bumpers_Mechanism varchar(100) NULL,
 	Bumpers_NumofPartsNeedToBeMachined varchar(100) NULL,
 	Bumpers_SizeOfPart varchar(100) NULL,
@@ -16,4 +16,3 @@ CREATE TABLE partSubmission.Bumpers (
 ENGINE=InnoDB
 DEFAULT CHARSET=utf8mb4
 COLLATE=utf8mb4_0900_ai_ci;
-DROP TABLE IF EXISTS partSubmission.Bumpers;

@@ -1,6 +1,6 @@
 -- partSubmission.Forebar definition
 
-CREATE TABLE partSubmission.Forebar (
+CREATE TABLE IF NOT EXISTS partSubmission.Forebar (
 	Forebar_Mechanism varchar(100) NULL,
 	Forebar_NumofPartsNeedMachined varchar(100) NULL,
 	Forebar_SizeOfPart varchar(100) NULL,
@@ -16,4 +16,3 @@ CREATE TABLE partSubmission.Forebar (
 ENGINE=InnoDB
 DEFAULT CHARSET=utf8mb4
 COLLATE=utf8mb4_0900_ai_ci;
-DROP TABLE IF EXISTS partSubmission.Forebar;

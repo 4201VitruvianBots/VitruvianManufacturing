@@ -1,6 +1,6 @@
 -- partSubmission.`Auxiliary Systems` definition
 
-CREATE TABLE partSubmission.`Auxiliary Systems` (
+CREATE TABLE IF NOT EXISTS partSubmission.`Auxiliary Systems` (
 	AS_Mechanism varchar(100) NULL,
 	AS_NumofPartMachined varchar(100) NULL,
 	AS_SizeOfPart varchar(100) NULL,
@@ -16,4 +16,3 @@ CREATE TABLE partSubmission.`Auxiliary Systems` (
 ENGINE=InnoDB
 DEFAULT CHARSET=utf8mb4
 COLLATE=utf8mb4_0900_ai_ci;
-DROP TABLE IF EXISTS partSubmission.`Auxiliary Systems`;

@@ -1,7 +1,8 @@
 import React from 'react';
-import { AuxiliarySystems, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, Drivetrain, DrivetrainPhotos, Elevator, ElevatorPhotos, Forebar, ForebarPhotos, Intake, IntakePhotos, SavePage, SignIn, ThreeDPrint, ThreeDPrintPhotos } from '../Pages';
+import { AuxiliarySystemsDataTable, BumpersDataTable, DrivetrainDataTable, ElevatorDataTable, ForebarDataTable, IntakeDataTable, SavePage, SignIn, ThreeDPrintDataTable } from '../PageM';
+import "./app.css";
 
-function App() {
+const Machining = () => {
     const [value, setValue] = React.useState(0)
 
     const actArray = []
@@ -13,8 +14,8 @@ function App() {
             actArray.push('btn')
         }
     }
-
     return (
+
         <div className="App">
             <ul style={{ listStyle: 'none' }}>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>SignIn</button></li>
@@ -28,7 +29,7 @@ function App() {
             </ul>
             <br /><br />
             <div>
-                <form action="http://127.0.0.1:5000/api/parts" method="POST"
+                <form action="http://127.0.0.1:5000/api/machining" method="POST"
                     enctype="multipart/form-data">
                     <Choosepage value={value} />
                 </form>
@@ -37,86 +38,42 @@ function App() {
 
     );
 }
+
 function Choosepage(props) {
     if (props.value === 0) {
-        return (<SignIn />
-        );
+        return (<SignIn />);
     }
 
     if (props.value === 1) {
-        return (
-
-            <form action="http://127.0.0.1:5000/api/drivetrain" method="POST"
-                enctype="multipart/form-data">
-                <Drivetrain />
-                <DrivetrainPhotos />
-                <SavePage />
-            </form>
-
+        return (<><DrivetrainDataTable /><SavePage /></>
         );
     }
 
-
     if (props.value === 2) {
-        return (
-            <form action="http://127.0.0.1:5000/api/bumpers" method="POST"
-                enctype="multipart/form-data">
-                <Bumpers />
-                <BumperPhotos />
-                <SavePage />
-            </form>
-
+        return (<><BumpersDataTable /><SavePage /></>
         );
     }
     if (props.value === 3) {
-        return (<form action="http://127.0.0.1:5000/api/elevator" method="POST"
-            enctype="multipart/form-data">
-            <Elevator />
-            <ElevatorPhotos />
-            <SavePage />
-        </form>
+        return (<><ElevatorDataTable /><SavePage /></>
         );
     }
     if (props.value === 4) {
-        return (<form action="http://127.0.0.1:5000/api/intake" method="POST"
-            enctype="multipart/form-data">
-            <Intake />
-            <IntakePhotos />
-            <SavePage />
-        </form>
+        return (<><IntakeDataTable /><SavePage /></>
         );
     }
     if (props.value === 5) {
-        return (<form action="http://127.0.0.1:5000/api/auxiliary-systems" method="POST"
-            enctype="multipart/form-data">
-            <AuxiliarySystems />
-            <AuxiliarySystemsPhotos />
-            <SavePage />
-        </form>
+        return (<><AuxiliarySystemsDataTable /><SavePage /></>
         )
     }
     if (props.value === 6) {
-        return (
-            < form action="http://127.0.0.1:5000/api/forebar" method="POST"
-                enctype="multipart/form-data">
-                <Forebar />
-                <ForebarPhotos />
-                <SavePage />
-            </form>
+        return (<><ForebarDataTable /><SavePage /></>
         );
     }
     if (props.value === 7) {
-        return (
-            <form action="http://127.0.0.1:5000/api/3DPrint" method="POST"
-                enctype="multipart/form-data">
-                <ThreeDPrint />
-                <ThreeDPrintPhotos />
-                <SavePage />
-            </form>
+        return (<><ThreeDPrintDataTable /><SavePage /></>
         );
+
     }
 }
 
-
-
-export default App;
+export default Machining;

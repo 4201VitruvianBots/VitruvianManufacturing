@@ -1,6 +1,6 @@
 -- partSubmission.Intake definition
 
-CREATE TABLE partSubmission.Intake (
+CREATE TABLE IF NOT EXISTS partSubmission.Intake (
 	Intake_Mechanism varchar(100) NULL,
 	Intake_NumofPartsNeedToMachined varchar(100) NULL,
 	Intake_SizeOfPart varchar(100) NULL,
@@ -16,4 +16,3 @@ CREATE TABLE partSubmission.Intake (
 ENGINE=InnoDB
 DEFAULT CHARSET=utf8mb4
 COLLATE=utf8mb4_0900_ai_ci;
-DROP TABLE IF EXISTS partSubmission.Intake;
