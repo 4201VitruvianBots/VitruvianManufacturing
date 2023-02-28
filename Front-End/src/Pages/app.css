@@ -94,12 +94,12 @@ ul {
 body {
   margin: 0;
   /* font-family: monospace; */
-  font-weight: 100;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: var(--bg-color);
-  /* color: var(--accent-1); */
-}
+/* font-weight: 100; */
+/* -webkit-font-smoothing: antialiased; */
+/* -moz-osx-font-smoothing: grayscale; */
+/* background-color: var(--bg-color); */
+/* color: var(--accent-1); */
+
 
 /* button {
     border-color: var(black);
@@ -674,6 +674,6 @@ h4 {
   color: white;
 }
 
-a{
+a {
   color: fuchsia;
 }
