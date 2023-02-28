@@ -161,7 +161,7 @@ function DrivetrainPhotos(props) {
 
                 <p className="section-label" id="Drive-Train-Photos">Drivetrain Photos</p>
                 <div className="textArea">
-                    <input type="file" required="required "multiple
+                    <input type="file" required="required " multiple
                         id="avatar" name="drivetrainphotos_avatar"
                         accept="image/png, image/jpeg"></input>
                 </div>
