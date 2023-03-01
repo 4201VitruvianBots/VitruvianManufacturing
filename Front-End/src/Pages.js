@@ -41,7 +41,6 @@ function SignIn(props) {
                 <br></br>
                 <input type="submit" value="Submit" />
                 {/* <body class="light">     */}
-
                 {/* </body> */}
             </div>
         </Page>
@@ -64,12 +63,10 @@ function PartHub(props) {
                         <option value="Intake">Intake</option>
                         <option value="Forebar">Forebar</option>
                         <option value="3DPrint">3D Print</option>
-
                     </select>
                     <br></br>
                     <div>
                     </div>
-
                 </div>
             </div>
         </Page>
@@ -82,7 +79,6 @@ function Drivetrain(props) {
             <div>
                 <p className="section-label" id="DriveTrain">Drivetrain</p>
                 <div className="textArea">
-
                     <input type="text" id="Mechanism" name="drivetrain_Mechanism" placeholder="Mechanism" className="text-input" required="required" />
                     <br></br>
                     <input type="text" id="NumberOfParts" name="drivetrain_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" required="required" />
@@ -141,10 +137,10 @@ function Drivetrain(props) {
                     <br></br>
                     <input type="text" id="PartNumber" name="drivetrain_PartNumber" placeholder="Part Number" className="text-input" required="required" />
                     <br></br>
-                    <input type="radio" id="Low" name="Low" value="HTML" />
+                    {/* <input type="radio" id="Low" name="Low" value="HTML" />
                     <label for="html">Low</label>
                     <input type="radio" id="Mid" name="Mid" value="Mid" />
-                    <label for="Mid">Mid</label>
+                    <label for="Mid">Mid</label> */}
 
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="drivetrain_cal" />
@@ -161,7 +157,7 @@ function DrivetrainPhotos(props) {
 
                 <p className="section-label" id="Drive-Train-Photos">Drivetrain Photos</p>
                 <div className="textArea">
-                    <input type="file" required="required "multiple
+                    <input type="file" required="required " multiple
                         id="avatar" name="drivetrainphotos_avatar"
                         accept="image/png, image/jpeg"></input>
                 </div>

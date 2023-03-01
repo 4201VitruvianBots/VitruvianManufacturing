@@ -8,7 +8,6 @@ function Page(props) {
         <div className={props.selected ? "page selected" : "page"} id={props.id}>
             {props.children}
         </div>
-
     );
 }
 function NewDate(props) {
@@ -18,7 +17,6 @@ function NewDate(props) {
     );
 };
 
-
 function SignIn(props) {
     return (
         <Page selected={props.selected} className="page" id="sign-in">
@@ -26,9 +24,7 @@ function SignIn(props) {
                 {/* <h3>Sign in</h3>
                 {/* <label htmlFor="username">Your username</label> */}
                 {/* <br></br>
-
                 <input type="text" placeholder="Enter Username" name="username" required></input>
-
                 <input type="password" placeholder="Enter Password" name="pswrd" required /> */}
                 {/* <label for="username">Username:</label> */}
                 {/* <input type="text" id="username" name="username"/> */}
@@ -42,7 +38,6 @@ function SignIn(props) {
                 <br></br>
                 <input type="submit" value="Submit" />
                 {/* <body class="light">     */}
-
                 {/* </body> */}
             </div>
         </Page>
@@ -56,7 +51,6 @@ function DrivetrainDataTable(props) {
         <Page selected={props.selected} id="DrivetrainDataTable">
             <div>
                 <br></br>
-
                 <p className="selection-label" id="Drive-Train-Data-Table">Drivetrain Data Tables</p>
                 <div className="textArea">
                     <table border="" width="200%">
@@ -70,19 +64,11 @@ function DrivetrainDataTable(props) {
                             <th>  Length in Inches</th>
                             <th>  Part Number</th>
                             <th> Date</th>
+                            <th> Priority</th>
+
                         </tr>
                         <tr>
                             <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
@@ -97,9 +83,50 @@ function DrivetrainDataTable(props) {
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
+
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
+                            <td>Hello</td>
+                            <td>Hello</td>
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
@@ -153,6 +180,73 @@ function BumpersDataTable(props) {
                             <th>  Length in Inches</th>
                             <th>  Part Number</th>
                             <th> Date</th>
+                            <th> Priority</th>
+
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
+                            <td>Hello</td>
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
                         </tr>
                         <tr>
                             <td>Hello</td>
@@ -176,39 +270,7 @@ function BumpersDataTable(props) {
                             <td>Hello</td>
                             <td>Hello</td>
                         </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
+
                     </table>
 
                 </div>
@@ -236,6 +298,8 @@ function ElevatorDataTable(props) {
                             <th>  Length in Inches</th>
                             <th>  Part Number</th>
                             <th> Date</th>
+                            <th> Priority</th>
+
                         </tr>
                         <tr>
                             <td>Hello</td>
@@ -247,6 +311,8 @@ function ElevatorDataTable(props) {
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
+                            <td>Hello</td>
+
                         </tr>
                         <tr>
                             <td>Hello</td>
@@ -258,6 +324,8 @@ function ElevatorDataTable(props) {
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
+                            <td>Hello</td>
+
                         </tr>
                         <tr>
                             <td>Hello</td>
@@ -269,6 +337,34 @@ function ElevatorDataTable(props) {
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
+                            <td>Hello</td>
+
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
+                            <td>Hello</td>
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
                         </tr>
                         <tr>
                             <td>Hello</td>
@@ -319,6 +415,47 @@ function IntakeDataTable(props) {
                             <th>  Length in Inches</th>
                             <th>  Part Number</th>
                             <th> Date</th>
+                            <th> Priority</th>
+
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
                         </tr>
                         <tr>
                             <td>Hello</td>
@@ -330,16 +467,6 @@ function IntakeDataTable(props) {
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
                             <td>Hello</td>
                         </tr>
                         <tr>
@@ -347,6 +474,8 @@ function IntakeDataTable(props) {
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
+                            <td>Hello</td>
+
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
@@ -402,6 +531,34 @@ function AuxiliarySystemsDataTable(props) {
                             <th>  Length in Inches</th>
                             <th>  Part Number</th>
                             <th> Date</th>
+                            <th> Priority</th>
+
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
                         </tr>
                         <tr>
                             <td>Hello</td>
@@ -411,16 +568,7 @@ function AuxiliarySystemsDataTable(props) {
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
+
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
@@ -429,6 +577,21 @@ function AuxiliarySystemsDataTable(props) {
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
@@ -483,6 +646,8 @@ function ForebarDataTable(props) {
                             <th>  Length in Inches</th>
                             <th>  Part Number</th>
                             <th> Date</th>
+                            <th> Priority</th>
+
                         </tr>
                         <tr>
                             <td>Hello</td>
@@ -491,27 +656,7 @@ function ForebarDataTable(props) {
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
+
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
@@ -524,6 +669,8 @@ function ForebarDataTable(props) {
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
+
+                            <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
@@ -535,6 +682,34 @@ function ForebarDataTable(props) {
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
+                            <td>Hello</td>
+
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
@@ -566,22 +741,15 @@ function ThreeDPrintDataTable(props) {
                             <th>  Length in Inches</th>
                             <th>  Part Number</th>
                             <th> Date</th>
+                            <th> Priority</th>
+
                         </tr>
                         <tr>
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                        </tr>
-                        <tr>
-                            <td>Hello</td>
-                            <td>Hello</td>
-                            <td>Hello</td>
+
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
@@ -594,7 +762,48 @@ function ThreeDPrintDataTable(props) {
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>
+
                             <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+                            <td>Hello</td>
+
                             <td>Hello</td>
                             <td>Hello</td>
                             <td>Hello</td>

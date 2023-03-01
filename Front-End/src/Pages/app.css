@@ -34,7 +34,6 @@ ul {
 .page-title {
   color: gray;
   font-size: 25px;
-
   font-style: normal;
 }
 
@@ -49,14 +48,12 @@ ul {
   color: black;
   font-size: 30px;
   font-weight: bold;
-
 }
 
 .item-label,
 .item-label2 {
   color: black;
   font-size: 20px;
-
   display: inline-block;
 }
 
@@ -101,21 +98,6 @@ body {
 /* color: var(--accent-1); */
 
 
-/* button {
-    border-color: var(black);
-    background-color: var(--accent-2);
-    display: block;
-    width: 130%;
-    height: 50px;
-    float: initial;
-    align-self:inherit	 	;
- 
-    font-size: 29px;
-    padding: 10px;
-    margin: 10px;
-    
-  } */
-
 input[type="button"] {
   border-color: var(--accent-3);
   background-color: var(--accent-2);
@@ -124,7 +106,6 @@ input[type="button"] {
   height: 40px;
   font-size: 20px;
   cursor: default;
-
 }
 
 select {
@@ -146,8 +127,6 @@ input[type="text"] {
   height: 30px;
   font-size: 20px;
   margin: 0 auto;
-
-
 }
 
 .chonk {
@@ -156,10 +135,7 @@ input[type="text"] {
   width: 100px !important;
   height: 75px !important;
   font-size: 50px !important;
-  /* margin-left: 100; */
-
   background-color: #003800;
-
 }
 
 input[type=button].chonk {
@@ -167,9 +143,7 @@ input[type=button].chonk {
   border-width: 2px;
   border-color: #83c183;
   cursor: default;
-
 }
-
 
 input[type="checkbox"] {
   border-color: var(--accent-3);
@@ -186,9 +160,7 @@ input[type="radio"] {
   width: 50px;
   height: 20px;
   cursor: default;
-
   display: inline;
-
 }
 
 input[type="number"] {
@@ -214,13 +186,11 @@ input[type="number"] {
   background-color: #83c183;
   margin-top: 30px;
   margin-bottom: 10px;
-
 }
 
 .CLEAR {
   border-color: var(--accent-3);
   background-color: red;
-  /*Make this color better*/
 }
 
 .savept2 {
@@ -233,9 +203,6 @@ input[type="number"] {
 }
 
 .radioButtons {
-  /* display: inline-block;
-    text-align: left;
-    cursor: default; */
   background-color: initial;
   cursor: default;
   appearance: auto;
@@ -243,7 +210,6 @@ input[type="number"] {
   margin: 3px 3px 0px 5px;
   padding: initial;
   border: initial;
-
 }
 
 #QRCode {
@@ -254,9 +220,7 @@ input[type="number"] {
 .container {
   height: 200px;
   width: 250px;
-
   position: relative;
-  /* border: 3px solid green;  */
 }
 
 .center {
@@ -282,7 +246,6 @@ input[type="number"] {
   background-color: #f1f1f1;
 }
 
-/* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
   float: left;
@@ -293,17 +256,14 @@ input[type="number"] {
   transition: 0.3s;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #ddd;
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
   background-color: #ccc;
 }
 
-/* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
@@ -317,39 +277,26 @@ strong {
 
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
   padding-top: 60px;
 }
 
-/* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
   margin: 5px auto;
-  /* 15% from the top and centered */
   border: 1px solid #888;
   width: 80%;
-  /* Could be more or less, depending on screen size */
 }
 
-/* The Close Button */
 .close {
-  /* Position it in the top right corner outside of the modal */
   position: absolute;
   right: 25px;
   top: 0;
@@ -358,14 +305,12 @@ strong {
   font-weight: bold;
 }
 
-/* Close button on hover */
 .close:hover,
 .close:focus {
   color: red;
   cursor: pointer;
 }
 
-/* Add Zoom Animation */
 .animate {
   -webkit-animation: animatezoom 0.6s;
   animation: animatezoom 0.6s

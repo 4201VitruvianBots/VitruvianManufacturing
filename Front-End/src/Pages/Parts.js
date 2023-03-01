@@ -34,7 +34,6 @@ function App() {
                 </form>
             </div>
         </div>
-
     );
 }
 function Choosepage(props) {
@@ -44,6 +43,7 @@ function Choosepage(props) {
     }
 
     if (props.value === 1) {
+
         return (
 
             <form action="http://127.0.0.1:5000/api/drivetrain" method="POST"
@@ -52,7 +52,6 @@ function Choosepage(props) {
                 <DrivetrainPhotos />
                 <SavePage />
             </form>
-
         );
     }
 
@@ -116,7 +115,5 @@ function Choosepage(props) {
         );
     }
 }
-
-
 
 export default App;
