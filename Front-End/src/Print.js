@@ -66,9 +66,10 @@ function PrinterStatus(props) {
                         <option value="NozzleClogs"> Nozzle Clogs</option>
                         <option value="BrokenFrontFan"> Broken Front Fan</option>
                         <option value=" PindaProbeatIncorrectHeightThermalRunaway">  Pinda Probe at incorrect height  thermal runaway.</option>
+                        <option value="Nothing"> Nothing</option>
                     </select>
                     <br></br>
-                    <h3>When do you need it by?</h3>
+                    <h3>When do did the printer break</h3>
                     <NewDate />
                 </div>
             </div>
