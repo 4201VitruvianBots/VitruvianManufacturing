@@ -1,8 +1,8 @@
 import React from 'react';
-import { AuxiliarySystemsDataTable, BumpersDataTable, DrivetrainDataTable, ElevatorDataTable, ForebarDataTable, IntakeDataTable, SavePage, SignIn, ThreeDPrintDataTable } from '../PageM';
+import { AuxiliarySystems, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, Drivetrain, DrivetrainPhotos, Elevator, ElevatorPhotos, Forebar, ForebarPhotos, Intake, IntakePhotos, SavePage, SignIn, ThreeDPrint, ThreeDPrintPhotos } from '../NewPartApp';
 import "./app.css";
 
-const Machining = () => {
+const NewPartApp = () => {
     const [value, setValue] = React.useState(0)
 
     const actArray = []
@@ -29,7 +29,7 @@ const Machining = () => {
             </ul>
             <br /><br />
             <div>
-                <form action="http://127.0.0.1:5000/api/machining" method="POST"
+                <form action="http://127.0.0.1:5000/api/homept2" method="POST"
                     enctype="multipart/form-data">
                     <Choosepage value={value} />
                 </form>
@@ -41,38 +41,40 @@ const Machining = () => {
 
 function Choosepage(props) {
     if (props.value === 0) {
-        return (<SignIn />);
+        return (<SignIn />
+        );
     }
 
     if (props.value === 1) {
-        return (<><DrivetrainDataTable /><SavePage /></>
+        return (<><Drivetrain /><DrivetrainPhotos /> <SavePage /></>
         );
     }
 
+
     if (props.value === 2) {
-        return (<><BumpersDataTable /><SavePage /></>
+        return (<><Bumpers /><BumperPhotos /><SavePage /></>
         );
     }
     if (props.value === 3) {
-        return (<><ElevatorDataTable /><SavePage /></>
+        return (<><Elevator /><ElevatorPhotos /><SavePage /></>
         );
     }
     if (props.value === 4) {
-        return (<><IntakeDataTable /><SavePage /></>
+        return (<><Intake /><IntakePhotos /><SavePage /></>
         );
     }
     if (props.value === 5) {
-        return (<><AuxiliarySystemsDataTable /><SavePage /></>
-        );
+        return (<><AuxiliarySystems /><AuxiliarySystemsPhotos /><SavePage /></>
+        )
     }
     if (props.value === 6) {
-        return (<><ForebarDataTable /><SavePage /></>
+        return (<><Forebar /><ForebarPhotos /><SavePage /></>
         );
     }
     if (props.value === 7) {
-        return (<><ThreeDPrintDataTable /><SavePage /></>
+        return (<><ThreeDPrint /><ThreeDPrintPhotos /><SavePage /></>
         );
     }
 }
 
-export default Machining;
+export default NewPartApp;
