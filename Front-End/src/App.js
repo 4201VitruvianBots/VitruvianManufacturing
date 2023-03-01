@@ -8,8 +8,8 @@ import PrinterStatusDataPage from "./Pages/PrinterAdmin";
 
 import Machining from "./Pages/Machining";
 import NoPage from "./Pages/NoPage";
+import NewPartApp from "./Pages/pt2home";
 export default function App() {
-
 
     return (
         <BrowserRouter>
@@ -19,10 +19,10 @@ export default function App() {
                     <Route path="Printer" element={<PrinterStatusPage />} />
                     <Route path="PrinterStatusDataPage" element={<PrinterStatusDataPage />} />
                     <Route path="Machining" element={<Machining />} />
+                    <Route path="HomePt2" element={<NewPartApp />} />
                     <Route path="*" element={<NoPage />} />
                 </Route>
             </Routes>
         </BrowserRouter>
-
     );
 }
