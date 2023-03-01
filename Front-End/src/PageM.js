@@ -9,7 +9,6 @@ function Page(props) {
         <div className={props.selected ? "page selected" : "page"} id={props.id}>
             {props.children}
         </div>
-
     );
 }
 function NewDate(props) {
@@ -19,7 +18,6 @@ function NewDate(props) {
     );
 };
 
-
 function SignIn(props) {
     return (
         <Page selected={props.selected} className="page" id="sign-in">
@@ -27,9 +25,7 @@ function SignIn(props) {
                 {/* <h3>Sign in</h3>
                 {/* <label htmlFor="username">Your username</label> */}
                 {/* <br></br>
-
                 <input type="text" placeholder="Enter Username" name="username" required></input>
-
                 <input type="password" placeholder="Enter Password" name="pswrd" required /> */}
                 {/* <label for="username">Username:</label> */}
                 {/* <input type="text" id="username" name="username"/> */}
@@ -43,7 +39,6 @@ function SignIn(props) {
                 <br></br>
                 <input type="submit" value="Submit" />
                 {/* <body class="light">     */}
-
                 {/* </body> */}
             </div>
         </Page>
@@ -78,7 +73,6 @@ function DrivetrainDataTable(props) {
             < Page selected={props.selected} id="DrivetrainDataTable" >
                 <div>
                     <br></br>
-
                     <p className="selection-label" id="Drive-Train-Data-Table">Drivetrain Data Tables</p>
                     <div className="textArea">
                         <table border="1" width="100%">
@@ -166,7 +160,6 @@ function BumpersDataTable(props) {
                                     <th>Number Of Parts</th>
                                     <th>Size Of Part</th>
                                     <th>Type Of Stock</th>
-
                                     <th> Thickness (Extrusion)</th>
                                     <th> Thickness (Plate)</th>
                                     <th> Material (Plate)</th>
@@ -204,6 +197,7 @@ function BumpersDataTable(props) {
                                 }
                             </tbody>
                         </table>
+     
 
                     </div>
                 </div>
@@ -241,12 +235,10 @@ function ElevatorDataTable(props) {
         fetchData();
     }, []);
     if (isLoaded) {
-
         return (
             <Page selected={props.selected} id="ElevatorDataTable">
                 <div>
                     <br></br>
-
                     <p className="selection-label" id="Elevator-Data-Table">Elevator Data Tables</p>
                     <div className="textArea">
                         <table border="1" width="100%">
@@ -326,7 +318,6 @@ function IntakeDataTable(props) {
                 console.log("error", error);
             }
         };
-
         fetchData();
     }, []);
     if (isLoaded) {
@@ -412,7 +403,6 @@ function AuxiliarySystemsDataTable(props) {
                 console.log("error", error);
             }
         };
-
         fetchData();
     }, []);
     if (isLoaded) {
@@ -487,7 +477,6 @@ function ForebarDataTable(props) {
                 console.log("error", error);
             }
         };
-
         fetchData();
     }, []);
     if (isLoaded) {
@@ -605,7 +594,9 @@ function ThreeDPrintDataTable(props) {
                                 }
                             </tbody>
                         </table>
-                    </div>
+                    </div>            
+
+                    
                 </div>
             </Page >
         )

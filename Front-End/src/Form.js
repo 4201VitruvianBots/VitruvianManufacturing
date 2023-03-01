@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 
-// Radio Buttons
 function RadioButtons(props) {
     let output = [];
     for (let item in props.items) {
@@ -14,8 +13,6 @@ function RadioButtons(props) {
     }
     return output;
 }
-
-// Number input
 class NumberInput extends React.Component {
     constructor(props) {
         super(props);
@@ -25,24 +22,19 @@ class NumberInput extends React.Component {
         this.increaseValue = this.increaseValue.bind(this);
         this.decreaseValue = this.decreaseValue.bind(this);
     }
-
     setValue(value) {
         this.setState({ value: Math.abs(parseInt(value)) });
     }
-
     handleChange(event) {
         this.setValue(event.target.value);
     }
-
     increaseValue() {
         this.setState({ value: this.state.value + 1 });
     }
-
     decreaseValue() {
         if (this.state.value > 0)
             this.setState({ value: this.state.value - 1 });
     }
-
     render() {
         return (
             <div>
@@ -54,8 +46,6 @@ class NumberInput extends React.Component {
                     <input type="button" className="chonk" value="+" onClick={this.increaseValue} />
                 </div>
             </div>
-
-
         );
     }
 }
