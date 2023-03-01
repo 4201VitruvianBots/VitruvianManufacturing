@@ -681,64 +681,79 @@ a {
 }
 
 p#DriveTrain.section-label {
-  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-  /* font-family: 'Courier New', Courier, monospace; */
-  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-  /* font-family: 'Times New Roman', Times, serif; */
-  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-  /* font-family: Arial, Helvetica, sans-serif; */
-  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-  /* font-family: Georgia, 'Times New Roman', Times, serif; */
-  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-  /* font-family: cursive; */
-  /* font-family: fantasy; */
-  /* font-family: monospace; */
-  /* font-family: sans-serif; */
-  /* font-family: serif; */
-  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-  /* font-size: 300%; */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 300%;
 }
 
 input#Mechanism.text-input {
   font-size: 100%;
-  /* font-family: cursive; */
-  /* width: 200px; */
+  font-family: 'Courier New', Courier, monospace;
 }
 
 select#SizeOfPart.form-control {
   width: 250px;
+  font-family: 'Courier New', Courier, monospace;
+
 }
 
 select#TypeOfPart.form-control {
   width: 250px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 select#Thickness(Extrusion).form-control {
   width: 250px;
+  font-family: 'Courier New', Courier, monospace;
+
 }
 
 select#Thickness(Plate).form-control {
   width: 250px;
+  font-family: 'Courier New', Courier, monospace;
+
 }
 
 select#Material(Plate).form-control {
   width: 250px;
+  font-family: 'Courier New', Courier, monospace;
+
+
+}
+
+input#LengthInInches.text-input {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+input#PartNumber.text-input {
+  font-family: 'Courier New', Courier, monospace;
 }
 
 strong {
   font-size: 180%;
+  font-family: 'Courier New', Courier, monospace;
+
 }
 
 h4 {
-  font-size: 30px;
+  font-size: 28.8px;
+  font-family: 'Courier New', Courier, monospace;
+
 }
 
-input#file-upload-button {}
+input {
+  font-family: 'Courier New', Courier, monospace;
 
-input {}
+}
+
+input#file-upload-button {
+  font-family: 'Courier New', Courier, monospace;
+  width: auto;
+}
+
+input#avatar {
+  font-family: 'Courier New', Courier, monospace;
+
+}
 
 a {}
 
@@ -746,28 +761,68 @@ button.btn {}
 
 li {}
 
-p#Drive-Train-Photos.section-label {}
+p#Drive-Train-Photos.section-label {
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
 
-p#Save.section-label {}
+}
 
-p#Bumpers.section-label {}
+p#Save.section-label {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
 
-p#Bumper-Photos.section-label {}
+p#Bumpers.section-label {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
 
-p#Elevator.section-label {}
+p#Bumper-Photos.section-label {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
 
-p#ElevatorsPhotos.section-label {}
+p#Elevator.section-label {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
 
-p#Intake.section-label {}
+p#ElevatorsPhotos.section-label {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
 
-p#Intake-Photos.section-label {}
+p#Intake.section-label {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
 
-p#AuxiliarySystems.section-label {}
+p#Intake-Photos.section-label {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
 
-p#AuxiliarySystems-Photos.section-label {}
+p#AuxiliarySystems.section-label {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
 
-p#Forebar.section-label {}
+p#AuxiliarySystems-Photos.section-label {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
 
-p#Forebar-Photos.section-label {}
+p#Forebar.section-label {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
 
-p#ThreeDPrint.section-label {}
+p#Forebar-Photos.section-label {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
+
+p#ThreeDPrint.section-label {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
