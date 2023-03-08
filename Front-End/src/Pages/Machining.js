@@ -1,7 +1,6 @@
 import React from 'react';
 import { AuxiliarySystemsDataTable, BumpersDataTable, DrivetrainDataTable, ElevatorDataTable, ForebarDataTable, IntakeDataTable, SavePage, SignIn, ThreeDPrintDataTable } from '../PageM';
-import "./app.css";
-
+import "./Machiningg.css"
 const Machining = () => {
     const [value, setValue] = React.useState(0)
 

@@ -1,4 +1,3 @@
-import "./app.css";
 import React from 'react';
 import { PrinterStatusDataTable } from '../PageP';
 import { SavePage, SignIn } from '../Pages';

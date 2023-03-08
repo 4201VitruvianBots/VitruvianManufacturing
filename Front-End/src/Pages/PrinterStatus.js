@@ -1,4 +1,5 @@
 import React from 'react';
+import "./PrinterStatuss.css"
 import { PrinterStatus } from '../Print';
 import { SavePage, SignIn } from '../Pages';
 

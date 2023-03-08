@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./Pages/App.css";
 
 // Radio Buttons
 function RadioButtons(props) {
