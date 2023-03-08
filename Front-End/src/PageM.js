@@ -167,18 +167,7 @@ function BumpersDataTable(props) {
                                     <th>  Part Number</th>
                                     <th> Date</th>
                                 </tr>
-                                <tr>
-                                    <td>{advice[0][0]}</td>
-                                    <td>{advice[0][1]}</td>
-                                    <td>{advice[0][2]}</td>
-                                    <td>{advice[0][3]}</td>
-                                    <td>{advice[0][4]}</td>
-                                    <td>{advice[0][5]}</td>
-                                    <td>{advice[0][6]}</td>
-                                    <td>{advice[0][7]}</td>
-                                    <td>{advice[0][8]}</td>
-                                    <td>{advice[0][9]}</td>
-                                </tr>
+                                
                                 {
                                     advice.map(row => (
                                         <tr>
@@ -256,18 +245,7 @@ function ElevatorDataTable(props) {
                                     <th>  Part Number</th>
                                     <th> Date</th>
                                 </tr>
-                                <tr>
-                                    <td>{advice[0][0]}</td>
-                                    <td>{advice[0][1]}</td>
-                                    <td>{advice[0][2]}</td>
-                                    <td>{advice[0][3]}</td>
-                                    <td>{advice[0][4]}</td>
-                                    <td>{advice[0][5]}</td>
-                                    <td>{advice[0][6]}</td>
-                                    <td>{advice[0][7]}</td>
-                                    <td>{advice[0][8]}</td>
-                                    <td>{advice[0][9]}</td>
-                                </tr>
+                          
                                 {
                                     advice.map(row => (
                                         <tr>
@@ -343,18 +321,7 @@ function IntakeDataTable(props) {
                                     <th>  Part Number</th>
                                     <th> Date</th>
                                 </tr>
-                                <tr>
-                                    <td>{advice[0][0]}</td>
-                                    <td>{advice[0][1]}</td>
-                                    <td>{advice[0][2]}</td>
-                                    <td>{advice[0][3]}</td>
-                                    <td>{advice[0][4]}</td>
-                                    <td>{advice[0][5]}</td>
-                                    <td>{advice[0][6]}</td>
-                                    <td>{advice[0][7]}</td>
-                                    <td>{advice[0][8]}</td>
-                                    <td>{advice[0][9]}</td>
-                                </tr>
+                            
                                 {
                                     advice.map(row => (
                                         <tr>
