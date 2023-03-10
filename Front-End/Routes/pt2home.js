@@ -1,6 +1,6 @@
 import React from 'react';
 import { AuxiliarySystems, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, Drivetrain, DrivetrainPhotos, Elevator, ElevatorPhotos, Forebar, ForebarPhotos, Intake, IntakePhotos, SavePage, SignIn, ThreeDPrint, ThreeDPrintPhotos } from '../NewPartApp';
-import "../CSS/ApPP.css";
+import "../CSS/app.css";
 
 const NewPartApp = () => {
     const [value, setValue] = React.useState(0)
