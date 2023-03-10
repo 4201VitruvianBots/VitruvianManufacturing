@@ -1,6 +1,5 @@
-import "./App.css";
+import "../CSS/ApPP.css";
 import React, { useState, useEffect } from "react";
-
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -167,7 +166,7 @@ function BumpersDataTable(props) {
                                     <th>  Part Number</th>
                                     <th> Date</th>
                                 </tr>
-                                
+
                                 {
                                     advice.map(row => (
                                         <tr>
@@ -186,7 +185,7 @@ function BumpersDataTable(props) {
                                 }
                             </tbody>
                         </table>
-     
+
 
                     </div>
                 </div>
@@ -245,7 +244,7 @@ function ElevatorDataTable(props) {
                                     <th>  Part Number</th>
                                     <th> Date</th>
                                 </tr>
-                          
+
                                 {
                                     advice.map(row => (
                                         <tr>
@@ -320,7 +319,7 @@ function IntakeDataTable(props) {
                                     <th>  Part Number</th>
                                     <th> Date</th>
                                 </tr>
-                            
+
                                 {
                                     advice.map(row => (
                                         <tr>
@@ -496,7 +495,7 @@ function ForebarDataTable(props) {
 
             <div>Loading....</div>
         )
-        }
+    }
 }
 function ThreeDPrintDataTable(props) {
     const [advice, setAdvice] = useState("");
@@ -559,8 +558,8 @@ function ThreeDPrintDataTable(props) {
                                 }
                             </tbody>
                         </table>
-                    </div>            
-                   
+                    </div>
+
                 </div>
             </Page >
         )

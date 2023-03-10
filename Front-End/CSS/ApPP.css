@@ -42,6 +42,7 @@
  }
 
  .dropdown {
+
    border-color: #085f00;
    border-width: 50px;
  }
@@ -622,6 +623,6 @@
    color: white;
  }
 
- .a{
-  color: fuchsia;
-}
+ .a {
+   color: fuchsia;
+ }
