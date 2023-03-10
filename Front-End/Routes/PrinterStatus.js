@@ -1,4 +1,6 @@
 import React from 'react';
+import "../CSS/ApPP.css";
+
 import { PrinterStatus } from '../Print';
 import { SavePage, SignIn } from '../Pages';
 

@@ -1,4 +1,4 @@
-import './App.css';
+import ".../CSS/ApPP.css";
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Pages/Layout";
