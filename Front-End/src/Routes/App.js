@@ -6,8 +6,8 @@ import Parts from "./Parts";
 import PrinterStatusPage from "./PrinterStatus";
 import PrinterStatusDataPage from "./PrinterAdmin";
 
-import Machining from "../Routes/Machining";
-import NoPage from "../PagesInAppCode/NoPage";
+import Machining from "./Machining";
+import NoPage from "./NoPage";
 import NewPartApp from "./pt2home";
 export default function App() {
 
