@@ -1,7 +1,9 @@
 import "./App.css";
 import React, { useState } from "react";
+import { RadioButtons } from "./Form";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+
 function Page(props) {
     return (
         <div className={props.selected ? "page selected" : "page"} id={props.id}>
@@ -32,6 +34,7 @@ function SignIn(props) {
                 {/* <label for="username">Username:</label> */}
                 {/* <input type="text" id="username" name="username"/> */}
                 <h1>Sign in</h1>
+                <br></br>
                 <label htmlFor="email">Email: </label>
                 <input type="email" id="email" name="email" required="required" />
                 <br></br>
@@ -131,19 +134,29 @@ function Drivetrain(props) {
                         <option value="PLA">PLA</option>
                         <option value="ONYX">ONYX</option>
                     </select>
+                    <label className="Priority" name="drivetrain_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
+                    <select name="drivetrain_Priority" id="Priority" defaultValue="" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here! </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5 ">5</option>
+                        <option value="Whenever">Whenever</option>
+                    </select>
                     <br></br>
 
                     <input type="text" id="LengthInInches" name="drivetrain_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
                     <br></br>
                     <input type="text" id="PartNumber" name="drivetrain_PartNumber" placeholder="Part Number" className="text-input" required="required" />
                     <br></br>
-                    {/* <input type="radio" id="Low" name="Low" value="HTML" />
-                    <label for="html">Low</label>
-                    <input type="radio" id="Mid" name="Mid" value="Mid" />
-                    <label for="Mid">Mid</label> */}
+                   
 
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="drivetrain_cal" />
+                    <br></br>
+                    {/* <h1>Priority</h1>
+                    <RadioButtons items={['1', '2', '3', '4', '5']} id="Drivetrain_Priority" /> */}
                 </div>
 
             </div>
@@ -173,7 +186,6 @@ function Bumpers(props) {
                 <p className="section-label" id="Bumpers">Bumpers</p>
                 <div className="textArea">
                     <input type="text" id="Mechanism" name="bumpers_Mechanism" placeholder="Mechanism" className="text-input" required="required" />
-
                     <br></br>
                     <input type="text" id="NumberOfParts" name="bumpers_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" required="required" />
                     <br></br>
@@ -229,9 +241,19 @@ function Bumpers(props) {
                     <br></br>
                     <input type="text" id="PartNumber" name="bumpers_PartNumber" placeholder="Part Number" className="text-input" required="required" />
                     <br></br>
-                    <br></br>
+                    <label className="Priority" name="bumpers_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
+                    <select name="bumpers_Priority" id="Priority" defaultValue="" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here! </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5 ">5</option>
+                        <option value="Whenever">Whenever</option>
+                    </select>
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="bumpers_date" />
+                    <br></br>
                 </div>
             </div>
         </Page>
@@ -314,7 +336,16 @@ function Elevator(props) {
                     <br></br>
                     <input type="text" id="PartNumber" name="elevator_PartNumber" placeholder="Part Number" className="text-input" required="required" />
                     <br></br>
-                    <br></br>
+                    <label className="Priority" name="elevator_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
+                    <select name="elevator_Priority" id="Priority" defaultValue="" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here! </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5 ">5</option>
+                        <option value="Whenever">Whenever</option>
+                    </select>
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="elevator_date" />
                 </div>
@@ -400,9 +431,19 @@ function Intake(props) {
                     <br></br>
                     <input type="text" id="PartNumber" name="intake_PartNumber" placeholder="Part Number" className="text-input" required="required" />
                     <br></br>
+                    <label className="Priority" name="intake_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
+                    <select name="intake_Priority" id="Priority" defaultValue="" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here! </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5 ">5</option>
+                        <option value="Whenever">Whenever</option>
+                    </select>
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="intake_date" />
-
+                    <br></br>
                 </div>
             </div>
         </Page>
@@ -485,8 +526,19 @@ function AuxiliarySystems(props) {
                     <br></br>
                     <input type="text" id="PartNumber" name="AuxiliarySystems_PartNumber" placeholder="Part Number" className="text-input" required="required" />
                     <br></br>
+                    <label className="Priority" name="AuxiliarySystems_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
+                    <select name="AuxiliarySystems_Priority" id="Priority" defaultValue="" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here! </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5 ">5</option>
+                        <option value="Whenever">Whenever</option>
+                    </select>
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="AuxiliarySystems_date" />
+                    <br></br>
                 </div>
             </div>
         </Page>
@@ -497,7 +549,6 @@ function AuxiliarySystemsPhotos(props) {
     return (
         <Page selected={props.selected} id="AuxiliarySystems-Photos">
             <div>
-
                 <p className="section-label" id="AuxiliarySystems-Photos">Auxiliary Systems Photos</p>
                 <div className="textArea">
                     <input type="file" required="required" multiple
@@ -570,8 +621,19 @@ function Forebar(props) {
                     <br></br>
                     <input type="text" id="PartNumber" name="Forebar_PartNumber" placeholder="Part Number" className="text-input" required="required" />
                     <br></br>
+                    <label className="Priority" name="forebar_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
+                    <select name="forebar_Priority" id="Priority" defaultValue="" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here! </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5 ">5</option>
+                        <option value="Whenever">Whenever</option>
+                    </select>
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="Forebar_date" />
+                    <br></br>
                 </div>
             </div>
         </Page>
@@ -657,8 +719,19 @@ function ThreeDPrint(props) {
                     <br></br>
                     <input type="text" id="PartNumber" name="ThreeDPrint_PartNumber" placeholder="Part Number" className="text-input" required />
                     <br></br>
+                    <label className="Priority" name="ThreeDPrint_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
+                    <select name="ThreeDPrint_Priority" id="Priority" defaultValue="" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here! </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5 ">5</option>
+                        <option value="Whenever">Whenever</option>
+                    </select>
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="ThreeDPrint_date" />
+                    <br></br>
 
                 </div>
             </div>
@@ -691,4 +764,4 @@ function SavePage(props) {
         </Page>
     );
 }
-export { SignIn, Drivetrain, PartHub, SavePage, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos, Forebar, ForebarPhotos, NewDate, ThreeDPrint, ThreeDPrintPhotos };
+export { SignIn, Drivetrain, PartHub, SavePage, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos, Forebar, ForebarPhotos, NewDate, ThreeDPrint, ThreeDPrintPhotos, RadioButtons };
