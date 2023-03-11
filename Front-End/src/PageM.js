@@ -274,7 +274,6 @@ function ElevatorDataTable(props) {
 
             <div>Loading....</div>
         )
-
     }
 }
 
@@ -497,8 +496,7 @@ function ForebarDataTable(props) {
 
             <div>Loading....</div>
         )
-
-    }
+        }
 }
 function ThreeDPrintDataTable(props) {
     const [advice, setAdvice] = useState("");
@@ -562,8 +560,7 @@ function ThreeDPrintDataTable(props) {
                             </tbody>
                         </table>
                     </div>            
-
-                    
+                   
                 </div>
             </Page >
         )

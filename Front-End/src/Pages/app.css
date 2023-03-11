@@ -80,21 +80,23 @@ ul {
 
 /* .textArea {
   background-color: #ecf2eb;
-  min-width: 300px;
+  min-width: 600px;
   min-height: 100px;
-  padding: 25px;
-  margin: 20px;
-} */
+  min: length 100%;
+  padding: 100px;
+  margin: 200px;
+}
+
 
 body {
   margin: 0;
   /* font-family: monospace; */
-  font-weight: 100;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: var(--bg-color);
-  /* color: var(--accent-1); */
-}
+/* font-weight: 100; */
+/* -webkit-font-smoothing: antialiased; */
+/* -moz-osx-font-smoothing: grayscale; */
+/* background-color: var(--bg-color); */
+/* color: var(--accent-1); */
+
 
 input[type="button"] {
   border-color: var(--accent-3);
@@ -617,6 +619,6 @@ h4 {
   color: white;
 }
 
-a{
+a {
   color: fuchsia;
 }

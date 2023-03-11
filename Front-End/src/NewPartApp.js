@@ -7,6 +7,7 @@ function Page(props) {
         <div className={props.selected ? "page selected" : "page"} id={props.id}>
             {props.children}
         </div>
+
     );
 }
 function NewDate(props) {
@@ -92,6 +93,7 @@ function Drivetrain(props) {
                         <option value="L-Bracket ">L-Bracket</option>
                         <option value="Shaft">Shaft</option>
                         <option value="Nothing">Nothing</option>
+
                     </select>
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
@@ -130,7 +132,7 @@ function Drivetrain(props) {
                         <option value="Wood">Wood</option>
                         <option value="PETG">PETG</option>
                         <option value="PLA">PLA</option>
-                        <option value="ONYX">ONYX</option>
+                        <option value="ONYX">ONYX</option>             
                         <option value="Nothing">Nothing</option>
                     </select>
                     <br></br>
@@ -193,7 +195,7 @@ function Bumpers(props) {
                         <option value="Shaft">Shaft</option>
                         <option value="3D-Print">3D-Print</option>
                         <option value="Nothing">Nothing</option>
-                    </select>
+                        </select>
                     <br></br>
                     <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
                     <select name="bumpers_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="" className="form-control" required >
@@ -269,6 +271,7 @@ function Elevator(props) {
                         <option value="2x2">2x2</option>
                         <option value="L-Bracket ">L-Bracket</option>
                         <option value="Shaft">Shaft</option>
+
                         <option value="Nothing">Nothing</option>
                     </select>
                     <br></br>
@@ -287,6 +290,7 @@ function Elevator(props) {
                         <option value="" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
+
                         <option value="Nothing">Nothing</option>
                     </select>
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
@@ -298,6 +302,7 @@ function Elevator(props) {
                         <option value="1/4">1/4</option>
                         <option value="3/8">3/8</option>
                         <option value="3/4">3/4</option>
+
                         <option value="Nothing">Nothing</option>
                     </select>
                     <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
@@ -309,6 +314,7 @@ function Elevator(props) {
                         <option value="PETG">PETG</option>
                         <option value="PLA">PLA</option>
                         <option value="ONYX">ONYX</option>
+
                         <option value="Nothing">Nothing</option>
                     </select>
                     <br></br>
@@ -356,6 +362,7 @@ function Intake(props) {
                         <option value="2x2">2x2</option>
                         <option value="L-Bracket ">L-Bracket</option>
                         <option value="Shaft">Shaft</option>
+
                         <option value="Nothing">Nothing</option>
                     </select>
                     <br></br>
@@ -374,6 +381,7 @@ function Intake(props) {
                         <option value="" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
+
                         <option value="Nothing">Nothing</option>
                     </select>
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
@@ -396,6 +404,7 @@ function Intake(props) {
                         <option value="PETG">PETG</option>
                         <option value="PLA">PLA</option>
                         <option value="ONYX">ONYX</option>
+
                         <option value="Nothing">Nothing</option>
                     </select>
                     <br></br>
@@ -460,6 +469,7 @@ function AuxiliarySystems(props) {
                         <option value="" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
+
                         <option value="Nothing">Nothing</option>
                     </select>
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
@@ -482,6 +492,7 @@ function AuxiliarySystems(props) {
                         <option value="PETG">PETG</option>
                         <option value="PLA">PLA</option>
                         <option value="ONYX">ONYX</option>
+
                         <option value="Nothing">Nothing</option>
                     </select>
                     <br></br>
@@ -625,6 +636,7 @@ function ThreeDPrint(props) {
                         <option value="Plate">Plate</option>
                         <option value="Hex Shaft">Hex Shaft</option>
                         <option value="Shaft">Shaft</option>
+
                         <option value="Nothing">Nothing</option>
                     </select>
                     <br></br>
@@ -633,6 +645,7 @@ function ThreeDPrint(props) {
                         <option value="" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
+
                         <option value="Nothing">Nothing</option>
                     </select>
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
