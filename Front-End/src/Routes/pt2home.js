@@ -1,6 +1,6 @@
 import React from 'react';
-import { AuxiliarySystems, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, Drivetrain, DrivetrainPhotos, Elevator, ElevatorPhotos, Forebar, ForebarPhotos, Intake, IntakePhotos, SavePage, SignIn, ThreeDPrint, ThreeDPrintPhotos } from '../PagesInApp/NewPartApp';
-import "./CSS/app.css";
+import { AuxiliarySystems, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, Drivetrain, DrivetrainPhotos, Elevator, ElevatorPhotos, Forebar, ForebarPhotos, Intake, IntakePhotos, SavePage, SignIn, ThreeDPrint, ThreeDPrintPhotos } from '../PagesInAppCode/NewPartApp';
+import "../CSS/app.css";
 
 const NewPartApp = () => {
     const [value, setValue] = React.useState(0)

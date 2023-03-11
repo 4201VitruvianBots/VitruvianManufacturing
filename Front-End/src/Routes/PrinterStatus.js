@@ -1,8 +1,8 @@
 import React from 'react';
 import "../CSS/ApPP.css";
 
-import { PrinterStatus } from '../Print';
-import { SavePage, SignIn } from '../Pages';
+import { PrinterStatus } from '../PagesInAppCode/Print';
+import { SavePage, SignIn } from '../PagesInAppCode/Pages';
 
 function PrinterStatusPage() {
     const [value, setValue] = React.useState(0)

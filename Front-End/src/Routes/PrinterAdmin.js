@@ -1,7 +1,7 @@
 import "../CSS/ApPP.css";
 import React from 'react';
-import { PrinterStatusDataTable } from '../PageP';
-import { SavePage, SignIn } from '../Pages';
+import { PrinterStatusDataTable } from '../PagesInAppCode/PageP';
+import { SavePage, SignIn } from '../PagesInAppCode/Pages';
 
 function PrinterStatusDataPage() {
     const [value, setValue] = React.useState(0)

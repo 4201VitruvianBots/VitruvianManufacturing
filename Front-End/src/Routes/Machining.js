@@ -1,6 +1,6 @@
 import React from 'react';
-import { AuxiliarySystemsDataTable, BumpersDataTable, DrivetrainDataTable, ElevatorDataTable, ForebarDataTable, IntakeDataTable, SavePage, SignIn, ThreeDPrintDataTable } from '../PageM';
-import ".../CSS/ApPP.css";
+import { AuxiliarySystemsDataTable, BumpersDataTable, DrivetrainDataTable, ElevatorDataTable, ForebarDataTable, IntakeDataTable, SavePage, SignIn, ThreeDPrintDataTable } from '../PagesInAppCode/PageM';
+import "../CSS/ApPP.css";
 
 const Machining = () => {
     const [value, setValue] = React.useState(0)

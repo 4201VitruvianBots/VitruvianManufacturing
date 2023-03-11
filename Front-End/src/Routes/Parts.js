@@ -1,7 +1,7 @@
 import React from 'react';
 import "../CSS/ApPP.css";
 
-import { AuxiliarySystems, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, Drivetrain, DrivetrainPhotos, Elevator, ElevatorPhotos, Forebar, ForebarPhotos, Intake, IntakePhotos, SavePage, SignIn, ThreeDPrint, ThreeDPrintPhotos } from '../Pages';
+import { AuxiliarySystems, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, Drivetrain, DrivetrainPhotos, Elevator, ElevatorPhotos, Forebar, ForebarPhotos, Intake, IntakePhotos, SavePage, SignIn, ThreeDPrint, ThreeDPrintPhotos } from '../PagesInAppCode/Pages';
 
 function App() {
     const [value, setValue] = React.useState(0)
