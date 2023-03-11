@@ -1,14 +1,14 @@
-import ".../CSS/ApPP.css";
+// import ".../CSS/ApPP.css";
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./Pages/Layout";
-import Parts from "./Pages/Parts";
-import PrinterStatusPage from "./Pages/PrinterStatus";
-import PrinterStatusDataPage from "./Pages/PrinterAdmin";
+import Layout from "./Layout";
+import Parts from "./Parts";
+import PrinterStatusPage from "./PrinterStatus";
+import PrinterStatusDataPage from "./PrinterAdmin";
 
-import Machining from "./Pages/Machining";
-import NoPage from "./Pages/NoPage";
-import NewPartApp from "./Pages/pt2home";
+import Machining from "../Routes/Machining";
+import NoPage from "../PagesInAppCode/NoPage";
+import NewPartApp from "./pt2home";
 export default function App() {
 
     return (
