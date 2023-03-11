@@ -53,7 +53,7 @@ function DrivetrainDataTable(props) {
                 <br></br>
                 <p className="selection-label" id="Drive-Train-Data-Table">Drivetrain Data Tables</p>
                 <div className="textArea">
-                    <table border="1" width="100%">
+                    <table border="" width="200%">
                         <tr>
                             <th>Mechanism</th>
                             <th>Number Of Parts</th>
@@ -157,7 +157,7 @@ function DrivetrainDataTable(props) {
 
                 </div>
             </div>
-        </Page>
+        </Page >
     )
 }
 
@@ -169,7 +169,7 @@ function BumpersDataTable(props) {
 
                 <p className="selection-label" id="Bumpers-Data-Table">Bumpers Data Tables</p>
                 <div className="textArea">
-                    <table border="1" width="100%">
+                    <table border="1" width="200%">
                         <tr>
                             <th>Mechanism</th>
                             <th>Number Of Parts</th>
@@ -287,7 +287,7 @@ function ElevatorDataTable(props) {
 
                 <p className="selection-label" id="Elevator-Data-Table">Elevator Data Tables</p>
                 <div className="textArea">
-                    <table border="1" width="100%">
+                    <table border="1" width="200%">
                         <tr>
                             <th>Mechanism</th>
                             <th>Number Of Parts</th>
@@ -404,7 +404,7 @@ function IntakeDataTable(props) {
 
                 <p className="selection-label" id="Intake-Data-Table">Intake Data Tables</p>
                 <div className="textArea">
-                    <table border="1" width="100%">
+                    <table border="1" width="200%">
                         <tr>
                             <th>Mechanism</th>
                             <th>Number Of Parts</th>
@@ -520,7 +520,7 @@ function AuxiliarySystemsDataTable(props) {
 
                 <p className="selection-label" id="Auxiliary-Systems-Data-Table">Auxiliary Systems Data Tables</p>
                 <div className="textArea">
-                    <table border="1" width="100%">
+                    <table border="1" width="200%">
                         <tr>
                             <th>Mechanism</th>
                             <th>Number Of Parts</th>
@@ -622,7 +622,6 @@ function AuxiliarySystemsDataTable(props) {
                             <td>Hello</td>
                         </tr>
                     </table>
-
                 </div>
             </div>
         </Page>
@@ -634,10 +633,9 @@ function ForebarDataTable(props) {
         <Page selected={props.selected} id="ForebarDataTable">
             <div>
                 <br></br>
-
                 <p className="selection-label" id="Forebar-Data-Table">Forebar Data Tables</p>
                 <div className="textArea">
-                    <table border="1" width="100%">
+                    <table border="1" width="200%">
                         <tr>
                             <th>Mechanism</th>
                             <th>Number Of Parts</th>
@@ -732,7 +730,7 @@ function ThreeDPrintDataTable(props) {
 
                 <p className="selection-label" id="Three-D-Print-Data-Table">3D Print Data Tables</p>
                 <div className="textArea">
-                    <table border="1" width="100%">
+                    <table border="1" width="200%">
                         <tr>
                             <th>Mechanism</th>
                             <th>Number Of Parts</th>
