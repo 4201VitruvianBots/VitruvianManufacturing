@@ -24,15 +24,7 @@ function SignIn(props) {
     return (
         <Page selected={props.selected} className="page" id="sign-in">
             <div className="textArea">
-                {/* <h3>Sign in</h3>
-                {/* <label htmlFor="username">Your username</label> */}
-                {/* <br></br>
-
-                <input type="text" placeholder="Enter Username" name="username" required></input>
-
-                <input type="password" placeholder="Enter Password" name="pswrd" required /> */}
-                {/* <label for="username">Username:</label> */}
-                {/* <input type="text" id="username" name="username"/> */}
+            
                 <h1>Sign in</h1>
                 <br></br>
                 <label htmlFor="email">Email: </label>
