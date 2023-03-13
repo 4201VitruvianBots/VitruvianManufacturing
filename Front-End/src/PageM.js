@@ -1,6 +1,5 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
-
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -17,33 +16,6 @@ function NewDate(props) {
         <DatePicker name={props.name} selected={startDate} onChange={(date) => setStartDate(date)} />
     );
 };
-
-function SignIn(props) {
-    return (
-        <Page selected={props.selected} className="page" id="sign-in">
-            <div className="textArea">
-                {/* <h3>Sign in</h3>
-                {/* <label htmlFor="username">Your username</label> */}
-                {/* <br></br>
-                <input type="text" placeholder="Enter Username" name="username" required></input>
-                <input type="password" placeholder="Enter Password" name="pswrd" required /> */}
-                {/* <label for="username">Username:</label> */}
-                {/* <input type="text" id="username" name="username"/> */}
-                <h1>Sign in</h1>
-                <label htmlFor="email">Email: </label>
-                <input type="email" id="email" name="email" required="required" />
-                <br></br>
-                <br></br>
-                {/* <label for="pwd">Password:</label>
-                <input type="password" id="pwd" name="pwd"></input> */}
-                <br></br>
-                <input type="submit" value="Submit" />
-                {/* <body class="light">     */}
-                {/* </body> */}
-            </div>
-        </Page>
-    );
-}
 
 
 
@@ -65,7 +37,6 @@ function DrivetrainDataTable(props) {
                 console.log("error", error);
             }
         };
-
         fetchData();
     }, []);
     if (isLoaded) {
@@ -106,9 +77,7 @@ function DrivetrainDataTable(props) {
                                     ))
                                 }
                             </tbody>
-
                         </table>
-
                     </div>
                 </div>
             </Page >
@@ -116,13 +85,11 @@ function DrivetrainDataTable(props) {
     }
     else {
         return (
-
             <div>Loading....</div>
         )
 
     }
 }
-
 
 function BumpersDataTable(props) {
     const [advice, setAdvice] = useState("");
@@ -150,7 +117,6 @@ function BumpersDataTable(props) {
             <Page selected={props.selected} id="BumpersDataTable">
                 <div>
                     <br></br>
-
                     <p className="selection-label" id="Bumpers-Data-Table">Bumpers Data Tables</p>
                     <div className="textArea">
                         <table border="1" width="100%">
@@ -167,7 +133,6 @@ function BumpersDataTable(props) {
                                     <th>  Part Number</th>
                                     <th> Date</th>
                                 </tr>
-                                
                                 {
                                     advice.map(row => (
                                         <tr>
@@ -195,18 +160,14 @@ function BumpersDataTable(props) {
     }
     else {
         return (
-
             <div>Loading....</div>
         )
-
     }
 }
-
 
 function ElevatorDataTable(props) {
     const [advice, setAdvice] = useState("");
     const [isLoaded, setIsLoaded] = useState(false);
-
     useEffect(() => {
         const url = "http://127.0.0.1:5000/api/elevator";
         const fetchData = async () => {
@@ -220,7 +181,6 @@ function ElevatorDataTable(props) {
                 console.log("error", error);
             }
         };
-
         fetchData();
     }, []);
     if (isLoaded) {
@@ -245,7 +205,6 @@ function ElevatorDataTable(props) {
                                     <th>  Part Number</th>
                                     <th> Date</th>
                                 </tr>
-                          
                                 {
                                     advice.map(row => (
                                         <tr>
@@ -271,7 +230,6 @@ function ElevatorDataTable(props) {
     }
     else {
         return (
-
             <div>Loading....</div>
         )
     }
@@ -280,7 +238,6 @@ function ElevatorDataTable(props) {
 function IntakeDataTable(props) {
     const [advice, setAdvice] = useState("");
     const [isLoaded, setIsLoaded] = useState(false);
-
     useEffect(() => {
         const url = "http://127.0.0.1:5000/api/intake";
 
@@ -302,7 +259,6 @@ function IntakeDataTable(props) {
             <Page selected={props.selected} id="IntakeDataTable">
                 <div>
                     <br></br>
-
                     <p className="selection-label" id="Intake-Data-Table">Intake Data Tables</p>
                     <div className="textArea">
                         <table border="1" width="100%">
@@ -312,7 +268,6 @@ function IntakeDataTable(props) {
                                     <th>Number Of Parts</th>
                                     <th>Size Of Part</th>
                                     <th>Type Of Stock</th>
-
                                     <th> Thickness (Extrusion)</th>
                                     <th> Thickness (Plate)</th>
                                     <th> Material (Plate)</th>
@@ -320,7 +275,6 @@ function IntakeDataTable(props) {
                                     <th>  Part Number</th>
                                     <th> Date</th>
                                 </tr>
-                            
                                 {
                                     advice.map(row => (
                                         <tr>
@@ -346,7 +300,6 @@ function IntakeDataTable(props) {
     }
     else {
         return (
-
             <div>Loading....</div>
         )
 
@@ -355,7 +308,6 @@ function IntakeDataTable(props) {
 function AuxiliarySystemsDataTable(props) {
     const [advice, setAdvice] = useState("");
     const [isLoaded, setIsLoaded] = useState(false);
-
     useEffect(() => {
         const url = "http://127.0.0.1:5000/api/auxiliary-systems";
         const fetchData = async () => {
@@ -376,7 +328,6 @@ function AuxiliarySystemsDataTable(props) {
             <Page selected={props.selected} id="AuxiliarySystemsDataTable">
                 <div>
                     <br></br>
-
                     <p className="selection-label" id="Auxiliary-Systems-Data-Table">Auxiliary Systems Data Tables</p>
                     <div className="textArea">
                         <table border="1" width="100%">
@@ -386,7 +337,6 @@ function AuxiliarySystemsDataTable(props) {
                                     <th>Number Of Parts</th>
                                     <th>Size Of Part</th>
                                     <th>Type Of Stock</th>
-
                                     <th> Thickness (Extrusion)</th>
                                     <th> Thickness (Plate)</th>
                                     <th> Material (Plate)</th>
@@ -419,7 +369,6 @@ function AuxiliarySystemsDataTable(props) {
     }
     else {
         return (
-
             <div>Loading....</div>
         )
 
@@ -429,7 +378,6 @@ function AuxiliarySystemsDataTable(props) {
 function ForebarDataTable(props) {
     const [advice, setAdvice] = useState("");
     const [isLoaded, setIsLoaded] = useState(false);
-
     useEffect(() => {
         const url = "http://127.0.0.1:5000/api/forebar";
         const fetchData = async () => {
@@ -446,12 +394,10 @@ function ForebarDataTable(props) {
         fetchData();
     }, []);
     if (isLoaded) {
-
         return (
             <Page selected={props.selected} id="ForebarDataTable">
                 <div>
                     <br></br>
-
                     <p className="selection-label" id="Forebar-Data-Table">Forebar Data Tables</p>
                     <div className="textArea">
                         <table border="1" width="100%">
@@ -493,7 +439,6 @@ function ForebarDataTable(props) {
     }
     else {
         return (
-
             <div>Loading....</div>
         )
         }
@@ -514,16 +459,13 @@ function ThreeDPrintDataTable(props) {
                 console.log("error", error);
             }
         };
-
         fetchData();
     }, []);
     if (isLoaded) {
-
         return (
             <Page selected={props.selected} id="ThreeDPrintDataTable">
                 <div>
                     <br></br>
-
                     <p className="selection-label" id="Three-D-Print-Data-Table">3D Print Data Tables</p>
                     <div className="textArea">
                         <table border="1" width="100%">
@@ -560,14 +502,12 @@ function ThreeDPrintDataTable(props) {
                             </tbody>
                         </table>
                     </div>            
-                   
                 </div>
             </Page >
         )
     }
     else {
         return (
-
             <div>Loading....</div>
         )
 
@@ -583,4 +523,4 @@ function SavePage(props) {
         </Page>
     );
 }
-export { SignIn, ThreeDPrintDataTable, ForebarDataTable, AuxiliarySystemsDataTable, IntakeDataTable, ElevatorDataTable, BumpersDataTable, DrivetrainDataTable, SavePage, NewDate };
+export {  ThreeDPrintDataTable, ForebarDataTable, AuxiliarySystemsDataTable, IntakeDataTable, ElevatorDataTable, BumpersDataTable, DrivetrainDataTable, SavePage, NewDate };
