@@ -25,7 +25,7 @@ def get_data_from_table(table):
     print(rows)
 
 
-# get_data_from_table("`3D Print`")
+get_data_from_table("`3DPrint`")
 
 
 # INSERT INTO partSubmission.Drivetrain
@@ -48,7 +48,7 @@ def insert_drivetrain_data(Mechanism, NumOfPartsNeededToBeMachined, SizeOfPart, 
 
 
 def insert_3D_Print_data(Mechanism, NumberOfPartsNeededToBeMachined, SizeOfPart, TypeofStock, ThicknessExtrusion, ThicknessPlate, MaterialPlate, LengthInInches, PartNumber, Date, Photo):
-    request = f"INSERT INTO partSubmission.`3D Print` (`3DPrint_Mechanism`, `3DPrint_NumberOfPartMachined`, `3DPrint_SizeOfPart`, `3DPrint_TypeOfStock`, `3DPrint_Thickness-Extrusion`, `3DPrint_ThicknessPlate`, `3DPrint_MaterialPlate`, `3DPrint_LengthInInches`, `3DPrint_PartNumber`, `3DPrint_Date`, `3DPrint_Photos`)VALUES('{Mechanism}', '{NumberOfPartsNeededToBeMachined}', '{SizeOfPart}', '{TypeofStock}', '{ThicknessExtrusion}', '{ThicknessPlate}', '{MaterialPlate}', '{LengthInInches}', '{PartNumber}', '{Date}', '{Photo}');"
+    request = f"INSERT INTO partSubmission.`3D Print` (`ThreeDPrint_Mechanism`, `ThreeDPrint_NumberOfParts`, `ThreeDPrint_SizeOfPart`, `ThreeDPrint_TypeOfStock`, `ThreeDPrint_Thickness(Extrusion)`, `3DPrint_ThicknessPlate`, `3DPrint_MaterialPlate`, `3DPrint_LengthInInches`, `3DPrint_PartNumber`, `3DPrint_Date`, `3DPrint_Photos`)VALUES('{Mechanism}', '{NumberOfPartsNeededToBeMachined}', '{SizeOfPart}', '{TypeofStock}', '{ThicknessExtrusion}', '{ThicknessPlate}', '{MaterialPlate}', '{LengthInInches}', '{PartNumber}', '{Date}', '{Photo}');"
     mycursor.execute(request)
     mydb.commit()
     rows = mycursor.fetchall()

@@ -1,6 +1,7 @@
 import mysql.connector
 
 from flask import Flask, request
+from flask_cors import CORS
 from werkzeug.utils import secure_filename
 mydb = mysql.connector.connect(
     host="localhost",
@@ -12,6 +13,14 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 
 app = Flask(__name__)
+CORS(app)
+
+
+def get_data_from_table(table):
+    request = "SELECT * FROM " + table
+    mycursor.execute(request)
+    rows = mycursor.fetchall()
+    return rows
 
 
 def insert_drivetrain_data(Mechanism, NumOfPartsNeededToBeMachined, SizeOfPart, TypeofStock, ThicknessExtrusion, ThicknessPlate, MaterialPlate, LengthInInches, PartNumber, Date, Photo):
@@ -104,6 +113,12 @@ def ElevatorParts():
     return "Hello!"
 
 
+@app.route("/api/elevator", methods=["GET"])
+def getelevatorparts():
+
+    return get_data_from_table("Elevator")
+
+
 @app.route("/api/drivetrain", methods=["POST"])
 def DrivetrainParts():
     print(request.form)
@@ -111,6 +126,12 @@ def DrivetrainParts():
     insert_Drivetrain_data(request.form.get('drivetrain_Mechanism'),
                            request.form.get('drivetrain_NumberOfParts'), request.form.get('drivetrain_SizeOfPart'), request.form.get('drivetrain_TypeOfPart'), request.form.get('drivetrain_Thickness(Extrusion)'), request.form.get('drivetrain_Thickness(Plate)'), request.form.get('drivetrain_Material(Plate)'), request.form.get('drivetrain_LengthInInches'), request.form.get('drivetrain_PartNumber'), request.form.get('drivetrain_cal'), request.form.get('drivetrain_photos'))
     return "Hello!"
+
+
+@app.route("/api/drivetrain", methods=["GET"])
+def getdrivetrainparts():
+
+    return get_data_from_table("Drivetrain")
 
 
 @app.route("/api/bumpers", methods=["POST"])
@@ -122,6 +143,12 @@ def BumpersParts():
     return "Hello!"
 
 
+@app.route("/api/bumpers", methods=["GET"])
+def getbumpersparts():
+
+    return get_data_from_table("Bumpers")
+
+
 @app.route("/api/intake", methods=["POST"])
 def IntakeParts():
     print(request.form)
@@ -129,6 +156,12 @@ def IntakeParts():
     insert_Intake_data(request.form.get('intake_Mechanism'),
                        request.form.get('intake_NumberOfParts'), request.form.get('intake_SizeOfPart'), request.form.get('intake_TypeOfStock'), request.form.get('intake_Thickness(Extrusion)'), request.form.get('intake_Thickness(Plate)'), request.form.get('intake_Material(Plate)'), request.form.get('intake_LengthInInches'), request.form.get('intake_PartNumber'), request.form.get('intake_date'), request.form.get('Intake_Photos'))
     return "Hello!"
+
+
+@app.route("/api/intake", methods=["GET"])
+def getintakeparts():
+
+    return get_data_from_table("Intake")
 
 
 @app.route("/api/forebar", methods=["POST"])
@@ -140,6 +173,12 @@ def ForebarParts():
     return "Hello!"
 
 
+@app.route("/api/forebar", methods=["GET"])
+def getforebarparts():
+
+    return get_data_from_table("Forebar")
+
+
 @app.route("/api/auxiliary-systems", methods=["POST"])
 def ASParts():
     print(request.form)
@@ -149,6 +188,12 @@ def ASParts():
     return "Hello!"
 
 
+@app.route("/api/auxiliary-systems", methods=["GET"])
+def getaASparts():
+
+    return get_data_from_table("`Auxiliary Systems`")
+
+
 @app.route("/api/3DPrint", methods=["POST"])
 def ThreeDParts():
     print(request.form)
@@ -156,6 +201,12 @@ def ThreeDParts():
     insert_3D_Print_data(request.form.get('ThreeDPrint_Mechanism'),
                          request.form.get('ThreeDPrint_NumberOfParts'), request.form.get('ThreeDPrint_SizeOfPart'), request.form.get('ThreeDPrint_TypeOfStock'), request.form.get('ThreeDPrint_Thickness(Extrusion)'), request.form.get('ThreeDPrint_Thickness(Plate)'), request.form.get('ThreeDPrint_Material(Plate)'), request.form.get('ThreeDPrint_LengthInInches'), request.form.get('ThreeDPrint_PartNumber'), request.form.get('ThreeDPrint_date'), request.form.get('3DPrint_Photos'))
     return "Hello!"
+
+
+@app.route("/api/3DPrint", methods=["GET"])
+def get3DPrintparts():
+
+    return get_data_from_table("`3D Print`")
 
 
 @ app.route('/uploader', methods=['GET', 'POST'])
