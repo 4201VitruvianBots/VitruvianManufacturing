@@ -76,6 +76,6 @@ def insert_Intake_data(Mechanism, NumOfPartsNeededToBeMachined, SizeOfPart, Type
     mydb.commit()
     rows = mycursor.fetchall()
     print(rows)
-
+    
 insert_Intake_data("Foreba9r", "555009", "01/8", "Mo^ney",
                    "1/100", "0.05", "W8oSod", "7V", "5S5", "2S023", ".png")

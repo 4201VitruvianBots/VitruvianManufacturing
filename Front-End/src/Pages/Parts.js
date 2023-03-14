@@ -1,6 +1,5 @@
 import React from 'react';
 import { AuxiliarySystems, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, Drivetrain, DrivetrainPhotos, Elevator, ElevatorPhotos, Forebar, ForebarPhotos, Intake, IntakePhotos, SavePage,  ThreeDPrint, ThreeDPrintPhotos } from '../Pages';
-
 function App() {
     const [value, setValue] = React.useState(0)
     const actArray = []
