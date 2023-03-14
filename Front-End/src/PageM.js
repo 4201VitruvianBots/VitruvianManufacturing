@@ -88,6 +88,8 @@ function DrivetrainDataTable(props) {
                                     <th>  Length in Inches</th>
                                     <th>  Part Number</th>
                                     <th> Date</th>
+                                    <th> Photos</th>
+
                                 </tr>
                                 {
                                     advice.map(row => (
@@ -102,13 +104,12 @@ function DrivetrainDataTable(props) {
                                             <td>{row[7]}</td>
                                             <td>{row[8]}</td>
                                             <td>{row[9]}</td>
+                                            <td>{row[10]}</td>
                                         </tr>
                                     ))
                                 }
                             </tbody>
-
                         </table>
-
                     </div>
                 </div>
             </Page >
@@ -150,7 +151,6 @@ function BumpersDataTable(props) {
             <Page selected={props.selected} id="BumpersDataTable">
                 <div>
                     <br></br>
-
                     <p className="selection-label" id="Bumpers-Data-Table">Bumpers Data Tables</p>
                     <div className="textArea">
                         <table border="1" width="100%">
@@ -166,6 +166,8 @@ function BumpersDataTable(props) {
                                     <th>  Length in Inches</th>
                                     <th>  Part Number</th>
                                     <th> Date</th>
+                                    <th>Photos</th>
+
                                 </tr>
                                 
                                 {
@@ -181,13 +183,12 @@ function BumpersDataTable(props) {
                                             <td>{row[7]}</td>
                                             <td>{row[8]}</td>
                                             <td>{row[9]}</td>
+                                            <td>{row[10]}</td>
                                         </tr>
                                     ))
                                 }
                             </tbody>
                         </table>
-     
-
                     </div>
                 </div>
             </Page >
@@ -195,10 +196,8 @@ function BumpersDataTable(props) {
     }
     else {
         return (
-
             <div>Loading....</div>
         )
-
     }
 }
 
@@ -237,13 +236,13 @@ function ElevatorDataTable(props) {
                                     <th>Number Of Parts</th>
                                     <th>Size Of Part</th>
                                     <th>Type Of Stock</th>
-
                                     <th> Thickness (Extrusion)</th>
                                     <th> Thickness (Plate)</th>
                                     <th> Material (Plate)</th>
                                     <th>  Length in Inches</th>
                                     <th>  Part Number</th>
                                     <th> Date</th>
+                                    <th> Photos</th>
                                 </tr>
                           
                                 {
@@ -259,6 +258,7 @@ function ElevatorDataTable(props) {
                                             <td>{row[7]}</td>
                                             <td>{row[8]}</td>
                                             <td>{row[9]}</td>
+                                            <td>{row[10]}</td>
                                         </tr>
                                     ))
                                 }
@@ -271,7 +271,6 @@ function ElevatorDataTable(props) {
     }
     else {
         return (
-
             <div>Loading....</div>
         )
     }
@@ -312,13 +311,13 @@ function IntakeDataTable(props) {
                                     <th>Number Of Parts</th>
                                     <th>Size Of Part</th>
                                     <th>Type Of Stock</th>
-
                                     <th> Thickness (Extrusion)</th>
                                     <th> Thickness (Plate)</th>
                                     <th> Material (Plate)</th>
                                     <th>  Length in Inches</th>
                                     <th>  Part Number</th>
                                     <th> Date</th>
+                                    <th> Photos</th>
                                 </tr>
                             
                                 {
@@ -334,6 +333,7 @@ function IntakeDataTable(props) {
                                             <td>{row[7]}</td>
                                             <td>{row[8]}</td>
                                             <td>{row[9]}</td>
+                                            <td>{row[10]}</td>
                                         </tr>
                                     ))
                                 }
@@ -386,13 +386,13 @@ function AuxiliarySystemsDataTable(props) {
                                     <th>Number Of Parts</th>
                                     <th>Size Of Part</th>
                                     <th>Type Of Stock</th>
-
                                     <th> Thickness (Extrusion)</th>
                                     <th> Thickness (Plate)</th>
                                     <th> Material (Plate)</th>
                                     <th>  Length in Inches</th>
                                     <th>  Part Number</th>
                                     <th> Date</th>
+                                    <th> Photos</th>
                                 </tr>
                                 {
                                     advice.map(row => (
@@ -407,6 +407,7 @@ function AuxiliarySystemsDataTable(props) {
                                             <td>{row[7]}</td>
                                             <td>{row[8]}</td>
                                             <td>{row[9]}</td>
+                                            <td>{row[10]}</td>
                                         </tr>
                                     ))
                                 }
@@ -451,7 +452,6 @@ function ForebarDataTable(props) {
             <Page selected={props.selected} id="ForebarDataTable">
                 <div>
                     <br></br>
-
                     <p className="selection-label" id="Forebar-Data-Table">Forebar Data Tables</p>
                     <div className="textArea">
                         <table border="1" width="100%">
@@ -467,6 +467,7 @@ function ForebarDataTable(props) {
                                     <th>  Length in Inches</th>
                                     <th>  Part Number</th>
                                     <th> Date</th>
+                                    <th> Photos</th>
                                 </tr>
                                 {
                                     advice.map(row => (
@@ -480,7 +481,7 @@ function ForebarDataTable(props) {
                                             <td>{row[6]}</td>
                                             <td>{row[7]}</td>
                                             <td>{row[8]}</td>
-                                            <td>{row[9]}</td>
+                                            <td>{row[10]}</td>
                                         </tr>
                                     ))
                                 }
@@ -533,13 +534,13 @@ function ThreeDPrintDataTable(props) {
                                     <th>Number Of Parts</th>
                                     <th>Size Of Part</th>
                                     <th>Type Of Stock</th>
-
                                     <th> Thickness (Extrusion)</th>
                                     <th> Thickness (Plate)</th>
                                     <th> Material (Plate)</th>
                                     <th>  Length in Inches</th>
                                     <th>  Part Number</th>
                                     <th> Date</th>
+                                    <th> Photos</th>
                                 </tr>
                                 {
                                     advice.map(row => (
@@ -554,13 +555,13 @@ function ThreeDPrintDataTable(props) {
                                             <td>{row[7]}</td>
                                             <td>{row[8]}</td>
                                             <td>{row[9]}</td>
+                                            <td>{row[10]}</td>
                                         </tr>
                                     ))
                                 }
                             </tbody>
                         </table>
                     </div>            
-                   
                 </div>
             </Page >
         )
