@@ -21,7 +21,6 @@ function PrinterStatus(props) {
         <Page selected={props.selected} id="PrinerStatus">
             <div>
                 <br></br>
-
                 <p className="section-label" id="PrinterStatus">Printer Status</p>
                 <div className="textArea">
                     <label className="PrinterName" name="PrinterName" htmlFor="PrinterName"><strong>Name of Printer</strong> </label>

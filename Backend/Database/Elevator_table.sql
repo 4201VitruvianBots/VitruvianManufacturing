@@ -1,5 +1,4 @@
 -- partSubmission.Elevator definition
-
 CREATE TABLE IF NOT EXISTS partSubmission.Elevator (
 	Elevator_Mechanism varchar(100) NULL,
 	Elevator_NumofPartsNeedMachined varchar(100) NULL,

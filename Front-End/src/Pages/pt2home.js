@@ -1,5 +1,5 @@
 import React from 'react';
-import { AuxiliarySystems, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, Drivetrain, DrivetrainPhotos, Elevator, ElevatorPhotos, Forebar, ForebarPhotos, Intake, IntakePhotos, SavePage, SignIn, ThreeDPrint, ThreeDPrintPhotos } from '../NewPartApp';
+import { AuxiliarySystems, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, Drivetrain, DrivetrainPhotos, Elevator, ElevatorPhotos, Forebar, ForebarPhotos, Intake, IntakePhotos, SavePage,  ThreeDPrint, ThreeDPrintPhotos } from '../NewPartApp';
 import "./app.css";
 
 const NewPartApp = () => {
@@ -15,10 +15,8 @@ const NewPartApp = () => {
         }
     }
     return (
-
         <div className="App">
             <ul style={{ listStyle: 'none' }}>
-                <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>SignIn</button></li>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[1]} onClick={() => { setValue(1) }}>Drivetrain</button></li>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[2]} onClick={() => { setValue(2) }}>Bumpers</button></li>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[3]} onClick={() => { setValue(3) }}>Elevator</button></li>
@@ -35,22 +33,14 @@ const NewPartApp = () => {
                 </form>
             </div>
         </div>
-
     );
 }
-
 function Choosepage(props) {
-    if (props.value === 0) {
-        return (<SignIn />
-        );
-    }
 
     if (props.value === 1) {
         return (<><Drivetrain /><DrivetrainPhotos /> <SavePage /></>
         );
     }
-
-
     if (props.value === 2) {
         return (<><Bumpers /><BumperPhotos /><SavePage /></>
         );
@@ -65,7 +55,7 @@ function Choosepage(props) {
     }
     if (props.value === 5) {
         return (<><AuxiliarySystems /><AuxiliarySystemsPhotos /><SavePage /></>
-        )
+        );
     }
     if (props.value === 6) {
         return (<><Forebar /><ForebarPhotos /><SavePage /></>
@@ -76,5 +66,4 @@ function Choosepage(props) {
         );
     }
 }
-
 export default NewPartApp;

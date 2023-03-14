@@ -1,5 +1,4 @@
 -- partSubmission.Forebar definition
-
 CREATE TABLE IF NOT EXISTS partSubmission.Forebar (
 	Forebar_Mechanism varchar(100) NULL,
 	Forebar_NumofPartsNeedMachined varchar(100) NULL,

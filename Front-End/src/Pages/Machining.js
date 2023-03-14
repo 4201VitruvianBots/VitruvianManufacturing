@@ -1,5 +1,5 @@
 import React from 'react';
-import { AuxiliarySystemsDataTable, BumpersDataTable, DrivetrainDataTable, ElevatorDataTable, ForebarDataTable, IntakeDataTable, SavePage, SignIn, ThreeDPrintDataTable } from '../PageM';
+import { AuxiliarySystemsDataTable, BumpersDataTable, DrivetrainDataTable, ElevatorDataTable, ForebarDataTable, IntakeDataTable, SavePage,  ThreeDPrintDataTable } from '../PageM';
 import "./app.css";
 
 const Machining = () => {
@@ -18,7 +18,6 @@ const Machining = () => {
 
         <div className="App">
             <ul style={{ listStyle: 'none' }}>
-                <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>SignIn</button></li>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[1]} onClick={() => { setValue(1) }}>Drivetrain</button></li>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[2]} onClick={() => { setValue(2) }}>Bumpers</button></li>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[3]} onClick={() => { setValue(3) }}>Elevator</button></li>
@@ -35,15 +34,11 @@ const Machining = () => {
                 </form>
             </div>
         </div>
-
     );
 }
 
 function Choosepage(props) {
-    if (props.value === 0) {
-        return (<SignIn />);
-    }
-
+   
     if (props.value === 1) {
         return (<><DrivetrainDataTable /><SavePage /></>
         );

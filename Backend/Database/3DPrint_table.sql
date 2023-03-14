@@ -1,5 +1,4 @@
 -- partSubmission.`3D Print` definition
-
 CREATE TABLE IF NOT EXISTS partSubmission.`3D Print` (
 	`3DPrint_Mechanism` varchar(100) NULL,
 	`3DPrint_NumberOfPartMachined` varchar(100) NULL,

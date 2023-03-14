@@ -78,26 +78,6 @@ ul {
   margin: 10px;
 }
 
-/* .textArea {
-  background-color: #ecf2eb;
-  min-width: 600px;
-  min-height: 100px;
-  min: length 100%;
-  padding: 100px;
-  margin: 200px;
-}
-
-
-body {
-  margin: 0;
-  /* font-family: monospace; */
-/* font-weight: 100; */
-/* -webkit-font-smoothing: antialiased; */
-/* -moz-osx-font-smoothing: grayscale; */
-/* background-color: var(--bg-color); */
-/* color: var(--accent-1); */
-
-
 input[type="button"] {
   border-color: var(--accent-3);
   background-color: var(--accent-2);
@@ -120,7 +100,6 @@ select {
 
 input[type="text"] {
   border-color: #003800;
-  /* background-color: var(--accent-1); */
   color: black;
   display: block;
   width: fit-content;
@@ -205,7 +184,6 @@ input[type="number"] {
 .radioButtons {
   background-color: initial;
   cursor: default;
-  appearance: auto;
   box-sizing: border-box;
   margin: 3px 3px 0px 5px;
   padding: initial;

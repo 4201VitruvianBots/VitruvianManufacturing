@@ -32,7 +32,6 @@
  .item-label2 {
    color: black;
    font-size: 20px;
-
    display: inline-block;
  }
 
@@ -72,23 +71,8 @@
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    background-color: var(--bg-color);
-   /* color: var(--accent-1); */
  }
 
- /* button {
-   border-color: var(black);
-   background-color: var(--accent-2);
-   display: block;
-   width: 130%;
-   height: 50px;
-   float: initial;
-   align-self:inherit	 	;
-
-   font-size: 29px;
-   padding: 10px;
-   margin: 10px;
-   
- } */
 
  input[type="button"] {
    border-color: var(--accent-3);
@@ -113,7 +97,6 @@
 
  input[type="text"] {
    border-color: #003800;
-   /* background-color: var(--accent-1); */
    color: black;
    display: block;
    width: fit-content;
@@ -130,9 +113,7 @@
    width: 100px !important;
    height: 75px !important;
    font-size: 50px !important;
-
    background-color: #003800;
-
  }
 
  input[type=button].chonk {
@@ -140,7 +121,6 @@
    border-width: 2px;
    border-color: #83c183;
    cursor: default;
-
  }
 
 
@@ -160,7 +140,6 @@
    height: 20px;
    cursor: default;
    display: inline;
-
  }
 
  input[type="number"] {
@@ -186,7 +165,6 @@
    background-color: #83c183;
    margin-top: 30px;
    margin-bottom: 10px;
-
  }
 
  .CLEAR {
@@ -204,15 +182,12 @@
  }
 
  .radioButtons {
-
    background-color: initial;
    cursor: default;
-   appearance: auto;
    box-sizing: border-box;
    margin: 3px 3px 0px 5px;
    padding: initial;
    border: initial;
-
  }
 
  #QRCode {

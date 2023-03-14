@@ -1,9 +1,7 @@
 import React from 'react';
-import { AuxiliarySystems, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, Drivetrain, DrivetrainPhotos, Elevator, ElevatorPhotos, Forebar, ForebarPhotos, Intake, IntakePhotos, SavePage, SignIn, ThreeDPrint, ThreeDPrintPhotos } from '../Pages';
-
+import { AuxiliarySystems, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, Drivetrain, DrivetrainPhotos, Elevator, ElevatorPhotos, Forebar, ForebarPhotos, Intake, IntakePhotos, SavePage,  ThreeDPrint, ThreeDPrintPhotos } from '../Pages';
 function App() {
     const [value, setValue] = React.useState(0)
-
     const actArray = []
     for (let i = 0; i < 10; i++) {
         if (i === value) {
@@ -37,13 +35,8 @@ function App() {
     );
 }
 function Choosepage(props) {
-    if (props.value === 0) {
-        return (<SignIn />
-        );
-    }
 
     if (props.value === 1) {
-
         return (
 
             <form action="http://127.0.0.1:5000/api/drivetrain" method="POST"

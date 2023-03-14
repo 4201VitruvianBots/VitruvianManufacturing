@@ -5,12 +5,10 @@ import Layout from "./Pages/Layout";
 import Parts from "./Pages/Parts";
 import PrinterStatusPage from "./Pages/PrinterStatus";
 import PrinterStatusDataPage from "./Pages/PrinterAdmin";
-
 import Machining from "./Pages/Machining";
 import NoPage from "./Pages/NoPage";
 import NewPartApp from "./Pages/pt2home";
 export default function App() {
-
     return (
         <BrowserRouter>
             <Routes>
