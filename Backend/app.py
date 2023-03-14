@@ -86,6 +86,13 @@ def insert_Intake_data(Mechanism, NumOfPartsNeededToBeMachined, SizeOfPart, Type
     rows = mycursor.fetchall()
     print(rows)
 
+    def insert_PrinterStatus_data(NameOfPrinter, StatusOfPrinter, IssueOfPrinter, Date):
+    request = f"INSERT INTO PrinterStatus.PrinterStatus (PrinterName, StatusOfPrinter, Issue, NewDate) VALUES('{PrinterName}', '{StatusOfPrinter}', '{Issue}','{NewDate}');"
+    mycursor.execute(request)
+    mydb.commit()
+    rows = mycursor.fetchall()
+    print(rows)
+
 
 @app.route("/")
 def home():
