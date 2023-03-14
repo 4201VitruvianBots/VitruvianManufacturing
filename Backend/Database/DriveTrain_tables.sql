@@ -1,5 +1,4 @@
 -- partSubmission.Drivetrain definition
-
 CREATE TABLE IF NOT EXISTS partSubmission.Drivetrain (
 	Drivetrain_Mechanism varchar(100) NULL,
 	Drivetrain_NumofPartsNeedToBeMachined varchar(100) NULL,

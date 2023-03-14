@@ -1,5 +1,4 @@
 -- partSubmission.Intake definition
-
 CREATE TABLE IF NOT EXISTS partSubmission.Intake (
 	Intake_Mechanism varchar(100) NULL,
 	Intake_NumofPartsNeedToMachined varchar(100) NULL,
