@@ -39,7 +39,7 @@ def PrinterStatus():
 def Printer():
     print(request.form)
     print(request.form.get('elevator_Mechanism'))
-    insert_Printer_data(request.form.get('NameOfPrinter'),
+    insert_PrinterStatus_data(request.form.get('NameOfPrinter'),
                          request.form.get('StatusOfPrinter'), request.form.get('IssueOfPrinter'), request.form.get('NewDate'))
     return "Hello!"
 
