@@ -13,7 +13,15 @@ mycursor = mydb.cursor()
 
 app = Flask(__name__)
 CORS(app)
+def get_data_from_table(table):
+    request = "SELECT * FROM " + table
+    mycursor.execute(request)
+    rows = mycursor.fetchall()
+    return rows
 
+@app.route("/")
+def home():
+    return "Hello world!"
 
 def insert_PrinterStatus_data(NameOfPrinter, StatusOfPrinter, IssueOfPrinter, Date):
     request = f"INSERT INTO PrinterStatus.PrinterStatus (NameOfPrinter, StatusOfPrinter, IssueOfPrinter, NewDate) VALUES('{NameOfPrinter}', '{StatusOfPrinter}', '{IssueOfPrinter}','{Date}');"
@@ -29,13 +37,13 @@ def Printer():
     return "request.form"
 
 
-@app.route("/api/printerstatus", methods=["POST"])
+@app.route("/api/printer", methods=["POST"])
 def PrinterStatus():
     print(request.form)
     return "Hello!"
 
 
-@app.route("/api/printer", methods=["POST"])
+@app.route("/api/printerStatus", methods=["POST"])
 def Printer():
     print(request.form)
     print(request.form.get('elevator_Mechanism'))
