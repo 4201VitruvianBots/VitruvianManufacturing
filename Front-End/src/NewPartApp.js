@@ -155,8 +155,6 @@ function Drivetrain(props) {
                         <option value="4201-23-P-01100">4201-23-P-0110</option>
                         <option value="4201-23-P-0111">4201-23-P-0111</option>
                         <option value="4201-23-P-0113">4201-23-P-0113</option>
-
-
                     </select>
                     <br></br>
                     {/* <input type="radio" id="Low" name="Low" value="HTML" />
@@ -248,8 +246,15 @@ function Bumpers(props) {
                     <br></br>
                     <input type="text" id="LengthInInches" name="bumpers_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
                     <br></br>
-                    <input type="text" id="PartNumber" name="bumpers_PartNumber" placeholder="Part Number" className="text-input" required="required" />
                     <br></br>
+                    <label className="Partame" htmlFor="PartName"><strong>Part Name </strong> </label>
+                    <select name="bumpers_PartName" id="PartName" defaultValue="" className="form-control" required >
+                        <option value="" className="Placeholder" disabled>Click Here!</option>
+                        <option value="4201-23-P-0201">4201-23-P-0201</option>
+                        <option value="4201-23-p-0204">4201-23-p-0204</option>
+                        <option value="4201-23-P-0203">4201-23-P-0203</option>
+                        <option value="4201-23-P-0202">4201-23-P-0202</option>
+                        </select>
                     <br></br>
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="bumpers_date" />
