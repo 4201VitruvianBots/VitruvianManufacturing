@@ -582,7 +582,12 @@ function AuxiliarySystems(props) {
                     <br></br>
                     <input type="text" id="LengthInInches" name="AuxiliarySystems_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
                     <br></br>
-                    <input type="text" id="PartNumber" name="AuxiliarySystems_PartNumber" placeholder="Part Number" className="text-input" required="required" />
+                    <label className="Partame" htmlFor="PartName"><strong>Part Name </strong> </label>
+                    <select name="AS_PartName" id="PartName" defaultValue="" className="form-control" required >
+                        <option value="" className="Placeholder" disabled>Click Here!</option>
+                        <option value="4201-23-P-0514">4201-23-P-0514</option>
+                        <option value="4201-23-p-0515">4201-23-p-0515</option>
+                        </select>
                     <br></br>
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="AuxiliarySystems_date" />
