@@ -138,7 +138,26 @@ function Drivetrain(props) {
                     <br></br>
                     <input type="text" id="LengthInInches" name="drivetrain_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
                     <br></br>
-                    <input type="text" id="PartNumber" name="drivetrain_PartNumber" placeholder="Part Number" className="text-input" required="required" />
+                    {/* <input type="text" id="PartNumber" name="drivetrain_PartNumber" placeholder="Part Number" className="text-input" required="required" /> */}
+                    <label className="PartName" htmlFor="PartName"><strong>Part Name</strong> </label>
+                    <select name="drivetrain_PartName" id="Material  (Plate)" defaultValue="" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here!</option>
+                        <option value="4201-23-P-0118">4201-23-P-0118</option>
+                        <option value="4201-23-P-0117">4201-23-P-0117</option>
+                        <option value="4201-23-P-0116">4201-23-P-0116</option>
+                        <option value="4201-23-P-0101">4201-23-P-0101</option>
+                        <option value="4201-23-P-0102">4201-23-P-0102</option>
+                        <option value="4201-23-P-0103">4201-23-P-0103</option>             
+                        <option value="4201-23-P-0104">4201-23-P-0104</option>
+                        <option value="4201-23-P-0105">4201-23-P-0105</option>
+                        <option value="4201-23-P-0112">4201-23-P-0112</option>
+                        <option value="4201-23-P-0109">4201-23-P-0109</option>
+                        <option value="4201-23-P-01100">4201-23-P-0110</option>
+                        <option value="4201-23-P-0111">4201-23-P-0111</option>
+                        <option value="4201-23-P-0113">4201-23-P-0113</option>
+
+
+                    </select>
                     <br></br>
                     {/* <input type="radio" id="Low" name="Low" value="HTML" />
                     <label for="html">Low</label>
