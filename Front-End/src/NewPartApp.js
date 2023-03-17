@@ -674,7 +674,12 @@ function Forebar(props) {
                     <br></br>
                     <input type="text" id="LengthInInches" name="Forebar_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
                     <br></br>
-                    <input type="text" id="PartNumber" name="Forebar_PartNumber" placeholder="Part Number" className="text-input" required="required" />
+                    <label className="Partame" htmlFor="PartName"><strong>Part Name </strong> </label>
+                    <select name="Forebar_PartName" id="PartName" defaultValue="" className="form-control" required >
+                        <option value="" className="Placeholder" disabled>Click Here!</option>
+                        <option value="4201-23-P-0310">4201-23-P-0310</option>
+                        <option value="4201-23-p-0309">4201-23-p-0309</option>
+                        </select>
                     <br></br>
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="Forebar_date" />
