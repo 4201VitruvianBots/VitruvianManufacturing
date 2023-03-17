@@ -344,7 +344,46 @@ function Elevator(props) {
                     <br></br>
                     <input type="text" id="LengthInInches" name="elevator_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
                     <br></br>
-                    <input type="text" id="PartNumber" name="elevator_PartNumber" placeholder="Part Number" className="text-input" required="required" />
+                    <label className="Partame" htmlFor="PartName"><strong>Part Name </strong> </label>
+                    <select name="elevator_PartName" id="PartName" defaultValue="" className="form-control" required >
+                        <option value="" className="Placeholder" disabled>Click Here!</option>
+                        <option value="4201-23-P-0310">4201-23-P-0310</option>
+                        <option value="4201-23-p-0309">4201-23-p-0309</option>
+                        <option value="4201-23-P-0307">4201-23-P-0307</option>
+                        <option value="4201-23-P-0308">4201-23-P-0308</option>
+                        <option value="4201-23-P-0305">4201-23-P-0305</option>
+                        <option value="4201-23-P-0306">4201-23-P-0306</option>
+                        <option value="4201-23-P-0315">4201-23-P-0315</option>
+                        <option value="4201-23-P-0314">4201-23-P-0314</option>
+                        <option value="4201-23-P-0313">4201-23-P-0313</option>
+                        <option value="4201-23-P-0312">4201-23-P-0312</option>
+                        <option value="4201-23-P-0311">4201-23-P-0311</option>
+                        <option value="4201-23-P-0317">4201-23-P-0317</option>
+                        <option value="4201-23-P-0318">4201-23-P-0318</option>
+                        <option value="4201-23-P-0319">4201-23-P-0319</option>
+                        <option value="4201-23-P-0323">4201-23-P-0323</option>
+                        <option value="4201-23-P-0326">4201-23-P-0326</option>
+                        <option value="4201-23-P-0327">4201-23-P-0327</option>
+                        <option value="4201-23-P-0328">4201-23-P-0328</option>
+                        <option value="4201-23-P-0331">4201-23-P-0331</option>
+                        <option value="4201-23-P-0501">4201-23-P-0501</option>
+                        <option value="4201-23-P-0338">4201-23-P-0338</option>
+                        <option value="4201-23-P-0344">4201-23-P-0344</option>
+                        <option value="4201-23-P-0341">4201-23-P-0341</option>
+                        <option value="4201-23-P-0324">4201-23-P-0324</option>
+                        <option value="4201-23-P-0348">4201-23-P-0348</option>
+                        <option value="4201-23-P-0350">4201-23-P-0350</option>
+                        <option value="4201-23-P-0349">4201-23-P-0349</option>
+                        <option value="4201-23-P-0344">4201-23-P-0344</option>
+                        <option value="4201-23-P-0345">4201-23-P-0345</option>
+                        <option value="4201-23-P-0346">4201-23-P-0346</option>
+                        <option value="4201-23-P-0352">4201-23-P-0352</option>
+                        <option value="4201-23-P-0351">4201-23-P-0351</option>
+                        <option value="4201-23-P-0347">4201-23-P-0347</option>
+                        <option value="4201-23-P-0347">4201-23-P-0511</option>
+                        <option value="4201-23-P-0343">4201-23-P-0343</option>
+                        <option value="4201-23-P-0342">4201-23-P-0342</option>
+                        </select>
                     <br></br>
                     <br></br>
                     <h4>When do you need the part done by?</h4>
