@@ -679,6 +679,10 @@ function Forebar(props) {
                         <option value="" className="Placeholder" disabled>Click Here!</option>
                         <option value="4201-23-P-0310">4201-23-P-0310</option>
                         <option value="4201-23-p-0309">4201-23-p-0309</option>
+                        <option value="4201-23-p-0307">4201-23-p-0307</option>
+                        <option value="4201-23-p-0308">4201-23-p-0308</option>
+                        <option value="4201-23-p-0305">4201-23-p-0305</option>
+
                         </select>
                     <br></br>
                     <h4>When do you need the part done by?</h4>
