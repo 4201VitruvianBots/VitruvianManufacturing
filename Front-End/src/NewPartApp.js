@@ -682,6 +682,24 @@ function Forebar(props) {
                         <option value="4201-23-p-0307">4201-23-p-0307</option>
                         <option value="4201-23-p-0308">4201-23-p-0308</option>
                         <option value="4201-23-p-0305">4201-23-p-0305</option>
+                        <option value="4201-23-p-0305">4201-23-p-0306</option>
+                        <option value="4201-23-p-0315">4201-23-p-0315</option>
+                        <option value="4201-23-p-0314">4201-23-p-0314</option>
+                        <option value="4201-23-p-0313">4201-23-p-0313</option>
+                        <option value="4201-23-p-0312">4201-23-p-0312</option>
+                        <option value="4201-23-p-0312">4201-23-p-0312</option>
+                        <option value="4201-23-p-0311">4201-23-p-0311</option>
+                        <option value="4201-23-p-0317">4201-23-p-0317</option>
+                        <option value="4201-23-p-0318">4201-23-p-0318</option>
+                        <option value="4201-23-p-0319">4201-23-p-0319</option>
+                        <option value="4201-23-p-0323">4201-23-p-0323</option>
+                        <option value="4201-23-p-0326">4201-23-p-0326</option>
+                        <option value="4201-23-p-0327">4201-23-p-0327</option>
+                        <option value="4201-23-p-0328">4201-23-p-0328</option>
+                        <option value="4201-23-p-0331">4201-23-p-0331</option>
+                        <option value="4201-23-p-0501">4201-23-p-0501</option>
+                        <option value="4201-23-p-0338">4201-23-p-0338</option>
+                        <option value="4201-23-p-0344">4201-23-p-0344</option>
 
                         </select>
                     <br></br>
