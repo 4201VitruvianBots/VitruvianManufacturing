@@ -713,7 +713,6 @@ function Forebar(props) {
                         <option value="4201-23-p-0347">4201-23-p-0347</option>
                         <option value="4201-23-p-0511">4201-23-p-0511</option>
                         <option value="4201-23-p-0606">4201-23-p-0606</option>
-
                         </select>
                     <br></br>
                     <h4>When do you need the part done by?</h4>
