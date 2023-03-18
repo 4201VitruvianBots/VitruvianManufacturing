@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-
+import "./App.css"
 function Page(props) {
     return (
         <div className={props.selected ? "page selected" : "page"} id={props.id}>

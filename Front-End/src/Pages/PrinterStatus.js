@@ -1,7 +1,7 @@
 import React from 'react';
 import { PrinterStatus } from '../Print';
 import { SavePage, SignIn } from '../Pages';
-
+// import "./app.css";
 function PrinterStatusPage() {
     const [value, setValue] = React.useState(0)
 

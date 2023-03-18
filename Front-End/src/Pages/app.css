@@ -621,7 +621,7 @@ h4 {
 
 
 .header-social {
-  float: right;
+  float: left;
   transform: rotate(-90deg) translateY(-100%);
   transform-origin: top right;
   background: #eee;
