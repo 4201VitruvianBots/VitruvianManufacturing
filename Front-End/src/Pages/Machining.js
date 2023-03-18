@@ -17,6 +17,8 @@ const Machining = () => {
     return (
 
         <div className="App">
+            <div class="header-social">
+  <nav class="header-nav-secondary">
             <ul style={{ listStyle: 'none' }}>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>SignIn</button></li>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[1]} onClick={() => { setValue(1) }}>Drivetrain</button></li>
@@ -27,7 +29,8 @@ const Machining = () => {
                 <li style={{ float: 'left' }}><button type='button' className={actArray[6]} onClick={() => { setValue(6) }}>Forebar</button></li>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[7]} onClick={() => { setValue(7) }}>3D Print</button></li>
             </ul>
-            <br /><br />
+            </nav>
+            </div>
             <div>
                 <form action="http://127.0.0.1:5000/api/machining" method="POST"
                     enctype="multipart/form-data">

@@ -18,10 +18,14 @@ function PrinterStatusDataPage() {
 
     return (
         <div className="App">
+  <div class="header-social">
+  <nav class="header-nav-secondary">
             <ul style={{ listStyle: 'none' }}>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>SignIn</button></li>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[1]} onClick={() => { setValue(1) }}>Printer Status Admin</button></li>
             </ul>
+            </nav>
+            </div>
             <br /><br />
             <div>
                 <form action="http://127.0.0.1:5000/api/PrinterAdmin" method="POST"
