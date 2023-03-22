@@ -4,9 +4,9 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 function Page(props) {
     return (
-        <div className={props.selected ? "page selected" : "page"} id={props.id}>
+        <><img src="https://docs.google.com/document/d/e/2PACX-1vSo0LktSR3Pt91px1YV3r90YKgJZtTV0GSmu0CZRIB1Hd9Vor6_vMUzU5ktfZLULgty1FVoaPTl5kbv/pub" alt="Image" height="290px" width="30px"/><div className={props.selected ? "page selected" : "page"} id={props.id}>
             {props.children}
-        </div>
+        </div></>
 
     );
 }
@@ -93,7 +93,6 @@ function Drivetrain(props) {
                         <option value="L-Bracket ">L-Bracket</option>
                         <option value="Shaft">Shaft</option>
                         <option value="Nothing">Nothing</option>
-
                     </select>
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
