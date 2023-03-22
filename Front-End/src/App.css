@@ -625,3 +625,36 @@
  .a{
   color: fuchsia;
 }
+.sidenav {
+  height: 200%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:fuchsia;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: fuchsia;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: fuchsia;
+}
+
+.main {
+  margin-left: 190px; 
+  font-size: 28px; 
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

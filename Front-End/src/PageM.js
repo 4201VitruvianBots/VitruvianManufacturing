@@ -21,6 +21,15 @@ function NewDate(props) {
 function SignIn(props) {
     return (
         <Page selected={props.selected} className="page" id="sign-in">
+             <div class="sidenav">
+  <a href="#bumpers">Bumpers</a>
+  <a href="#elevator">Elevator</a>
+  <a href="#intake">Intake</a>
+  <a href="#auxiliarysystems">Auxiliary Systems</a>
+  <a href="#forebar">Forebar</a>
+  <a href="#3DPrint">3D Print</a>
+</div>
+
             <div className="textArea">
                 {/* <h3>Sign in</h3>
                 {/* <label htmlFor="username">Your username</label> */}
@@ -50,6 +59,14 @@ function SignIn(props) {
 function DrivetrainDataTable(props) {
     const [isLoaded, setIsLoaded] = useState(false);
     const [advice, setAdvice] = useState("");
+    <div class="sidenav">
+    <a href="#bumpers">Bumpers</a>
+    <a href="#elevator">Elevator</a>
+    <a href="#intake">Intake</a>
+    <a href="#auxiliarysystems">Auxiliary Systems</a>
+    <a href="#forebar">Forebar</a>
+    <a href="#3DPrint">3D Print</a>
+  </div>
 
     useEffect(() => {
         const url = "http://127.0.0.1:5000/api/drivetrain";
@@ -67,14 +84,17 @@ function DrivetrainDataTable(props) {
         };
 
         fetchData();
+        
     }, []);
     if (isLoaded) {
         return (
             < Page selected={props.selected} id="DrivetrainDataTable" >
+       
                 <div>
                     <br></br>
                     <p className="selection-label" id="Drive-Train-Data-Table">Drivetrain Data Tables</p>
                     <div className="textArea">
+
                         <table border="1" width="100%">
                             <tbody>
                                 <tr>
@@ -148,6 +168,14 @@ function BumpersDataTable(props) {
     if (isLoaded) {
         return (
             <Page selected={props.selected} id="BumpersDataTable">
+                 <div class="sidenav">
+  <a href="#bumpers">Bumpers</a>
+  <a href="#elevator">Elevator</a>
+  <a href="#intake">Intake</a>
+  <a href="#auxiliarysystems">Auxiliary Systems</a>
+  <a href="#forebar">Forebar</a>
+  <a href="#3DPrint">3D Print</a>
+</div>
                 <div>
                     <br></br>
 
@@ -226,6 +254,14 @@ function ElevatorDataTable(props) {
     if (isLoaded) {
         return (
             <Page selected={props.selected} id="ElevatorDataTable">
+                 <div class="sidenav">
+  <a href="#bumpers">Bumpers</a>
+  <a href="#elevator">Elevator</a>
+  <a href="#intake">Intake</a>
+  <a href="#auxiliarysystems">Auxiliary Systems</a>
+  <a href="#forebar">Forebar</a>
+  <a href="#3DPrint">3D Print</a>
+</div>
                 <div>
                     <br></br>
                     <p className="selection-label" id="Elevator-Data-Table">Elevator Data Tables</p>
@@ -300,6 +336,14 @@ function IntakeDataTable(props) {
     if (isLoaded) {
         return (
             <Page selected={props.selected} id="IntakeDataTable">
+                 <div class="sidenav">
+  <a href="#bumpers">Bumpers</a>
+  <a href="#elevator">Elevator</a>
+  <a href="#intake">Intake</a>
+  <a href="#auxiliarysystems">Auxiliary Systems</a>
+  <a href="#forebar">Forebar</a>
+  <a href="#3DPrint">3D Print</a>
+</div>
                 <div>
                     <br></br>
 
@@ -374,6 +418,14 @@ function AuxiliarySystemsDataTable(props) {
     if (isLoaded) {
         return (
             <Page selected={props.selected} id="AuxiliarySystemsDataTable">
+                 <div class="sidenav">
+  <a href="#bumpers">Bumpers</a>
+  <a href="#elevator">Elevator</a>
+  <a href="#intake">Intake</a>
+  <a href="#auxiliarysystems">Auxiliary Systems</a>
+  <a href="#forebar">Forebar</a>
+  <a href="#3DPrint">3D Print</a>
+</div>
                 <div>
                     <br></br>
 
@@ -449,6 +501,14 @@ function ForebarDataTable(props) {
 
         return (
             <Page selected={props.selected} id="ForebarDataTable">
+                 <div class="sidenav">
+  <a href="#bumpers">Bumpers</a>
+  <a href="#elevator">Elevator</a>
+  <a href="#intake">Intake</a>
+  <a href="#auxiliarysystems">Auxiliary Systems</a>
+  <a href="#forebar">Forebar</a>
+  <a href="#3DPrint">3D Print</a>
+</div>
                 <div>
                     <br></br>
 
@@ -521,6 +581,14 @@ function ThreeDPrintDataTable(props) {
 
         return (
             <Page selected={props.selected} id="ThreeDPrintDataTable">
+                 <div class="sidenav">
+  <a href="#bumpers">Bumpers</a>
+  <a href="#elevator">Elevator</a>
+  <a href="#intake">Intake</a>
+  <a href="#auxiliarysystems">Auxiliary Systems</a>
+  <a href="#forebar">Forebar</a>
+  <a href="#3DPrint">3D Print</a>
+</div>
                 <div>
                     <br></br>
 
