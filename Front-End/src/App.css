@@ -628,6 +628,7 @@
 
 .box{
   width: 390px;
+<<<<<<< Updated upstream
 height:450px;
 background-color:green;
 align-content: initial;
@@ -637,4 +638,10 @@ align-content: initial;
 height:25px;
 background-color:yellow;
 align-content: initial;
+=======
+height:200px;
+}
+app{
+  fuchsia;
+>>>>>>> Stashed changes
 }
