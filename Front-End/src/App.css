@@ -637,4 +637,23 @@ align-content: initial;
 height:25px;
 background-color:yellow;
 align-content: initial;
+font-size: x-large;
+
 }
+.boxx{
+  width: 390px;
+height:25px;
+background-color:white;
+align-content: initial;
+font-size: x-large;
+
+}
+label{
+  font-size: x-large;
+}
+input#polycarbonate{
+  align-self: auto;
+}
+
+input#alumium{
+position: relative;}

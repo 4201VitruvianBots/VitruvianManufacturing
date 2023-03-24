@@ -1,8 +1,5 @@
 import "./App.css";
 import React, { useState } from "react";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
-import { RadioButtons } from "./Form";
 function Page(props) {
     return (
         <div className={props.selected ? "page selected" : "page"} id={props.id}>
@@ -11,25 +8,131 @@ function Page(props) {
 
     );
 }
-function NewDate(props) {
-    const [startDate, setStartDate] = useState(new Date());
-    return (
-        <DatePicker name={props.name} selected={startDate} onChange={(date) => setStartDate(date)} />
-    );
-};
-
 
 function VitruvianManfacturing(props) {
     return (
-        <Page selected={props.selected} className="page" id="sign-in">
+        <Page selected={props.selected} className="page" id="vitruvian-manfacturing">
+            <br></br>
             <div className="box">
-        <h1>Welcome to Vitruvian Manfacturing</h1>
+       <div className="boxhalf">
+        Delete
+       </div>
+       <br></br>
+       
+<div className="boxx">
+    File Upload:
+</div>
+<br></br>
+About the Part:
+<br></br>
+<div className="boxx">
+Quantity:
+</div>
+<br></br>
+<div className="boxx">
+Name:
+</div>
+
+       </div>
+
+
+
+
+
+
+            <div className="box">
        <div className="boxhalf">
         Material
        </div>
-       
-            </div>
-        </Page>
+       <br></br>
+       <input type="checkbox" id="polycarbonate" name="polycarbonate"/>
+                       <label for="polycarbonate">polycarbonate</label>
+                       <br></br>
+                       <input type="checkbox" id="alumium" name="alumiun"/>
+                       <label for="alumium">aluminum</label>
+                       <br></br>
+                       <input type="checkbox" id="steel" name="steel"/>
+                       <label for="steel">steel</label>
+                       <br></br>
+                       <input type="checkbox" id="acrylic" name="acrylic"/>
+                       <label for="acrylic">acrylic</label>
+                       <br></br>
+                       <input type="checkbox" id="PLA" name="PLA"/>
+                       <label for="PLA">PLA</label>
+                       <br></br>
+                       <input type="checkbox" id="PETG" name="PETG"/>
+                       <label for="PETG">PETG</label>
+                       <br></br>
+                       <input type="checkbox" id="Onyx" name="Onyx"/>
+                       <label for="Onyx">Onyx</label>
+                       <br></br>
+                        </div>
+                        <br></br>
+                        <br></br>
+
+
+
+
+
+                        <div className="box">
+                        <div className="boxhalf">
+        Stock
+       </div>
+                            <br></br>
+                            <br></br>
+                        <input type="checkbox" id="plate" name="plate"/>
+                       <label for="plate">plate</label>
+                       <br></br>
+                       <input type="checkbox" id="extrusion" name="extrusion"/>
+                       <label for="extrusion">extrusion</label>
+                       <br></br>
+                       <input type="checkbox" id="hexShaft" name="hexShaft"/>
+                       <label for="hexShaft">Hex Shaft</label>
+                       <br></br>
+                       <input type="checkbox" id="shaft" name="shaft"/>
+                       <label for="shaft">shaft</label>
+                       <br></br>
+                       <input type="checkbox" id="angle" name="angke"/>
+                       <label for="angle">angle</label>
+                       <br></br>
+                       <input type="checkbox" id="filament" name="filament"/>
+                       <label for="filament">filament</label>
+                       <br></br>
+                        </div>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <div className="box">
+                        <div className="boxhalf">
+        Thickness
+       </div>
+       <br></br>
+       <input type="checkbox" id="0.00625" name="0.00625"/>
+                       <label for="0.00625">"0.00625"</label>
+                       <br></br>
+                       <input type="checkbox" id="0.09" name="0.09"/>
+                       <label for="0.09">0.09"</label>
+                       <br></br>
+                       <input type="checkbox" id="0.125" name="0.125"/>
+                       <label for="0.125">0.125"</label>
+                       <br></br>
+                       <input type="checkbox" id="0.2" name="0.2"/>
+                       <label for="0.2">0.2"</label>
+                       <br></br>
+                       <input type="checkbox" id="0.25" name="0.25"/>
+                       <label for="0.25">0.25"</label>
+                       <br></br>
+                       <input type="checkbox" id="0.375" name="0.375"/>
+                       <label for="0.375">0.375"</label>
+                       <br></br>
+                       <input type="checkbox" id="0.5" name="0.5"/>
+                       <label for="0.5">0.35"</label>
+                       <br></br>
+                       <input type="checkbox" id="N/A" name="N/A"/>
+                       <label for="N/A">N/A</label>
+                       <br></br>
+       </div>
+            </Page>
     );
 }
 
@@ -128,7 +231,6 @@ function UploadComplete(props) {
                     <br></br>
                     <br></br>
                     <h4>When do you need the part done by?</h4>
-                    <NewDate name="bumpers_date" />
                 </div>
             </div>
         </Page>
