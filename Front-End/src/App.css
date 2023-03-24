@@ -650,10 +650,31 @@ font-size: x-large;
 }
 label{
   font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display:-moz-grid-line;
+  /* padding-left: 15px; */
+  text-indent: -15px;
 }
 input#polycarbonate{
   align-self: auto;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
 }
 
 input#alumium{
-position: relative;}
+position: relative;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+width: 15px;
+height: 15px;
+padding: 0;
+margin: 0;
+vertical-align: bottom;
+position: relative;
+top: -1px;
+}
