@@ -1,12 +1,12 @@
 import React from 'react';
-import { AuxiliarySystems, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, Drivetrain, DrivetrainPhotos, Elevator, ElevatorPhotos, Forebar, ForebarPhotos, Intake, IntakePhotos, SavePage, SignIn, ThreeDPrint, ThreeDPrintPhotos } from '../NewPartApp';
+import { VitruvianManfacturing,UploadFile, Part, UploadComplete } from '../NewPartApp3';
 import "./app.css";
 
-const NewPartApp = () => {
+const NewPartApp3 = () => {
     const [value, setValue] = React.useState(0)
 
     const actArray = []
-    for (let i = 0; i < 10; i++) {
+    for (let i = 1; i < 10; i++) {
         if (i === value) {
             actArray.push('btn active')
         }
@@ -18,10 +18,12 @@ const NewPartApp = () => {
 
         <div className="App">
             <ul style={{ listStyle: 'none' }}>
-                <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>Begin</button></li>
+                {/* <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>Begin</button></li> */}
                 <li style={{ float: 'left' }}><button type='button' className={actArray[1]} onClick={() => { setValue(1) }}>Upload File</button></li>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[2]} onClick={() => { setValue(2) }}>Part Sumbmission</button></li>
-                <li style={{ float: 'left' }}><button type='button' className={actArray[3]} onClick={() => { setValue(3) }}>Sumbmission</button></li>
+                <li style={{ float: 'left' }}><button type='button' className={actArray[3]} onClick={() => { setValue(3) }}>Part</button></li>
+                <li style={{ float: 'left' }}><button type='button' className={actArray[4]} onClick={() => { setValue(4) }}>Upload Complete</button></li>
+
             </ul>
             <br /><br />
             <div>
@@ -36,41 +38,29 @@ const NewPartApp = () => {
 }
 
 function Choosepage(props) {
-    if (props.value === 0) {
-        return (<SignIn />
-        );
-    }
+    // if (props.value === 0) {
+    //     return (<SignIn />
+    //     );
+    // }
 
     if (props.value === 1) {
-        return (<><Drivetrain /><DrivetrainPhotos /> <SavePage /></>
+        return (<VitruvianManfacturing />
         );
     }
 
-
     if (props.value === 2) {
-        return (<><Bumpers /><BumperPhotos /><SavePage /></>
+        return (<UploadFile />
         );
     }
     if (props.value === 3) {
-        return (<><Elevator /><ElevatorPhotos /><SavePage /></>
+        return (<Part />
         );
     }
     if (props.value === 4) {
-        return (<><Intake /><IntakePhotos /><SavePage /></>
+        return (<UploadComplete />
         );
     }
-    if (props.value === 5) {
-        return (<><AuxiliarySystems /><AuxiliarySystemsPhotos /><SavePage /></>
-        )
-    }
-    if (props.value === 6) {
-        return (<><Forebar /><ForebarPhotos /><SavePage /></>
-        );
-    }
-    if (props.value === 7) {
-        return (<><ThreeDPrint /><ThreeDPrintPhotos /><SavePage /></>
-        );
-    }
+    
 }
 
-export default NewPartApp;
+export default NewPartApp3;

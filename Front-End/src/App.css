@@ -628,5 +628,13 @@
 
 .box{
   width: 390px;
-height:200px;
+height:450px;
+background-color:green;
+align-content: initial;
+}
+.boxhalf{
+  width: 390px;
+height:25px;
+background-color:yellow;
+align-content: initial;
 }
