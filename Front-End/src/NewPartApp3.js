@@ -1,5 +1,4 @@
 import "./App.css";
-import React, { useState } from "react";
 function Page(props) {
     return (
         <div className={props.selected ? "page selected" : "page"} id={props.id}>
