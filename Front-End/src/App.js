@@ -23,7 +23,6 @@ export default function App() {
                     <Route path="Machining" element={<Machining />} />
                     <Route path="HomePt2" element={<NewPartApp />} />
                     <Route path="HomePt3" element={<NewPartApp3 />} />
-
                     <Route path="*" element={<NoPage />} />
                 </Route>
             </Routes>

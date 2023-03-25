@@ -233,6 +233,4 @@ function UploadComplete(props) {
     );
 }
 
-
-
 export { VitruvianManfacturing, UploadFile, Part, UploadComplete };
