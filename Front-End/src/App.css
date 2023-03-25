@@ -622,59 +622,59 @@
    color: white;
  }
 
- .a{
-  color: fuchsia;
-}
+ .a {
+   color: fuchsia;
+ }
 
-.box{
-  width: 390px;
-height:450px;
-background-color:green;
-align-content: initial;
-}
-.boxhalf{
-  width: 390px;
-height:25px;
-background-color:yellow;
-align-content: initial;
-font-size: x-large;
+ .box {
+   width: 390px;
+   height: 590px;
+   background-color: fuchsia;
+   float: right;
+ }
 
-}
-.boxx{
-  width: 390px;
-height:25px;
-background-color:white;
-align-content: initial;
-font-size: x-large;
+ .box2 {
+   width: 390px;
+   height: 590px;
+   background-color: blueviolet;
+   float: left;
+ }
 
-}
-label{
-  font-size: x-large;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  display:-moz-grid-line;
-  /* padding-left: 15px; */
-  text-indent: -15px;
-}
-input#polycarbonate{
-  align-self: auto;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  width: 15px;
-  height: 15px;
-  padding: 0;
-  margin: 0;
-  vertical-align: bottom;
-  position: relative;
-  top: -1px;
-}
+ .box3 {
+   width: 390px;
+   height: 590px;
+   background-color: red;
+   float: left;
 
-input#alumium{
-position: relative;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-width: 15px;
-height: 15px;
-padding: 0;
-margin: 0;
-vertical-align: bottom;
-position: relative;
-top: -1px;
-}
+ }
+
+ .box4 {
+   width: 390px;
+   height: 590px;
+   background-color: paleturquoise;
+   float: left;
+
+ }
+
+ .boxhalf {
+   width: 390px;
+   height: 25px;
+   background-color: yellow;
+   font-size: x-large;
+
+ }
+
+ .boxx {
+   width: 390px;
+   height: 25px;
+   background-color: white;
+   align-content: initial;
+   font-size: x-large;
+
+ }
+
+ label {
+   font-size: x-large;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   display: block;
+ }
