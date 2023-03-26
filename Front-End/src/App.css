@@ -682,3 +682,10 @@ input{
  position: relative;
  
 }
+
+.BigBox{
+  width:1300px;
+  height:300px;
+  background-color: #eeeeee;
+  font-size: xx-large;
+}

@@ -144,8 +144,12 @@ function UploadFile(props) {
     return (
         <Page selected={props.selected} id="UploadFile">
             <div>
-                <p className="section-label" id="UploadFile">Upload File</p>
-                <div className="textArea">
+                <br></br>
+                <div className="BigBox">
+                    <br></br>
+                    Welcome To Vitruvian Manfacturing
+                    
+
                 </div>
             </div>
         </Page >
