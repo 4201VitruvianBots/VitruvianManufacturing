@@ -206,6 +206,11 @@ input[type="number"] {
   position: relative;
 }
 
+.containerr {
+  height: 200px;
+  position: relative;
+}
+
 .center {
   margin: 0;
   position: absolute;
@@ -215,6 +220,12 @@ input[type="number"] {
   transform: translate(-50%, -50%);
 }
 
+.centerr {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height:200px
+}
 .vertical-center {
   margin: 0;
   position: absolute;
@@ -606,52 +617,45 @@ h4 {
 
 .box {
   width: 100%;
-  height: 590px;
-  background-color: lightgrey;
-  /* float: right; */
-  /* margin: -9ch; */
-  /* margin: 0cap; */
-  /* margin: 9cm; */
-  /* margin: 100cqb; */
-  /* margin: -20%; */
-  /* margin: 40cqh; */
-  /* margin: 50cqi; */
-
+  height: 600px;
+  background-color: #eeeeee;
 }
 
 .box2 {
   width: 100%;
-  height: 590px;
-  background-color: lightgrey;
-  /* float: left; */
+  height: 600px;
+  background-color: #eeeeee;
 }
 
 .box3 {
   width: 100%;
-  height: 590px;
-  background-color: lightgrey;
-  /* float: left; */
+  height: 600px;
+  background-color: #eeeeee;
 }
 
 .box4 {
   width: 100%;
-  height: 590px;
-  background-color: lightgrey;
-  /* float: right; */
+  height: 600px;
+  background-color: #eeeeee;
 }
 
 .boxhalf {
   width: 100%;
   height: 25px;
-  background-color: lightgreen;
+  background-color: #b6d7a8;
+  font-size: x-large;
+}
+.boxhalf2 {
+  width: 100%;
+  height: 25px;
+  background-color: #f4cccc;
   font-size: x-large;
 }
 
 .boxx {
   width: 100%;
   height: 25px;
-  background-color: white;
-  /* align-content: initial; */
+  background-color: #ffffff;
   font-size: x-large;
 }
 
@@ -665,5 +669,16 @@ label {
   width: 20%;
   float: left;
   margin: 0 2%;
-  filter: blur(108px);
+}
+
+input{
+  background-color: #b6d7a8;
+  width: 350px;
+  height:50px;
+  font-size: large;
+  border: #b6d7a8;
+ -ms-transform: translateY(10%);
+ transform: translateY(10%);
+ position: relative;
+ 
 }

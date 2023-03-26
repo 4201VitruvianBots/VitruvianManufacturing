@@ -14,7 +14,7 @@ function VitruvianManfacturing(props) {
             <br></br>
             <div className="colummtest">
                 <div className="box">
-                    <div className="boxhalf">
+                    <div className="boxhalf2">
                         Delete
                     </div>
                     <br></br>
@@ -68,6 +68,7 @@ function VitruvianManfacturing(props) {
                     <label for="Onyx">Onyx</label>
                     <br></br>
                 </div>
+
             </div>
 
             <div className="colummtest">
@@ -75,7 +76,6 @@ function VitruvianManfacturing(props) {
                     <div className="boxhalf">
                         Stock
                     </div>
-                    <br></br>
                     <br></br>
                     <input type="checkbox" id="plate" name="plate" />
                     <label for="plate">Plate</label>
@@ -95,9 +95,12 @@ function VitruvianManfacturing(props) {
                     <input type="checkbox" id="filament" name="filament" />
                     <label for="filament">Filament</label>
                     <br></br>
+                    <br></br>
                 </div>
+                <br></br>
+                <br></br>
+                <input type="submit" value="Submit"/>
             </div>
-
 
             <div className="colummtest">
                 <div className="box4">
@@ -129,7 +132,7 @@ function VitruvianManfacturing(props) {
                     <input type="checkbox" id="N/A" name="N/A" />
                     <label for="N/A">N/A</label>
                     <br></br>
-                </div>
+            </div>
             </div>
         </Page>
     );
