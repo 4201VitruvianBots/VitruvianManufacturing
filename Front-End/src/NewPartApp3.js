@@ -1,6 +1,5 @@
-// import "./App.css";
+import "./App.css";
 import "./script.js";
-import "./style.css";
 function Page(props) {
     return (
         <div className={props.selected ? "page selected" : "page"} id={props.id}>
@@ -151,7 +150,7 @@ function UploadFile(props) {
                     <br></br>
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" /> 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="App.css" />
 
   <div class="container">
     <input type="file" id="file-input" multiple />
