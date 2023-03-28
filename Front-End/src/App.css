@@ -695,10 +695,10 @@ input{
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body {
+body1 {
   background-color: #025bee;
 }
-.container {
+.container1 {
   background-color: #ffffff;
   width: 90%;
   max-width: 34.37em;
@@ -708,10 +708,10 @@ body {
   border-radius: 0.43em;
   box-shadow: 0 1.25em 2.18em rgb(1, 28, 71, 0.3);
 }
-input[type="file"] {
+input[type="file1"] {
   display: none;
 }
-label {
+label1 {
   display: block;
   position: relative;
   background-color: #025bee;
@@ -725,12 +725,12 @@ label {
   border-radius: 0.31em;
   cursor: pointer;
 }
-#num-of-files {
+#num-of-files1 {
   font-weight: 400;
   text-align: center;
   margin: 1.25em 0 1.87em 0;
 }
-ul {
+ul1 {
   list-style-type: none;
 }
 .container li {

@@ -1,5 +1,4 @@
 import "./App.css";
-import "./script.js";
 function Page(props) {
     return (
         <div className={props.selected ? "page selected" : "page"} id={props.id}>
@@ -152,14 +151,14 @@ function UploadFile(props) {
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" /> 
   <link rel="stylesheet" href="App.css" />
 
-  <div class="container">
-    <input type="file" id="file-input" multiple />
-    <label for="file-input">
+  <div class="container1">
+    <input type="file1" id="file-input1" multiple />
+    <label for="file-input1">
       <i class="fa-solid fa-arrow-up-from-bracket"></i>
       &nbsp; Choose Files To Upload
     </label>
-    <div id="num-of-files">No Files Choosen</div>
-    <ul id="files-list"></ul>
+    <div id="num-of-files1">No Files Choosen</div>
+    <ul id="files-list1"></ul>
   </div>
   <script src="script.js"></script>
                 </div>
