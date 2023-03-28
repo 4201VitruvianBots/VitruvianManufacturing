@@ -1,3 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
 .App {
   width: 100%;
 }
@@ -221,11 +229,12 @@ input[type="number"] {
 }
 
 .centerr {
- display: flex;
- justify-content: center;
- align-items: center;
- height:200px
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px
 }
+
 .vertical-center {
   margin: 0;
   position: absolute;
@@ -645,6 +654,7 @@ h4 {
   background-color: #b6d7a8;
   font-size: x-large;
 }
+
 .boxhalf2 {
   width: 100%;
   height: 25px;
@@ -671,33 +681,43 @@ label {
   margin: 0 2%;
 }
 
-input{
+input {
   background-color: #b6d7a8;
   width: 350px;
-  height:50px;
+  height: 50px;
   font-size: large;
   border: #b6d7a8;
- -ms-transform: translateY(10%);
- transform: translateY(10%);
- position: relative;
- 
+  -ms-transform: translateY(10%);
+  transform: translateY(10%);
+  position: relative;
+
 }
 
-.BigBox{
-  width:1300px;
-  height:300px;
+.BigBox {
+  width: 1300px;
+  height: 300px;
   background-color: #eeeeee;
   font-size: xx-large;
 }
+
+.BigBox1 {
+  width: 300px;
+  height: 300px;
+  background-color: #eeeeee;
+  font-size: xx-large;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body1 {
   background-color: #025bee;
 }
+
 .container1 {
   background-color: #ffffff;
   width: 90%;
@@ -708,9 +728,11 @@ body1 {
   border-radius: 0.43em;
   box-shadow: 0 1.25em 2.18em rgb(1, 28, 71, 0.3);
 }
+
 input[type="file1"] {
   display: none;
 }
+
 label1 {
   display: block;
   position: relative;
@@ -725,15 +747,18 @@ label1 {
   border-radius: 0.31em;
   cursor: pointer;
 }
+
 #num-of-files1 {
   font-weight: 400;
   text-align: center;
   margin: 1.25em 0 1.87em 0;
 }
+
 ul1 {
   list-style-type: none;
 }
-.container li {
+
+.hello {
   font-weight: 500;
   background-color: #eff5ff;
   color: #025bee;
