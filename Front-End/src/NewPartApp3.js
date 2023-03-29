@@ -4,7 +4,6 @@ function Page(props) {
         <div className={props.selected ? "page selected" : "page"} id={props.id}>
             {props.children}
         </div>
-
     );
 }
 
@@ -166,27 +165,13 @@ function UploadFile(props) {
         </Page >
     );
 }
-function Part(props) {
-    return (
-        <Page selected={props.selected} id="Part">
-            <div>
-                <p className="section-label" id="Part">Part</p>
-                <div className="textArea">
-                    <input type="file" required="required " multiple
-                        id="avatar" name="drivetrainphotos_avatar"
-                        accept="image/png, image/jpeg"></input>
-                </div>
-            </div>
-        </Page>
-    );
-}
 
 function UploadComplete(props) {
     return (
-        <div className="BigBox1">
+        <><br></br><div className="BigBox1">
             Upload Complete
-        </div>
+        </div></>
     );
 }
 
-export { VitruvianManfacturing, UploadFile, Part, UploadComplete };
+export { VitruvianManfacturing, UploadFile, UploadComplete };
