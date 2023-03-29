@@ -1,5 +1,5 @@
 import React from 'react';
-import { VitruvianManfacturing, UploadFile, UploadComplete } from '../NewPartApp3';
+import { VitruvianManfacturing, UploadFile } from '../NewPartApp3';
 import "./app.css";
 
 const NewPartApp3 = () => {
@@ -20,7 +20,6 @@ const NewPartApp3 = () => {
             <ul style={{ listStyle: 'none' }}>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>Begin</button></li>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[1]} onClick={() => { setValue(1) }}>Upload File</button></li>
-                <li style={{ float: 'left' }}><button type='button' className={actArray[2]} onClick={() => { setValue(2) }}>Part Sumbmission</button></li>
             </ul>
             <br /><br />
             <div>
@@ -44,12 +43,5 @@ function Choosepage(props) {
         return (<UploadFile />
         );
     }
-
-    if (props.value === 2) {
-        return (<UploadComplete />
-        );
-    }
-
 }
-
 export default NewPartApp3;

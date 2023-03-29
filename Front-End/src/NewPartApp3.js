@@ -166,12 +166,6 @@ function UploadFile(props) {
     );
 }
 
-function UploadComplete(props) {
-    return (
-        <><br></br><div className="BigBox1">
-            Upload Complete
-        </div></>
-    );
-}
 
-export { VitruvianManfacturing, UploadFile, UploadComplete };
+
+export { VitruvianManfacturing, UploadFile };
