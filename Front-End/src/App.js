@@ -8,7 +8,7 @@ import PrinterStatusDataPage from "./Pages/PrinterAdmin";
 import Machining from "./Pages/Machining";
 import NoPage from "./Pages/NoPage";
 import NewPartApp from "./Pages/pt2home";
-import NewPartApp3 from "./Pages/pt2home copy";
+import NewPartApp3 from "./Pages/pt2homecopy";
 
 export default function App() {
 
