@@ -5,10 +5,11 @@ import Layout from "./Pages/Layout";
 import Parts from "./Pages/Parts";
 import PrinterStatusPage from "./Pages/PrinterStatus";
 import PrinterStatusDataPage from "./Pages/PrinterAdmin";
-
 import Machining from "./Pages/Machining";
 import NoPage from "./Pages/NoPage";
 import NewPartApp from "./Pages/pt2home";
+import NewPartApp3 from "./Pages/pt2home copy";
+
 export default function App() {
 
     return (
@@ -20,6 +21,7 @@ export default function App() {
                     <Route path="PrinterStatusDataPage" element={<PrinterStatusDataPage />} />
                     <Route path="Machining" element={<Machining />} />
                     <Route path="HomePt2" element={<NewPartApp />} />
+                    <Route path="HomePt3" element={<NewPartApp3 />} />
                     <Route path="*" element={<NoPage />} />
                 </Route>
             </Routes>
