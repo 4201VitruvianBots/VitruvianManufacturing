@@ -1,16 +1,19 @@
 import "./App.css";
 function Page(props) {
     return (
-        <div className={props.selected ? "page selected" : "page"} id={props.id}>
+        <><div className={props.selected ? "page selected" : "page"} id={props.id}>
             {props.children}
-        </div>
+        </div><style>
+                background-image: ("TemplateJack.png");
+                background-repeat: no-repeat;
+                background-size: cover;</style></>
     );
 }
 
 function VitruvianManfacturing(props) {
     return (
         <Page selected={props.selected} className="page" id="vitruvian-manfacturing">
-            <br></br>                
+            <br></br>
             <div className="colummtest">
                 <div className="box">
                     <div className="boxhalf2">
@@ -19,11 +22,11 @@ function VitruvianManfacturing(props) {
                     <br></br>
                     <br></br>
                     <div className="boxx">
-                        Name: 
-                        </div>
-                        <br></br>
-                        <br></br>
-                        <div className="boxx">
+                        Name:
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <div className="boxx">
                         File Upload:
                     </div>
                     <br></br>
@@ -35,7 +38,7 @@ function VitruvianManfacturing(props) {
                     <div className="boxx">
                         Quantity:
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -137,26 +140,26 @@ function VitruvianManfacturing(props) {
     );
 }
 
-function DropDragBX(props){
+function DropDragBX(props) {
     <Page>
-        
-         <title>Drag and Drop File Upload</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta charset="utf-8"/>
-  <link rel="shortcut icon" href="/assets/favicon.ico"/>
-  <link rel="stylesheet" href="./src/main.css"/>
 
-<body>
-  <div class="drop-zone">
-    <span class="drop-zone__prompt">Drop file here or click to upload</span>
-    <input type="file" name="myFile" class="drop-zone__input"/>
-  </div>
+        <title>Drag and Drop File Upload</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="/assets/favicon.ico" />
+        <link rel="stylesheet" href="./src/main.css" />
 
-  <script src="./src/main.js"></script>
-</body>
+        <body>
+            <div class="drop-zone">
+                <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                <input type="file" name="myFile" class="drop-zone__input" />
+            </div>
+
+            <script src="./src/main.js"></script>
+        </body>
     </Page>
 }
 
-        
 
-                export {VitruvianManfacturing, DropDragBX};
+
+export { VitruvianManfacturing, DropDragBX };

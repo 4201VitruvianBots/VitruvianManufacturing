@@ -4,9 +4,13 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 function Page(props) {
     return (
-        <><span style="background-img:url(https://docs.google.com/presentation/d/e/2PACX-1vT0AEm9Nmjw3k6xrdJnUOXEVKYtcYKU-ZniCDMU978IBgOwyrxsocQVxPtNrLSzKWDmnKwDGAKRd42o/pub?start=false&loop=false&delayms=3000)"></span><div className={props.selected ? "page selected" : "page"} id={props.id}>
+        <><div className={props.selected ? "page selected" : "page"} id={props.id}>
             {props.children}
-        </div></>
+        </div><style>
+                background-image: ("TemplateJack.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            </style></>
 
     );
 }
@@ -21,28 +25,17 @@ function NewDate(props) {
 function SignIn(props) {
     return (
         <Page selected={props.selected} className="page" id="sign-in">
+            <style>
+                background-image: ("TemplateJack.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            </style>
             <div className="textArea">
-                {/* <h3>Sign in</h3>
-                {/* <label htmlFor="username">Your username</label> */}
-                {/* <br></br>
-
-                <input type="text" placeholder="Enter Username" name="username" required></input>
-
-                <input type="password" placeholder="Enter Password" name="pswrd" required /> */}
-                {/* <label for="username">Username:</label> */}
-                {/* <input type="text" id="username" name="username"/> */}
                 <h1>Sign in</h1>
                 <label htmlFor="email">Email: </label>
                 <input type="email" id="email" name="email" required="required" />
                 <br></br>
                 <br></br>
-                {/* <label for="pwd">Password:</label>
-                <input type="password" id="pwd" name="pwd"></input> */}
-                <br></br>
-                <input type="submit" value="Submit" />
-                {/* <body class="light">     */}
-
-                {/* </body> */}
             </div>
         </Page>
     );
@@ -51,6 +44,11 @@ function SignIn(props) {
 function PartHub(props) {
     return (
         <Page selected={props.selected} id="PartHub">
+            <style>
+                background-image: ("TemplateJack.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            </style>
             <div>
                 <p className="section-label" id="Part Hub">Select a Mechanism</p>
                 <div className="textArea">
@@ -68,7 +66,6 @@ function PartHub(props) {
                     <br></br>
                     <div>
                     </div>
-
                 </div>
             </div>
         </Page>
@@ -78,6 +75,11 @@ function PartHub(props) {
 function Drivetrain(props) {
     return (
         <Page selected={props.selected} id="DriveTrain">
+            <style>
+                background-image: ("TemplateJack.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            </style>
             <div>
                 <p className="section-label" id="DriveTrain">Drivetrain</p>
                 <div className="textArea">
@@ -139,10 +141,6 @@ function Drivetrain(props) {
                     <br></br>
                     <input type="text" id="PartNumber" name="drivetrain_PartNumber" placeholder="Part Number" className="text-input" required="required" />
                     <br></br>
-                    {/* <input type="radio" id="Low" name="Low" value="HTML" />
-                    <label for="html">Low</label>
-                    <input type="radio" id="Mid" name="Mid" value="Mid" />
-                    <label for="Mid">Mid</label> */}
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="drivetrain_cal" />
                 </div>
@@ -168,6 +166,11 @@ function DrivetrainPhotos(props) {
 function Bumpers(props) {
     return (
         <Page selected={props.selected} id="Bumpers">
+            <style>
+                background-image: ("TemplateJack.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            </style>
             <div>
                 <p className="section-label" id="Bumpers">Bumpers</p>
                 <div className="textArea">
@@ -256,6 +259,11 @@ function BumperPhotos(props) {
 function Elevator(props) {
     return (
         <Page selected={props.selected} id="Elevator">
+            <style>
+                background-image: ("TemplateJack.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            </style>
             <div>
                 <p className="section-label" id="Elevator">Elevator</p>
                 <div className="textArea">
@@ -347,6 +355,11 @@ function ElevatorPhotos(props) {
 function Intake(props) {
     return (
         <Page selected={props.selected} id="Intake">
+            <style>
+                background-image: ("TemplateJack.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            </style>
             <div>
                 <p className="section-label" id="Intake">Intake</p>
                 <div className="textArea">
@@ -436,6 +449,11 @@ function IntakePhotos(props) {
 function AuxiliarySystems(props) {
     return (
         <Page selected={props.selected} id="AuxiliarySystems">
+            <style>
+                background-image: ("TemplateJack.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            </style>
             <div>
                 <p className="section-label" id="AuxiliarySystems">Auxiliary Systems</p>
                 <div className="textArea">
@@ -525,6 +543,11 @@ function AuxiliarySystemsPhotos(props) {
 function Forebar(props) {
     return (
         <Page selected={props.selected} id="Forebar">
+            <style>
+                background-image: ("TemplateJack.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            </style>
             <div>
                 <p className="section-label" id="Forebar">Forebar</p>
                 <div className="textArea">
@@ -611,6 +634,11 @@ function ForebarPhotos(props) {
 function ThreeDPrint(props) {
     return (
         <Page selected={props.selected} id="ThreeDPrint">
+            <style>
+                background-image: ("TemplateJack.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            </style>
             <div>
                 <p className="section-label" id="ThreeDPrint">3d Print</p>
                 <div className="textArea">
@@ -703,6 +731,11 @@ function ThreeDPrintPhotos(props) {
 function SavePage(props) {
     return (
         <Page selected={props.selected} id="Save ">
+            <style>
+                background-image: ("TemplateJack.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            </style>
             <p className="section-label" id="Save ">Save</p>
             <div className="textArea">
                 <input type="submit" value="Submit" />

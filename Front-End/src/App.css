@@ -7,6 +7,12 @@
    text-align: center;
  }
 
+ .Page {
+   background-image: ("TemplateJack.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
  .page-title {
    color: gray;
    font-size: 25px;
@@ -73,7 +79,6 @@
    -moz-osx-font-smoothing: grayscale;
    /* background-color: var(--bg-color); */
    /* color: var(--accent-1); */
-   background-image: url("https://docs.google.com/presentation/d/e/2PACX-1vT0AEm9Nmjw3k6xrdJnUOXEVKYtcYKU-ZniCDMU978IBgOwyrxsocQVxPtNrLSzKWDmnKwDGAKRd42o/pub?start=false&loop=false&delayms=3000");
 
  }
 
@@ -361,7 +366,6 @@
    display: grid;
    place-items: center;
    font-family: var(--font-family);
-   background-color: var(--bg-body);
  }
 
  .calendar {
