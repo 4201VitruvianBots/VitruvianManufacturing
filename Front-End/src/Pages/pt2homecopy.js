@@ -49,7 +49,7 @@ function Choosepage(props) {
         return (<UploadFile />
         );
     }
-   (props.value === 2) {
+    if (props.value === 2) {
         return (<UploadComplete />
         );
     }
