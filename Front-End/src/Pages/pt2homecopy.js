@@ -1,5 +1,5 @@
 import React from 'react';
-import { VitruvianManfacturing, UploadFile, DragDropFile} from '../NewPartApp3';
+import { VitruvianManfacturing, Filer} from '../NewPartApp3';
 import "./app.css";
 
 const NewPartApp3 = () => {
@@ -40,7 +40,7 @@ function Choosepage(props) {
     // }
 
     if (props.value === 0) {
-        return (<><UploadFile /><DragDropFile /></>
+        return (<Filer />
         );
     }
 
