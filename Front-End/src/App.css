@@ -628,13 +628,15 @@ h4 {
 .box3 {
   width: 100%;
   height: 750px;
-  background-color: #eeeeee;
+  background-color: #eeeeee
 }
 
 .box4 {
   width: 100%;
   height: 750px;
   background-color: #eeeeee;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
 }
 
 .boxhalf {
@@ -642,6 +644,8 @@ h4 {
   height: 35px;
   background-color: #b6d7a8;
   font-size: x-large;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
 }
 
 .boxhalf2 {
@@ -649,6 +653,8 @@ h4 {
   height: 35px;
   background-color: #f4cccc;
   font-size: x-large;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
 }
 
 .boxx {
@@ -656,18 +662,24 @@ h4 {
   height: 35px;
   background-color: #ffffff;
   font-size: x-large;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
 }
 
 label {
   font-size: x-large;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
   display: block;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
 }
 
 .colummtest {
   width: 20%;
   float: left;
   margin: 0 2%;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
 }
 
 input {
@@ -679,6 +691,8 @@ input {
   -ms-transform: translateY(10%);
   transform: translateY(10%);
   position: relative;
+  /* font-family: Comic Sans; */
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .BigBox {
@@ -686,6 +700,8 @@ input {
   height: 300px;
   background-color: #eeeeee;
   font-size: xx-large;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
 }
 
 .BigBox1 {
@@ -694,17 +710,23 @@ input {
   background-color: #eeeeee;
   font-size: xx-large;
   text-align: center;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
 }
 
 body1 {
   background-color: #025bee;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
 }
 
 .container1 {
@@ -716,10 +738,14 @@ body1 {
   padding: 3.12em 1.25em;
   border-radius: 0.43em;
   box-shadow: 0 1.25em 2.18em rgb(1, 28, 71, 0.3);
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
 }
 
 input[type="file1"] {
   display: none;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
 }
 
 label1 {
@@ -735,16 +761,22 @@ label1 {
   margin: auto;
   border-radius: 0.31em;
   cursor: pointer;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
 }
 
 #num-of-files1 {
   font-weight: 400;
   text-align: center;
   margin: 1.25em 0 1.87em 0;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
 }
 
 ul1 {
   list-style-type: none;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+
 }
 
 .hello {
@@ -756,4 +788,7 @@ ul1 {
   border-radius: 0.3em;
   display: flex;
   justify-content: space-between;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  filter: blur(24px);
+
 }
