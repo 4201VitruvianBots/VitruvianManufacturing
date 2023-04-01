@@ -71,8 +71,10 @@
    font-weight: 100;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
-   background-color: var(--bg-color);
+   /* background-color: var(--bg-color); */
    /* color: var(--accent-1); */
+   background-image: url("https://docs.google.com/presentation/d/e/2PACX-1vT0AEm9Nmjw3k6xrdJnUOXEVKYtcYKU-ZniCDMU978IBgOwyrxsocQVxPtNrLSzKWDmnKwDGAKRd42o/pub?start=false&loop=false&delayms=3000");
+
  }
 
  /* button {
@@ -622,6 +624,6 @@
    color: white;
  }
 
- .a{
-  color: fuchsia;
-}
+ .a {
+   color: fuchsia;
+ }

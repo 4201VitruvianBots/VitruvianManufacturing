@@ -4,7 +4,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 function Page(props) {
     return (
-        <><img src="https://docs.google.com/document/d/e/2PACX-1vSo0LktSR3Pt91px1YV3r90YKgJZtTV0GSmu0CZRIB1Hd9Vor6_vMUzU5ktfZLULgty1FVoaPTl5kbv/pub" alt="Image" height="290px" width="30px"/><div className={props.selected ? "page selected" : "page"} id={props.id}>
+        <><span style="background-img:url(https://docs.google.com/presentation/d/e/2PACX-1vT0AEm9Nmjw3k6xrdJnUOXEVKYtcYKU-ZniCDMU978IBgOwyrxsocQVxPtNrLSzKWDmnKwDGAKRd42o/pub?start=false&loop=false&delayms=3000)"></span><div className={props.selected ? "page selected" : "page"} id={props.id}>
             {props.children}
         </div></>
 
@@ -131,7 +131,7 @@ function Drivetrain(props) {
                         <option value="Wood">Wood</option>
                         <option value="PETG">PETG</option>
                         <option value="PLA">PLA</option>
-                        <option value="ONYX">ONYX</option>             
+                        <option value="ONYX">ONYX</option>
                         <option value="Nothing">Nothing</option>
                     </select>
                     <br></br>
@@ -194,7 +194,7 @@ function Bumpers(props) {
                         <option value="Shaft">Shaft</option>
                         <option value="3D-Print">3D-Print</option>
                         <option value="Nothing">Nothing</option>
-                        </select>
+                    </select>
                     <br></br>
                     <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
                     <select name="bumpers_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="" className="form-control" required >
@@ -681,7 +681,7 @@ function ThreeDPrint(props) {
                     <NewDate name="ThreeDPrint_date" />
                 </div>
             </div>
-        </Page>
+        </Page >
     );
 }
 
