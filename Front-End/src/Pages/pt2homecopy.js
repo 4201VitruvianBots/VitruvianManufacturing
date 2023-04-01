@@ -1,5 +1,5 @@
 import React from 'react';
-import { VitruvianManfacturing, Filer} from '../NewPartApp3';
+import { VitruvianManfacturing, Filer } from '../NewPartApp3';
 import "./app.css";
 
 const NewPartApp3 = () => {
@@ -34,11 +34,6 @@ const NewPartApp3 = () => {
 }
 
 function Choosepage(props) {
-    // if (props.value === 0) {
-    //     return (<SignIn />
-    //     );
-    // }
-
     if (props.value === 0) {
         return (<Filer />
         );
@@ -48,7 +43,6 @@ function Choosepage(props) {
         return (<VitruvianManfacturing />
         );
     }
-    
 }
 
 export default NewPartApp3;

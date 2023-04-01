@@ -50,5 +50,4 @@ class NumberInput extends React.Component {
     }
 }
 
-
 export { RadioButtons, NumberInput };

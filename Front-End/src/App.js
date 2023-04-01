@@ -11,7 +11,6 @@ import NewPartApp from "./Pages/pt2home";
 import NewPartApp3 from "./Pages/pt2homecopy";
 
 export default function App() {
-
     return (
         <BrowserRouter>
             <Routes>

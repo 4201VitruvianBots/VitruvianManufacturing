@@ -9,9 +9,9 @@ function Page(props) {
         <div className={props.selected ? "page selected" : "page"} id={props.id}>
             {props.children}
         </div>
-
     );
 }
+
 function NewDate(props) {
     const [startDate, setStartDate] = useState(new Date());
     return (
@@ -19,32 +19,18 @@ function NewDate(props) {
     );
 };
 
-
 function SignIn(props) {
     return (
         <Page selected={props.selected} className="page" id="sign-in">
             <div className="textArea">
-                {/* <h3>Sign in</h3>
-                {/* <label htmlFor="username">Your username</label> */}
-                {/* <br></br>
-
-                <input type="text" placeholder="Enter Username" name="username" required></input>
-
-                <input type="password" placeholder="Enter Password" name="pswrd" required /> */}
-                {/* <label for="username">Username:</label> */}
-                {/* <input type="text" id="username" name="username"/> */}
                 <h1>Sign in</h1>
                 <br></br>
                 <label htmlFor="email">Email: </label>
                 <input type="email" id="email" name="email" required="required" />
                 <br></br>
                 <br></br>
-                {/* <label for="pwd">Password:</label>
-                <input type="password" id="pwd" name="pwd"></input> */}
                 <br></br>
                 <input type="submit" value="Submit" />
-                {/* <body class="light">     */}
-                {/* </body> */}
             </div>
         </Page>
     );
@@ -85,7 +71,6 @@ function Drivetrain(props) {
                     <input type="text" id="Mechanism" name="drivetrain_Mechanism" placeholder="Mechanism" className="text-input" required="required" />
                     <br></br>
                     <input type="text" id="NumberOfParts" name="drivetrain_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" required="required" />
-
                     <br></br>
                     <label className="SizeOfPart" name="drivetrain_SizeOfParts" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
                     <select name="drivetrain_SizeOfPart" id="SizeOfPart" defaultValue="" className="form-control" required>
@@ -113,7 +98,6 @@ function Drivetrain(props) {
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
                     </select>
-
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
                     <select name="drivetrain_Thickness(Plate)" id="Thickness (Plate)" defaultValue="" className="form-control" required>
                         <option value="" className="Placeholder" disabled>Click Here!</option>
@@ -145,20 +129,14 @@ function Drivetrain(props) {
                         <option value="Whenever">Whenever</option>
                     </select>
                     <br></br>
-
                     <input type="text" id="LengthInInches" name="drivetrain_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
                     <br></br>
                     <input type="text" id="PartNumber" name="drivetrain_PartNumber" placeholder="Part Number" className="text-input" required="required" />
                     <br></br>
-                   
-
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="drivetrain_cal" />
                     <br></br>
-                    {/* <h1>Priority</h1>
-                    <RadioButtons items={['1', '2', '3', '4', '5']} id="Drivetrain_Priority" /> */}
                 </div>
-
             </div>
         </Page >
     );
@@ -167,7 +145,6 @@ function DrivetrainPhotos(props) {
     return (
         <Page selected={props.selected} id="DrivetrainPhotos">
             <div>
-
                 <p className="section-label" id="Drive-Train-Photos">Drivetrain Photos</p>
                 <div className="textArea">
                     <input type="file" required="required " multiple
@@ -259,6 +236,7 @@ function Bumpers(props) {
         </Page>
     );
 }
+
 function BumperPhotos(props) {
     return (
         <Page selected={props.selected} id="Bumper-Photos">
@@ -449,6 +427,7 @@ function Intake(props) {
         </Page>
     );
 }
+
 function IntakePhotos(props) {
     return (
         <Page selected={props.selected} id="Intake-Photos">
@@ -732,7 +711,6 @@ function ThreeDPrint(props) {
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="ThreeDPrint_date" />
                     <br></br>
-
                 </div>
             </div>
         </Page>

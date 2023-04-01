@@ -45,7 +45,6 @@ function Choosepage(props) {
     if (props.value === 1) {
 
         return (
-
             <form action="http://127.0.0.1:5000/api/drivetrain" method="POST"
                 enctype="multipart/form-data">
                 <Drivetrain />
@@ -55,7 +54,6 @@ function Choosepage(props) {
         );
     }
 
-
     if (props.value === 2) {
         return (
             <form action="http://127.0.0.1:5000/api/bumpers" method="POST"
@@ -64,7 +62,6 @@ function Choosepage(props) {
                 <BumperPhotos />
                 <SavePage />
             </form>
-
         );
     }
     if (props.value === 3) {
