@@ -4,7 +4,6 @@ import { SavePage, SignIn } from '../Pages';
 
 function PrinterStatusPage() {
     const [value, setValue] = React.useState(0)
-
     const actArray = []
     for (let i = 0; i < 10; i++) {
         if (i === value) {
@@ -14,7 +13,6 @@ function PrinterStatusPage() {
             actArray.push('btn')
         }
     }
-
     return (
         <div className="App">
             <ul style={{ listStyle: 'none' }}>

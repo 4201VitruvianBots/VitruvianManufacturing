@@ -1,3 +1,11 @@
+.App {
+  width: 100%;
+}
+
+#root {
+  width: 100%;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -78,25 +86,9 @@ ul {
   margin: 10px;
 }
 
-/* .textArea {
-  background-color: #ecf2eb;
-  min-width: 600px;
-  min-height: 100px;
-  min: length 100%;
-  padding: 100px;
-  margin: 200px;
-}
-
-
 body {
-  margin: 0;
-  /* font-family: monospace; */
-/* font-weight: 100; */
-/* -webkit-font-smoothing: antialiased; */
-/* -moz-osx-font-smoothing: grayscale; */
-/* background-color: var(--bg-color); */
-/* color: var(--accent-1); */
-
+  width: 100%;
+}
 
 input[type="button"] {
   border-color: var(--accent-3);
@@ -120,7 +112,6 @@ select {
 
 input[type="text"] {
   border-color: #003800;
-  /* background-color: var(--accent-1); */
   color: black;
   display: block;
   width: fit-content;

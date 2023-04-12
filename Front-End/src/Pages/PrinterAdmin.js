@@ -43,9 +43,6 @@ function Choosepage(props) {
         return (<><PrinterStatusDataTable /><SavePage /></>
         );
     }
-
 }
-
-
 
 export default PrinterStatusDataPage;

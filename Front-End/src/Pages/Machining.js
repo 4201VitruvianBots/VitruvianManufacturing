@@ -35,7 +35,6 @@ const Machining = () => {
                 </form>
             </div>
         </div>
-
     );
 }
 

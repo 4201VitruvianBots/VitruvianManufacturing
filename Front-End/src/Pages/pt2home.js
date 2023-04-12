@@ -15,7 +15,6 @@ const NewPartApp = () => {
         }
     }
     return (
-
         <div className="App">
             <ul style={{ listStyle: 'none' }}>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>SignIn</button></li>
