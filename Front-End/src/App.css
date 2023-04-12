@@ -7,10 +7,15 @@
    text-align: center;
  }
 
+ .Page {
+   background-image: ("TemplateJack.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
  .page-title {
    color: gray;
    font-size: 25px;
-
    font-style: normal;
  }
 
@@ -22,7 +27,7 @@
  }
 
  .section-label {
-   color: black;
+   color: bla ck;
    font-size: 30px;
    font-weight: bold;
 
@@ -71,8 +76,9 @@
    font-weight: 100;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
-   background-color: var(--bg-color);
+   /* background-color: var(--bg-color); */
    /* color: var(--accent-1); */
+
  }
 
  /* button {
@@ -359,7 +365,6 @@
    display: grid;
    place-items: center;
    font-family: var(--font-family);
-   background-color: var(--bg-body);
  }
 
  .calendar {
@@ -622,6 +627,6 @@
    color: white;
  }
 
- .a{
-  color: fuchsia;
-}
+ .a {
+   color: fuchsia;
+ }

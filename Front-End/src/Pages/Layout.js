@@ -5,6 +5,11 @@ const Layout = () => {
     return (
         <>
             <nav>
+                <style>
+                    background-image: ("TemplateJack.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                </style>
                 <div className="menu">
                     <Link to="/">Home</Link>
                     <Link to="/HomePt2">Home Pt2</Link>
