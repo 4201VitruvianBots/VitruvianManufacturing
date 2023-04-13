@@ -18,35 +18,7 @@ function NewDate(props) {
 };
 
 
-function SignIn(props) {
-    return (
-        <Page selected={props.selected} className="page" id="sign-in">
-            <div className="textArea">
-                {/* <h3>Sign in</h3>
-                {/* <label htmlFor="username">Your username</label> */}
-                {/* <br></br>
 
-                <input type="text" placeholder="Enter Username" name="username" required></input>
-
-                <input type="password" placeholder="Enter Password" name="pswrd" required /> */}
-                {/* <label for="username">Username:</label> */}
-                {/* <input type="text" id="username" name="username"/> */}
-                <h1>Sign in</h1>
-                <label htmlFor="email">Email: </label>
-                <input type="email" id="email" name="email" required="required" />
-                <br></br>
-                <br></br>
-                {/* <label for="pwd">Password:</label>
-                <input type="password" id="pwd" name="pwd"></input> */}
-                <br></br>
-                <input type="submit" value="Submit" />
-                {/* <body class="light">     */}
-
-                {/* </body> */}
-            </div>
-        </Page>
-    );
-}
 
 function PartHub(props) {
     return (
@@ -68,7 +40,6 @@ function PartHub(props) {
                     <br></br>
                     <div>
                     </div>
-
                 </div>
             </div>
         </Page>
@@ -93,7 +64,6 @@ function Drivetrain(props) {
                         <option value="L-Bracket ">L-Bracket</option>
                         <option value="Shaft">Shaft</option>
                         <option value="Nothing">Nothing</option>
-
                     </select>
                     <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
@@ -135,15 +105,21 @@ function Drivetrain(props) {
                         <option value="ONYX">ONYX</option>             
                         <option value="Nothing">Nothing</option>
                     </select>
+                    <label className="Priority" name="drivetrain_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
+                    <select name="drivetrain_Priority" id="Priority" defaultValue="" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here! </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5 ">5</option>
+                        <option value="Whenever">Whenever</option>
+                    </select>
                     <br></br>
                     <input type="text" id="LengthInInches" name="drivetrain_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
                     <br></br>
                     <input type="text" id="PartNumber" name="drivetrain_PartNumber" placeholder="Part Number" className="text-input" required="required" />
                     <br></br>
-                    {/* <input type="radio" id="Low" name="Low" value="HTML" />
-                    <label for="html">Low</label>
-                    <input type="radio" id="Mid" name="Mid" value="Mid" />
-                    <label for="Mid">Mid</label> */}
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="drivetrain_cal" />
                 </div>
@@ -226,6 +202,16 @@ function Bumpers(props) {
                         <option value="ONYX">ONYX</option>
                         <option value="Nothing">Nothing</option>
                     </select>
+                    <label className="Priority" name="drivetrain_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
+                    <select name="drivetrain_Priority" id="Priority" defaultValue="" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here! </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5 ">5</option>
+                        <option value="Whenever">Whenever</option>
+                    </select>
                     <br></br>
                     <input type="text" id="LengthInInches" name="bumpers_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
                     <br></br>
@@ -271,7 +257,6 @@ function Elevator(props) {
                         <option value="2x2">2x2</option>
                         <option value="L-Bracket ">L-Bracket</option>
                         <option value="Shaft">Shaft</option>
-
                         <option value="Nothing">Nothing</option>
                     </select>
                     <br></br>
@@ -290,7 +275,6 @@ function Elevator(props) {
                         <option value="" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
-
                         <option value="Nothing">Nothing</option>
                     </select>
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
@@ -302,7 +286,6 @@ function Elevator(props) {
                         <option value="1/4">1/4</option>
                         <option value="3/8">3/8</option>
                         <option value="3/4">3/4</option>
-
                         <option value="Nothing">Nothing</option>
                     </select>
                     <label className="Material (Plate)" htmlFor="Material (Plate)"><strong>Material (Plate)</strong> </label>
@@ -314,8 +297,17 @@ function Elevator(props) {
                         <option value="PETG">PETG</option>
                         <option value="PLA">PLA</option>
                         <option value="ONYX">ONYX</option>
-
                         <option value="Nothing">Nothing</option>
+                    </select>
+                    <label className="Priority" name="drivetrain_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
+                    <select name="drivetrain_Priority" id="Priority" defaultValue="" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here! </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5 ">5</option>
+                        <option value="Whenever">Whenever</option>
                     </select>
                     <br></br>
                     <input type="text" id="LengthInInches" name="elevator_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
@@ -362,7 +354,6 @@ function Intake(props) {
                         <option value="2x2">2x2</option>
                         <option value="L-Bracket ">L-Bracket</option>
                         <option value="Shaft">Shaft</option>
-
                         <option value="Nothing">Nothing</option>
                     </select>
                     <br></br>
@@ -381,7 +372,6 @@ function Intake(props) {
                         <option value="" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
-
                         <option value="Nothing">Nothing</option>
                     </select>
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
@@ -404,8 +394,17 @@ function Intake(props) {
                         <option value="PETG">PETG</option>
                         <option value="PLA">PLA</option>
                         <option value="ONYX">ONYX</option>
-
                         <option value="Nothing">Nothing</option>
+                    </select>
+                    <label className="Priority" name="drivetrain_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
+                    <select name="drivetrain_Priority" id="Priority" defaultValue="" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here! </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5 ">5</option>
+                        <option value="Whenever">Whenever</option>
                     </select>
                     <br></br>
                     <input type="text" id="LengthInInches" name="intake_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
@@ -469,7 +468,6 @@ function AuxiliarySystems(props) {
                         <option value="" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
-
                         <option value="Nothing">Nothing</option>
                     </select>
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
@@ -492,8 +490,17 @@ function AuxiliarySystems(props) {
                         <option value="PETG">PETG</option>
                         <option value="PLA">PLA</option>
                         <option value="ONYX">ONYX</option>
-
                         <option value="Nothing">Nothing</option>
+                    </select>
+                    <label className="Priority" name="drivetrain_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
+                    <select name="drivetrain_Priority" id="Priority" defaultValue="" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here! </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5 ">5</option>
+                        <option value="Whenever">Whenever</option>
                     </select>
                     <br></br>
                     <input type="text" id="LengthInInches" name="AuxiliarySystems_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
@@ -582,6 +589,16 @@ function Forebar(props) {
                         <option value="ONYX">ONYX</option>
                         <option value="Nothing">Nothing</option>
                     </select>
+                    <label className="Priority" name="drivetrain_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
+                    <select name="drivetrain_Priority" id="Priority" defaultValue="" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here! </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5 ">5</option>
+                        <option value="Whenever">Whenever</option>
+                    </select>
                     <br></br>
                     <input type="text" id="LengthInInches" name="Forebar_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
                     <br></br>
@@ -636,7 +653,6 @@ function ThreeDPrint(props) {
                         <option value="Plate">Plate</option>
                         <option value="Hex Shaft">Hex Shaft</option>
                         <option value="Shaft">Shaft</option>
-
                         <option value="Nothing">Nothing</option>
                     </select>
                     <br></br>
@@ -645,7 +661,6 @@ function ThreeDPrint(props) {
                         <option value="" className="Placeholder" disabled>Click Here!</option>
                         <option value="1/16">1/16</option>
                         <option value="1/8">1/8</option>
-
                         <option value="Nothing">Nothing</option>
                     </select>
                     <label className="Thickness (Plate)" htmlFor="Thickness (Plate)"><strong>Thickness (Plate)</strong> </label>
@@ -672,6 +687,16 @@ function ThreeDPrint(props) {
                         <option value="HHST">HHST</option>
                         <option value="CarbonFiber">CarbonFiber</option>
                         <option value="Nothing">Nothing</option>
+                    </select>
+                    <label className="Priority" name="drivetrain_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
+                    <select name="drivetrain_Priority" id="Priority" defaultValue="" className="form-control" required>
+                        <option value="" className="Placeholder" disabled>Click Here! </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5 ">5</option>
+                        <option value="Whenever">Whenever</option>
                     </select>
                     <br></br>
                     <input type="text" id="LengthInInches" name="ThreeDPrint_LengthInInches" placeholder="Length in Inches" className="text-input" required />
@@ -711,4 +736,4 @@ function SavePage(props) {
         </Page>
     );
 }
-export { SignIn, PartHub, Drivetrain, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos, Forebar, ForebarPhotos, ThreeDPrint, ThreeDPrintPhotos, SavePage };
+export {  PartHub, Drivetrain, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos, Forebar, ForebarPhotos, ThreeDPrint, ThreeDPrintPhotos, SavePage };
