@@ -35,13 +35,9 @@ const NewPartApp3 = () => {
 
 function Choosepage(props) {
     if (props.value === 0) {
-        // return (<DropDragBX />
-        // );
     }
 
     if (props.value === 1) {
-        // return (<VitruvianManfacturing />
-        // );
     }
 }
 
