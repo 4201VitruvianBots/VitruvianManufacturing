@@ -1,5 +1,6 @@
 import React from 'react';
 import { AuxiliarySystems, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, Drivetrain, DrivetrainPhotos, Elevator, ElevatorPhotos, Forebar, ForebarPhotos, Intake, IntakePhotos, SavePage,  ThreeDPrint, ThreeDPrintPhotos } from '../NewPartApp';
+
 import "./app.css";
 
 const NewPartApp = () => {

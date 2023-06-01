@@ -197,7 +197,6 @@ function ElevatorDataTable(props) {
                                     <th>Number Of Parts</th>
                                     <th>Size Of Part</th>
                                     <th>Type Of Stock</th>
-
                                     <th> Thickness (Extrusion)</th>
                                     <th> Thickness (Plate)</th>
                                     <th> Material (Plate)</th>
@@ -475,7 +474,6 @@ function ThreeDPrintDataTable(props) {
                                     <th>Number Of Parts</th>
                                     <th>Size Of Part</th>
                                     <th>Type Of Stock</th>
-
                                     <th> Thickness (Extrusion)</th>
                                     <th> Thickness (Plate)</th>
                                     <th> Material (Plate)</th>
