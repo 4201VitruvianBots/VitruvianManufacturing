@@ -24,15 +24,7 @@ function SignIn(props) {
     return (
         <Page selected={props.selected} className="page" id="sign-in">
             <div className="textArea">
-                {/* <h3>Sign in</h3>
-                {/* <label htmlFor="username">Your username</label> */}
-                {/* <br></br>
-
-                <input type="text" placeholder="Enter Username" name="username" required></input>
-
-                <input type="password" placeholder="Enter Password" name="pswrd" required /> */}
-                {/* <label for="username">Username:</label> */}
-                {/* <input type="text" id="username" name="username"/> */}
+            
                 <h1>Sign in</h1>
                 <br></br>
                 <label htmlFor="email">Email: </label>
@@ -236,11 +228,6 @@ function Bumpers(props) {
                         <option value="PLA">PLA</option>
                         <option value="ONYX">ONYX</option>
                     </select>
-                    <br></br>
-                    <input type="text" id="LengthInInches" name="bumpers_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
-                    <br></br>
-                    <input type="text" id="PartNumber" name="bumpers_PartNumber" placeholder="Part Number" className="text-input" required="required" />
-                    <br></br>
                     <label className="Priority" name="bumpers_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
                     <select name="bumpers_Priority" id="Priority" defaultValue="" className="form-control" required>
                         <option value="" className="Placeholder" disabled>Click Here! </option>
@@ -251,6 +238,12 @@ function Bumpers(props) {
                         <option value="5 ">5</option>
                         <option value="Whenever">Whenever</option>
                     </select>
+                    <br></br>
+                    <input type="text" id="LengthInInches" name="bumpers_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
+                    <br></br>
+                    <input type="text" id="PartNumber" name="bumpers_PartNumber" placeholder="Part Number" className="text-input" required="required" />
+                    <br></br>
+                   
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="bumpers_date" />
                     <br></br>
@@ -331,13 +324,8 @@ function Elevator(props) {
                         <option value="PLA">PLA</option>
                         <option value="ONYX">ONYX</option>
                     </select>
-                    <br></br>
-                    <input type="text" id="LengthInInches" name="elevator_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
-                    <br></br>
-                    <input type="text" id="PartNumber" name="elevator_PartNumber" placeholder="Part Number" className="text-input" required="required" />
-                    <br></br>
-                    <label className="Priority" name="elevator_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
-                    <select name="elevator_Priority" id="Priority" defaultValue="" className="form-control" required>
+                    <label className="Priority" name="bumpers_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
+                    <select name="bumpers_Priority" id="Priority" defaultValue="" className="form-control" required>
                         <option value="" className="Placeholder" disabled>Click Here! </option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -346,6 +334,11 @@ function Elevator(props) {
                         <option value="5 ">5</option>
                         <option value="Whenever">Whenever</option>
                     </select>
+                    <input type="text" id="LengthInInches" name="elevator_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
+                    <br></br>
+                    <input type="text" id="PartNumber" name="elevator_PartNumber" placeholder="Part Number" className="text-input" required="required" />
+                    <br></br>
+                    
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="elevator_date" />
                 </div>
@@ -426,11 +419,6 @@ function Intake(props) {
                         <option value="PLA">PLA</option>
                         <option value="ONYX">ONYX</option>
                     </select>
-                    <br></br>
-                    <input type="text" id="LengthInInches" name="intake_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
-                    <br></br>
-                    <input type="text" id="PartNumber" name="intake_PartNumber" placeholder="Part Number" className="text-input" required="required" />
-                    <br></br>
                     <label className="Priority" name="intake_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
                     <select name="intake_Priority" id="Priority" defaultValue="" className="form-control" required>
                         <option value="" className="Placeholder" disabled>Click Here! </option>
@@ -441,6 +429,11 @@ function Intake(props) {
                         <option value="5 ">5</option>
                         <option value="Whenever">Whenever</option>
                     </select>
+                    <input type="text" id="LengthInInches" name="intake_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
+                    <br></br>
+                    <input type="text" id="PartNumber" name="intake_PartNumber" placeholder="Part Number" className="text-input" required="required" />
+                    <br></br>
+                   
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="intake_date" />
                     <br></br>
@@ -521,11 +514,6 @@ function AuxiliarySystems(props) {
                         <option value="PLA">PLA</option>
                         <option value="ONYX">ONYX</option>
                     </select>
-                    <br></br>
-                    <input type="text" id="LengthInInches" name="AuxiliarySystems_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
-                    <br></br>
-                    <input type="text" id="PartNumber" name="AuxiliarySystems_PartNumber" placeholder="Part Number" className="text-input" required="required" />
-                    <br></br>
                     <label className="Priority" name="AuxiliarySystems_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
                     <select name="AuxiliarySystems_Priority" id="Priority" defaultValue="" className="form-control" required>
                         <option value="" className="Placeholder" disabled>Click Here! </option>
@@ -536,6 +524,10 @@ function AuxiliarySystems(props) {
                         <option value="5 ">5</option>
                         <option value="Whenever">Whenever</option>
                     </select>
+                    <input type="text" id="LengthInInches" name="AuxiliarySystems_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
+                    <br></br>
+                    <input type="text" id="PartNumber" name="AuxiliarySystems_PartNumber" placeholder="Part Number" className="text-input" required="required" />
+                    <br></br>
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="AuxiliarySystems_date" />
                     <br></br>
@@ -616,11 +608,6 @@ function Forebar(props) {
                         <option value="PLA">PLA</option>
                         <option value="ONYX">ONYX</option>
                     </select>
-                    <br></br>
-                    <input type="text" id="LengthInInches" name="Forebar_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
-                    <br></br>
-                    <input type="text" id="PartNumber" name="Forebar_PartNumber" placeholder="Part Number" className="text-input" required="required" />
-                    <br></br>
                     <label className="Priority" name="forebar_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
                     <select name="forebar_Priority" id="Priority" defaultValue="" className="form-control" required>
                         <option value="" className="Placeholder" disabled>Click Here! </option>
@@ -631,6 +618,11 @@ function Forebar(props) {
                         <option value="5 ">5</option>
                         <option value="Whenever">Whenever</option>
                     </select>
+                    <input type="text" id="LengthInInches" name="Forebar_LengthInInches" placeholder="Length in Inches" className="text-input" required="required" />
+                    <br></br>
+                    <input type="text" id="PartNumber" name="Forebar_PartNumber" placeholder="Part Number" className="text-input" required="required" />
+                    <br></br>
+                   
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="Forebar_date" />
                     <br></br>
@@ -674,7 +666,6 @@ function ThreeDPrint(props) {
                         <option value="L-Bracket ">L-Bracket</option>
                         <option value="Shaft">Shaft</option>
                     </select>
-                    <br></br>
                     <label className="TypeOfStock" htmlFor="TypeOfStock"><strong>Type of Stock</strong> </label>
                     <select name="ThreeDPrint_TypeOfStock" id="TypeOfPart" defaultValue="" className="form-control" required>
                         <option value="" className="Placeholder" disabled>Click Here!</option>
@@ -714,11 +705,6 @@ function ThreeDPrint(props) {
                         <option value="HHST">HHST</option>
                         <option value="CarbonFiber">CarbonFiber</option>
                     </select>
-                    <br></br>
-                    <input type="text" id="LengthInInches" name="ThreeDPrint_LengthInInches" placeholder="Length in Inches" className="text-input" required />
-                    <br></br>
-                    <input type="text" id="PartNumber" name="ThreeDPrint_PartNumber" placeholder="Part Number" className="text-input" required />
-                    <br></br>
                     <label className="Priority" name="ThreeDPrint_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
                     <select name="ThreeDPrint_Priority" id="Priority" defaultValue="" className="form-control" required>
                         <option value="" className="Placeholder" disabled>Click Here! </option>
@@ -729,10 +715,14 @@ function ThreeDPrint(props) {
                         <option value="5 ">5</option>
                         <option value="Whenever">Whenever</option>
                     </select>
+                    <input type="text" id="LengthInInches" name="ThreeDPrint_LengthInInches" placeholder="Length in Inches" className="text-input" required />
+                    <br></br>
+                    <input type="text" id="PartNumber" name="ThreeDPrint_PartNumber" placeholder="Part Number" className="text-input" required />
+                    <br></br>
+
                     <h4>When do you need the part done by?</h4>
                     <NewDate name="ThreeDPrint_date" />
                     <br></br>
-
                 </div>
             </div>
         </Page>
