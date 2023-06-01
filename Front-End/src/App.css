@@ -622,9 +622,7 @@
    color: white;
  }
 
- .a{
-  color: fuchsia;
-}
+ 
 .sidenav {
   height: 200%;
   width: 300px;
@@ -632,7 +630,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color:fuchsia;
+  background-color:black;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -640,7 +638,7 @@
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  color: fuchsia;
+  color: blue;
   display: block;
 }
 
@@ -658,8 +656,7 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 
- =====
-
+}
 .App {
   width: 100%;
 }
