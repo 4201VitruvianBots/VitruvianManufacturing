@@ -52,7 +52,7 @@ function PartSumbmission(props) {
 
 function UploadComplete(props) {
     return (
-        <Page selected={props.selected} id="PartHub">
+        <Page selected={props.selected} id="UploadComplete">
             <div>
                </div>
         </Page>
