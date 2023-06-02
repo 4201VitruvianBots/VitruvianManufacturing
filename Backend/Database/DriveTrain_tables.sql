@@ -12,6 +12,3 @@ CREATE TABLE IF NOT EXISTS partSubmission.Drivetrain (
 	Drivetrain_Date varchar(100) NULL,
 	Drivetrain_Photo varchar(100) NULL
 )
-ENGINE=InnoDB
-DEFAULT CHARSET=utf8mb4
-COLLATE=utf8mb4_0900_ai_ci;

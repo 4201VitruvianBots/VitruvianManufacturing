@@ -12,6 +12,3 @@ CREATE TABLE IF NOT EXISTS partSubmission.`3D Print` (
 	`3DPrint_Date` varchar(100)  NULL,
 	`3DPrint_Photos` varchar(100) NULL
 )
-ENGINE=InnoDB
-DEFAULT CHARSET=utf8mb4
-COLLATE=utf8mb4_0900_ai_ci;

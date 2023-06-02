@@ -10,14 +10,13 @@ function Page(props) {
         </div>
     );
 }
+
 function NewDate(props) {
     const [startDate, setStartDate] = useState(new Date());
     return (
         <DatePicker name={props.name} selected={startDate} onChange={(date) => setStartDate(date)} />
     );
 };
-
-
 
 function DrivetrainDataTable(props) {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -151,7 +150,7 @@ function BumpersDataTable(props) {
                                 }
                             </tbody>
                         </table>
-     
+
 
                     </div>
                 </div>
@@ -304,6 +303,7 @@ function IntakeDataTable(props) {
 
     }
 }
+
 function AuxiliarySystemsDataTable(props) {
     const [advice, setAdvice] = useState("");
     const [isLoaded, setIsLoaded] = useState(false);
@@ -440,8 +440,9 @@ function ForebarDataTable(props) {
         return (
             <div>Loading....</div>
         )
-        }
+    }
 }
+
 function ThreeDPrintDataTable(props) {
     const [advice, setAdvice] = useState("");
     const [isLoaded, setIsLoaded] = useState(false);
@@ -499,7 +500,7 @@ function ThreeDPrintDataTable(props) {
                                 }
                             </tbody>
                         </table>
-                    </div>            
+                    </div>
                 </div>
             </Page >
         )
@@ -511,6 +512,7 @@ function ThreeDPrintDataTable(props) {
 
     }
 }
+
 function SavePage(props) {
     return (
         <Page selected={props.selected} id="Save ">
@@ -521,4 +523,4 @@ function SavePage(props) {
         </Page>
     );
 }
-export {  ThreeDPrintDataTable, ForebarDataTable, AuxiliarySystemsDataTable, IntakeDataTable, ElevatorDataTable, BumpersDataTable, DrivetrainDataTable, SavePage, NewDate };
+export { ThreeDPrintDataTable, ForebarDataTable, AuxiliarySystemsDataTable, IntakeDataTable, ElevatorDataTable, BumpersDataTable, DrivetrainDataTable, SavePage, NewDate };
