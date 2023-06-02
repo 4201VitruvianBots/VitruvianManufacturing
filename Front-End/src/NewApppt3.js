@@ -19,12 +19,17 @@ function NewDate(props) {
 
 
 
-
 function Welcome(props) {
     return (
         <Page selected={props.selected} id="Welcome">
-            <div>
-               
+            <div className="box" >
+               <h1>Welcome to Vitruvian Manufacturing</h1>
+                </div>
+                <div className="boxhalf">
+                    Upload
+                </div>
+                <div className="boxhalfs">
+                Machining
                 </div>
         </Page>
     );
