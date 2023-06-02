@@ -18,8 +18,11 @@ const NewPartApp3 = () => {
 
         <div className="App">
             <ul style={{ listStyle: 'none' }}>
-                <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>Upload File</button></li>
-                <li style={{ float: 'left' }}><button type='button' className={actArray[1]} onClick={() => { setValue(1) }}>Part Sumbmission</button></li>
+                <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>Welcome</button></li>
+                <li style={{ float: 'left' }}><button type='button' className={actArray[1]} onClick={() => { setValue(1) }}>Upload File</button></li>
+                <li style={{ float: 'left' }}><button type='button' className={actArray[2]} onClick={() => { setValue(2) }}>Part Sumbmission</button></li>
+                <li style={{ float: 'left' }}><button type='button' className={actArray[3]} onClick={() => { setValue(3) }}>Upload Complete</button></li>
+
             </ul>
             <br /><br />
             <div>
@@ -38,6 +41,11 @@ function Choosepage(props) {
     }
 
     if (props.value === 1) {
+    }
+    if (props.value === 2) {
+    }
+
+    if (props.value === 3) {
     }
 }
 
