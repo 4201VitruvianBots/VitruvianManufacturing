@@ -2,14 +2,15 @@ import "./App.css";
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+
 function Page(props) {
     return (
         <div className={props.selected ? "page selected" : "page"} id={props.id}>
             {props.children}
         </div>
-
     );
 }
+
 function NewDate(props) {
     const [startDate, setStartDate] = useState(new Date());
     return (
@@ -17,18 +18,16 @@ function NewDate(props) {
     );
 };
 
-
-
 function Welcome(props) {
     return (
         <Page selected={props.selected} id="Welcome">
-            <div className="box" >
+            <div className="BigBox" >
                <h1>Welcome to Vitruvian Manufacturing</h1>
                 </div>
-                <div className="boxhalf">
+                <div className="container1">
                     Upload
                 </div>
-                <div className="boxhalfs">
+                <div className="container1">
                 Machining
                 </div>
         </Page>
@@ -38,9 +37,8 @@ function Welcome(props) {
 function UploadFile(props) {
     return (
         <Page selected={props.selected} id="UploadFile">
-            <div>
-            
-            </div>
+        
+           
         </Page>
     );
 }
@@ -63,3 +61,5 @@ function UploadComplete(props) {
         </Page>
     );
 }
+
+export {Welcome, UploadFile, PartSumbmission, UploadComplete};

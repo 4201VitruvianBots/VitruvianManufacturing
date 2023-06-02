@@ -1,7 +1,7 @@
 import React from 'react';
 // import { VitruvianManfacturing, DropDragBX } from '../NewPartApp3';
 import "./app.css";
-
+import {Welcome, UploadFile, PartSumbmission, UploadComplete} from '../NewApppt3';
 const NewPartApp3 = () => {
     const [value, setValue] = React.useState(0)
 
@@ -38,14 +38,18 @@ const NewPartApp3 = () => {
 
 function Choosepage(props) {
     if (props.value === 0) {
+        <Welcome/>
     }
 
     if (props.value === 1) {
+        <UploadFile/>
     }
     if (props.value === 2) {
+        <PartSumbmission/>
     }
 
     if (props.value === 3) {
+        <UploadComplete/>
     }
 }
 
