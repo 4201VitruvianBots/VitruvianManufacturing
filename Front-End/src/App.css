@@ -1,6 +1,7 @@
 
 .App {
-  width: 100%;
+  width: auto;
+  height:auto;
 }
 
 
@@ -9,7 +10,8 @@
 }
 
 body {
-  width: 100%;
+  width: max-content;
+  height:max-content;
 }
 
 :root {
