@@ -629,6 +629,15 @@ h4 {
   color: white;
 }
 
-a {
-  color: fuchsia;
+
+.header-social {
+  float: left;
+  transform: rotate(-90deg) translateY(-100%);
+  transform-origin: top right;
+  background: #eee;
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
 }

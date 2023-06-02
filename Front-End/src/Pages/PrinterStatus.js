@@ -1,7 +1,7 @@
 import React from 'react';
 import { PrinterStatus } from '../Print';
 import { SavePage, SignIn } from '../Pages';
-
+// import "./app.css";
 function PrinterStatusPage() {
     const [value, setValue] = React.useState(0)
 
@@ -17,10 +17,14 @@ function PrinterStatusPage() {
 
     return (
         <div className="App">
+              <div class="header-social">
+  <nav class="header-nav-secondary">
             <ul style={{ listStyle: 'none' }}>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>SignIn</button></li>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[1]} onClick={() => { setValue(1) }}>Printer Status</button></li>
             </ul>
+            </nav>
+            </div>
             <br /><br />
             <div>
                 <form action="http://127.0.0.1:5000/api/Printer" method="POST"

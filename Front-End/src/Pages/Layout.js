@@ -3,9 +3,10 @@ import "./app.css";
 
 const Layout = () => {
     return (
-        <>
+        <><>
             <nav>
                 <div className="menu">
+
                     <Link to="/">Home</Link>
                     <Link to="/HomePt2">Home Pt2</Link>
                     <Link to="/HomePt3">Home Pt3</Link>
@@ -14,8 +15,8 @@ const Layout = () => {
                     <Link to="/Machining">Machining</Link>
                 </div>
             </nav>
-            <Outlet />
-        </>
+        </><Outlet /></>
+        
     )
 };
 
