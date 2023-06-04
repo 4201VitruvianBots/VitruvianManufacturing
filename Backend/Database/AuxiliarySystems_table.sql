@@ -1,5 +1,4 @@
 -- partSubmission.`Auxiliary Systems` definition
-
 CREATE TABLE IF NOT EXISTS partSubmission.`Auxiliary Systems` (
 	AS_Mechanism varchar(100) NULL,
 	AS_NumofPartMachined varchar(100) NULL,
@@ -13,6 +12,3 @@ CREATE TABLE IF NOT EXISTS partSubmission.`Auxiliary Systems` (
 	AS_Date varchar(100) NULL,
 	AS_Photo varchar(100) NULL
 )
-ENGINE=InnoDB
-DEFAULT CHARSET=utf8mb4
-COLLATE=utf8mb4_0900_ai_ci;

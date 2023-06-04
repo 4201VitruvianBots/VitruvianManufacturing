@@ -2,22 +2,21 @@ import "./App.css";
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+
 function Page(props) {
     return (
         <div className={props.selected ? "page selected" : "page"} id={props.id}>
             {props.children}
         </div>
-
     );
 }
+
 function NewDate(props) {
     const [startDate, setStartDate] = useState(new Date());
     return (
         <DatePicker name={props.name} selected={startDate} onChange={(date) => setStartDate(date)} />
     );
 };
-
-
 
 
 function PartHub(props) {
@@ -102,7 +101,7 @@ function Drivetrain(props) {
                         <option value="Wood">Wood</option>
                         <option value="PETG">PETG</option>
                         <option value="PLA">PLA</option>
-                        <option value="ONYX">ONYX</option>             
+                        <option value="ONYX">ONYX</option>
                         <option value="Nothing">Nothing</option>
                     </select>
                     <label className="Priority" name="drivetrain_Priority" htmlFor="Priority"><strong>Priority</strong> </label>
@@ -138,7 +137,7 @@ function Drivetrain(props) {
                     </select>
                     <br></br>
                     <h4>When do you need the part done by?</h4>
-                    <NewDate name="drivetrain_cal" />
+                    <NewDate name="drivetrain_cal"/>
                 </div>
             </div>
         </Page >
@@ -188,7 +187,7 @@ function Bumpers(props) {
                         <option value="Shaft">Shaft</option>
                         <option value="3D-Print">3D-Print</option>
                         <option value="Nothing">Nothing</option>
-                        </select>
+                    </select>
                     <br></br>
                     <label className="Thickness (Extrusion)" htmlFor="Thickness (Extrusion)"><strong>Thickness (Extrusion)</strong> </label>
                     <select name="bumpers_Thickness(Extrusion)" id="Thickness (Extrusion)" defaultValue="" className="form-control" required >
@@ -504,6 +503,7 @@ function Intake(props) {
         </Page>
     );
 }
+
 function IntakePhotos(props) {
     return (
         <Page selected={props.selected} id="Intake-Photos">

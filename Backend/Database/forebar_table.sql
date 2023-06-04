@@ -1,5 +1,4 @@
 -- partSubmission.Forebar definition
-
 CREATE TABLE IF NOT EXISTS partSubmission.Forebar (
 	Forebar_Mechanism varchar(100) NULL,
 	Forebar_NumofPartsNeedMachined varchar(100) NULL,
@@ -13,6 +12,3 @@ CREATE TABLE IF NOT EXISTS partSubmission.Forebar (
 	Forebar_Date varchar(100) NULL,
 	Forebar_Photos varchar(100) NULL
 )
-ENGINE=InnoDB
-DEFAULT CHARSET=utf8mb4
-COLLATE=utf8mb4_0900_ai_ci;

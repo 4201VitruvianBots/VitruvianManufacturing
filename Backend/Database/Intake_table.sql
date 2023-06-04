@@ -1,5 +1,4 @@
 -- partSubmission.Intake definition
-
 CREATE TABLE IF NOT EXISTS partSubmission.Intake (
 	Intake_Mechanism varchar(100) NULL,
 	Intake_NumofPartsNeedToMachined varchar(100) NULL,
@@ -13,6 +12,3 @@ CREATE TABLE IF NOT EXISTS partSubmission.Intake (
 	Intake_Date varchar(100) NULL,
 	Intake_Photos varchar(100) NULL
 )
-ENGINE=InnoDB
-DEFAULT CHARSET=utf8mb4
-COLLATE=utf8mb4_0900_ai_ci;

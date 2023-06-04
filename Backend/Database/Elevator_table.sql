@@ -1,5 +1,4 @@
 -- partSubmission.Elevator definition
-
 CREATE TABLE IF NOT EXISTS partSubmission.Elevator (
 	Elevator_Mechanism varchar(100) NULL,
 	Elevator_NumofPartsNeedMachined varchar(100) NULL,
@@ -13,6 +12,4 @@ CREATE TABLE IF NOT EXISTS partSubmission.Elevator (
 	Elevator_Date varchar(100) NULL,
 	Elevator_Photos varchar(100) NULL
 )
-ENGINE=InnoDB
-DEFAULT CHARSET=utf8mb4
-COLLATE=utf8mb4_0900_ai_ci;
+
