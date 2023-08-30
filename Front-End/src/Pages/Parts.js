@@ -17,14 +17,14 @@ function App() {
     return (
         <div className="App">
             <ul style={{ listStyle: 'none' }}>
-                <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>SignIn</button></li>
-                <li style={{ float: 'left' }}><button type='button' className={actArray[1]} onClick={() => { setValue(1) }}>Drivetrain</button></li>
-                <li style={{ float: 'left' }}><button type='button' className={actArray[2]} onClick={() => { setValue(2) }}>Bumpers</button></li>
-                <li style={{ float: 'left' }}><button type='button' className={actArray[3]} onClick={() => { setValue(3) }}>Elevator</button></li>
-                <li style={{ float: 'left' }}><button type='button' className={actArray[4]} onClick={() => { setValue(4) }}>Intake</button></li>
-                <li style={{ float: 'left' }}><button type='button' className={actArray[5]} onClick={() => { setValue(5) }}>Auxiliary Systems</button></li>
-                <li style={{ float: 'left' }}><button type='button' className={actArray[6]} onClick={() => { setValue(6) }}>Forebar</button></li>
-                <li style={{ float: 'left' }}><button type='button' className={actArray[7]} onClick={() => { setValue(7) }}>3D Print</button></li>
+                {/* <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>SignIn</button></li> */}
+                <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>Drivetrain</button></li>
+                <li style={{ float: 'left' }}><button type='button' className={actArray[1]} onClick={() => { setValue(1) }}>Bumpers</button></li>
+                <li style={{ float: 'left' }}><button type='button' className={actArray[2]} onClick={() => { setValue(2) }}>Elevator</button></li>
+                <li style={{ float: 'left' }}><button type='button' className={actArray[3]} onClick={() => { setValue(3) }}>Intake</button></li>
+                <li style={{ float: 'left' }}><button type='button' className={actArray[4]} onClick={() => { setValue(4) }}>Auxiliary Systems</button></li>
+                <li style={{ float: 'left' }}><button type='button' className={actArray[5]} onClick={() => { setValue(5) }}>Forebar</button></li>
+                <li style={{ float: 'left' }}><button type='button' className={actArray[6]} onClick={() => { setValue(6) }}>3D Print</button></li>
             </ul>
             <br /><br />
             <div>
@@ -37,12 +37,12 @@ function App() {
     );
 }
 function Choosepage(props) {
-    if (props.value === 0) {
-        return (<SignIn />
-        );
-    }
+    // if (props.value === 0) {
+    //     return (<SignIn />
+    //     );
+    // }
 
-    if (props.value === 1) {
+    if (props.value === 0) {
 
         return (
 
@@ -56,7 +56,7 @@ function Choosepage(props) {
     }
 
 
-    if (props.value === 2) {
+    if (props.value === 1) {
         return (
             <form action="http://127.0.0.1:5000/api/bumpers" method="POST"
                 enctype="multipart/form-data">
@@ -67,7 +67,7 @@ function Choosepage(props) {
 
         );
     }
-    if (props.value === 3) {
+    if (props.value === 2) {
         return (<form action="http://127.0.0.1:5000/api/elevator" method="POST"
             enctype="multipart/form-data">
             <Elevator />
@@ -76,7 +76,7 @@ function Choosepage(props) {
         </form>
         );
     }
-    if (props.value === 4) {
+    if (props.value === 3) {
         return (<form action="http://127.0.0.1:5000/api/intake" method="POST"
             enctype="multipart/form-data">
             <Intake />
@@ -85,7 +85,7 @@ function Choosepage(props) {
         </form>
         );
     }
-    if (props.value === 5) {
+    if (props.value === 4) {
         return (<form action="http://127.0.0.1:5000/api/auxiliary-systems" method="POST"
             enctype="multipart/form-data">
             <AuxiliarySystems />
@@ -94,7 +94,7 @@ function Choosepage(props) {
         </form>
         )
     }
-    if (props.value === 6) {
+    if (props.value === 5) {
         return (
             < form action="http://127.0.0.1:5000/api/forebar" method="POST"
                 enctype="multipart/form-data">
@@ -104,7 +104,7 @@ function Choosepage(props) {
             </form>
         );
     }
-    if (props.value === 7) {
+    if (props.value === 6) {
         return (
             <form action="http://127.0.0.1:5000/api/3DPrint" method="POST"
                 enctype="multipart/form-data">

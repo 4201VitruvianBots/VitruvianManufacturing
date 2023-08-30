@@ -19,8 +19,8 @@ function PrinterStatusDataPage() {
     return (
         <div className="App">
             <ul style={{ listStyle: 'none' }}>
-                <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>SignIn</button></li>
-                <li style={{ float: 'left' }}><button type='button' className={actArray[1]} onClick={() => { setValue(1) }}>Printer Status Admin</button></li>
+                {/* <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>SignIn</button></li> */}
+                <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>Printer Status Admin</button></li>
             </ul>
             <br /><br />
             <div>
@@ -34,18 +34,16 @@ function PrinterStatusDataPage() {
     );
 }
 function Choosepage(props) {
-    if (props.value === 0) {
-        return (<SignIn />
-        );
-    }
+    // if (props.value === 0) {
+    //     return (<SignIn />
+    //     );
+    // }
 
-    if (props.value === 1) {
+    if (props.value === 0) {
         return (<><PrinterStatusDataTable /><SavePage /></>
         );
     }
 
 }
-
-
 
 export default PrinterStatusDataPage;

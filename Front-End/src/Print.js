@@ -27,7 +27,7 @@ function PrinterStatus(props) {
                     <label className="PrinterName" name="PrinterName" htmlFor="PrinterName"><strong>Name of Printer</strong> </label>
                     <select name="PrinterName" id="PrinterName" defaultValue="" className="form-control" required>
                         <option value="" className="Placeholder" disabled>Click Here! </option>
-                        <option value="Printer1">Printer 1</option>
+                        <option value="Printer1">Printer #1</option>
                         <option value="Printer2">Printer #2</option>
                         <option value="Printer3">Printer #3</option>
                         <option value="Printer4">Printer #4</option>
