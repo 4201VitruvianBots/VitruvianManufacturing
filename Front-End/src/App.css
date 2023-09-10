@@ -6,12 +6,12 @@
 
 
 #root {
-  width: 100%;
+  width: 200%;
 }
 
 body {
-  width: max-content;
-  height:max-content;
+width:auto;
+  height:auto;
 }
 
 :root {
@@ -25,7 +25,7 @@ body {
 
 .page-title {
   color: gray;
-  font-size: 25px;
+  font-size: 100px;
   font-style: normal;
 }
 
@@ -72,13 +72,13 @@ body {
   margin: 10px;
 }
 
-/* .textArea {
+ .textArea {
   /* background-color: #ecf2eb; */
   min-width: 600px;
   min-height: 200px;
   padding: 35px;
   margin: 20px;
-} */
+} 
 
 body {
   margin: 0;
@@ -770,4 +770,8 @@ ul1 {
   border-radius: 0.3em;
   display: flex;
   justify-content: space-between;
+}
+.button.bth{
+ font-size: large; 
+ margin-top: auto;
 }
