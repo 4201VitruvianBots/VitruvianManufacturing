@@ -27,6 +27,7 @@ function PartHub(props) {
                 <p className="section-label" id="Part Hub">Select a Mechanism</p>
                 <div className="textArea">
                     <label className="item-label" htmlFor="Competition"><strong>Select a Mechanism</strong> </label>
+                    
                     <select name="PartHub_ SelectaMechanism" id="Competition" defaultValue="Choose" required="required">
                         <option value="Choose" className="Placeholder" disabled>Click Here!</option>
                         <option value="DriveTrain">DriveTrain</option>
@@ -50,10 +51,13 @@ function Drivetrain(props) {
     return (
         <Page selected={props.selected} id="DriveTrain">
             <div>
+                <br>
                 <p className="section-label" id="DriveTrain">Drivetrain</p>
+</br>
                 <div className="textArea">
                     <input type="text" id="NumberOfParts" name="drivetrain_NumberOfParts" placeholder="Number of parts that need to be machined" className="text-input" required="required" />
                     <br></br>
+                
                     <label className="SizeOfPart" name="drivetrain_SizeOfParts" htmlFor="SizeOfPart"><strong>Size Of Part</strong> </label>
                     <select name="drivetrain_SizeOfPart" id="SizeOfPart" defaultValue="" className="form-control" required>
                         <option value="" className="Placeholder" disabled>Click Here! </option>
