@@ -1,7 +1,7 @@
 import "../App.css";
 import React from 'react';
 import { PrinterStatusDataTable } from '../PageP';
-import { SavePage, SignIn } from '../Pages';
+import { SavePage} from '../Pages';
 
 function PrinterStatusDataPage() {
     const [value, setValue] = React.useState(0)
@@ -19,7 +19,6 @@ function PrinterStatusDataPage() {
     return (
         <div className="App">
             <ul style={{ listStyle: 'none' }}>
-                {/* <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>SignIn</button></li> */}
                 <li style={{ float: 'left' }}><button type='button' className={actArray[0]} onClick={() => { setValue(0) }}>Printer Status Admin</button></li>
             </ul>
             <br /><br />
@@ -34,10 +33,6 @@ function PrinterStatusDataPage() {
     );
 }
 function Choosepage(props) {
-    // if (props.value === 0) {
-    //     return (<SignIn />
-    //     );
-    // }
 
     if (props.value === 0) {
         return (<><PrinterStatusDataTable /><SavePage /></>

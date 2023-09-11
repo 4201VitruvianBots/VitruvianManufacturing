@@ -1,5 +1,5 @@
 import React from 'react';
-import { AuxiliarySystems, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, Drivetrain, DrivetrainPhotos, Elevator, ElevatorPhotos, Forebar, ForebarPhotos, Intake, IntakePhotos, SavePage, SignIn, ThreeDPrint, ThreeDPrintPhotos } from '../Pages';
+import { AuxiliarySystems, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, Drivetrain, DrivetrainPhotos, Elevator, ElevatorPhotos, Forebar, ForebarPhotos, Intake, IntakePhotos, SavePage,  ThreeDPrint, ThreeDPrintPhotos } from '../Pages';
 import "../App.css";
 
 function App() {
@@ -38,10 +38,6 @@ function App() {
     );
 }
 function Choosepage(props) {
-    // if (props.value === 0) {
-    //     return (<SignIn />
-    //     );
-    // }
 
     if (props.value === 0) {
 
