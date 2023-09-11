@@ -19,35 +19,35 @@ function NewDate(props) {
 };
 
 
-function PartHub(props) {
+function SignIn(props) {
+
     return (
-        <Page selected={props.selected} id="PartHub">
-            <div>
-                <p className="section-label" id="Part Hub">Select a Mechanism</p>
-                <div className="textArea">
-                    <label className="item-label" htmlFor="Competition"><strong>Select a Mechanism</strong> </label>
-                    <select name="PartHub_ SelectaMechanism" id="Competition" defaultValue="Choose" required="required">
-                        <option value="Choose" className="Placeholder" disabled>Click Here!</option>
-                        <option value="DriveTrain">DriveTrain</option>
-                        <option value="Elevator">Elevator</option>
-                        <option value="Auxiliary Systems">Auxiliary Systems</option>
-                        <option value="Bumpers">Bumpers</option>
-                        <option value="Intake">Intake</option>
-                        <option value="Forebar">Forebar</option>
-                        <option value="3DPrint">3D Print</option>
-                    </select>
-                    <br></br>
-                    <div>
-                    </div>
+        <Page selected={props.selected} className="page" id="sign-in">
+            <div className="textArea">
+                <div class="sidenav">
+                    <a href="#bumpers">Bumpers</a>
+                    <a href="#elevator">Elevator</a>
+                    <a href="#intake">Intake</a>
+                    <a href="#auxiliarysystems">Auxiliary Systems</a>
+                    <a href="#forebar">Forebar</a>
+                    <a href="#3DPrint">3D Print</a>
                 </div>
             </div>
         </Page>
-    );
+    )
 }
 
 function Drivetrain(props) {
     return (
         <Page selected={props.selected} id="DriveTrain">
+            <div class="sidenav">
+                <a href="#bumpers">Bumpers</a>
+                <a href="#elevator">Elevator</a>
+                <a href="#intake">Intake</a>
+                <a href="#auxiliarysystems">Auxiliary Systems</a>
+                <a href="#forebar">Forebar</a>
+                <a href="#3DPrint">3D Print</a>
+            </div>
             <div>
                 <p className="section-label" id="DriveTrain">Drivetrain</p>
                 <div className="textArea">
@@ -161,6 +161,14 @@ function DrivetrainPhotos(props) {
 function Bumpers(props) {
     return (
         <Page selected={props.selected} id="Bumpers">
+            <div class="sidenav">
+                <a href="#bumpers">Bumpers</a>
+                <a href="#elevator">Elevator</a>
+                <a href="#intake">Intake</a>
+                <a href="#auxiliarysystems">Auxiliary Systems</a>
+                <a href="#forebar">Forebar</a>
+                <a href="#3DPrint">3D Print</a>
+            </div>
             <div>
                 <p className="section-label" id="Bumpers">Bumpers</p>
                 <div className="textArea">
@@ -266,6 +274,14 @@ function BumperPhotos(props) {
 function Elevator(props) {
     return (
         <Page selected={props.selected} id="Elevator">
+            <div class="sidenav">
+                <a href="#bumpers">Bumpers</a>
+                <a href="#elevator">Elevator</a>
+                <a href="#intake">Intake</a>
+                <a href="#auxiliarysystems">Auxiliary Systems</a>
+                <a href="#forebar">Forebar</a>
+                <a href="#3DPrint">3D Print</a>
+            </div>
             <div>
                 <p className="section-label" id="Elevator">Elevator</p>
                 <div className="textArea">
@@ -402,6 +418,14 @@ function ElevatorPhotos(props) {
 function Intake(props) {
     return (
         <Page selected={props.selected} id="Intake">
+            <div class="sidenav">
+                <a href="#bumpers">Bumpers</a>
+                <a href="#elevator">Elevator</a>
+                <a href="#intake">Intake</a>
+                <a href="#auxiliarysystems">Auxiliary Systems</a>
+                <a href="#forebar">Forebar</a>
+                <a href="#3DPrint">3D Print</a>
+            </div>
             <div>
                 <p className="section-label" id="Intake">Intake</p>
                 <div className="textArea">
@@ -522,6 +546,14 @@ function IntakePhotos(props) {
 function AuxiliarySystems(props) {
     return (
         <Page selected={props.selected} id="AuxiliarySystems">
+            <div class="sidenav">
+                <a href="#bumpers">Bumpers</a>
+                <a href="#elevator">Elevator</a>
+                <a href="#intake">Intake</a>
+                <a href="#auxiliarysystems">Auxiliary Systems</a>
+                <a href="#forebar">Forebar</a>
+                <a href="#3DPrint">3D Print</a>
+            </div>
             <div>
                 <p className="section-label" id="AuxiliarySystems">Auxiliary Systems</p>
                 <div className="textArea">
@@ -624,6 +656,14 @@ function AuxiliarySystemsPhotos(props) {
 function Forebar(props) {
     return (
         <Page selected={props.selected} id="Forebar">
+            <div class="sidenav">
+                <a href="#bumpers">Bumpers</a>
+                <a href="#elevator">Elevator</a>
+                <a href="#intake">Intake</a>
+                <a href="#auxiliarysystems">Auxiliary Systems</a>
+                <a href="#forebar">Forebar</a>
+                <a href="#3DPrint">3D Print</a>
+            </div>
             <div>
                 <p className="section-label" id="Forebar">Forebar</p>
                 <div className="textArea">
@@ -756,9 +796,18 @@ function ForebarPhotos(props) {
         </Page>
     );
 }
+
 function ThreeDPrint(props) {
     return (
         <Page selected={props.selected} id="ThreeDPrint">
+            <div class="sidenav">
+                <a href="#bumpers">Bumpers</a>
+                <a href="#elevator">Elevator</a>
+                <a href="#intake">Intake</a>
+                <a href="#auxiliarysystems">Auxiliary Systems</a>
+                <a href="#forebar">Forebar</a>
+                <a href="#3DPrint">3D Print</a>
+            </div>
             <div>
                 <p className="section-label" id="ThreeDPrint">3d Print</p>
                 <div className="textArea">
@@ -856,6 +905,7 @@ function ThreeDPrintPhotos(props) {
     );
 }
 
+
 function SavePage(props) {
     return (
         <Page selected={props.selected} id="Save ">
@@ -866,4 +916,5 @@ function SavePage(props) {
         </Page>
     );
 }
-export {  PartHub, Drivetrain, DrivetrainPhotos, Bumpers, BumperPhotos, Elevator, ElevatorPhotos, Intake, IntakePhotos, AuxiliarySystems, AuxiliarySystemsPhotos, Forebar, ForebarPhotos, ThreeDPrint, ThreeDPrintPhotos, SavePage };
+
+export {SignIn, SavePage, ThreeDPrintPhotos, ThreeDPrint, ForebarPhotos, Forebar, AuxiliarySystemsPhotos, AuxiliarySystems, IntakePhotos, Intake, ElevatorPhotos, Elevator, BumperPhotos, Bumpers, DrivetrainPhotos, Drivetrain };

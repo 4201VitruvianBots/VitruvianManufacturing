@@ -19,6 +19,10 @@ function NewDate(props) {
 function PrinterStatus(props) {
     return (
         <Page selected={props.selected} id="PrinerStatus">
+             <div class="sidenav">
+             <a href="#SignIn">SignIn</a>  
+  <a href="#PrinterStatus">PrinerStatus</a>  
+</div>
             <div>
                 <br></br>
                 <p className="section-label" id="PrinterStatus">Printer Status</p>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { AuxiliarySystems, AuxiliarySystemsPhotos, BumperPhotos, Bumpers, Drivetrain, DrivetrainPhotos, Elevator, ElevatorPhotos, Forebar, ForebarPhotos, Intake, IntakePhotos, SavePage,  ThreeDPrint, ThreeDPrintPhotos } from '../NewPartApp';
+import  { SavePage, ThreeDPrintPhotos,ThreeDPrint,ForebarPhotos, Forebar, AuxiliarySystemsPhotos,AuxiliarySystems, IntakePhotos, Intake, ElevatorPhotos,Elevator, BumperPhotos, Bumpers, DrivetrainPhotos,Drivetrain} from '../NewPartApp';
 
 import "./app.css";
 
