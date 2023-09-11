@@ -73,7 +73,7 @@
    -moz-osx-font-smoothing: grayscale;
    background-color: var(--bg-color);
 
-
+ }
  input[type="button"] {
    border-color: var(--accent-3);
    background-color: var(--accent-2);
