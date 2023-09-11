@@ -1,6 +1,6 @@
 import React from 'react';
 // import { VitruvianManfacturing, DropDragBX } from '../NewPartApp3';
-import "./app.css";
+import "../App.css";
 
 const NewPartApp3 = () => {
     const [value, setValue] = React.useState(0)
