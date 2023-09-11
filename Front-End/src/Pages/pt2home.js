@@ -1,5 +1,6 @@
 import React from 'react';
 import  { SavePage, ThreeDPrintPhotos,ThreeDPrint,ForebarPhotos, Forebar, AuxiliarySystemsPhotos,AuxiliarySystems, IntakePhotos, Intake, ElevatorPhotos,Elevator, BumperPhotos, Bumpers, DrivetrainPhotos,Drivetrain} from '../NewPartApp';
+
 import "./app.css";
 
 const NewPartApp = () => {
@@ -15,7 +16,6 @@ const NewPartApp = () => {
         }
     }
     return (
-
         <div className="App">
             <ul style={{ listStyle: 'none' }}>
                 <li style={{ float: 'left' }}><button type='button' className={actArray[1]} onClick={() => { setValue(1) }}>Drivetrain</button></li>
@@ -34,12 +34,10 @@ const NewPartApp = () => {
                 </form>
             </div>
         </div>
-
     );
 }
-
 function Choosepage(props) {
-   
+
     if (props.value === 1) {
         return (<><Drivetrain /><DrivetrainPhotos /> <SavePage /></>
         );
@@ -58,7 +56,7 @@ function Choosepage(props) {
     }
     if (props.value === 5) {
         return (<><AuxiliarySystems /><AuxiliarySystemsPhotos /><SavePage /></>
-        )
+        );
     }
     if (props.value === 6) {
         return (<><Forebar /><ForebarPhotos /><SavePage /></>
@@ -69,5 +67,4 @@ function Choosepage(props) {
         );
     }
 }
-
 export default NewPartApp;

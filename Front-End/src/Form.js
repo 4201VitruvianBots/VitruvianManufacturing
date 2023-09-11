@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-
 function RadioButtons(props) {
     let output = [];
     for (let item in props.items) {
