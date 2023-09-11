@@ -18,41 +18,41 @@ function NewDate(props) {
     );
 };
 
-function SignIn(props) {
-    return (
-        <Page selected={props.selected} className="page" id="sign-in">
-             <div class="sidenav">
-  <a href="#bumpers">Bumpers</a>
-  <a href="#elevator">Elevator</a>
-  <a href="#intake">Intake</a>
-  <a href="#auxiliarysystems">Auxiliary Systems</a>
-  <a href="#forebar">Forebar</a>
-  <a href="#3DPrint">3D Print</a>
-</div>
+// function SignIn(props) {
+//     return (
+//         <Page selected={props.selected} className="page" id="sign-in">
+//              <div class="sidenav">
+//   <a href="#bumpers">Bumpers</a>
+//   <a href="#elevator">Elevator</a>
+//   <a href="#intake">Intake</a>
+//   <a href="#auxiliarysystems">Auxiliary Systems</a>
+//   <a href="#forebar">Forebar</a>
+//   <a href="#3DPrint">3D Print</a>
+// </div>
 
-            <div className="textArea">
-                {/* <h3>Sign in</h3>
-                {/* <label htmlFor="username">Your username</label> */}
-                {/* <br></br>
-                <input type="text" placeholder="Enter Username" name="username" required></input>
-                <input type="password" placeholder="Enter Password" name="pswrd" required /> */}
-                {/* <label for="username">Username:</label> */}
-                {/* <input type="text" id="username" name="username"/> */}
-                <h1>Sign in</h1>
-                <label htmlFor="email">Email: </label>
-                <input type="email" id="email" name="email" required="required" />
-                <br></br>
-                <br></br>
-                {/* <label for="pwd">Password:</label>
-                <input type="password" id="pwd" name="pwd"></input> */}
-                <br></br>
-                <input type="submit" value="Submit" />
-                {/* <body class="light">     */}
-                {/* </body> */}
-            </div>
-        </Page>
-    );
-}
+//             <div className="textArea">
+//                 {/* <h3>Sign in</h3>
+//                 {/* <label htmlFor="username">Your username</label> */}
+//                 {/* <br></br>
+//                 <input type="text" placeholder="Enter Username" name="username" required></input>
+//                 <input type="password" placeholder="Enter Password" name="pswrd" required /> */}
+//                 {/* <label for="username">Username:</label> */}
+//                 {/* <input type="text" id="username" name="username"/> */}
+//                 <h1>Sign in</h1>
+//                 <label htmlFor="email">Email: </label>
+//                 <input type="email" id="email" name="email" required="required" />
+//                 <br></br>
+//                 <br></br>
+//                 {/* <label for="pwd">Password:</label>
+//                 <input type="password" id="pwd" name="pwd"></input> */}
+//                 <br></br>
+//                 <input type="submit" value="Submit" />
+//                 {/* <body class="light">     */}
+//                 {/* </body> */}
+//             </div>
+//         </Page>
+//     );
+// }
 
 
 
